@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b",
+  "language": "deu_Latn",
+  "sample_id": "s0080",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Bitte schreiben Sie ungefähr 256 Zeichen Text auf Deutsch über das Thema des folgenden Satzes. Keine Begrüßung, keine Erklärungen, nur den Absatz selbst:\n\nElemente wie Calcium und Kalium werden als Metalle angesehen. Natürlich gibt es auch andere Metalle wie Silber und Gold.\n\n/no_think",
+    "source_text": "Elemente wie Calcium und Kalium werden als Metalle angesehen. Natürlich gibt es auch andere Metalle wie Silber und Gold."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "Elemente wie Calcium und Kalium werden als Metalle angesehen. Natürlich gibt es auch andere Metalle wie Silber und Gold.",
+  "ollama": {
+    "model": "qwen3:0.6b",
+    "total_duration": 460822408,
+    "load_duration": 47929109,
+    "prompt_eval_duration": 14664892,
+    "eval_duration": 391103595,
+    "eval_count": 28,
+    "prompt_eval_count": 100,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-09-09T11:30:19.897725796Z",
+    "message": {
+      "role": "assistant",
+      "content": "Elemente wie Calcium und Kalium werden als Metalle angesehen. Natürlich gibt es auch andere Metalle wie Silber und Gold."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 460822408,
+    "load_duration": 47929109,
+    "prompt_eval_count": 100,
+    "prompt_eval_duration": 14664892,
+    "eval_count": 28,
+    "eval_duration": 391103595
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788953419.4015632,
+      "nvidia_smi": {
+        "timestamp_unix": 1788953419.4015634,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.237,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788953419.4164357,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 224.3671875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1026824,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1534.41015625,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 224.3671875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1310.04296875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788953419.4285953,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 229752,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1018590,
+        "proc_invol_ctx": 8234,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788953419.8982317,
+      "nvidia_smi": {
+        "timestamp_unix": 1788953419.8982322,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.253,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788953419.91564,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 219.34375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1026824,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1529.38671875,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 219.34375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1310.04296875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788953419.9288628,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 224608,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1018590,
+        "proc_invol_ctx": 8234,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788953419.436487,
+      "response_received_unix": 1788953419.8981526,
+      "first_byte_unix": 1788953419.8980765,
+      "total_wall_ms": 461.6656303405762,
+      "queue_wait_ms": 461.5895748138428,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 11:30:19 GMT",
+        "Content-Length": "416",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788953419.937724,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788953419.4364421
+    }
+  },
+  "wall_clock_unix": 1788953419.937724
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "eng_Latn",
+  "sample_id": "s0159",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Please write exactly about 256 characters of text in English on the topic implied by the following sentence. Do not add greetings, do not add explanations, just the paragraph itself:\n\nCasinos typically make many efforts to maximize time and money spent by guests. Windows and clocks are usually absent, and exits can be hard to find.\n\n/no_think",
+    "source_text": "Casinos typically make many efforts to maximize time and money spent by guests. Windows and clocks are usually absent, and exits can be hard to find."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Casinos prioritize guest experience by minimizing wait times and maximizing convenience. They often feature large screens, minimalist layouts, and intuitive navigation to reduce stress. Exits may be less frequent or require navigating complex routes, but the overall atmosphere is designed to feel relaxed and engaging.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 917793664,
+    "load_duration": 25265969,
+    "prompt_eval_duration": 218749016,
+    "eval_duration": 666461281,
+    "eval_count": 58,
+    "prompt_eval_count": 94,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T07:28:03.434098054Z",
+    "message": {
+      "role": "assistant",
+      "content": "Casinos prioritize guest experience by minimizing wait times and maximizing convenience. They often feature large screens, minimalist layouts, and intuitive navigation to reduce stress. Exits may be less frequent or require navigating complex routes, but the overall atmosphere is designed to feel relaxed and engaging."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 917793664,
+    "load_duration": 25265969,
+    "prompt_eval_count": 94,
+    "prompt_eval_duration": 218749016,
+    "eval_count": 58,
+    "eval_duration": 666461281
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788938882.4783285,
+      "nvidia_smi": {
+        "timestamp_unix": 1788938882.478329,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 14,
+            "power_w": 11.94,
+            "temp_c": 47,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788938882.4925926,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 197.0859375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 924776,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 971.40625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 197.0859375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 774.3203125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788938882.5067925,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 201816,
+        "proc_threads": 40,
+        "proc_vol_ctx": 917651,
+        "proc_invol_ctx": 7125,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788938883.4346774,
+      "nvidia_smi": {
+        "timestamp_unix": 1788938883.4346786,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 31,
+            "mem_util_pct": 14,
+            "power_w": 11.947,
+            "temp_c": 47,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788938883.4537013,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 200.61328125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 924777,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 973.62109375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 200.61328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 773.0078125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788938883.4685621,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 205428,
+        "proc_threads": 40,
+        "proc_vol_ctx": 917652,
+        "proc_invol_ctx": 7125,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788938882.5157814,
+      "response_received_unix": 1788938883.4345155,
+      "first_byte_unix": 1788938883.434428,
+      "total_wall_ms": 918.734073638916,
+      "queue_wait_ms": 918.6465740203857,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 07:28:03 GMT",
+        "Content-Length": "631",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788938883.4773138,
+      "vram_delta_mib": -0.0625
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788938882.5157337
+    }
+  },
+  "wall_clock_unix": 1788938883.4773138
+}

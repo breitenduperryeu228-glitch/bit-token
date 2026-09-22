@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b-q8",
+  "language": "spa_Latn",
+  "sample_id": "s0145",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nNo obstante, estos planes cayeron en desuso casi de un día para otro, cuando más de 800 000 combatientes del Ejército Rojo de la Unión Soviética ingresaron y formaron los frentes bielorruso y ucraniano luego de invadir las regiones del este de Polonia, infringiendo el Tratado de Paz de Riga, el pacto de No Agresión soviético-polaca y otros acuerdos internacionales, bilaterales y multilaterales.\n\n/no_think",
+    "source_text": "No obstante, estos planes cayeron en desuso casi de un día para otro, cuando más de 800 000 combatientes del Ejército Rojo de la Unión Soviética ingresaron y formaron los frentes bielorruso y ucraniano luego de invadir las regiones del este de Polonia, infringiendo el Tratado de Paz de Riga, el pacto de No Agresión soviético-polaca y otros acuerdos internacionales, bilaterales y multilaterales."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "Los planes de la Unión Soviética cayeron en desuso, ya que más de 800 000 combatientes formaron los frentes bielorruso y ucraniano tras invadir Polonia, infringiendo acuerdos internacionales y bilaterales.",
+  "ollama": {
+    "model": "qwen3:0.6b-q8",
+    "total_duration": 368479652,
+    "load_duration": 47614350,
+    "prompt_eval_duration": 4987284,
+    "eval_duration": 297788180,
+    "eval_count": 67,
+    "prompt_eval_count": 181,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b-q8",
+    "created_at": "2026-09-19T03:25:24.844846381Z",
+    "message": {
+      "role": "assistant",
+      "content": "<think>\n\n</think>\n\nLos planes de la Unión Soviética cayeron en desuso, ya que más de 800 000 combatientes formaron los frentes bielorruso y ucraniano tras invadir Polonia, infringiendo acuerdos internacionales y bilaterales."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 368479652,
+    "load_duration": 47614350,
+    "prompt_eval_count": 181,
+    "prompt_eval_duration": 4987284,
+    "eval_count": 67,
+    "eval_duration": 297788180
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789788324.4454184,
+      "nvidia_smi": {
+        "timestamp_unix": 1789788324.4454186,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2365.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 78,
+            "power_w": 49.569,
+            "temp_c": 56,
+            "sm_clock_mhz": 2325,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789788324.4556868,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 102.3984375,
+        "vms_mib": 3980.078125,
+        "num_threads": 38,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 760.66015625,
+        "tree_threads": 85,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 102.3984375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 658.26171875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789788324.467282,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4075600,
+        "proc_vm_rss_kib": 104856,
+        "proc_threads": 38,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789788324.8452501,
+      "nvidia_smi": {
+        "timestamp_unix": 1789788324.8452506,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2365.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 8,
+            "mem_util_pct": 11,
+            "power_w": 50.665,
+            "temp_c": 57,
+            "sm_clock_mhz": 2325,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789788324.8580356,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 98.8046875,
+        "vms_mib": 3980.078125,
+        "num_threads": 38,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 757.06640625,
+        "tree_threads": 85,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 98.8046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 658.26171875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789788324.870176,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4075600,
+        "proc_vm_rss_kib": 101176,
+        "proc_threads": 38,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789788324.4759939,
+      "response_received_unix": 1789788324.8452024,
+      "first_byte_unix": 1789788324.8451633,
+      "total_wall_ms": 369.20857429504395,
+      "queue_wait_ms": 369.1694736480713,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 19 Sep 2026 03:25:24 GMT",
+        "Content-Length": "548",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789788324.8781316,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789788324.4759455
+    }
+  },
+  "wall_clock_unix": 1789788324.8781316
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "spa_Latn",
+  "sample_id": "s0166",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nDurante el siglo XII su estatus decayó, sobre todo debido a que, a su regreso, los cruzados trajeron obsequios, como sedas y especias, a los que se les daba mayor valor que a los bienes ofrecidos en los mercados bizantinos.\n\n/no_think",
+    "source_text": "Durante el siglo XII su estatus decayó, sobre todo debido a que, a su regreso, los cruzados trajeron obsequios, como sedas y especias, a los que se les daba mayor valor que a los bienes ofrecidos en los mercados bizantinos."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Los cruzados trajeron objetos de gran valor, como sedas y especias, que superaban significativamente lo que ofrecían los comerciantes bizantinos.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 295782847,
+    "load_duration": 71457871,
+    "prompt_eval_duration": 5944998,
+    "eval_duration": 203693649,
+    "eval_count": 36,
+    "prompt_eval_count": 137,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T08:11:20.751017753Z",
+    "message": {
+      "role": "assistant",
+      "content": "Los cruzados trajeron objetos de gran valor, como sedas y especias, que superaban significativamente lo que ofrecían los comerciantes bizantinos."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 295782847,
+    "load_duration": 71457871,
+    "prompt_eval_count": 137,
+    "prompt_eval_duration": 5944998,
+    "eval_count": 36,
+    "eval_duration": 203693649
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789027880.4080744,
+      "nvidia_smi": {
+        "timestamp_unix": 1789027880.4080749,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 53.928,
+            "temp_c": 76,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789027880.4187083,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.83203125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1284.15234375,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.83203125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1025.3203125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789027880.4406655,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265044,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789027880.7513652,
+      "nvidia_smi": {
+        "timestamp_unix": 1789027880.7513654,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 56.072,
+            "temp_c": 75,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789027880.7623925,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.72265625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1284.078125,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.72265625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1025.35546875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789027880.7857509,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264932,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789027880.454888,
+      "response_received_unix": 1789027880.751296,
+      "first_byte_unix": 1789027880.7512488,
+      "total_wall_ms": 296.40793800354004,
+      "queue_wait_ms": 296.36073112487793,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 08:11:20 GMT",
+        "Content-Length": "441",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789027880.8002937,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789027880.4548411
+    }
+  },
+  "wall_clock_unix": 1789027880.8002937
+}

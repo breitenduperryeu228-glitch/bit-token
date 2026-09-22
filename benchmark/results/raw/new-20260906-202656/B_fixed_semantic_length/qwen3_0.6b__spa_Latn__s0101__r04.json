@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b",
+  "language": "spa_Latn",
+  "sample_id": "s0101",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nLas mujeres cocinaban en el patio; las tiendas eran tan solo mostradores que daban a la calle. Las casas se construían con piedra.\n\n/no_think",
+    "source_text": "Las mujeres cocinaban en el patio; las tiendas eran tan solo mostradores que daban a la calle. Las casas se construían con piedra."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "Las mujeres cocinaban en el patio; las tiendas eran mostradores que daban a la calle. Las casas se construían con piedra.",
+  "ollama": {
+    "model": "qwen3:0.6b",
+    "total_duration": 605967629,
+    "load_duration": 57329045,
+    "prompt_eval_duration": 15498071,
+    "eval_duration": 521895977,
+    "eval_count": 35,
+    "prompt_eval_count": 108,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-09-09T11:04:54.669940251Z",
+    "message": {
+      "role": "assistant",
+      "content": "Las mujeres cocinaban en el patio; las tiendas eran mostradores que daban a la calle. Las casas se construían con piedra."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 605967629,
+    "load_duration": 57329045,
+    "prompt_eval_count": 108,
+    "prompt_eval_duration": 15498071,
+    "eval_count": 35,
+    "eval_duration": 521895977
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788951894.023639,
+      "nvidia_smi": {
+        "timestamp_unix": 1788951894.0236392,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.206,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788951894.039503,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 215.78515625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1014520,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1525.52734375,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 215.78515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1309.7421875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788951894.054633,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 220964,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1006492,
+        "proc_invol_ctx": 8028,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788951894.670337,
+      "nvidia_smi": {
+        "timestamp_unix": 1788951894.6703377,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.165,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788951894.6847677,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 219.55078125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1014522,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1529.296875,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 219.55078125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1309.74609375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788951894.7011147,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 224820,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1006494,
+        "proc_invol_ctx": 8028,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788951894.0636,
+      "response_received_unix": 1788951894.6702628,
+      "first_byte_unix": 1788951894.670211,
+      "total_wall_ms": 606.6627502441406,
+      "queue_wait_ms": 606.6110134124756,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 11:04:54 GMT",
+        "Content-Length": "417",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788951894.7105618,
+      "vram_delta_mib": -0.1875
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788951894.063555
+    }
+  },
+  "wall_clock_unix": 1788951894.7105618
+}

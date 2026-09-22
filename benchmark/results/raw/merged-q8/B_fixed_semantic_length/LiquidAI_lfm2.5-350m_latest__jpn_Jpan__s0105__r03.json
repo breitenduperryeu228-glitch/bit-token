@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0105",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nさらに北方の広い地域は人口が少なく、ほとんど人が住んでいない原生地域もあります。\n\n/no_think",
+    "source_text": "さらに北方の広い地域は人口が少なく、ほとんど人が住んでいない原生地域もあります。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "北方の広い地域は、自然の美しさと静けさが魅力の源泉です。広大な森林や山々が広がり、季節ごとの風景は訪れる人々を惹きつけています。特に、夜間の静寂は心を落ち着かせ、深い瞑想の時間を提供します。\n\n原生地域は、その土地の歴史や文化を保存する重要な役割を果たしています。伝統的な建築や祭り、自然との共生の精神が息づいており、訪れる人々はその土地の誇りを肌で感じます。こうした地域は、現代社会とは異なる価値観を育む貴重な拠点となっています。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2081825118,
+    "load_duration": 23423800,
+    "prompt_eval_duration": 139229207,
+    "eval_duration": 1897070101,
+    "eval_count": 164,
+    "prompt_eval_count": 87,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:20:27.475003349Z",
+    "message": {
+      "role": "assistant",
+      "content": "北方の広い地域は、自然の美しさと静けさが魅力の源泉です。広大な森林や山々が広がり、季節ごとの風景は訪れる人々を惹きつけています。特に、夜間の静寂は心を落ち着かせ、深い瞑想の時間を提供します。\n\n原生地域は、その土地の歴史や文化を保存する重要な役割を果たしています。伝統的な建築や祭り、自然との共生の精神が息づいており、訪れる人々はその土地の誇りを肌で感じます。こうした地域は、現代社会とは異なる価値観を育む貴重な拠点となっています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2081825118,
+    "load_duration": 23423800,
+    "prompt_eval_count": 87,
+    "prompt_eval_duration": 139229207,
+    "eval_count": 164,
+    "eval_duration": 1897070101
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788942025.3575728,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942025.3575733,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.524,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942025.3718784,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.62890625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 963841,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 989.3359375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.62890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 785.70703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942025.3845654,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208516,
+        "proc_threads": 40,
+        "proc_vol_ctx": 956472,
+        "proc_invol_ctx": 7369,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788942027.4755821,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942027.475583,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 14,
+            "power_w": 12.563,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942027.492738,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 205.12109375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 963842,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 991.765625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 205.12109375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 786.64453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942027.5073912,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 210044,
+        "proc_threads": 40,
+        "proc_vol_ctx": 956473,
+        "proc_invol_ctx": 7369,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788942025.3927824,
+      "response_received_unix": 1788942027.4754949,
+      "first_byte_unix": 1788942027.4754412,
+      "total_wall_ms": 2082.712411880493,
+      "queue_wait_ms": 2082.6587677001953,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:20:27 GMT",
+        "Content-Length": "961",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788942027.516776,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788942025.3927383
+    }
+  },
+  "wall_clock_unix": 1788942027.516776
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0076",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n今週初め、警察のヘリコプターが墜落して3人が死亡し、さらに3人が負傷しました。\n\n/no_think",
+    "source_text": "今週初め、警察のヘリコプターが墜落して3人が死亡し、さらに3人が負傷しました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "今週初め、警察のヘリコプターが墜落し、死者3名、負傷者3名を確認しました。現場では緊急対応が急務で、消防隊が迅速に救助を開始しました。ヘリコプターの故障や悪天候が原因と考えられ、現場の状況は非常に危険でした。警察は被害状況を詳細に報告し、被害者への支援を開始しました。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1589790180,
+    "load_duration": 40341529,
+    "prompt_eval_duration": 232877528,
+    "eval_duration": 1293768801,
+    "eval_count": 104,
+    "prompt_eval_count": 97,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:16:01.018403282Z",
+    "message": {
+      "role": "assistant",
+      "content": "今週初め、警察のヘリコプターが墜落し、死者3名、負傷者3名を確認しました。現場では緊急対応が急務で、消防隊が迅速に救助を開始しました。ヘリコプターの故障や悪天候が原因と考えられ、現場の状況は非常に危険でした。警察は被害状況を詳細に報告し、被害者への支援を開始しました。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1589790180,
+    "load_duration": 40341529,
+    "prompt_eval_count": 97,
+    "prompt_eval_duration": 232877528,
+    "eval_count": 104,
+    "eval_duration": 1293768801
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788941759.38974,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941759.3897402,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.25,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.231,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941759.4046893,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.21875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 960671,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 984.91796875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.21875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.69921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941759.4192054,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209120,
+        "proc_threads": 40,
+        "proc_vol_ctx": 953329,
+        "proc_invol_ctx": 7342,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788941761.018995,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941761.0189955,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.25,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.228,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941761.0376987,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 198.3671875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 960676,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 979.50390625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 198.3671875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 781.13671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941761.0531392,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 203128,
+        "proc_threads": 40,
+        "proc_vol_ctx": 953334,
+        "proc_invol_ctx": 7342,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788941759.4282076,
+      "response_received_unix": 1788941761.0189042,
+      "first_byte_unix": 1788941761.018804,
+      "total_wall_ms": 1590.6965732574463,
+      "queue_wait_ms": 1590.5964374542236,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:16:01 GMT",
+        "Content-Length": "713",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788941761.0621939,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788941759.4281614
+    }
+  },
+  "wall_clock_unix": 1788941761.0621939
+}

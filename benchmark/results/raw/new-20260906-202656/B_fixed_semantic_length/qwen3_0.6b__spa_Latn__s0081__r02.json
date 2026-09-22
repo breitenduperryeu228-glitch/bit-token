@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b",
+  "language": "spa_Latn",
+  "sample_id": "s0081",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nLa investigación todavía se ubica en su etapa inicial, conforme indicara el Dr. Ehud Ur, docente en la carrera de medicina de la Universidad de Dalhousie, en Halifax, Nueva Escocia, y director del departamento clínico y científico de la Asociación Canadiense de Diabetes.\n\n/no_think",
+    "source_text": "La investigación todavía se ubica en su etapa inicial, conforme indicara el Dr. Ehud Ur, docente en la carrera de medicina de la Universidad de Dalhousie, en Halifax, Nueva Escocia, y director del departamento clínico y científico de la Asociación Canadiense de Diabetes."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "La investigación está en su etapa inicial, según indican los datos del Dr. Ehud Ur, director del departamento clínico y científico de la Asociación Canadiense de Diabetes.",
+  "ollama": {
+    "model": "qwen3:0.6b",
+    "total_duration": 679528915,
+    "load_duration": 57192442,
+    "prompt_eval_duration": 15114382,
+    "eval_duration": 594241291,
+    "eval_count": 41,
+    "prompt_eval_count": 140,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-09-09T11:03:40.66761796Z",
+    "message": {
+      "role": "assistant",
+      "content": "La investigación está en su etapa inicial, según indican los datos del Dr. Ehud Ur, director del departamento clínico y científico de la Asociación Canadiense de Diabetes."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 679528915,
+    "load_duration": 57192442,
+    "prompt_eval_count": 140,
+    "prompt_eval_duration": 15114382,
+    "eval_count": 41,
+    "eval_duration": 594241291
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788951819.9501839,
+      "nvidia_smi": {
+        "timestamp_unix": 1788951819.950184,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 28,
+            "mem_util_pct": 13,
+            "power_w": 12.218,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788951819.9644303,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 217.56640625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1014097,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1528.15625,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 217.56640625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1310.58984375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788951819.9788978,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 222788,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1006078,
+        "proc_invol_ctx": 8019,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788951820.6679647,
+      "nvidia_smi": {
+        "timestamp_unix": 1788951820.6679652,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.235,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788951820.6828732,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 213.42578125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1014100,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1524.59375,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 213.42578125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1311.16796875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788951820.6992877,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 218548,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1006081,
+        "proc_invol_ctx": 8019,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788951819.9877114,
+      "response_received_unix": 1788951820.667912,
+      "first_byte_unix": 1788951820.6678505,
+      "total_wall_ms": 680.2005767822266,
+      "queue_wait_ms": 680.1390647888184,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 11:03:40 GMT",
+        "Content-Length": "471",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788951820.7082553,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788951819.9876676
+    }
+  },
+  "wall_clock_unix": 1788951820.7082553
+}

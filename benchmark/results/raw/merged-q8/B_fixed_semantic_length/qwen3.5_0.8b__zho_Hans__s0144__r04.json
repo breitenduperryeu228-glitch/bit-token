@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "zho_Hans",
+  "sample_id": "s0144",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n当一小群生物（一个小种群）与它们本来的主要种群分离时（比如它们跨过山脉和河流，或者它们到了一个新的岛屿以至于不可能轻易回去)，它们通常会发现自己所处的环境与之前不同。\n\n/no_think",
+    "source_text": "当一小群生物（一个小种群）与它们本来的主要种群分离时（比如它们跨过山脉和河流，或者它们到了一个新的岛屿以至于不可能轻易回去)，它们通常会发现自己所处的环境与之前不同。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "当一小群生物（一个小种群）与它们本来的主要种群分离时（比如它们跨过山脉和河流，或者它们到了一个新的岛屿以至于不可能轻易回去），它们通常会发现自己所处的环境与之前不同。这种分离往往伴随着环境的剧烈变化，自然选择开始作用于个体，导致基因频率发生改变。在封闭环境中，种群内部竞争加剧，生存压力增大，个体间的生存斗争变得尤为激烈。为了在有限的资源中占据优势，个体往往表现出更强的适应性和生存策略。例如，某些物种为了逃避天敌而进化出更敏锐的感官，或者为了争夺食物而演化出更高效的觅食机制。这些适应性变化使得种群能够更有效地应对环境挑战，从而在长期的演化过程中逐渐形成独特的物种特征。",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 1066425582,
+    "load_duration": 113028100,
+    "prompt_eval_duration": 21823219,
+    "eval_duration": 876966000,
+    "eval_count": 153,
+    "prompt_eval_count": 102,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T01:07:07.992905938Z",
+    "message": {
+      "role": "assistant",
+      "content": "当一小群生物（一个小种群）与它们本来的主要种群分离时（比如它们跨过山脉和河流，或者它们到了一个新的岛屿以至于不可能轻易回去），它们通常会发现自己所处的环境与之前不同。这种分离往往伴随着环境的剧烈变化，自然选择开始作用于个体，导致基因频率发生改变。在封闭环境中，种群内部竞争加剧，生存压力增大，个体间的生存斗争变得尤为激烈。为了在有限的资源中占据优势，个体往往表现出更强的适应性和生存策略。例如，某些物种为了逃避天敌而进化出更敏锐的感官，或者为了争夺食物而演化出更高效的觅食机制。这些适应性变化使得种群能够更有效地应对环境挑战，从而在长期的演化过程中逐渐形成独特的物种特征。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1066425582,
+    "load_duration": 113028100,
+    "prompt_eval_count": 102,
+    "prompt_eval_duration": 21823219,
+    "eval_count": 153,
+    "eval_duration": 876966000
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789002426.8817518,
+      "nvidia_smi": {
+        "timestamp_unix": 1789002426.881752,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 89,
+            "mem_util_pct": 71,
+            "power_w": 64.175,
+            "temp_c": 73,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789002426.8921092,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 244.64453125,
+        "vms_mib": 4154.26953125,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2209.94921875,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 244.64453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 1965.3046875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789002426.912273,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4253972,
+        "proc_vm_rss_kib": 250516,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789002427.993341,
+      "nvidia_smi": {
+        "timestamp_unix": 1789002427.9933414,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 89,
+            "mem_util_pct": 71,
+            "power_w": 62.215,
+            "temp_c": 73,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789002428.0050015,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 250.31640625,
+        "vms_mib": 4154.26953125,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2215.62109375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 250.31640625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 1965.3046875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789002428.0272312,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4253972,
+        "proc_vm_rss_kib": 256324,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789002426.9261386,
+      "response_received_unix": 1789002427.9932785,
+      "first_byte_unix": 1789002427.993224,
+      "total_wall_ms": 1067.1398639678955,
+      "queue_wait_ms": 1067.0852661132812,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 01:07:07 GMT",
+        "Content-Length": "1158",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789002428.0412104,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789002426.9260948
+    }
+  },
+  "wall_clock_unix": 1789002428.0412104
+}

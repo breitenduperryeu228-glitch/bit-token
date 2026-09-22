@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "llama3.2:1b",
+  "language": "kor_Hang",
+  "sample_id": "s0110",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장을 한국어로 이어서 짧은 단락으로 작성해 주세요.\n\n우주에 있는 위성은 신호를 받고 나서 거의 즉각적으로 반사해 내려보낸다.\n\n/no_think",
+    "source_text": "우주에 있는 위성은 신호를 받고 나서 거의 즉각적으로 반사해 내려보낸다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "위성은 우주의 전신이 되는 지구와 같은 거리를 가지고 있으며, 이 거리에서 전신을 받은 후에는 전신의 신호를 반사하여 우주에 보냅니다.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1746020839,
+    "load_duration": 70390499,
+    "prompt_eval_duration": 36053433,
+    "eval_duration": 1610782405,
+    "eval_count": 47,
+    "prompt_eval_count": 80,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-07T02:59:04.210426809Z",
+    "message": {
+      "role": "assistant",
+      "content": "위성은 우주의 전신이 되는 지구와 같은 거리를 가지고 있으며, 이 거리에서 전신을 받은 후에는 전신의 신호를 반사하여 우주에 보냅니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1746020839,
+    "load_duration": 70390499,
+    "prompt_eval_count": 80,
+    "prompt_eval_duration": 36053433,
+    "eval_count": 47,
+    "eval_duration": 1610782405
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788749942.4270227,
+      "nvidia_smi": {
+        "timestamp_unix": 1788749942.4270232,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.75,
+            "vram_total_mib": 8188.0,
+            "util_pct": 25,
+            "mem_util_pct": 14,
+            "power_w": 12.625,
+            "temp_c": 52,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788749942.4412284,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 227.94140625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2186.38671875,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 227.94140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1958.4453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788749942.454947,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 233412,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788749944.2108197,
+      "nvidia_smi": {
+        "timestamp_unix": 1788749944.2108204,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.75,
+            "vram_total_mib": 8188.0,
+            "util_pct": 26,
+            "mem_util_pct": 13,
+            "power_w": 12.585,
+            "temp_c": 52,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788749944.2248907,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 233.57421875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2192.01953125,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 233.57421875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1958.4453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788749944.2406204,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 239180,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788749942.464065,
+      "response_received_unix": 1788749944.2107582,
+      "first_byte_unix": 1788749944.2107103,
+      "total_wall_ms": 1746.6931343078613,
+      "queue_wait_ms": 1746.645212173462,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 07 Sep 2026 02:59:04 GMT",
+        "Content-Length": "482",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788749944.2505524,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788749942.4640176
+    }
+  },
+  "wall_clock_unix": 1788749944.2505524
+}

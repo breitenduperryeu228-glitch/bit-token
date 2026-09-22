@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "spa_Latn",
+  "sample_id": "s0194",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nEn los folletos de algunos cruceros aparece Berlín, Alemania. No obstante, tal y como se observa en el mapa de arriba, dicha ciudad no se encuentra cerca del mar y su visita no está incluida en el precio del crucero.\n\n/no_think",
+    "source_text": "En los folletos de algunos cruceros aparece Berlín, Alemania. No obstante, tal y como se observa en el mapa de arriba, dicha ciudad no se encuentra cerca del mar y su visita no está incluida en el precio del crucero."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "La ausencia de Berlín en los folletos de algunos cruceros puede deberse a que la ciudad es demasiado lejana para ser accesible desde el puerto, lo que reduce la rentabilidad de la visita.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 379800633,
+    "load_duration": 82893315,
+    "prompt_eval_duration": 9621765,
+    "eval_duration": 268419791,
+    "eval_count": 47,
+    "prompt_eval_count": 132,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T08:12:34.044306319Z",
+    "message": {
+      "role": "assistant",
+      "content": "La ausencia de Berlín en los folletos de algunos cruceros puede deberse a que la ciudad es demasiado lejana para ser accesible desde el puerto, lo que reduce la rentabilidad de la visita."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 379800633,
+    "load_duration": 82893315,
+    "prompt_eval_count": 132,
+    "prompt_eval_duration": 9621765,
+    "eval_count": 47,
+    "eval_duration": 268419791
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789027953.6158946,
+      "nvidia_smi": {
+        "timestamp_unix": 1789027953.6158948,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 59.728,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789027953.6265814,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.98046875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1292.71484375,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.98046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1033.734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789027953.649599,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265196,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789027954.0446644,
+      "nvidia_smi": {
+        "timestamp_unix": 1789027954.0446649,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 62.001,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789027954.0555801,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 259.12890625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1292.86328125,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 259.12890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1033.734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789027954.0788558,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265348,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789027953.6641479,
+      "response_received_unix": 1789027954.0446055,
+      "first_byte_unix": 1789027954.0445619,
+      "total_wall_ms": 380.45763969421387,
+      "queue_wait_ms": 380.4140090942383,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 08:12:34 GMT",
+        "Content-Length": "483",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789027954.093336,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789027953.664099
+    }
+  },
+  "wall_clock_unix": 1789027954.093336
+}

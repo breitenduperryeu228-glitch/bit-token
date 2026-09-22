@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0086",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\nHaldarsvik 마을에서는 근처에 있는 Eysturoy 섬을 볼 수 있으며, 특이한 팔각형 모양의 교회가 있습니다.\n\n/no_think",
+    "source_text": "Haldarsvik 마을에서는 근처에 있는 Eysturoy 섬을 볼 수 있으며, 특이한 팔각형 모양의 교회가 있습니다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Haldarsvik 마을은 평범한 농촌 지역에서 벗어난 독특한 자연과 문화의 조합을 자랑합니다. Eysturoy 섬 근처에 위치한 이 마을은 해안선이 아름다운 풍경을 자랑하며, 해양 생물과 풍경을 즐기고 싶은 사람들에게 이상적인 목적지입니다. 교회는 전통적인 건축 양식이지만, 현대적인 요소를 적극적으로 도입하여 현대적인 분위기를 더합니다. 이 마을은 자연과 인간의 공존을 강조하는 독특한 문화적 특징을 가지고 있으며, 지역 주민들은 이를 통해 삶의 질을 높이고자 합니다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2248845154,
+    "load_duration": 26379411,
+    "prompt_eval_duration": 205351882,
+    "eval_duration": 1993465512,
+    "eval_count": 171,
+    "prompt_eval_count": 114,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:54:12.528336615Z",
+    "message": {
+      "role": "assistant",
+      "content": "Haldarsvik 마을은 평범한 농촌 지역에서 벗어난 독특한 자연과 문화의 조합을 자랑합니다. Eysturoy 섬 근처에 위치한 이 마을은 해안선이 아름다운 풍경을 자랑하며, 해양 생물과 풍경을 즐기고 싶은 사람들에게 이상적인 목적지입니다. 교회는 전통적인 건축 양식이지만, 현대적인 요소를 적극적으로 도입하여 현대적인 분위기를 더합니다. 이 마을은 자연과 인간의 공존을 강조하는 독특한 문화적 특징을 가지고 있으며, 지역 주민들은 이를 통해 삶의 질을 높이고자 합니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2248845154,
+    "load_duration": 26379411,
+    "prompt_eval_count": 114,
+    "prompt_eval_duration": 205351882,
+    "eval_count": 171,
+    "eval_duration": 1993465512
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788944050.244035,
+      "nvidia_smi": {
+        "timestamp_unix": 1788944050.2440352,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 14,
+            "power_w": 12.351,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788944050.2594407,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 198.3515625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 991.26953125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 198.3515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 792.91796875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788944050.2715836,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 203112,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788944052.528834,
+      "nvidia_smi": {
+        "timestamp_unix": 1788944052.5288346,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 38,
+            "mem_util_pct": 14,
+            "power_w": 12.344,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788944052.5435297,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 200.171875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 993.15234375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 200.171875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 792.98046875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788944052.5562117,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 204976,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788944050.279198,
+      "response_received_unix": 1788944052.5287592,
+      "first_byte_unix": 1788944052.52871,
+      "total_wall_ms": 2249.561309814453,
+      "queue_wait_ms": 2249.511957168579,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:54:12 GMT",
+        "Content-Length": "942",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788944052.564421,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788944050.2791538
+    }
+  },
+  "wall_clock_unix": 1788944052.564421
+}

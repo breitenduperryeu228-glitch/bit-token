@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "deu_Latn",
+  "sample_id": "s0143",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Bitte schreiben Sie ungefähr 256 Zeichen Text auf Deutsch über das Thema des folgenden Satzes. Keine Begrüßung, keine Erklärungen, nur den Absatz selbst:\n\nDie große Pyramide wurde dem Pharao Cheops zu Ehren erbaut und viele der kleineren Pyramiden, Grabmale und Tempel wurden zu Ehren von Cheops Ehefrauen und Familienmitgliedern errichtet.\n\n/no_think",
+    "source_text": "Die große Pyramide wurde dem Pharao Cheops zu Ehren erbaut und viele der kleineren Pyramiden, Grabmale und Tempel wurden zu Ehren von Cheops Ehefrauen und Familienmitgliedern errichtet."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Die großen Pyramiden des Ägyptens wurden in den Pharaonenzeitraum eingeteilt\nDie größte der drei großen Pyramiden, die im Mittelalter zerstört wurde, war die von Cheops erbauten Pyramide und viele kleinere Pyramiden\nDie Grabmale und Tempel der Ehefrauen und Familienmitglieder von Cheops wurden zu Ehren dieser Pyramiden errichtet",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 644891833,
+    "load_duration": 79592159,
+    "prompt_eval_duration": 6056568,
+    "eval_duration": 524089895,
+    "eval_count": 91,
+    "prompt_eval_count": 127,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:34:44.402934741Z",
+    "message": {
+      "role": "assistant",
+      "content": "Die großen Pyramiden des Ägyptens wurden in den Pharaonenzeitraum eingeteilt\nDie größte der drei großen Pyramiden, die im Mittelalter zerstört wurde, war die von Cheops erbauten Pyramide und viele kleinere Pyramiden\nDie Grabmale und Tempel der Ehefrauen und Familienmitglieder von Cheops wurden zu Ehren dieser Pyramiden errichtet"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 644891833,
+    "load_duration": 79592159,
+    "prompt_eval_count": 127,
+    "prompt_eval_duration": 6056568,
+    "eval_count": 91,
+    "eval_duration": 524089895
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789137283.7090724,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137283.7090726,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 68.106,
+            "temp_c": 64,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137283.71988,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 241.3203125,
+        "vms_mib": 3646.7421875,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 2729,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 980.421875,
+        "tree_threads": 51,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 241.3203125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 739.1015625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137283.742647,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734264,
+        "proc_vm_rss_kib": 247112,
+        "proc_threads": 32,
+        "proc_vol_ctx": 2675,
+        "proc_invol_ctx": 54,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789137284.4033434,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137284.4033437,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 94,
+            "mem_util_pct": 100,
+            "power_w": 68.043,
+            "temp_c": 65,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137284.4142911,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 241.83203125,
+        "vms_mib": 3646.7421875,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 2748,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 982.42578125,
+        "tree_threads": 51,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 241.83203125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 740.59375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137284.438038,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734264,
+        "proc_vm_rss_kib": 247636,
+        "proc_threads": 32,
+        "proc_vol_ctx": 2694,
+        "proc_invol_ctx": 54,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789137283.7576816,
+      "response_received_unix": 1789137284.403268,
+      "first_byte_unix": 1789137284.4032218,
+      "total_wall_ms": 645.5864906311035,
+      "queue_wait_ms": 645.5402374267578,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:34:44 GMT",
+        "Content-Length": "633",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789137284.4524946,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789137283.7576296
+    }
+  },
+  "wall_clock_unix": 1789137284.4524946
+}

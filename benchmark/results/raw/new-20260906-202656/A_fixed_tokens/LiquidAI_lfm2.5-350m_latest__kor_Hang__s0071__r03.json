@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0071",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장을 한국어로 이어서 짧은 단락으로 작성해 주세요.\n\n물을 정화시키는 다른 방법들이 있는데, 어떤 것들은 특정한 위험요소에 더 효과적이다.\n\n/no_think",
+    "source_text": "물을 정화시키는 다른 방법들이 있는데, 어떤 것들은 특정한 위험요소에 더 효과적이다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "물을 정화시키는 방법은 다양하지만, 특정 위험 요소에 더 효과적일 수 있습니다. 예를 들어, 오염된 물은 정화 과정에서 미생물이 오염물질을 분해할 수 있어 효과적입니다. 반면, 물의 pH가 너무 높거나 낮으면 정화 효율이 떨어질 수 있습니다. 또한, 물의 온도도 정화에 영향을 미치므로, 적절한 온도가 필요합니다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1508147429,
+    "load_duration": 22506683,
+    "prompt_eval_duration": 177088090,
+    "eval_duration": 1292111643,
+    "eval_count": 112,
+    "prompt_eval_count": 78,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-06T15:05:23.515266602Z",
+    "message": {
+      "role": "assistant",
+      "content": "물을 정화시키는 방법은 다양하지만, 특정 위험 요소에 더 효과적일 수 있습니다. 예를 들어, 오염된 물은 정화 과정에서 미생물이 오염물질을 분해할 수 있어 효과적입니다. 반면, 물의 pH가 너무 높거나 낮으면 정화 효율이 떨어질 수 있습니다. 또한, 물의 온도도 정화에 영향을 미치므로, 적절한 온도가 필요합니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1508147429,
+    "load_duration": 22506683,
+    "prompt_eval_count": 78,
+    "prompt_eval_duration": 177088090,
+    "eval_count": 112,
+    "eval_duration": 1292111643
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788707121.9688294,
+      "nvidia_smi": {
+        "timestamp_unix": 1788707121.9688299,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.5,
+            "vram_total_mib": 8188.0,
+            "util_pct": 25,
+            "mem_util_pct": 14,
+            "power_w": 12.632,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788707121.982973,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 586.5859375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 324994,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1367.43359375,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 586.5859375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 780.84765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788707121.9976945,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 600664,
+        "proc_threads": 40,
+        "proc_vol_ctx": 323985,
+        "proc_invol_ctx": 1009,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788707123.5158021,
+      "nvidia_smi": {
+        "timestamp_unix": 1788707123.5158029,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.5,
+            "vram_total_mib": 8188.0,
+            "util_pct": 25,
+            "mem_util_pct": 14,
+            "power_w": 12.61,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788707123.5302742,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 585.11328125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 325003,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1366.35546875,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 585.11328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 781.2421875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788707123.545418,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 599156,
+        "proc_threads": 40,
+        "proc_vol_ctx": 323994,
+        "proc_invol_ctx": 1009,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788707122.0067244,
+      "response_received_unix": 1788707123.5157275,
+      "first_byte_unix": 1788707123.5156703,
+      "total_wall_ms": 1509.0031623840332,
+      "queue_wait_ms": 1508.9459419250488,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sun, 06 Sep 2026 15:05:23 GMT",
+        "Content-Length": "734",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788707123.5544713,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788707122.0066779
+    }
+  },
+  "wall_clock_unix": 1788707123.5544713
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0140",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章を日本語で続けて、短い段落で書いてください。\n\nハコクラゲは、10月から4月にかけて1770の北、海岸や河口付近に生息します。この時期以外にも見かけることがあります。\n\n/no_think",
+    "source_text": "ハコクラゲは、10月から4月にかけて1770の北、海岸や河口付近に生息します。この時期以外にも見かけることがあります。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "ハコクラゲは、北部の海岸や河口付近で生活しています。特に10月から4月にかけて、見かけることができるのは少ないです。\n\nこの時期は、海洋生物が多く集まり、食料を得るのに役立つためです。ハコクラゲは、海洋生物と一緒に生活しているので、他の動物や魚類と同じように、食べ物を求めることができます。\n\nハコクラゲの生息地は、海岸や河口付近で、水面が低い所にあります。したがって、海洋生物が集まる場所です。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 5222715483,
+    "load_duration": 75284590,
+    "prompt_eval_duration": 36118969,
+    "eval_duration": 5005064159,
+    "eval_count": 143,
+    "prompt_eval_count": 94,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-07T02:06:44.340000302Z",
+    "message": {
+      "role": "assistant",
+      "content": "ハコクラゲは、北部の海岸や河口付近で生活しています。特に10月から4月にかけて、見かけることができるのは少ないです。\n\nこの時期は、海洋生物が多く集まり、食料を得るのに役立つためです。ハコクラゲは、海洋生物と一緒に生活しているので、他の動物や魚類と同じように、食べ物を求めることができます。\n\nハコクラゲの生息地は、海岸や河口付近で、水面が低い所にあります。したがって、海洋生物が集まる場所です。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 5222715483,
+    "load_duration": 75284590,
+    "prompt_eval_count": 94,
+    "prompt_eval_duration": 36118969,
+    "eval_count": 143,
+    "eval_duration": 5005064159
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788746799.0816064,
+      "nvidia_smi": {
+        "timestamp_unix": 1788746799.0816066,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.676,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788746799.095125,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 232.83203125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2185.56640625,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 232.83203125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1952.734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788746799.1083333,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 238420,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788746804.3403728,
+      "nvidia_smi": {
+        "timestamp_unix": 1788746804.340373,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.694,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788746804.3536942,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 241.53125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2194.265625,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 241.53125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1952.734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788746804.3680735,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 247328,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788746799.1168633,
+      "response_received_unix": 1788746804.3403118,
+      "first_byte_unix": 1788746804.3402588,
+      "total_wall_ms": 5223.4485149383545,
+      "queue_wait_ms": 5223.395586013794,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 07 Sep 2026 02:06:44 GMT",
+        "Content-Length": "882",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788746804.376925,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788746799.1168206
+    }
+  },
+  "wall_clock_unix": 1788746804.376925
+}

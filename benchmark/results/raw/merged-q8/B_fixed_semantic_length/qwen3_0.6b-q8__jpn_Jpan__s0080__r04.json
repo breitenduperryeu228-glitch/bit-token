@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b-q8",
+  "language": "jpn_Jpan",
+  "sample_id": "s0080",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nカルシウムやカリウムなどの元素は金属とされています。もちろん、銀や金などの金属もあります。\n\n/no_think",
+    "source_text": "カルシウムやカリウムなどの元素は金属とされています。もちろん、銀や金などの金属もあります。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "カルシウムやカリウムは金属元素であり、銀や金も含まれています。",
+  "ollama": {
+    "model": "qwen3:0.6b-q8",
+    "total_duration": 163061300,
+    "load_duration": 50230660,
+    "prompt_eval_duration": 4711820,
+    "eval_duration": 100647584,
+    "eval_count": 25,
+    "prompt_eval_count": 88,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b-q8",
+    "created_at": "2026-09-19T03:11:57.128039946Z",
+    "message": {
+      "role": "assistant",
+      "content": "<think>\n\n</think>\n\nカルシウムやカリウムは金属元素であり、銀や金も含まれています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 163061300,
+    "load_duration": 50230660,
+    "prompt_eval_count": 88,
+    "prompt_eval_duration": 4711820,
+    "eval_count": 25,
+    "eval_duration": 100647584
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789787516.9300885,
+      "nvidia_smi": {
+        "timestamp_unix": 1789787516.930089,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2642.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 95,
+            "mem_util_pct": 88,
+            "power_w": 45.841,
+            "temp_c": 58,
+            "sm_clock_mhz": 2175,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789787516.9420936,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 111.9140625,
+        "vms_mib": 3979.828125,
+        "num_threads": 38,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 765.92578125,
+        "tree_threads": 85,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 111.9140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 654.01171875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789787516.9554787,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4075344,
+        "proc_vm_rss_kib": 114600,
+        "proc_threads": 38,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789787517.1284173,
+      "nvidia_smi": {
+        "timestamp_unix": 1789787517.1284177,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2641.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 95,
+            "mem_util_pct": 88,
+            "power_w": 42.802,
+            "temp_c": 58,
+            "sm_clock_mhz": 2175,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789787517.1417809,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 107.2265625,
+        "vms_mib": 3979.828125,
+        "num_threads": 38,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 761.23828125,
+        "tree_threads": 85,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 107.2265625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 654.01171875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789787517.1545298,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4075344,
+        "proc_vm_rss_kib": 109800,
+        "proc_threads": 38,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789787516.9645762,
+      "response_received_unix": 1789787517.1283524,
+      "first_byte_unix": 1789787517.1283123,
+      "total_wall_ms": 163.77615928649902,
+      "queue_wait_ms": 163.73610496520996,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 19 Sep 2026 03:11:57 GMT",
+        "Content-Length": "432",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789787517.1637182,
+      "vram_delta_mib": -0.1875
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789787516.9645267
+    }
+  },
+  "wall_clock_unix": 1789787517.1637182
+}

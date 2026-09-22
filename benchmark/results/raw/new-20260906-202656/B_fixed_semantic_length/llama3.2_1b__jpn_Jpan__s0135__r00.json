@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0135",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nこの土砂は、野生生物の生息地となる砂州や海岸の形成に必要なものでした。\n\n/no_think",
+    "source_text": "この土砂は、野生生物の生息地となる砂州や海岸の形成に必要なものでした。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "日本語では、土砂が形成される場所には砂州や海岸があることが多いです。砂州は、砂と水を混ぜてできた土地であり、野生生物が生息する場所となります。海岸は、海に沿ってできた土地で、海の波が動かしてできている場所です。\n\n土砂が形成されるときには、野生生物の生息地となる砂州や海岸を形成する必要があります。これらの土地では、水と砂の混合により、さまざまな種類の植物や動物が生えます。たとえば、砂州では、草原のような植物が生え、海岸では海藻や海洋生物が生えます。\n\n土砂が形成される場所には、野生生物の多様性があります。たとえば、砂州では、野生動物の種類が多く見られます。海岸では、海洋生物の種類も多く見られます。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1440066898,
+    "load_duration": 73862865,
+    "prompt_eval_duration": 8564305,
+    "eval_duration": 1259900730,
+    "eval_count": 217,
+    "prompt_eval_count": 105,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:27:53.895536938Z",
+    "message": {
+      "role": "assistant",
+      "content": "日本語では、土砂が形成される場所には砂州や海岸があることが多いです。砂州は、砂と水を混ぜてできた土地であり、野生生物が生息する場所となります。海岸は、海に沿ってできた土地で、海の波が動かしてできている場所です。\n\n土砂が形成されるときには、野生生物の生息地となる砂州や海岸を形成する必要があります。これらの土地では、水と砂の混合により、さまざまな種類の植物や動物が生えます。たとえば、砂州では、草原のような植物が生え、海岸では海藻や海洋生物が生えます。\n\n土砂が形成される場所には、野生生物の多様性があります。たとえば、砂州では、野生動物の種類が多く見られます。海岸では、海洋生物の種類も多く見られます。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1440066898,
+    "load_duration": 73862865,
+    "prompt_eval_count": 105,
+    "prompt_eval_duration": 8564305,
+    "eval_count": 217,
+    "eval_duration": 1259900730
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789025272.407013,
+      "nvidia_smi": {
+        "timestamp_unix": 1789025272.4070132,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 0,
+            "mem_util_pct": 0,
+            "power_w": 73.886,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789025272.4176078,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.9609375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1232.1640625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.9609375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.203125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789025272.440448,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265176,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789025273.8959002,
+      "nvidia_smi": {
+        "timestamp_unix": 1789025273.8959007,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 82.51,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789025273.9069026,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 259.14453125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1232.34765625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 259.14453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.203125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789025273.9306703,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265364,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789025272.455039,
+      "response_received_unix": 1789025273.8958385,
+      "first_byte_unix": 1789025273.8957934,
+      "total_wall_ms": 1440.7994747161865,
+      "queue_wait_ms": 1440.7544136047363,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:27:53 GMT",
+        "Content-Length": "1200",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789025273.9462442,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789025272.4549909
+    }
+  },
+  "wall_clock_unix": 1789025273.9462442
+}

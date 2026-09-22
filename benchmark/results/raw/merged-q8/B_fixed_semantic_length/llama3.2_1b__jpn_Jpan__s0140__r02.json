@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0140",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nハコクラゲは、10月から4月にかけて1770の北、海岸や河口付近に生息します。この時期以外にも見かけることがあります。\n\n/no_think",
+    "source_text": "ハコクラゲは、10月から4月にかけて1770の北、海岸や河口付近に生息します。この時期以外にも見かけることがあります。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "ハコクラゲは、北海道で見ることができる動物です。10月から4月にかけて、海岸や河口付近の水中で生活しています。特に冬の季節になると、海岸の水中では、ハコクラゲがたくさん集まっています。\n\nこれらの動物は、北海道の海岸を回るときに、海洋生物と一緒に移動することができます。ハコクラゲは、海洋生物と一緒に移動することで、海洋生物との関係を理解するのに役立ちます。\n\nハコクラゲは、海洋生物と一緒に移動することで、海洋生物の生活環境や、海洋生物の行動についてよりよく知ることができます。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1080726667,
+    "load_duration": 74177677,
+    "prompt_eval_duration": 6731802,
+    "eval_duration": 938723847,
+    "eval_count": 162,
+    "prompt_eval_count": 119,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:28:55.548353749Z",
+    "message": {
+      "role": "assistant",
+      "content": "ハコクラゲは、北海道で見ることができる動物です。10月から4月にかけて、海岸や河口付近の水中で生活しています。特に冬の季節になると、海岸の水中では、ハコクラゲがたくさん集まっています。\n\nこれらの動物は、北海道の海岸を回るときに、海洋生物と一緒に移動することができます。ハコクラゲは、海洋生物と一緒に移動することで、海洋生物との関係を理解するのに役立ちます。\n\nハコクラゲは、海洋生物と一緒に移動することで、海洋生物の生活環境や、海洋生物の行動についてよりよく知ることができます。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1080726667,
+    "load_duration": 74177677,
+    "prompt_eval_count": 119,
+    "prompt_eval_duration": 6731802,
+    "eval_count": 162,
+    "eval_duration": 938723847
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789025334.4199326,
+      "nvidia_smi": {
+        "timestamp_unix": 1789025334.419933,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 79.007,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789025334.4305258,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.421875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1231.71484375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.421875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.29296875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789025334.4526975,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264624,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789025335.548718,
+      "nvidia_smi": {
+        "timestamp_unix": 1789025335.5487187,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 76.713,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789025335.5597806,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.53125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1231.82421875,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.53125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.29296875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789025335.5838172,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264736,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789025334.46727,
+      "response_received_unix": 1789025335.5486622,
+      "first_byte_unix": 1789025335.54861,
+      "total_wall_ms": 1081.3922882080078,
+      "queue_wait_ms": 1081.3400745391846,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:28:55 GMT",
+        "Content-Length": "1007",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789025335.5987408,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789025334.46722
+    }
+  },
+  "wall_clock_unix": 1789025335.5987408
+}

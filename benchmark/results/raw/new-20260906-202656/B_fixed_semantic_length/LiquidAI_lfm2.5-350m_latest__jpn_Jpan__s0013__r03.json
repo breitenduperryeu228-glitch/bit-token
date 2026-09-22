@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0013",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nアマゾン川の本流は長さ6,387 km（3,980マイル）に及びます。この川は、何千という小さな川から水流を集めています。\n\n/no_think",
+    "source_text": "アマゾン川の本流は長さ6,387 km（3,980マイル）に及びます。この川は、何千という小さな川から水流を集めています。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "アマゾン川は南米の熱帯雨林に流れ、約2560キロメートルの長さを持つ巨大な河川です。約3,980マイルに達するこの川は、世界最大の河川の一つとして知られ、南米の豊かな自然環境を支えています。水流は多様な生態系を育み、多くの動植物が生息する重要な生息地となっています。川の流れは季節によって変化し、春には急激に増水し、夏には低下するなど、自然のサイクルを示しています。このような変化は、地域の気候や生態系に大きな影響を与えています。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1981632308,
+    "load_duration": 27426144,
+    "prompt_eval_duration": 161710967,
+    "eval_duration": 1771148949,
+    "eval_count": 152,
+    "prompt_eval_count": 108,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:06:53.116142983Z",
+    "message": {
+      "role": "assistant",
+      "content": "アマゾン川は南米の熱帯雨林に流れ、約2560キロメートルの長さを持つ巨大な河川です。約3,980マイルに達するこの川は、世界最大の河川の一つとして知られ、南米の豊かな自然環境を支えています。水流は多様な生態系を育み、多くの動植物が生息する重要な生息地となっています。川の流れは季節によって変化し、春には急激に増水し、夏には低下するなど、自然のサイクルを示しています。このような変化は、地域の気候や生態系に大きな影響を与えています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1981632308,
+    "load_duration": 27426144,
+    "prompt_eval_count": 108,
+    "prompt_eval_duration": 161710967,
+    "eval_count": 152,
+    "eval_duration": 1771148949
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788941211.0981004,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941211.098101,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.54,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941211.1121914,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.76171875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 956627,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 983.640625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.76171875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 779.87890625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941211.1255305,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208652,
+        "proc_threads": 40,
+        "proc_vol_ctx": 949311,
+        "proc_invol_ctx": 7316,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788941213.1166008,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941213.1166012,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 14,
+            "power_w": 12.528,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941213.1314158,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.2890625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 956628,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 982.73046875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.2890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.44140625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941213.1441598,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207144,
+        "proc_threads": 40,
+        "proc_vol_ctx": 949312,
+        "proc_invol_ctx": 7316,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788941211.1340666,
+      "response_received_unix": 1788941213.1165438,
+      "first_byte_unix": 1788941213.1164968,
+      "total_wall_ms": 1982.4771881103516,
+      "queue_wait_ms": 1982.4302196502686,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:06:53 GMT",
+        "Content-Length": "943",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788941213.1524034,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788941211.1340227
+    }
+  },
+  "wall_clock_unix": 1788941213.1524034
+}

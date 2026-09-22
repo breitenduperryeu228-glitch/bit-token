@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "fra_Latn",
+  "sample_id": "s0007",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Veuillez écrire environ 256 caractères de texte en français sur le sujet suggéré par la phrase suivante. Pas de salutations ni d'explications, juste le paragraphe :\n\nLe terme « insecte » est utilisé par les entomologistes dans un sens formel pour ce groupe d’insectes.\n\n/no_think",
+    "source_text": "Le terme « insecte » est utilisé par les entomologistes dans un sens formel pour ce groupe d’insectes."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Le terme « insecte » désigne les minuscules créatures qui prospèrent dans les écosystèmes terrestres, souvent sous la lumière du soleil.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 688653936,
+    "load_duration": 29839361,
+    "prompt_eval_duration": 211507757,
+    "eval_duration": 438743945,
+    "eval_count": 37,
+    "prompt_eval_count": 98,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T09:30:34.981816567Z",
+    "message": {
+      "role": "assistant",
+      "content": "Le terme « insecte » désigne les minuscules créatures qui prospèrent dans les écosystèmes terrestres, souvent sous la lumière du soleil."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 688653936,
+    "load_duration": 29839361,
+    "prompt_eval_count": 98,
+    "prompt_eval_duration": 211507757,
+    "eval_count": 37,
+    "eval_duration": 438743945
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788946234.257832,
+      "nvidia_smi": {
+        "timestamp_unix": 1788946234.2578323,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 13,
+            "power_w": 11.933,
+            "temp_c": 47,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788946234.2724862,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 205.75,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 975979,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 999.55078125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 205.75,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.80078125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788946234.2850478,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 210688,
+        "proc_threads": 40,
+        "proc_vol_ctx": 968543,
+        "proc_invol_ctx": 7436,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788946234.982329,
+      "nvidia_smi": {
+        "timestamp_unix": 1788946234.9823298,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 11.967,
+            "temp_c": 47,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788946235.0000527,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 205.75390625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 975992,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 999.4921875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 205.75390625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.73828125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788946235.013547,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 210692,
+        "proc_threads": 40,
+        "proc_vol_ctx": 968555,
+        "proc_invol_ctx": 7437,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788946234.2927759,
+      "response_received_unix": 1788946234.9822423,
+      "first_byte_unix": 1788946234.9821568,
+      "total_wall_ms": 689.4664764404297,
+      "queue_wait_ms": 689.3808841705322,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 09:30:34 GMT",
+        "Content-Length": "460",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788946235.0214303,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788946234.292734
+    }
+  },
+  "wall_clock_unix": 1788946235.0214303
+}

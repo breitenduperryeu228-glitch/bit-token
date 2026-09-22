@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "zho_Hans",
+  "sample_id": "s0172",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n每年规模最大的锦标赛于 12 月份在拉斯卡尼塔斯 (Las Cañitas) 的马球场举行。\n\n/no_think",
+    "source_text": "每年规模最大的锦标赛于 12 月份在拉斯卡尼塔斯 (Las Cañitas) 的马球场举行。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "拉斯卡尼塔斯的马球场是世界上最大的马球场之一，位于美国加利福尼亚州。每年在12月份举行的锦标赛吸引了数百万观众到达该地。这个锦标赛是由美国马球协会（USAMO）主管组织的，由于其规模最大，通常有超过一千名运动员参加比赛。比赛主要包括男子和女子马球两种形式，每个形式都有不同的规则和标准。比赛期间，运动员们在马球场上展现出他们的技巧和 athleticism，展示出他们的运动能力。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 964457632,
+    "load_duration": 84937501,
+    "prompt_eval_duration": 8702777,
+    "eval_duration": 815903241,
+    "eval_count": 141,
+    "prompt_eval_count": 105,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:06:20.47460594Z",
+    "message": {
+      "role": "assistant",
+      "content": "拉斯卡尼塔斯的马球场是世界上最大的马球场之一，位于美国加利福尼亚州。每年在12月份举行的锦标赛吸引了数百万观众到达该地。这个锦标赛是由美国马球协会（USAMO）主管组织的，由于其规模最大，通常有超过一千名运动员参加比赛。比赛主要包括男子和女子马球两种形式，每个形式都有不同的规则和标准。比赛期间，运动员们在马球场上展现出他们的技巧和 athleticism，展示出他们的运动能力。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 964457632,
+    "load_duration": 84937501,
+    "prompt_eval_count": 105,
+    "prompt_eval_duration": 8702777,
+    "eval_count": 141,
+    "eval_duration": 815903241
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789023979.4626718,
+      "nvidia_smi": {
+        "timestamp_unix": 1789023979.4626722,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 91,
+            "mem_util_pct": 100,
+            "power_w": 74.415,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789023979.4731727,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.3359375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.328125,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.3359375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 971.9921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789023979.4953048,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264536,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789023980.474962,
+      "nvidia_smi": {
+        "timestamp_unix": 1789023980.4749622,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 0,
+            "mem_util_pct": 0,
+            "power_w": 73.198,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789023980.4857945,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.296875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.2890625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.296875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 971.9921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789023980.5100868,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264496,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789023979.5098107,
+      "response_received_unix": 1789023980.474903,
+      "first_byte_unix": 1789023980.4748576,
+      "total_wall_ms": 965.0924205780029,
+      "queue_wait_ms": 965.0468826293945,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:06:20 GMT",
+        "Content-Length": "827",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789023980.525523,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789023979.509761
+    }
+  },
+  "wall_clock_unix": 1789023980.525523
+}

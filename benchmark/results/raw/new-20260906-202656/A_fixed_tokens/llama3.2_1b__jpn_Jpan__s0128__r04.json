@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0128",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章を日本語で続けて、短い段落で書いてください。\n\nカリフォルニア州のアーノルド・シュワルツェネッガー知事は、暴力的なビデオゲームを未成年者に販売やレンタルすることを禁止する法案に署名しました。\n\n/no_think",
+    "source_text": "カリフォルニア州のアーノルド・シュワルツェネッガー知事は、暴力的なビデオゲームを未成年者に販売やレンタルすることを禁止する法案に署名しました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "アメリカ合衆国カリフォルニア州のアーノルド・シュワルツェネッガー知事は、暴力的なビデオゲームを売りやレンタルすることについて法律を作った。 \n\nこの法律では、未成年者が暴力的なビデオゲームを買うことはできないと決めました。 \n\n知事は「子供の安全を守ることが大切です」と話しました。 \n\nこの法律は、2024年1月に法律で通過されます。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 4102367196,
+    "load_duration": 69779779,
+    "prompt_eval_duration": 35875612,
+    "eval_duration": 3926264076,
+    "eval_count": 113,
+    "prompt_eval_count": 106,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-07T02:00:51.954301202Z",
+    "message": {
+      "role": "assistant",
+      "content": "アメリカ合衆国カリフォルニア州のアーノルド・シュワルツェネッガー知事は、暴力的なビデオゲームを売りやレンタルすることについて法律を作った。 \n\nこの法律では、未成年者が暴力的なビデオゲームを買うことはできないと決めました。 \n\n知事は「子供の安全を守ることが大切です」と話しました。 \n\nこの法律は、2024年1月に法律で通過されます。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 4102367196,
+    "load_duration": 69779779,
+    "prompt_eval_count": 106,
+    "prompt_eval_duration": 35875612,
+    "eval_count": 113,
+    "eval_duration": 3926264076
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788746447.814462,
+      "nvidia_smi": {
+        "timestamp_unix": 1788746447.8144622,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.688,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788746447.8274672,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 241.22265625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2193.59375,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 241.22265625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1952.37109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788746447.8415413,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 247012,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788746451.9547217,
+      "nvidia_smi": {
+        "timestamp_unix": 1788746451.9547224,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.744,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788746451.9690056,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 234.56640625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2186.9375,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 234.56640625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1952.37109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788746451.9820707,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 240196,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788746447.8508093,
+      "response_received_unix": 1788746451.9546587,
+      "first_byte_unix": 1788746451.9546037,
+      "total_wall_ms": 4103.849411010742,
+      "queue_wait_ms": 4103.79433631897,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 07 Sep 2026 02:00:51 GMT",
+        "Content-Length": "781",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788746451.9904516,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788746447.8507655
+    }
+  },
+  "wall_clock_unix": 1788746451.9904516
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "zho_Hans",
+  "sample_id": "s0070",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n欧洲是片面积相对较小但有着许多独立国家的大陆。在通常情况下，穿越多个国家旅行意味着必须多次经历签证申请和护照检查。\n\n/no_think",
+    "source_text": "欧洲是片面积相对较小但有着许多独立国家的大陆。在通常情况下，穿越多个国家旅行意味着必须多次经历签证申请和护照检查。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "在欧洲的各个国家之间，拥有独立的国民身份和公民权利是非常重要的。然而，这并不意味着所有国家都允许游客自由行程。事实上，许多国家有严格的签证和护照要求，必须通过多次检查才能获得批准。例如，美国、加拿大和澳大利亚等国的游客通常需要在每个国家的边境口岸进行一次签证申请和护照检查，以便于自由行程。同时，欧洲各国也可能有不同的签证要求，例如英国、德国和意大利等国的游客必须在每个国家的边境口岸进行一次签证申请。因此，为了避免签证和护照检查的延迟，许多旅行者选择购买欧洲通行卡，这可以为他们提供一张便捷的签证和护照通道。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1320460861,
+    "load_duration": 81839691,
+    "prompt_eval_duration": 6637512,
+    "eval_duration": 1154921039,
+    "eval_count": 199,
+    "prompt_eval_count": 115,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T06:50:39.59674973Z",
+    "message": {
+      "role": "assistant",
+      "content": "在欧洲的各个国家之间，拥有独立的国民身份和公民权利是非常重要的。然而，这并不意味着所有国家都允许游客自由行程。事实上，许多国家有严格的签证和护照要求，必须通过多次检查才能获得批准。例如，美国、加拿大和澳大利亚等国的游客通常需要在每个国家的边境口岸进行一次签证申请和护照检查，以便于自由行程。同时，欧洲各国也可能有不同的签证要求，例如英国、德国和意大利等国的游客必须在每个国家的边境口岸进行一次签证申请。因此，为了避免签证和护照检查的延迟，许多旅行者选择购买欧洲通行卡，这可以为他们提供一张便捷的签证和护照通道。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1320460861,
+    "load_duration": 81839691,
+    "prompt_eval_count": 115,
+    "prompt_eval_duration": 6637512,
+    "eval_count": 199,
+    "eval_duration": 1154921039
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789023038.2295005,
+      "nvidia_smi": {
+        "timestamp_unix": 1789023038.2295008,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 81.868,
+            "temp_c": 80,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789023038.2403078,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.00390625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.01953125,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.00390625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 972.015625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789023038.2613842,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264196,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789023039.597159,
+      "nvidia_smi": {
+        "timestamp_unix": 1789023039.5971594,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 82.785,
+            "temp_c": 79,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789023039.6080384,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.4296875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.4453125,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.4296875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 972.015625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789023039.6316707,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264632,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789023038.2759075,
+      "response_received_unix": 1789023039.5970938,
+      "first_byte_unix": 1789023039.597036,
+      "total_wall_ms": 1321.1863040924072,
+      "queue_wait_ms": 1321.1283683776855,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:50:39 GMT",
+        "Content-Length": "1062",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789023039.6463733,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789023038.2758346
+    }
+  },
+  "wall_clock_unix": 1789023039.6463733
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "fra_Latn",
+  "sample_id": "s0104",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Veuillez écrire environ 256 caractères de texte en français sur le sujet suggéré par la phrase suivante. Pas de salutations ni d'explications, juste le paragraphe :\n\nPratiquement tous les ordinateurs utilisés aujourd'hui sont basés sur la manipulation d'informations qui sont codées sous forme de nombres binaires.\n\n/no_think",
+    "source_text": "Pratiquement tous les ordinateurs utilisés aujourd'hui sont basés sur la manipulation d'informations qui sont codées sous forme de nombres binaires."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "La manipulation d'informations codées sous forme de nombres binaires est le fondement de la technologie informatique actuelle. Chaque ordinateur utilise des bits pour stocker et traiter des données, où chaque bit représente un état de 0 ou 1. Cette structure fondamentale permet de coder des informations complexes, comme les textes ou les images, en utilisant des combinaisons de ces unités de base. Les algorithmes de traitement de données, tels que les algorithmes de compression, exploitent directement ces codes binaires pour réduire la taille des fichiers et améliorer la vitesse de lecture. Sans cette base numérique, les systèmes de calcul modernes ne pourraient pas fonctionner, car ils nécessitent une capacité à manipuler des informations à l'échelle de l'ordre de magnitude de la taille d'un ordinateur.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 1120890618,
+    "load_duration": 118022546,
+    "prompt_eval_duration": 21650696,
+    "eval_duration": 918430813,
+    "eval_count": 158,
+    "prompt_eval_count": 96,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T06:10:31.816347811Z",
+    "message": {
+      "role": "assistant",
+      "content": "La manipulation d'informations codées sous forme de nombres binaires est le fondement de la technologie informatique actuelle. Chaque ordinateur utilise des bits pour stocker et traiter des données, où chaque bit représente un état de 0 ou 1. Cette structure fondamentale permet de coder des informations complexes, comme les textes ou les images, en utilisant des combinaisons de ces unités de base. Les algorithmes de traitement de données, tels que les algorithmes de compression, exploitent directement ces codes binaires pour réduire la taille des fichiers et améliorer la vitesse de lecture. Sans cette base numérique, les systèmes de calcul modernes ne pourraient pas fonctionner, car ils nécessitent une capacité à manipuler des informations à l'échelle de l'ordre de magnitude de la taille d'un ordinateur."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1120890618,
+    "load_duration": 118022546,
+    "prompt_eval_count": 96,
+    "prompt_eval_duration": 21650696,
+    "eval_count": 158,
+    "eval_duration": 918430813
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789020630.6466627,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020630.646663,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 88,
+            "mem_util_pct": 70,
+            "power_w": 67.291,
+            "temp_c": 76,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020630.657061,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 261.44140625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2351.57421875,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 261.44140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2090.1328125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020630.6797168,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 267716,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789020631.816825,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020631.8168254,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 88,
+            "mem_util_pct": 70,
+            "power_w": 63.955,
+            "temp_c": 76,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020631.8285809,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 264.92578125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2355.05859375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 264.92578125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2090.1328125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020631.8521805,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 271284,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789020630.6951299,
+      "response_received_unix": 1789020631.8167622,
+      "first_byte_unix": 1789020631.816708,
+      "total_wall_ms": 1121.6323375701904,
+      "queue_wait_ms": 1121.5782165527344,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:10:31 GMT",
+        "Content-Length": "1130",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789020631.8671072,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789020630.6950834
+    }
+  },
+  "wall_clock_unix": 1789020631.8671072
+}

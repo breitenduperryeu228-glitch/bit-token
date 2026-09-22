@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0107",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章を日本語で続けて、短い段落で書いてください。\n\n人間にとって致死性となる鳥インフルエンザの株、H5N1が、フランス東部のリヨン近郊の湿地帯で月曜日に発見された野生のカモの死骸に感染していることが確認されました。\n\n/no_think",
+    "source_text": "人間にとって致死性となる鳥インフルエンザの株、H5N1が、フランス東部のリヨン近郊の湿地帯で月曜日に発見された野生のカモの死骸に感染していることが確認されました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "フランスのリヨン県の湿地帯では、H5N1の鳥インフルエンザが広がっています。\nこの地域で発見したカモは、月曜日に死亡しました。\n野生のカモは、フランス国立野生生物学研究所によると、2019年から2020年にかけて、湿地帯にいる鳥類を調べたところ、H5N1の感染が見つかりました。\nこの地域では、インフルエンザの感染症が少ないことがわかっています。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 4431924495,
+    "load_duration": 63507480,
+    "prompt_eval_duration": 34462011,
+    "eval_duration": 4254620615,
+    "eval_count": 125,
+    "prompt_eval_count": 116,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-07T01:48:16.083432432Z",
+    "message": {
+      "role": "assistant",
+      "content": "フランスのリヨン県の湿地帯では、H5N1の鳥インフルエンザが広がっています。\nこの地域で発見したカモは、月曜日に死亡しました。\n野生のカモは、フランス国立野生生物学研究所によると、2019年から2020年にかけて、湿地帯にいる鳥類を調べたところ、H5N1の感染が見つかりました。\nこの地域では、インフルエンザの感染症が少ないことがわかっています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 4431924495,
+    "load_duration": 63507480,
+    "prompt_eval_count": 116,
+    "prompt_eval_duration": 34462011,
+    "eval_count": 125,
+    "eval_duration": 4254620615
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788745691.6161597,
+      "nvidia_smi": {
+        "timestamp_unix": 1788745691.61616,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.25,
+            "vram_total_mib": 8188.0,
+            "util_pct": 23,
+            "mem_util_pct": 14,
+            "power_w": 12.545,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788745691.629089,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 236.5,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2189.109375,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 236.5,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1952.609375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788745691.642476,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 242176,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788745696.0837238,
+      "nvidia_smi": {
+        "timestamp_unix": 1788745696.083724,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.25,
+            "vram_total_mib": 8188.0,
+            "util_pct": 23,
+            "mem_util_pct": 13,
+            "power_w": 12.554,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788745696.0974615,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 236.34765625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2188.96484375,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 236.34765625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1952.6171875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788745696.1110675,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 242020,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788745691.651129,
+      "response_received_unix": 1788745696.0836806,
+      "first_byte_unix": 1788745696.0836465,
+      "total_wall_ms": 4432.551622390747,
+      "queue_wait_ms": 4432.517528533936,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 07 Sep 2026 01:48:16 GMT",
+        "Content-Length": "783",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788745696.1194959,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788745691.6510813
+    }
+  },
+  "wall_clock_unix": 1788745696.1194959
+}

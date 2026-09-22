@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "jpn_Jpan",
+  "sample_id": "s0193",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n1960年代を通して、ブレジンスキーはジョン・F・ケネディの顧問を務め、その後リンドン・B・ジョンソン政権でも活躍しました。\n\n/no_think",
+    "source_text": "1960年代を通して、ブレジンスキーはジョン・F・ケネディの顧問を務め、その後リンドン・B・ジョンソン政権でも活躍しました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "1960年代を通してブレジンスキーはジョン・F・ケネディの顧問を務め、その後リンドン・B・ジョンソン政権でも活躍しました。",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 1129750512,
+    "load_duration": 40835312,
+    "prompt_eval_duration": 190224457,
+    "eval_duration": 863623811,
+    "eval_count": 64,
+    "prompt_eval_count": 148,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T06:13:01.450295959Z",
+    "message": {
+      "role": "assistant",
+      "content": "1960年代を通してブレジンスキーはジョン・F・ケネディの顧問を務め、その後リンドン・B・ジョンソン政権でも活躍しました。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1129750512,
+    "load_duration": 40835312,
+    "prompt_eval_count": 148,
+    "prompt_eval_duration": 190224457,
+    "eval_count": 64,
+    "eval_duration": 863623811
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788934380.2837656,
+      "nvidia_smi": {
+        "timestamp_unix": 1788934380.2837663,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.365,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788934380.299455,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 185.296875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 875902,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 970.47265625,
+        "tree_threads": 55,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 185.296875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 785.17578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788934380.3120053,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 189744,
+        "proc_threads": 40,
+        "proc_vol_ctx": 869568,
+        "proc_invol_ctx": 6334,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788934381.450627,
+      "nvidia_smi": {
+        "timestamp_unix": 1788934381.4506273,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.48,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788934381.4640985,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 188.1484375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 875902,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 973.32421875,
+        "tree_threads": 55,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 188.1484375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 785.17578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788934381.4770176,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 192664,
+        "proc_threads": 40,
+        "proc_vol_ctx": 869568,
+        "proc_invol_ctx": 6334,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788934380.3201988,
+      "response_received_unix": 1788934381.4505835,
+      "first_byte_unix": 1788934381.4505417,
+      "total_wall_ms": 1130.3846836090088,
+      "queue_wait_ms": 1130.342960357666,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 06:13:01 GMT",
+        "Content-Length": "473",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788934381.4847937,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788934380.320153
+    }
+  },
+  "wall_clock_unix": 1788934381.4847937
+}

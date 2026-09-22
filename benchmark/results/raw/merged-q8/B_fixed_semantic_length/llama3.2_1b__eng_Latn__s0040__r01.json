@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "eng_Latn",
+  "sample_id": "s0040",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Please write exactly about 256 characters of text in English on the topic implied by the following sentence. Do not add greetings, do not add explanations, just the paragraph itself:\n\nIn 1624,Dutch East India Company establishes a base in southwestern Taiwan, initiating a transformation in aboriginal grain production practices and employing Chinese laborers to work on its rice and sugar plantations.\n\n/no_think",
+    "source_text": "In 1624,Dutch East India Company establishes a base in southwestern Taiwan, initiating a transformation in aboriginal grain production practices and employing Chinese laborers to work on its rice and sugar plantations."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "The Dutch East India Company's establishment of a base in Taiwan marked the beginning of significant changes in the island's indigenous population. The introduction of new agricultural techniques and the use of Chinese laborers led to increased productivity, but also resulted in cultural assimilation and loss of traditional practices.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 449414938,
+    "load_duration": 89925993,
+    "prompt_eval_duration": 5928374,
+    "eval_duration": 325281655,
+    "eval_count": 57,
+    "prompt_eval_count": 109,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T06:35:02.439095412Z",
+    "message": {
+      "role": "assistant",
+      "content": "The Dutch East India Company's establishment of a base in Taiwan marked the beginning of significant changes in the island's indigenous population. The introduction of new agricultural techniques and the use of Chinese laborers led to increased productivity, but also resulted in cultural assimilation and loss of traditional practices."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 449414938,
+    "load_duration": 89925993,
+    "prompt_eval_count": 109,
+    "prompt_eval_duration": 5928374,
+    "eval_count": 57,
+    "eval_duration": 325281655
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789022101.9399953,
+      "nvidia_smi": {
+        "timestamp_unix": 1789022101.9399958,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 91,
+            "mem_util_pct": 100,
+            "power_w": 66.857,
+            "temp_c": 72,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789022101.950471,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 257.79296875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1080.3125,
+        "tree_threads": 58,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 257.79296875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 822.51953125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789022101.9740584,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 263980,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789022102.4395025,
+      "nvidia_smi": {
+        "timestamp_unix": 1789022102.4395034,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 0,
+            "mem_util_pct": 0,
+            "power_w": 60.6,
+            "temp_c": 72,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789022102.4505756,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 257.51171875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1080.03125,
+        "tree_threads": 58,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 257.51171875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 822.51953125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789022102.4753244,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 263692,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789022101.989343,
+      "response_received_unix": 1789022102.439448,
+      "first_byte_unix": 1789022102.4393964,
+      "total_wall_ms": 450.1051902770996,
+      "queue_wait_ms": 450.05345344543457,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:35:02 GMT",
+        "Content-Length": "631",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789022102.4907079,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789022101.989296
+    }
+  },
+  "wall_clock_unix": 1789022102.4907079
+}

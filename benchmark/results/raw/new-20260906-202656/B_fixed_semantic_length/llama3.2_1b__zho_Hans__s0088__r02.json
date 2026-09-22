@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "zho_Hans",
+  "sample_id": "s0088",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n有些特殊的塔呈金字塔形状，被称为金字形神塔，是作为庙宇的一部分而建造的。\n\n/no_think",
+    "source_text": "有些特殊的塔呈金字塔形状，被称为金字形神塔，是作为庙宇的一部分而建造的。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "在中国的古代，特别是在佛教和道教的传统中，金字形神塔是非常重要的文化遗产。这些特殊的塔通常呈现金字形状，被称为金字形神塔，是作为庙宇的一部分而建造的。它们不仅具有美丽的外观，还有着深厚的历史和文化意义。金字形神塔在中国的传统中被视为一种象征着宗教精神和道德价值观的重要组成部分。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 795961125,
+    "load_duration": 72564291,
+    "prompt_eval_duration": 5944052,
+    "eval_duration": 663126760,
+    "eval_count": 115,
+    "prompt_eval_count": 102,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T06:53:34.416925633Z",
+    "message": {
+      "role": "assistant",
+      "content": "在中国的古代，特别是在佛教和道教的传统中，金字形神塔是非常重要的文化遗产。这些特殊的塔通常呈现金字形状，被称为金字形神塔，是作为庙宇的一部分而建造的。它们不仅具有美丽的外观，还有着深厚的历史和文化意义。金字形神塔在中国的传统中被视为一种象征着宗教精神和道德价值观的重要组成部分。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 795961125,
+    "load_duration": 72564291,
+    "prompt_eval_count": 102,
+    "prompt_eval_duration": 5944052,
+    "eval_count": 115,
+    "eval_duration": 663126760
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789023213.5750504,
+      "nvidia_smi": {
+        "timestamp_unix": 1789023213.5750508,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 72.244,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789023213.5855868,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.328125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.015625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 971.6875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789023213.6064062,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264528,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789023214.4172714,
+      "nvidia_smi": {
+        "timestamp_unix": 1789023214.4172719,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 69,
+            "mem_util_pct": 78,
+            "power_w": 73.436,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789023214.4285345,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.1328125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1229.8203125,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.1328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 971.6875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789023214.451596,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264328,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789023213.6206377,
+      "response_received_unix": 1789023214.4172132,
+      "first_byte_unix": 1789023214.4171693,
+      "total_wall_ms": 796.5755462646484,
+      "queue_wait_ms": 796.5316772460938,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:53:34 GMT",
+        "Content-Length": "713",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789023214.4657834,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789023213.6205883
+    }
+  },
+  "wall_clock_unix": 1789023214.4657834
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "zho_Hans",
+  "sample_id": "s0113",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n遗憾的是，随着新的书写方式的出现，铅笔的地位越来越低，使用也越来越少。\n\n/no_think",
+    "source_text": "遗憾的是，随着新的书写方式的出现，铅笔的地位越来越低，使用也越来越少。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "遗憾的是，随着新的书写方式的出现，铅笔的地位越来越低，使用也越来越少。",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 986587685,
+    "load_duration": 39105267,
+    "prompt_eval_duration": 295358309,
+    "eval_duration": 624355369,
+    "eval_count": 46,
+    "prompt_eval_count": 119,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T05:46:14.42791087Z",
+    "message": {
+      "role": "assistant",
+      "content": "遗憾的是，随着新的书写方式的出现，铅笔的地位越来越低，使用也越来越少。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 986587685,
+    "load_duration": 39105267,
+    "prompt_eval_count": 119,
+    "prompt_eval_duration": 295358309,
+    "eval_count": 46,
+    "eval_duration": 624355369
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788932773.4028149,
+      "nvidia_smi": {
+        "timestamp_unix": 1788932773.4028153,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.063,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788932773.4176157,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 183.140625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 867522,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 961.58984375,
+        "tree_threads": 55,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 183.140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 778.44921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788932773.4323108,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 187536,
+        "proc_threads": 40,
+        "proc_vol_ctx": 861305,
+        "proc_invol_ctx": 6217,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788932774.4281812,
+      "nvidia_smi": {
+        "timestamp_unix": 1788932774.4281814,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.042,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788932774.4419217,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 184.5078125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 867522,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 962.95703125,
+        "tree_threads": 55,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 184.5078125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 778.44921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788932774.4562047,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 188936,
+        "proc_threads": 40,
+        "proc_vol_ctx": 861305,
+        "proc_invol_ctx": 6217,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788932773.4409149,
+      "response_received_unix": 1788932774.4281378,
+      "first_byte_unix": 1788932774.4280982,
+      "total_wall_ms": 987.2229099273682,
+      "queue_wait_ms": 987.1833324432373,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 05:46:14 GMT",
+        "Content-Length": "405",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788932774.4649456,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788932773.440872
+    }
+  },
+  "wall_clock_unix": 1788932774.4649456
+}

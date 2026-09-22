@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "zho_Hans",
+  "sample_id": "s0152",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n《天使》(2006) 将连续体方案解释为可以帮助组织达到更高绩效水平的一种方法。\n\n/no_think",
+    "source_text": "《天使》(2006) 将连续体方案解释为可以帮助组织达到更高绩效水平的一种方法。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "天使在组织中扮演着关键角色，能够引导团队朝着更高的目标迈进。其独特的视角帮助人们发现潜在的机会和挑战，推动创新。通过培养团队的创造力和协作精神，天使能够加速项目的完成速度。\n\n其核心在于关注个体价值与团队目标的平衡，倡导透明的沟通渠道，让每个成员都能表达意见和贡献。天使还注重培养员工的自我效能感，帮助他们在面对困难时保持动力。\n\n在组织文化中，天使的存在往往成为推动变革的催化剂。它们能够激发团队成员的热情，激发创新思维，增强凝聚力。通过不断的反馈和改进，天使的影响力逐渐扩大，最终促使整个组织实现更高的绩效水平。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2763970713,
+    "load_duration": 24605164,
+    "prompt_eval_duration": 225240103,
+    "eval_duration": 2484944951,
+    "eval_count": 207,
+    "prompt_eval_count": 96,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T07:56:57.822314529Z",
+    "message": {
+      "role": "assistant",
+      "content": "天使在组织中扮演着关键角色，能够引导团队朝着更高的目标迈进。其独特的视角帮助人们发现潜在的机会和挑战，推动创新。通过培养团队的创造力和协作精神，天使能够加速项目的完成速度。\n\n其核心在于关注个体价值与团队目标的平衡，倡导透明的沟通渠道，让每个成员都能表达意见和贡献。天使还注重培养员工的自我效能感，帮助他们在面对困难时保持动力。\n\n在组织文化中，天使的存在往往成为推动变革的催化剂。它们能够激发团队成员的热情，激发创新思维，增强凝聚力。通过不断的反馈和改进，天使的影响力逐渐扩大，最终促使整个组织实现更高的绩效水平。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2763970713,
+    "load_duration": 24605164,
+    "prompt_eval_count": 96,
+    "prompt_eval_duration": 225240103,
+    "eval_count": 207,
+    "eval_duration": 2484944951
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788940615.0218718,
+      "nvidia_smi": {
+        "timestamp_unix": 1788940615.0218723,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 31,
+            "mem_util_pct": 14,
+            "power_w": 12.159,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788940615.0353463,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.64453125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 947511,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 983.5546875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.64453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.91015625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788940615.0490878,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207508,
+        "proc_threads": 40,
+        "proc_vol_ctx": 940253,
+        "proc_invol_ctx": 7258,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788940617.8228657,
+      "nvidia_smi": {
+        "timestamp_unix": 1788940617.8228664,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 38,
+            "mem_util_pct": 14,
+            "power_w": 12.132,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788940617.840518,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.77734375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 947512,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 983.6875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.77734375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.91015625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788940617.8553698,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207644,
+        "proc_threads": 40,
+        "proc_vol_ctx": 940254,
+        "proc_invol_ctx": 7258,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788940615.0579245,
+      "response_received_unix": 1788940617.8227718,
+      "first_byte_unix": 1788940617.8226943,
+      "total_wall_ms": 2764.8472785949707,
+      "queue_wait_ms": 2764.7697925567627,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 07:56:57 GMT",
+        "Content-Length": "1085",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788940617.864085,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788940615.0578785
+    }
+  },
+  "wall_clock_unix": 1788940617.864085
+}

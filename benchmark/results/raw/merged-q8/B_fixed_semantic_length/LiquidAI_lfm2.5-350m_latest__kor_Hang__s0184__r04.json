@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0184",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n이 이론에 따르면 은하계 주변 암흑물질의 대부분은 마치 후광처럼 은하계 주위에 자리 잡고 있으며, 대량의 작은 입자들로 구성되어 있다.\n\n/no_think",
+    "source_text": "이 이론에 따르면 은하계 주변 암흑물질의 대부분은 마치 후광처럼 은하계 주위에 자리 잡고 있으며, 대량의 작은 입자들로 구성되어 있다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "이 이론은 우리 우주의 어두운 영역에서 흔히 발견되는 현상으로, 은하계 주변의 암흑물질이 주변의 빛을 가려는 현상을 설명한다. 이는 우주가 형성된 과정에서 중요한 역할을 했을 가능성이 있다. 마치 빛이 흐리게 보이는 후광처럼, 암흑물질이 은하의 구조를 형성하는 데 기여했을 수 있다. 이러한 현상은 우주의 초기 상태를 이해하는 데 중요한 단서를 제공하며, 암흑물질의 본성에 대한 새로운 통찰을 제공할 수 있다. 연구자들은 이 이론을 통해 암흑물질의 존재를 확실히 확인하거나, 그 존재를 가정하는 데 도움을 줄 수 있다. 이는 우주론과 물리학의 교차점에서 중요한 발전이 될 수 있다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2897119022,
+    "load_duration": 24037009,
+    "prompt_eval_duration": 279481512,
+    "eval_duration": 2561706546,
+    "eval_count": 219,
+    "prompt_eval_count": 130,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T09:15:54.418080862Z",
+    "message": {
+      "role": "assistant",
+      "content": "이 이론은 우리 우주의 어두운 영역에서 흔히 발견되는 현상으로, 은하계 주변의 암흑물질이 주변의 빛을 가려는 현상을 설명한다. 이는 우주가 형성된 과정에서 중요한 역할을 했을 가능성이 있다. 마치 빛이 흐리게 보이는 후광처럼, 암흑물질이 은하의 구조를 형성하는 데 기여했을 수 있다. 이러한 현상은 우주의 초기 상태를 이해하는 데 중요한 단서를 제공하며, 암흑물질의 본성에 대한 새로운 통찰을 제공할 수 있다. 연구자들은 이 이론을 통해 암흑물질의 존재를 확실히 확인하거나, 그 존재를 가정하는 데 도움을 줄 수 있다. 이는 우주론과 물리학의 교차점에서 중요한 발전이 될 수 있다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2897119022,
+    "load_duration": 24037009,
+    "prompt_eval_count": 130,
+    "prompt_eval_duration": 279481512,
+    "eval_count": 219,
+    "eval_duration": 2561706546
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788945351.4839768,
+      "nvidia_smi": {
+        "timestamp_unix": 1788945351.4839776,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.502,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788945351.4985094,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 198.34375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 992.30078125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 198.34375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.95703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788945351.5120077,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 203104,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788945354.4186065,
+      "nvidia_smi": {
+        "timestamp_unix": 1788945354.418607,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 14,
+            "power_w": 12.505,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788945354.4359663,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 198.8125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 992.26953125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 198.8125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.45703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788945354.4507403,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 203584,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788945351.5205698,
+      "response_received_unix": 1788945354.4185174,
+      "first_byte_unix": 1788945354.4184496,
+      "total_wall_ms": 2897.9475498199463,
+      "queue_wait_ms": 2897.8798389434814,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 09:15:54 GMT",
+        "Content-Length": "1109",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788945354.4592566,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788945351.5205255
+    }
+  },
+  "wall_clock_unix": 1788945354.4592566
+}

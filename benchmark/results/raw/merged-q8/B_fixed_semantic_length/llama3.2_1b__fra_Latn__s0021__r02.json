@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "fra_Latn",
+  "sample_id": "s0021",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Veuillez écrire environ 256 caractères de texte en français sur le sujet suggéré par la phrase suivante. Pas de salutations ni d'explications, juste le paragraphe :\n\nLes sous-cultures rassemblent des individus se sentant négligés par les normes sociétales et partageant les mêmes idées ce qui leur permet de développer un sentiment d'identité.\n\n/no_think",
+    "source_text": "Les sous-cultures rassemblent des individus se sentant négligés par les normes sociétales et partageant les mêmes idées ce qui leur permet de développer un sentiment d'identité."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "La diversité culturelle est une richesse qui doit être valorisée et respectée, car elle nous permet de comprendre et de vivre pleinement nos différences. Les sous-cultures, en particulier celles qui sont marginalisées ou négligées par les normes sociétales, ont le potentiel d'innover et de créer des alternatives innovantes. Cela peut se manifester à travers la musique, l'art, la littérature, la cuisine, etc. En promouvant et en valorisant ces sous-cultures, nous pouvons travailler vers une société plus inclusive et plus ouverte aux différences.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 975981569,
+    "load_duration": 73817817,
+    "prompt_eval_duration": 6649105,
+    "eval_duration": 839027222,
+    "eval_count": 145,
+    "prompt_eval_count": 125,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T08:14:12.878531724Z",
+    "message": {
+      "role": "assistant",
+      "content": "La diversité culturelle est une richesse qui doit être valorisée et respectée, car elle nous permet de comprendre et de vivre pleinement nos différences. Les sous-cultures, en particulier celles qui sont marginalisées ou négligées par les normes sociétales, ont le potentiel d'innover et de créer des alternatives innovantes. Cela peut se manifester à travers la musique, l'art, la littérature, la cuisine, etc. En promouvant et en valorisant ces sous-cultures, nous pouvons travailler vers une société plus inclusive et plus ouverte aux différences."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 975981569,
+    "load_duration": 73817817,
+    "prompt_eval_count": 125,
+    "prompt_eval_duration": 6649105,
+    "eval_count": 145,
+    "eval_duration": 839027222
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789028051.8557873,
+      "nvidia_smi": {
+        "timestamp_unix": 1789028051.8557875,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 0,
+            "mem_util_pct": 0,
+            "power_w": 73.692,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789028051.8662765,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.6328125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1299.5,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.6328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1040.8671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789028051.8878462,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264840,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789028052.878873,
+      "nvidia_smi": {
+        "timestamp_unix": 1789028052.8788736,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 7,
+            "mem_util_pct": 8,
+            "power_w": 73.51,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789028052.8899457,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.6484375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1299.515625,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.6484375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1040.8671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789028052.9138803,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264856,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789028051.9021854,
+      "response_received_unix": 1789028052.878817,
+      "first_byte_unix": 1789028052.8787692,
+      "total_wall_ms": 976.6316413879395,
+      "queue_wait_ms": 976.58371925354,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 08:14:12 GMT",
+        "Content-Length": "861",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789028052.9287114,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789028051.90214
+    }
+  },
+  "wall_clock_unix": 1789028052.9287114
+}

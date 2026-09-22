@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "zho_Hans",
+  "sample_id": "s0020",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n梵蒂冈城在法律法规和官方通信中使用意大利语。\n\n/no_think",
+    "source_text": "梵蒂冈城在法律法规和官方通信中使用意大利语。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "梵蒂冈城在法律法规和官方通信中使用意大利语。",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 718104795,
+    "load_duration": 47808702,
+    "prompt_eval_duration": 251247835,
+    "eval_duration": 403322220,
+    "eval_count": 29,
+    "prompt_eval_count": 102,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T05:37:45.307468426Z",
+    "message": {
+      "role": "assistant",
+      "content": "梵蒂冈城在法律法规和官方通信中使用意大利语。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 718104795,
+    "load_duration": 47808702,
+    "prompt_eval_count": 102,
+    "prompt_eval_duration": 251247835,
+    "eval_count": 29,
+    "eval_duration": 403322220
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788932264.5509965,
+      "nvidia_smi": {
+        "timestamp_unix": 1788932264.550997,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 13,
+            "power_w": 12.159,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788932264.5648868,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 179.5,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 867521,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 922.640625,
+        "tree_threads": 53,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 179.5,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 743.140625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788932264.5798912,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 183808,
+        "proc_threads": 40,
+        "proc_vol_ctx": 861304,
+        "proc_invol_ctx": 6217,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788932265.3077607,
+      "nvidia_smi": {
+        "timestamp_unix": 1788932265.3077612,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.18,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788932265.3229911,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 187.34375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 867521,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 930.484375,
+        "tree_threads": 53,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 187.34375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 743.140625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788932265.3379056,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 191840,
+        "proc_threads": 40,
+        "proc_vol_ctx": 861304,
+        "proc_invol_ctx": 6217,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788932264.5890517,
+      "response_received_unix": 1788932265.3077128,
+      "first_byte_unix": 1788932265.3076684,
+      "total_wall_ms": 718.6610698699951,
+      "queue_wait_ms": 718.6167240142822,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 05:37:45 GMT",
+        "Content-Length": "367",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788932265.3467968,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788932264.5890045
+    }
+  },
+  "wall_clock_unix": 1788932265.3467968
+}

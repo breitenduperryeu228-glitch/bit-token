@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0042",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n이 병은 돼지에 의해 옮겨진 다음, 모기를 통해 인간에게 옮겨집니다.\n\n/no_think",
+    "source_text": "이 병은 돼지에 의해 옮겨진 다음, 모기를 통해 인간에게 옮겨집니다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "이 병은 돼지의 배출물을 통해 모기의 번식지로 인간에게 전달됩니다. 모기의 존재는 병의 확산을 촉진하며, 이는 전염병의 위험을 증가시킵니다. 병의 효과는 환경 조건에 크게 의존하며, 더 많은 돼지와 모기가 존재할수록 확산 속도가 빨라집니다. 또한, 병의 효율성은 유행 지역의 밀집도와 기후에 따라 달라질 수 있습니다. 이러한 요인들을 고려할 때, 병을 효과적으로 관리하기 위해서는 지역의 생태계와 인구 통계를 철저히 분석해야 합니다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2137099810,
+    "load_duration": 22911012,
+    "prompt_eval_duration": 210508484,
+    "eval_duration": 1885329693,
+    "eval_count": 163,
+    "prompt_eval_count": 104,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:44:41.736079316Z",
+    "message": {
+      "role": "assistant",
+      "content": "이 병은 돼지의 배출물을 통해 모기의 번식지로 인간에게 전달됩니다. 모기의 존재는 병의 확산을 촉진하며, 이는 전염병의 위험을 증가시킵니다. 병의 효과는 환경 조건에 크게 의존하며, 더 많은 돼지와 모기가 존재할수록 확산 속도가 빨라집니다. 또한, 병의 효율성은 유행 지역의 밀집도와 기후에 따라 달라질 수 있습니다. 이러한 요인들을 고려할 때, 병을 효과적으로 관리하기 위해서는 지역의 생태계와 인구 통계를 철저히 분석해야 합니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2137099810,
+    "load_duration": 22911012,
+    "prompt_eval_count": 104,
+    "prompt_eval_duration": 210508484,
+    "eval_count": 163,
+    "eval_duration": 1885329693
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788943479.5619526,
+      "nvidia_smi": {
+        "timestamp_unix": 1788943479.5619533,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 14,
+            "power_w": 12.594,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788943479.5771387,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 197.203125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 985.16015625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 197.203125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.95703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788943479.5899374,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 201936,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788943481.736514,
+      "nvidia_smi": {
+        "timestamp_unix": 1788943481.7365146,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.564,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788943481.75157,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 198.8515625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 986.80859375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 198.8515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.95703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788943481.7664106,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 203624,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788943479.5985727,
+      "response_received_unix": 1788943481.7364392,
+      "first_byte_unix": 1788943481.736383,
+      "total_wall_ms": 2137.866497039795,
+      "queue_wait_ms": 2137.810230255127,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:44:41 GMT",
+        "Content-Length": "910",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788943481.7757578,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788943479.5985277
+    }
+  },
+  "wall_clock_unix": 1788943481.7757578
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0163",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nヘブライ人家族はほとんど戸外で暮らしていました。\n\n/no_think",
+    "source_text": "ヘブライ人家族はほとんど戸外で暮らしていました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "ヘブライ人家族は、厳しい自然環境に適応しながら、長い歴史の中で独自の文化を築いてきました。彼らは農業や漁業に依存し、地域の風土に合わせた生活様式を発展させました。特に、イスラム教の影響を受けた地域では、礼拝や食事の習慣が変化し、伝統的な衣装や儀式が現代に受け継がれています。彼らの生活は、自然との共生と精神的な安定を重視しており、困難な時期には共同体としての絆が強く表れています。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1852096117,
+    "load_duration": 21189651,
+    "prompt_eval_duration": 177476610,
+    "eval_duration": 1634469905,
+    "eval_count": 139,
+    "prompt_eval_count": 81,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:29:43.979328038Z",
+    "message": {
+      "role": "assistant",
+      "content": "ヘブライ人家族は、厳しい自然環境に適応しながら、長い歴史の中で独自の文化を築いてきました。彼らは農業や漁業に依存し、地域の風土に合わせた生活様式を発展させました。特に、イスラム教の影響を受けた地域では、礼拝や食事の習慣が変化し、伝統的な衣装や儀式が現代に受け継がれています。彼らの生活は、自然との共生と精神的な安定を重視しており、困難な時期には共同体としての絆が強く表れています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1852096117,
+    "load_duration": 21189651,
+    "prompt_eval_count": 81,
+    "prompt_eval_duration": 177476610,
+    "eval_count": 139,
+    "eval_duration": 1634469905
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788942582.0926778,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942582.092678,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.461,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942582.106299,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.62890625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 971717,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 990.53515625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.62890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.90625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942582.1188605,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207492,
+        "proc_threads": 40,
+        "proc_vol_ctx": 964308,
+        "proc_invol_ctx": 7409,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788942583.9798343,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942583.979835,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.477,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942583.9954758,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.19140625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 971718,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 990.16015625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.19140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 786.96875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942584.0093174,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208068,
+        "proc_threads": 40,
+        "proc_vol_ctx": 964309,
+        "proc_invol_ctx": 7409,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788942582.1268349,
+      "response_received_unix": 1788942583.9797378,
+      "first_byte_unix": 1788942583.979675,
+      "total_wall_ms": 1852.902889251709,
+      "queue_wait_ms": 1852.8401851654053,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:29:43 GMT",
+        "Content-Length": "885",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788942584.0177922,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788942582.1267943
+    }
+  },
+  "wall_clock_unix": 1788942584.0177922
+}

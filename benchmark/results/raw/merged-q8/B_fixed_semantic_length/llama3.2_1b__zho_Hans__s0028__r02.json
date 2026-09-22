@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "zho_Hans",
+  "sample_id": "s0028",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n在奥地利、德国、斯洛文尼亚、保加利亚、希腊和意大利之后，法国是第七个深受这种病毒之苦的欧盟国家。\n\n/no_think",
+    "source_text": "在奥地利、德国、斯洛文尼亚、保加利亚、希腊和意大利之后，法国是第七个深受这种病毒之苦的欧盟国家。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "法国的疫情爆发主要集中在巴黎市区，尤其是在大都会地区。据估计，约有10万人被感染了该病毒。许多法国人因疫情而失业，甚至一些企业也面临破产。政府和卫生部门正在采取措施减轻经济负担，但仍然难以应对这种严重的健康危机。\n\n在欧洲各国，疫情爆发导致经济、社会和政治受到重大影响。许多国家实施了封锁、旅行限制和其他防控措施，以控制病毒的传播。然而，这些措施可能会造成经济损失，并对当地居民产生负面影响。\n\n法国政府也面临着与其他欧盟成员国合作减轻疫情负担的问题。例如，德国和意大利都已经实施了封锁政策，但法国仍然没有完全采取措施。这导致法国人感到不公平，认为他们的经济负担应该被分配得更公平。\n\n在这种情况下，人们开始质疑政府对疫情控制的能力，并批评政府的做法。一些人认为政府应该采取更积极的措施来应对疫情，而不是仅仅依靠防控政策。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1743795661,
+    "load_duration": 72650243,
+    "prompt_eval_duration": 6823132,
+    "eval_duration": 1553859545,
+    "eval_count": 267,
+    "prompt_eval_count": 115,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T06:45:20.610921711Z",
+    "message": {
+      "role": "assistant",
+      "content": "法国的疫情爆发主要集中在巴黎市区，尤其是在大都会地区。据估计，约有10万人被感染了该病毒。许多法国人因疫情而失业，甚至一些企业也面临破产。政府和卫生部门正在采取措施减轻经济负担，但仍然难以应对这种严重的健康危机。\n\n在欧洲各国，疫情爆发导致经济、社会和政治受到重大影响。许多国家实施了封锁、旅行限制和其他防控措施，以控制病毒的传播。然而，这些措施可能会造成经济损失，并对当地居民产生负面影响。\n\n法国政府也面临着与其他欧盟成员国合作减轻疫情负担的问题。例如，德国和意大利都已经实施了封锁政策，但法国仍然没有完全采取措施。这导致法国人感到不公平，认为他们的经济负担应该被分配得更公平。\n\n在这种情况下，人们开始质疑政府对疫情控制的能力，并批评政府的做法。一些人认为政府应该采取更积极的措施来应对疫情，而不是仅仅依靠防控政策。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1743795661,
+    "load_duration": 72650243,
+    "prompt_eval_count": 115,
+    "prompt_eval_duration": 6823132,
+    "eval_count": 267,
+    "eval_duration": 1553859545
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789022718.817255,
+      "nvidia_smi": {
+        "timestamp_unix": 1789022718.8172553,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 81.022,
+            "temp_c": 80,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789022718.8275921,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 256.88671875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1223.9375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 256.88671875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 967.05078125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789022718.8511872,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 263052,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789022720.6113124,
+      "nvidia_smi": {
+        "timestamp_unix": 1789022720.6113126,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 82.732,
+            "temp_c": 79,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789022720.622321,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.23046875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1225.28125,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.23046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 967.05078125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789022720.6461773,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264428,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789022718.8667843,
+      "response_received_unix": 1789022720.6112459,
+      "first_byte_unix": 1789022720.6111946,
+      "total_wall_ms": 1744.4615364074707,
+      "queue_wait_ms": 1744.4102764129639,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:45:20 GMT",
+        "Content-Length": "1371",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789022720.6610808,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789022718.8667367
+    }
+  },
+  "wall_clock_unix": 1789022720.6610808
+}

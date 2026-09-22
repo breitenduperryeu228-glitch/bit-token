@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0072",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nほとんどが砂浜で安全に泳ぐことができ、ポフツカワの木陰が日除けになります。\n\n/no_think",
+    "source_text": "ほとんどが砂浜で安全に泳ぐことができ、ポフツカワの木陰が日除けになります。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "ほとんどが砂浜で安全に泳ぐことができ、ポフツカワの木陰が日除けになる。静かな海辺に住む人々は、波の音を聞きながら穏やかな泳ぎを楽しんでいます。木陰の広さは、潮の満ち引きに左右されやすく、特に夕暮れ時には光が差し込むことで、木の葉が柔らかく輝く様子が目に留まります。ポフツカワの木は、古くから漁師や漁村の生活に欠かせない存在であり、その美しい形状と緑豊かな環境は、自然との共生を象徴しています。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2219883258,
+    "load_duration": 29330071,
+    "prompt_eval_duration": 219331827,
+    "eval_duration": 1948397153,
+    "eval_count": 160,
+    "prompt_eval_count": 94,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:15:29.039929439Z",
+    "message": {
+      "role": "assistant",
+      "content": "ほとんどが砂浜で安全に泳ぐことができ、ポフツカワの木陰が日除けになる。静かな海辺に住む人々は、波の音を聞きながら穏やかな泳ぎを楽しんでいます。木陰の広さは、潮の満ち引きに左右されやすく、特に夕暮れ時には光が差し込むことで、木の葉が柔らかく輝く様子が目に留まります。ポフツカワの木は、古くから漁師や漁村の生活に欠かせない存在であり、その美しい形状と緑豊かな環境は、自然との共生を象徴しています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2219883258,
+    "load_duration": 29330071,
+    "prompt_eval_count": 94,
+    "prompt_eval_duration": 219331827,
+    "eval_count": 160,
+    "eval_duration": 1948397153
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788941726.782084,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941726.7820847,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.291,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941726.795907,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.61328125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 960631,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 983.62890625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.61328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.015625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941726.8106015,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208500,
+        "proc_threads": 40,
+        "proc_vol_ctx": 953289,
+        "proc_invol_ctx": 7342,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788941729.0402875,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941729.040288,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.304,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941729.0548909,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.48828125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 960632,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 982.25390625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.48828125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 779.765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941729.070647,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207348,
+        "proc_threads": 40,
+        "proc_vol_ctx": 953290,
+        "proc_invol_ctx": 7342,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788941726.819651,
+      "response_received_unix": 1788941729.0402122,
+      "first_byte_unix": 1788941729.040156,
+      "total_wall_ms": 2220.5612659454346,
+      "queue_wait_ms": 2220.5049991607666,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:15:29 GMT",
+        "Content-Length": "903",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788941729.0797224,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788941726.8196044
+    }
+  },
+  "wall_clock_unix": 1788941729.0797224
+}

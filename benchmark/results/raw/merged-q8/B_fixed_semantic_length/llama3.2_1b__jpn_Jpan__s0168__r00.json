@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0168",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nライオン、チーター、ヒョウは意外に憶病なので、よく見えるように双眼鏡を使うことになります。\n\n/no_think",
+    "source_text": "ライオン、チーター、ヒョウは意外に憶病なので、よく見えるように双眼鏡を使うことになります。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "日本語では、医師が治療するために患者の体内から出る病気の細胞を取り出す手術や、薬物を服用することで治療できることがあります。ライオン、チーター、ヒョウは、意外に病気になったので、よく見えるように双眼鏡を使うことになりました。\n\n双眼鏡は、医師が患者の体内から出る病気の細胞を取り出すときに使います。この手法では、医師は患者の両目で、病気の細胞を観察できます。医師は、病気の原因や治療方法について、患者の家族や医者と話します。\n\n双眼鏡を使うことで、患者の体内から出る病気の細胞がよく見えるようになります。この手法は、ライオン、チーター、ヒョウなど、多くの動物に使われています。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1345387143,
+    "load_duration": 72584138,
+    "prompt_eval_duration": 8592519,
+    "eval_duration": 1184993470,
+    "eval_count": 204,
+    "prompt_eval_count": 109,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:34:29.260763691Z",
+    "message": {
+      "role": "assistant",
+      "content": "日本語では、医師が治療するために患者の体内から出る病気の細胞を取り出す手術や、薬物を服用することで治療できることがあります。ライオン、チーター、ヒョウは、意外に病気になったので、よく見えるように双眼鏡を使うことになりました。\n\n双眼鏡は、医師が患者の体内から出る病気の細胞を取り出すときに使います。この手法では、医師は患者の両目で、病気の細胞を観察できます。医師は、病気の原因や治療方法について、患者の家族や医者と話します。\n\n双眼鏡を使うことで、患者の体内から出る病気の細胞がよく見えるようになります。この手法は、ライオン、チーター、ヒョウなど、多くの動物に使われています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1345387143,
+    "load_duration": 72584138,
+    "prompt_eval_count": 109,
+    "prompt_eval_duration": 8592519,
+    "eval_count": 204,
+    "eval_duration": 1184993470
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789025667.867463,
+      "nvidia_smi": {
+        "timestamp_unix": 1789025667.8674636,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 94,
+            "mem_util_pct": 100,
+            "power_w": 84.022,
+            "temp_c": 81,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789025667.8780882,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 263.046875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1244.02734375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 263.046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 980.98046875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789025667.900542,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 269360,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789025669.2611077,
+      "nvidia_smi": {
+        "timestamp_unix": 1789025669.2611082,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 83.632,
+            "temp_c": 81,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789025669.2718937,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 256.953125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1237.9765625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 256.953125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 981.0234375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789025669.2960467,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 263120,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789025667.9150283,
+      "response_received_unix": 1789025669.2610517,
+      "first_byte_unix": 1789025669.2610116,
+      "total_wall_ms": 1346.0233211517334,
+      "queue_wait_ms": 1345.9832668304443,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:34:29 GMT",
+        "Content-Length": "1158",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789025669.3110366,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789025667.9149814
+    }
+  },
+  "wall_clock_unix": 1789025669.3110366
+}

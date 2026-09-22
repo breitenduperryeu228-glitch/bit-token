@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "fra_Latn",
+  "sample_id": "s0066",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Veuillez écrire environ 256 caractères de texte en français sur le sujet suggéré par la phrase suivante. Pas de salutations ni d'explications, juste le paragraphe :\n\nDe nombreux produits de boulangerie allemands contiennent également des amandes, des noisettes et d’autres noix. Les gâteaux populaires se marient souvent particulièrement bien avec une tasse de café serré.\n\n/no_think",
+    "source_text": "De nombreux produits de boulangerie allemands contiennent également des amandes, des noisettes et d’autres noix. Les gâteaux populaires se marient souvent particulièrement bien avec une tasse de café serré."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "Les produits de boulangerie allemands incluent souvent des noix et des noisettes, ce qui rend les gâteaux populaires particulièrement adaptés à une tasse de café serré.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 371298181,
+    "load_duration": 111514103,
+    "prompt_eval_duration": 22326271,
+    "eval_duration": 219561822,
+    "eval_count": 38,
+    "prompt_eval_count": 111,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T06:08:29.148165852Z",
+    "message": {
+      "role": "assistant",
+      "content": "Les produits de boulangerie allemands incluent souvent des noix et des noisettes, ce qui rend les gâteaux populaires particulièrement adaptés à une tasse de café serré."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 371298181,
+    "load_duration": 111514103,
+    "prompt_eval_count": 111,
+    "prompt_eval_duration": 22326271,
+    "eval_count": 38,
+    "eval_duration": 219561822
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789020508.7296543,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020508.7296546,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 0,
+            "mem_util_pct": 0,
+            "power_w": 52.205,
+            "temp_c": 70,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020508.7405958,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 252.875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2343.0,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 252.875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2090.125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020508.7625275,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 258944,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789020509.1485603,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020509.1485612,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 0,
+            "mem_util_pct": 0,
+            "power_w": 52.213,
+            "temp_c": 73,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020509.1605053,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 254.8125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2347.8046875,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 254.8125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2092.9921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020509.1835787,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 260928,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789020508.7765355,
+      "response_received_unix": 1789020509.148508,
+      "first_byte_unix": 1789020509.1484609,
+      "total_wall_ms": 371.97256088256836,
+      "queue_wait_ms": 371.92535400390625,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:08:29 GMT",
+        "Content-Length": "472",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789020509.19802,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789020508.77649
+    }
+  },
+  "wall_clock_unix": 1789020509.19802
+}

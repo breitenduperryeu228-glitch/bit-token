@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0026",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n전국의 유명한 가수들이 종교적 찬가인 바쟌을 스리 샤얌(Shri Shyam)의 발 앞에 바쳤습니다.\n\n/no_think",
+    "source_text": "전국의 유명한 가수들이 종교적 찬가인 바쟌을 스리 샤얌(Shri Shyam)의 발 앞에 바쳤습니다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "전국의 유명한 가수들이 종교적 찬가인 바쟌을 스리 샤얌(Shri Shyam)의 발 앞에 바쳤습니다. 그는 평화와 희망을 담은 노래로 많은 사람들에게 감동을 주었고, 그의 연주는 단순한 음악이 아니라 깊은 감정의 표현이었습니다. 바쟌은 그의 음악을 통해 세상에 평온함과 지혜를 전달하며, 많은 관객들이 그의 노래를 통해 평화를 찾았습니다. 그의 발 앞에서의 공연은 단순한 음악 경험을 넘어, 인간의 존재와 의미에 대한 깊은 성찰을 불러일으켰습니다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2204684870,
+    "load_duration": 22575416,
+    "prompt_eval_duration": 147547991,
+    "eval_duration": 2014117036,
+    "eval_count": 175,
+    "prompt_eval_count": 119,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:40:52.37007184Z",
+    "message": {
+      "role": "assistant",
+      "content": "전국의 유명한 가수들이 종교적 찬가인 바쟌을 스리 샤얌(Shri Shyam)의 발 앞에 바쳤습니다. 그는 평화와 희망을 담은 노래로 많은 사람들에게 감동을 주었고, 그의 연주는 단순한 음악이 아니라 깊은 감정의 표현이었습니다. 바쟌은 그의 음악을 통해 세상에 평온함과 지혜를 전달하며, 많은 관객들이 그의 노래를 통해 평화를 찾았습니다. 그의 발 앞에서의 공연은 단순한 음악 경험을 넘어, 인간의 존재와 의미에 대한 깊은 성찰을 불러일으켰습니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2204684870,
+    "load_duration": 22575416,
+    "prompt_eval_count": 119,
+    "prompt_eval_duration": 147547991,
+    "eval_count": 175,
+    "eval_duration": 2014117036
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788943250.1306443,
+      "nvidia_smi": {
+        "timestamp_unix": 1788943250.1306446,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.551,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788943250.1440175,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.296875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 992.21875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.296875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788943250.1564507,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209200,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788943252.370733,
+      "nvidia_smi": {
+        "timestamp_unix": 1788943252.3707335,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 14,
+            "power_w": 12.501,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788943252.3886507,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.2890625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 992.2109375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.2890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788943252.401085,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209192,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788943250.164959,
+      "response_received_unix": 1788943252.3706331,
+      "first_byte_unix": 1788943252.3705554,
+      "total_wall_ms": 2205.674171447754,
+      "queue_wait_ms": 2205.596446990967,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:40:52 GMT",
+        "Content-Length": "910",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788943252.4103436,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788943250.1649144
+    }
+  },
+  "wall_clock_unix": 1788943252.4103436
+}

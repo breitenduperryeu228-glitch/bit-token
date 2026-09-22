@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "llama3.2:1b",
+  "language": "spa_Latn",
+  "sample_id": "s0058",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Continúe la siguiente oración en español, en un párrafo corto:\n\nPasados cinco minutos del inicio del espectáculo, se desató un viento que, aproximadamente un minuto después, había alcanzado los 70 kilómetros por hora (...) luego llegó la lluvia, pero tan fuerte y tan densa que perforaba tu piel como una aguja. A continuación, cayó granizo del cielo; la gente, aterrorizada, gritaba y corría por encima de otros.\n\n/no_think",
+    "source_text": "Pasados cinco minutos del inicio del espectáculo, se desató un viento que, aproximadamente un minuto después, había alcanzado los 70 kilómetros por hora (...) luego llegó la lluvia, pero tan fuerte y tan densa que perforaba tu piel como una aguja. A continuación, cayó granizo del cielo; la gente, aterrorizada, gritaba y corría por encima de otros."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "...y yo, con el viento y la lluvia en mi cabello, me encontraba solo en medio de la tormenta, sin saber qué hacer ni dónde ir. La gravedad parecía haberse detenido, y todo lo que veía era una masa de agua y nieve que se deslizaba sobre el suelo como un mar de cristales rojos y brillantes.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 3194358518,
+    "load_duration": 72358344,
+    "prompt_eval_duration": 35197776,
+    "eval_duration": 3022475102,
+    "eval_count": 87,
+    "prompt_eval_count": 149,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-07T03:30:23.083787973Z",
+    "message": {
+      "role": "assistant",
+      "content": "...y yo, con el viento y la lluvia en mi cabello, me encontraba solo en medio de la tormenta, sin saber qué hacer ni dónde ir. La gravedad parecía haberse detenido, y todo lo que veía era una masa de agua y nieve que se deslizaba sobre el suelo como un mar de cristales rojos y brillantes."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 3194358518,
+    "load_duration": 72358344,
+    "prompt_eval_count": 149,
+    "prompt_eval_duration": 35197776,
+    "eval_count": 87,
+    "eval_duration": 3022475102
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788751819.8530476,
+      "nvidia_smi": {
+        "timestamp_unix": 1788751819.8530478,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.75,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 13,
+            "power_w": 12.5,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788751819.8667912,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 234.51953125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2210.9453125,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 234.51953125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1976.42578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788751819.8803034,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 240148,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788751823.0841773,
+      "nvidia_smi": {
+        "timestamp_unix": 1788751823.0841777,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.75,
+            "vram_total_mib": 8188.0,
+            "util_pct": 26,
+            "mem_util_pct": 14,
+            "power_w": 12.471,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788751823.0991442,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 238.66796875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2215.09375,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 238.66796875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1976.42578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788751823.1132798,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 244396,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788751819.8890445,
+      "response_received_unix": 1788751823.0841162,
+      "first_byte_unix": 1788751823.0840602,
+      "total_wall_ms": 3195.0716972351074,
+      "queue_wait_ms": 3195.0156688690186,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 07 Sep 2026 03:30:23 GMT",
+        "Content-Length": "591",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788751823.1222866,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788751819.8889933
+    }
+  },
+  "wall_clock_unix": 1788751823.1222866
+}

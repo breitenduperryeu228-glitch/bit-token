@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b-q8",
+  "language": "spa_Latn",
+  "sample_id": "s0092",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nEn el distrito de North Harbour, en el Océano Pacífico, se encuentran las playas de North Shore, que despliegan desde Long Bay, en el norte, hasta Devonport, en el sur.\n\n/no_think",
+    "source_text": "En el distrito de North Harbour, en el Océano Pacífico, se encuentran las playas de North Shore, que despliegan desde Long Bay, en el norte, hasta Devonport, en el sur."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "En el distrito de North Harbour, en el Océano Pacífico, se encuentran las playas de North Shore, que despliegan desde Long Bay, en el norte, hasta Devonport, en el sur.",
+  "ollama": {
+    "model": "qwen3:0.6b-q8",
+    "total_duration": 305974026,
+    "load_duration": 51267896,
+    "prompt_eval_duration": 4497794,
+    "eval_duration": 239371704,
+    "eval_count": 54,
+    "prompt_eval_count": 113,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b-q8",
+    "created_at": "2026-09-19T03:24:00.635015329Z",
+    "message": {
+      "role": "assistant",
+      "content": "<think>\n\n</think>\n\nEn el distrito de North Harbour, en el Océano Pacífico, se encuentran las playas de North Shore, que despliegan desde Long Bay, en el norte, hasta Devonport, en el sur."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 305974026,
+    "load_duration": 51267896,
+    "prompt_eval_count": 113,
+    "prompt_eval_duration": 4497794,
+    "eval_count": 54,
+    "eval_duration": 239371704
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789788240.2972572,
+      "nvidia_smi": {
+        "timestamp_unix": 1789788240.2972574,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2365.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 97,
+            "mem_util_pct": 81,
+            "power_w": 47.673,
+            "temp_c": 58,
+            "sm_clock_mhz": 2610,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789788240.3081045,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 100.37890625,
+        "vms_mib": 3980.078125,
+        "num_threads": 38,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 758.82421875,
+        "tree_threads": 85,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 100.37890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 658.4453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789788240.3201973,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4075600,
+        "proc_vm_rss_kib": 102788,
+        "proc_threads": 38,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789788240.6353312,
+      "nvidia_smi": {
+        "timestamp_unix": 1789788240.6353316,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2365.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 97,
+            "mem_util_pct": 81,
+            "power_w": 47.742,
+            "temp_c": 58,
+            "sm_clock_mhz": 2610,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789788240.6469631,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 104.08984375,
+        "vms_mib": 3980.078125,
+        "num_threads": 38,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 762.53515625,
+        "tree_threads": 85,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 104.08984375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 658.4453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789788240.6587176,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4075600,
+        "proc_vm_rss_kib": 106588,
+        "proc_threads": 38,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789788240.3286438,
+      "response_received_unix": 1789788240.635288,
+      "first_byte_unix": 1789788240.6352491,
+      "total_wall_ms": 306.6442012786865,
+      "queue_wait_ms": 306.60533905029297,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 19 Sep 2026 03:24:00 GMT",
+        "Content-Length": "510",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789788240.6663496,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789788240.3286085
+    }
+  },
+  "wall_clock_unix": 1789788240.6663496
+}

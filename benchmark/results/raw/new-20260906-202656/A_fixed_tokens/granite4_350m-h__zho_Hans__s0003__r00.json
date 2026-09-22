@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "granite4:350m-h",
+  "language": "zho_Hans",
+  "sample_id": "s0003",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请用中文继续下面这句话，写成一段简短的文字：\n\n据推测，他将在 2016 年参加总统竞选。\n\n/no_think",
+    "source_text": "据推测，他将在 2016 年参加总统竞选。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "根据推测，他将在 2016 年参加总统竞选。",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 626556141,
+    "load_duration": 42731647,
+    "prompt_eval_duration": 189631566,
+    "eval_duration": 375604141,
+    "eval_count": 24,
+    "prompt_eval_count": 69,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-06T12:39:09.881566474Z",
+    "message": {
+      "role": "assistant",
+      "content": "根据推测，他将在 2016 年参加总统竞选。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 626556141,
+    "load_duration": 42731647,
+    "prompt_eval_count": 69,
+    "prompt_eval_duration": 189631566,
+    "eval_count": 24,
+    "eval_duration": 375604141
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788698349.212808,
+      "nvidia_smi": {
+        "timestamp_unix": 1788698349.2128084,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2657.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 19,
+            "power_w": 13.729,
+            "temp_c": 55,
+            "sm_clock_mhz": 465,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788698349.2272446,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 569.2421875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 302646,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1369.27734375,
+        "tree_threads": 55,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 569.2421875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 259735,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 41521",
+            "rss_mib": 800.03515625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788698349.2439775,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 582904,
+        "proc_threads": 40,
+        "proc_vol_ctx": 301891,
+        "proc_invol_ctx": 755,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788698349.8819928,
+      "nvidia_smi": {
+        "timestamp_unix": 1788698349.8819933,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2657.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 37,
+            "mem_util_pct": 20,
+            "power_w": 13.787,
+            "temp_c": 55,
+            "sm_clock_mhz": 450,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788698349.8989248,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 570.91796875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 302646,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1372.1015625,
+        "tree_threads": 55,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 570.91796875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 259735,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 41521",
+            "rss_mib": 801.18359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788698349.9298868,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 584620,
+        "proc_threads": 40,
+        "proc_vol_ctx": 301891,
+        "proc_invol_ctx": 755,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788698349.2545857,
+      "response_received_unix": 1788698349.8819206,
+      "first_byte_unix": 1788698349.881862,
+      "total_wall_ms": 627.3348331451416,
+      "queue_wait_ms": 627.2761821746826,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sun, 06 Sep 2026 12:39:09 GMT",
+        "Content-Length": "354",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788698349.940622,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788698349.254535
+    }
+  },
+  "wall_clock_unix": 1788698349.940622
+}

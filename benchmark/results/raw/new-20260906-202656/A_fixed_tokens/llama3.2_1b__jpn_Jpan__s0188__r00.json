@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0188",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章を日本語で続けて、短い段落で書いてください。\n\n例えば、世界で最も普及している静止画写真のフィルム形式は35 mmで、これはアナログフィルム時代の終わり頃には主流のフィルムサイズでした。\n\n/no_think",
+    "source_text": "例えば、世界で最も普及している静止画写真のフィルム形式は35 mmで、これはアナログフィルム時代の終わり頃には主流のフィルムサイズでした。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "静止画写真のフィルムは、35 mm である。世界で最も普及しているのは、アナログフィルム時代の終わり頃に使用されていたものです。35 mm は、動きや音を記録するために使われていました。\n\nアナログフィルムは、光を通して動きや音を伝えるため、映像が静止したり動いたりしなかったりしました。このため、35 mm のフィルムは、動きや音を記録するために使用されていました。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 4597495526,
+    "load_duration": 72119435,
+    "prompt_eval_duration": 214386294,
+    "eval_duration": 4224570389,
+    "eval_count": 121,
+    "prompt_eval_count": 100,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-07T02:32:24.080705898Z",
+    "message": {
+      "role": "assistant",
+      "content": "静止画写真のフィルムは、35 mm である。世界で最も普及しているのは、アナログフィルム時代の終わり頃に使用されていたものです。35 mm は、動きや音を記録するために使われていました。\n\nアナログフィルムは、光を通して動きや音を伝えるため、映像が静止したり動いたりしなかったりしました。このため、35 mm のフィルムは、動きや音を記録するために使用されていました。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 4597495526,
+    "load_duration": 72119435,
+    "prompt_eval_count": 100,
+    "prompt_eval_duration": 214386294,
+    "eval_count": 121,
+    "eval_duration": 4224570389
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788748339.4482503,
+      "nvidia_smi": {
+        "timestamp_unix": 1788748339.4482508,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 28,
+            "mem_util_pct": 14,
+            "power_w": 12.641,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788748339.4618237,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 236.6875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2191.83203125,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 236.6875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1955.14453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788748339.475116,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 242368,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788748344.0810547,
+      "nvidia_smi": {
+        "timestamp_unix": 1788748344.0810552,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 14,
+            "power_w": 12.601,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788748344.0959342,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 233.70703125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2188.8515625,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 233.70703125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1955.14453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788748344.116843,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 239316,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788748339.482835,
+      "response_received_unix": 1788748344.080993,
+      "first_byte_unix": 1788748344.0809348,
+      "total_wall_ms": 4598.15788269043,
+      "queue_wait_ms": 4598.099708557129,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 07 Sep 2026 02:32:24 GMT",
+        "Content-Length": "814",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788748344.1248932,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788748339.4827952
+    }
+  },
+  "wall_clock_unix": 1788748344.1248932
+}

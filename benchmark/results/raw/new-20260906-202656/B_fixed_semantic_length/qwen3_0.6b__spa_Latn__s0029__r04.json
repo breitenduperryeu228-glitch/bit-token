@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b",
+  "language": "spa_Latn",
+  "sample_id": "s0029",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nAsesoró a Carter en materia de política exterior en las elecciones de 1976. Posteriormente, trabajó como asesor de seguridad nacional (ASN) entre 1977 y 1981, luego de Henry Kissinger.\n\n/no_think",
+    "source_text": "Asesoró a Carter en materia de política exterior en las elecciones de 1976. Posteriormente, trabajó como asesor de seguridad nacional (ASN) entre 1977 y 1981, luego de Henry Kissinger."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "Asesoró a Carter en política exterior durante las elecciones de 1976 y trabajó como asesor de seguridad nacional entre 1977 y 1981.",
+  "ollama": {
+    "model": "qwen3:0.6b",
+    "total_duration": 703782324,
+    "load_duration": 61436115,
+    "prompt_eval_duration": 15738325,
+    "eval_duration": 612782811,
+    "eval_count": 41,
+    "prompt_eval_count": 127,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-09-09T11:00:22.407214295Z",
+    "message": {
+      "role": "assistant",
+      "content": "Asesoró a Carter en política exterior durante las elecciones de 1976 y trabajó como asesor de seguridad nacional entre 1977 y 1981."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 703782324,
+    "load_duration": 61436115,
+    "prompt_eval_count": 127,
+    "prompt_eval_duration": 15738325,
+    "eval_count": 41,
+    "eval_duration": 612782811
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788951621.6655273,
+      "nvidia_smi": {
+        "timestamp_unix": 1788951621.6655278,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 11.955,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788951621.6794431,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 218.9609375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1011763,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1528.58203125,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 218.9609375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1309.62109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788951621.694051,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 224216,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1003783,
+        "proc_invol_ctx": 7980,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788951622.4077027,
+      "nvidia_smi": {
+        "timestamp_unix": 1788951622.4077034,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 29,
+            "mem_util_pct": 13,
+            "power_w": 11.924,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788951622.4252465,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 224.51953125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1011766,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1531.65625,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 224.51953125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1307.13671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788951622.4407668,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 229908,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1003786,
+        "proc_invol_ctx": 7980,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788951621.7030013,
+      "response_received_unix": 1788951622.407627,
+      "first_byte_unix": 1788951622.4075606,
+      "total_wall_ms": 704.6258449554443,
+      "queue_wait_ms": 704.559326171875,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 11:00:22 GMT",
+        "Content-Length": "429",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788951622.4497793,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788951621.7029545
+    }
+  },
+  "wall_clock_unix": 1788951622.4497793
+}

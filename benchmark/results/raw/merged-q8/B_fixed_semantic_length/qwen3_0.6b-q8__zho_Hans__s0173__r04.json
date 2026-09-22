@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b-q8",
+  "language": "zho_Hans",
+  "sample_id": "s0173",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n一对夫妻可能出于自己的利益，或者为其子女利益着想，因而决定不进行生育。\n\n/no_think",
+    "source_text": "一对夫妻可能出于自己的利益，或者为其子女利益着想，因而决定不进行生育。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "一对夫妻可能出于自己的利益，或者为其子女利益着想，因而决定不进行生育。",
+  "ollama": {
+    "model": "qwen3:0.6b-q8",
+    "total_duration": 161994740,
+    "load_duration": 48649269,
+    "prompt_eval_duration": 4506573,
+    "eval_duration": 101943993,
+    "eval_count": 25,
+    "prompt_eval_count": 75,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b-q8",
+    "created_at": "2026-09-19T03:09:20.413900056Z",
+    "message": {
+      "role": "assistant",
+      "content": "<think>\n\n</think>\n\n一对夫妻可能出于自己的利益，或者为其子女利益着想，因而决定不进行生育。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 161994740,
+    "load_duration": 48649269,
+    "prompt_eval_count": 75,
+    "prompt_eval_duration": 4506573,
+    "eval_count": 25,
+    "eval_duration": 101943993
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789787360.220295,
+      "nvidia_smi": {
+        "timestamp_unix": 1789787360.2202952,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2673.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 83,
+            "mem_util_pct": 77,
+            "power_w": 42.732,
+            "temp_c": 58,
+            "sm_clock_mhz": 2505,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789787360.231435,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 95.4765625,
+        "vms_mib": 3979.765625,
+        "num_threads": 38,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 751.234375,
+        "tree_threads": 85,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 95.4765625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 655.7578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789787360.2434382,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4075280,
+        "proc_vm_rss_kib": 97768,
+        "proc_threads": 38,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789787360.4143162,
+      "nvidia_smi": {
+        "timestamp_unix": 1789787360.414317,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2673.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 83,
+            "mem_util_pct": 77,
+            "power_w": 42.8,
+            "temp_c": 58,
+            "sm_clock_mhz": 2505,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789787360.4276338,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 95.890625,
+        "vms_mib": 3979.765625,
+        "num_threads": 38,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 750.9921875,
+        "tree_threads": 85,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 95.890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 655.1015625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789787360.4483924,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4075280,
+        "proc_vm_rss_kib": 98192,
+        "proc_threads": 38,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789787360.2515163,
+      "response_received_unix": 1789787360.414259,
+      "first_byte_unix": 1789787360.4142091,
+      "total_wall_ms": 162.74261474609375,
+      "queue_wait_ms": 162.69278526306152,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 19 Sep 2026 03:09:20 GMT",
+        "Content-Length": "444",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789787360.4569998,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789787360.2514784
+    }
+  },
+  "wall_clock_unix": 1789787360.4569998
+}

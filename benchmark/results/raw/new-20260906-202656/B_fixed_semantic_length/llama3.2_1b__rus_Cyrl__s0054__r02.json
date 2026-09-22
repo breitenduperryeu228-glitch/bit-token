@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0054",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nЖенщинам следует осознавать, что из-за культурных различий им может показаться, что их домогаются, женщин часто преследуют, берут за руку и так далее.\n\n/no_think",
+    "source_text": "Женщинам следует осознавать, что из-за культурных различий им может показаться, что их домогаются, женщин часто преследуют, берут за руку и так далее."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Без приветствий и пояснений, только сам абзац:\n\nЖенщинам следует осознавать, что из-за культурных различий им может показаться, что их домогаются, женщин часто преследуют, берут за руку и так далее. Это не потому, что они стремятся к власти или злоупотребляют властью, а скорее из-за непонимания и предубеждений, которые могут быть у других людей. Женщинам необходимо осознавать свои чувства и мыслить для себя, а не подчиняться эмоциям и предубеждениям других. Это требует от них критического мышления и принятия решений на основе их собственных ценностей и убеждений.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1118672878,
+    "load_duration": 74068213,
+    "prompt_eval_duration": 6710664,
+    "eval_duration": 974262212,
+    "eval_count": 168,
+    "prompt_eval_count": 129,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:43:35.330842022Z",
+    "message": {
+      "role": "assistant",
+      "content": "Без приветствий и пояснений, только сам абзац:\n\nЖенщинам следует осознавать, что из-за культурных различий им может показаться, что их домогаются, женщин часто преследуют, берут за руку и так далее. Это не потому, что они стремятся к власти или злоупотребляют властью, а скорее из-за непонимания и предубеждений, которые могут быть у других людей. Женщинам необходимо осознавать свои чувства и мыслить для себя, а не подчиняться эмоциям и предубеждениям других. Это требует от них критического мышления и принятия решений на основе их собственных ценностей и убеждений."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1118672878,
+    "load_duration": 74068213,
+    "prompt_eval_count": 129,
+    "prompt_eval_duration": 6710664,
+    "eval_count": 168,
+    "eval_duration": 974262212
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789137814.1679516,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137814.1679516,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 76.946,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137814.1780903,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.05078125,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 19239,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1146.8046875,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.05078125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 903.75390625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137814.1983669,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 248884,
+        "proc_threads": 32,
+        "proc_vol_ctx": 18914,
+        "proc_invol_ctx": 325,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789137815.3311815,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137815.3311818,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 76.414,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137815.3417938,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 248.82421875,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 19248,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1152.578125,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 248.82421875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 903.75390625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137815.3640263,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 254796,
+        "proc_threads": 32,
+        "proc_vol_ctx": 18922,
+        "proc_invol_ctx": 326,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789137814.211888,
+      "response_received_unix": 1789137815.3311276,
+      "first_byte_unix": 1789137815.331088,
+      "total_wall_ms": 1119.2395687103271,
+      "queue_wait_ms": 1119.1999912261963,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:43:35 GMT",
+        "Content-Length": "1337",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789137815.3776138,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789137814.2118464
+    }
+  },
+  "wall_clock_unix": 1789137815.3776138
+}

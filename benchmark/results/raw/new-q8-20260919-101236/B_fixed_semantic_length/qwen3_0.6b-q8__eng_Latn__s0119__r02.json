@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b-q8",
+  "language": "eng_Latn",
+  "sample_id": "s0119",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Please write exactly about 256 characters of text in English on the topic implied by the following sentence. Do not add greetings, do not add explanations, just the paragraph itself:\n\nThe photographer was transported to Ronald Reagan UCLA Medical Center, where he subsequently died.\n\n/no_think",
+    "source_text": "The photographer was transported to Ronald Reagan UCLA Medical Center, where he subsequently died."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "The photographer was transported to Ronald Reagan UCLA Medical Center, where he subsequently died.",
+  "ollama": {
+    "model": "qwen3:0.6b-q8",
+    "total_duration": 139221785,
+    "load_duration": 48070695,
+    "prompt_eval_duration": 4803845,
+    "eval_duration": 81642086,
+    "eval_count": 21,
+    "prompt_eval_count": 75,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b-q8",
+    "created_at": "2026-09-19T03:03:42.59084272Z",
+    "message": {
+      "role": "assistant",
+      "content": "<think>\n\n</think>\n\nThe photographer was transported to Ronald Reagan UCLA Medical Center, where he subsequently died."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 139221785,
+    "load_duration": 48070695,
+    "prompt_eval_count": 75,
+    "prompt_eval_duration": 4803845,
+    "eval_count": 21,
+    "eval_duration": 81642086
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789787022.4212089,
+      "nvidia_smi": {
+        "timestamp_unix": 1789787022.421209,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2608.625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 61,
+            "mem_util_pct": 57,
+            "power_w": 42.132,
+            "temp_c": 57,
+            "sm_clock_mhz": 2145,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789787022.4312274,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 110.48828125,
+        "vms_mib": 3763.69140625,
+        "num_threads": 35,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 751.34765625,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 110.48828125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 640.859375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789787022.442632,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3854020,
+        "proc_vm_rss_kib": 113140,
+        "proc_threads": 35,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789787022.5912201,
+      "nvidia_smi": {
+        "timestamp_unix": 1789787022.5912206,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2608.625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 53,
+            "mem_util_pct": 51,
+            "power_w": 42.166,
+            "temp_c": 54,
+            "sm_clock_mhz": 2595,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789787022.6046777,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 95.16015625,
+        "vms_mib": 3763.69140625,
+        "num_threads": 35,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 736.01953125,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 95.16015625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 640.859375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789787022.6170936,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3854020,
+        "proc_vm_rss_kib": 97444,
+        "proc_threads": 35,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789787022.4512274,
+      "response_received_unix": 1789787022.591167,
+      "first_byte_unix": 1789787022.5911229,
+      "total_wall_ms": 139.939546585083,
+      "queue_wait_ms": 139.89543914794922,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 19 Sep 2026 03:03:42 GMT",
+        "Content-Length": "435",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789787022.6258447,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789787022.4511857
+    }
+  },
+  "wall_clock_unix": 1789787022.6258447
+}

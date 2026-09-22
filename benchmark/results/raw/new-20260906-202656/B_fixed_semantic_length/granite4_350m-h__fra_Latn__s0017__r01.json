@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "fra_Latn",
+  "sample_id": "s0017",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Veuillez écrire environ 256 caractères de texte en français sur le sujet suggéré par la phrase suivante. Pas de salutations ni d'explications, juste le paragraphe :\n\nLes plans de livraison de vaccins dans les zones historiquement les plus touchées cette année ont été retardés en raison du manque de fonds et de la faible priorité accordée à ces maladies par rapport à d’autres.\n\n/no_think",
+    "source_text": "Les plans de livraison de vaccins dans les zones historiquement les plus touchées cette année ont été retardés en raison du manque de fonds et de la faible priorité accordée à ces maladies par rapport à d’autres."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Les plans de livraison des vaccins dans les zones historiquement touchées cette année ont été retardés en raison du manque de financement.",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 650051437,
+    "load_duration": 42322263,
+    "prompt_eval_duration": 173091266,
+    "eval_duration": 419694414,
+    "eval_count": 31,
+    "prompt_eval_count": 114,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T06:38:25.463739078Z",
+    "message": {
+      "role": "assistant",
+      "content": "Les plans de livraison des vaccins dans les zones historiquement touchées cette année ont été retardés en raison du manque de financement."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 650051437,
+    "load_duration": 42322263,
+    "prompt_eval_count": 114,
+    "prompt_eval_duration": 173091266,
+    "eval_count": 31,
+    "eval_duration": 419694414
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788935904.7790818,
+      "nvidia_smi": {
+        "timestamp_unix": 1788935904.779082,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.342,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788935904.792599,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 189.01171875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 892780,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 996.40625,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 189.01171875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 807.39453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788935904.8048944,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 193548,
+        "proc_threads": 40,
+        "proc_vol_ctx": 886124,
+        "proc_invol_ctx": 6656,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788935905.464163,
+      "nvidia_smi": {
+        "timestamp_unix": 1788935905.4641633,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 13,
+            "power_w": 12.37,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788935905.477542,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 184.06640625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 892784,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 991.4609375,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 184.06640625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 807.39453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788935905.4928284,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 188484,
+        "proc_threads": 40,
+        "proc_vol_ctx": 886128,
+        "proc_invol_ctx": 6656,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788935904.8132918,
+      "response_received_unix": 1788935905.464122,
+      "first_byte_unix": 1788935905.464076,
+      "total_wall_ms": 650.8302688598633,
+      "queue_wait_ms": 650.7842540740967,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 06:38:25 GMT",
+        "Content-Length": "444",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788935905.5026045,
+      "vram_delta_mib": -0.125
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788935904.8132472
+    }
+  },
+  "wall_clock_unix": 1788935905.5026045
+}

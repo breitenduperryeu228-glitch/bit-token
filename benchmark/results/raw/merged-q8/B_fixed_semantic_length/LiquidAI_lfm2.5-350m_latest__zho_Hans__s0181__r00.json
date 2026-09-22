@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "zho_Hans",
+  "sample_id": "s0181",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n每个人都能达到开悟的境界，而实现它的唯一阻碍是我们自己的紧张感和消极情绪。\n\n/no_think",
+    "source_text": "每个人都能达到开悟的境界，而实现它的唯一阻碍是我们自己的紧张感和消极情绪。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "中文：每个人都能达到开悟的境界，而实现它的唯一阻碍是我们自己的紧张感和消极情绪。\n\n中文：紧张感是内心的压力，消极情绪则是外部世界的影响。\n\n中文：这些两种情绪并不能完全消除，而是需要我们学会在面对它们时保持冷静。\n\n中文：正是这种平衡，让我们能够更深刻地理解自己和世界的真相。\n\n中文：每一个小小的觉醒，都能成为开悟的第一步。\n\n中文：正是每一个心灵的转变，才是实现真正觉醒的关键。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2108966789,
+    "load_duration": 30706075,
+    "prompt_eval_duration": 189141246,
+    "eval_duration": 1868814192,
+    "eval_count": 161,
+    "prompt_eval_count": 99,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:01:32.098727787Z",
+    "message": {
+      "role": "assistant",
+      "content": "中文：每个人都能达到开悟的境界，而实现它的唯一阻碍是我们自己的紧张感和消极情绪。\n\n中文：紧张感是内心的压力，消极情绪则是外部世界的影响。\n\n中文：这些两种情绪并不能完全消除，而是需要我们学会在面对它们时保持冷静。\n\n中文：正是这种平衡，让我们能够更深刻地理解自己和世界的真相。\n\n中文：每一个小小的觉醒，都能成为开悟的第一步。\n\n中文：正是每一个心灵的转变，才是实现真正觉醒的关键。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2108966789,
+    "load_duration": 30706075,
+    "prompt_eval_count": 99,
+    "prompt_eval_duration": 189141246,
+    "eval_count": 161,
+    "eval_duration": 1868814192
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788940889.9529405,
+      "nvidia_smi": {
+        "timestamp_unix": 1788940889.9529407,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 14,
+            "power_w": 12.503,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788940889.966978,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.93359375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 951295,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 984.85546875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.93359375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 779.921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788940889.9805148,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209852,
+        "proc_threads": 40,
+        "proc_vol_ctx": 944020,
+        "proc_invol_ctx": 7275,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788940892.0992591,
+      "nvidia_smi": {
+        "timestamp_unix": 1788940892.0992596,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.491,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788940892.1185036,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 197.6015625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 951296,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 977.4609375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 197.6015625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 779.859375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788940892.1311495,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 202344,
+        "proc_threads": 40,
+        "proc_vol_ctx": 944021,
+        "proc_invol_ctx": 7275,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788940889.9893587,
+      "response_received_unix": 1788940892.0991898,
+      "first_byte_unix": 1788940892.0991035,
+      "total_wall_ms": 2109.8310947418213,
+      "queue_wait_ms": 2109.7447872161865,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:01:32 GMT",
+        "Content-Length": "881",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788940892.1389377,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788940889.9893138
+    }
+  },
+  "wall_clock_unix": 1788940892.1389377
+}

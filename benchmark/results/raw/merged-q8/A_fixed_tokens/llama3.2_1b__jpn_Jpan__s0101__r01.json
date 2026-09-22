@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0101",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章を日本語で続けて、短い段落で書いてください。\n\n女性たちが庭で調理をし、店はいずれも街路に面した屋台に過ぎませんでした。家の建築には石が使われていました。\n\n/no_think",
+    "source_text": "女性たちが庭で調理をし、店はいずれも街路に面した屋台に過ぎませんでした。家の建築には石が使われていました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "日本の近代的な家は多くの場合、建物の外側に石や木などを使って作られていることが多いです。石を使用する家は、庭で調理をする女性たちが店を利用していました。\n\n店は街路に面した屋台にあり、女性たちは庭で調理をし、店はいずれもこのように見えていました。石や木の建物は、近くに住んでいる人が多かったため、店は家の外側に置かれています。\n\n石を使った家は、近くに住む人たちが多く住んでいると考えられています。石を使用する家は、自然と一致しているように見えます。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 5485774470,
+    "load_duration": 71988059,
+    "prompt_eval_duration": 34676640,
+    "eval_duration": 5270102537,
+    "eval_count": 155,
+    "prompt_eval_count": 93,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-07T01:45:24.030748461Z",
+    "message": {
+      "role": "assistant",
+      "content": "日本の近代的な家は多くの場合、建物の外側に石や木などを使って作られていることが多いです。石を使用する家は、庭で調理をする女性たちが店を利用していました。\n\n店は街路に面した屋台にあり、女性たちは庭で調理をし、店はいずれもこのように見えていました。石や木の建物は、近くに住んでいる人が多かったため、店は家の外側に置かれています。\n\n石を使った家は、近くに住む人たちが多く住んでいると考えられています。石を使用する家は、自然と一致しているように見えます。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 5485774470,
+    "load_duration": 71988059,
+    "prompt_eval_count": 93,
+    "prompt_eval_duration": 34676640,
+    "eval_count": 155,
+    "eval_duration": 5270102537
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788745518.5119777,
+      "nvidia_smi": {
+        "timestamp_unix": 1788745518.5119781,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 23,
+            "mem_util_pct": 13,
+            "power_w": 12.518,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788745518.5242152,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 233.28125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2185.64453125,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 233.28125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1952.36328125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788745518.5362115,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 238880,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788745524.0310357,
+      "nvidia_smi": {
+        "timestamp_unix": 1788745524.031036,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 23,
+            "mem_util_pct": 13,
+            "power_w": 12.505,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788745524.0449994,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 241.9296875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2194.29296875,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 241.9296875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1952.36328125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788745524.0596209,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 247736,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788745518.5446246,
+      "response_received_unix": 1788745524.0309885,
+      "first_byte_unix": 1788745524.030947,
+      "total_wall_ms": 5486.363887786865,
+      "queue_wait_ms": 5486.322402954102,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 07 Sep 2026 01:45:24 GMT",
+        "Content-Length": "969",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788745524.0690908,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788745518.544583
+    }
+  },
+  "wall_clock_unix": 1788745524.0690908
+}

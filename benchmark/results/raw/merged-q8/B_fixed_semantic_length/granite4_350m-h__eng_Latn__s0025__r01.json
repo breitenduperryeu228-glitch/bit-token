@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "eng_Latn",
+  "sample_id": "s0025",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Please write exactly about 256 characters of text in English on the topic implied by the following sentence. Do not add greetings, do not add explanations, just the paragraph itself:\n\nCongress began funding the obscenity initiative in fiscal 2005 and specified that the FBI must devote 10 agents to adult pornography.\n\n/no_think",
+    "source_text": "Congress began funding the obscenity initiative in fiscal 2005 and specified that the FBI must devote 10 agents to adult pornography."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Congress funded an obscenity program in FY2005 requiring the FBI to assign 10 agents for adult content.",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 576829398,
+    "load_duration": 43197641,
+    "prompt_eval_duration": 210539729,
+    "eval_duration": 307299933,
+    "eval_count": 23,
+    "prompt_eval_count": 83,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T05:27:09.241685914Z",
+    "message": {
+      "role": "assistant",
+      "content": "Congress funded an obscenity program in FY2005 requiring the FBI to assign 10 agents for adult content."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 576829398,
+    "load_duration": 43197641,
+    "prompt_eval_count": 83,
+    "prompt_eval_duration": 210539729,
+    "eval_count": 23,
+    "eval_duration": 307299933
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788931628.627537,
+      "nvidia_smi": {
+        "timestamp_unix": 1788931628.6275373,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1673.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 13,
+            "power_w": 12.382,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788931628.6422634,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 185.76953125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 867521,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 888.640625,
+        "tree_threads": 52,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 185.76953125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 702.87109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788931628.6560583,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 190228,
+        "proc_threads": 40,
+        "proc_vol_ctx": 861304,
+        "proc_invol_ctx": 6217,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788931629.2420578,
+      "nvidia_smi": {
+        "timestamp_unix": 1788931629.242058,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1673.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.307,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788931629.2559552,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 178.93359375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 867521,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 882.953125,
+        "tree_threads": 52,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 178.93359375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 704.01953125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788931629.2701826,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 183228,
+        "proc_threads": 40,
+        "proc_vol_ctx": 861304,
+        "proc_invol_ctx": 6217,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788931628.664476,
+      "response_received_unix": 1788931629.2420156,
+      "first_byte_unix": 1788931629.241967,
+      "total_wall_ms": 577.5396823883057,
+      "queue_wait_ms": 577.491044998169,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 05:27:09 GMT",
+        "Content-Length": "403",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788931629.2786863,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788931628.6644347
+    }
+  },
+  "wall_clock_unix": 1788931629.2786863
+}

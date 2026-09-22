@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "fra_Latn",
+  "sample_id": "s0071",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Veuillez écrire environ 256 caractères de texte en français sur le sujet suggéré par la phrase suivante. Pas de salutations ni d'explications, juste le paragraphe :\n\nIl existe différentes méthodes de purification de l'eau, dont certaines sont plus efficaces contre des menaces spécifiques.\n\n/no_think",
+    "source_text": "Il existe différentes méthodes de purification de l'eau, dont certaines sont plus efficaces contre des menaces spécifiques."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "La purification de l'eau repose sur plusieurs techniques, certaines étant particulièrement efficaces contre les pathogènes spécifiques. Les méthodes les plus courantes incluent la filtration, l'osmose inverse et l'ionisation. La filtration utilise des filtres de taille de particule pour séparer les impuretés, tandis que l'osmose inverse utilise une membrane semi-permeable pour retirer les ions. L'ionisation transforme les ions en molécules neutres, ce qui est utile pour les métaux lourds. Chaque méthode a ses avantages et inconvénients selon les besoins spécifiques de la situation.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 923456765,
+    "load_duration": 115013505,
+    "prompt_eval_duration": 20930734,
+    "eval_duration": 738589067,
+    "eval_count": 128,
+    "prompt_eval_count": 88,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T06:08:42.680364839Z",
+    "message": {
+      "role": "assistant",
+      "content": "La purification de l'eau repose sur plusieurs techniques, certaines étant particulièrement efficaces contre les pathogènes spécifiques. Les méthodes les plus courantes incluent la filtration, l'osmose inverse et l'ionisation. La filtration utilise des filtres de taille de particule pour séparer les impuretés, tandis que l'osmose inverse utilise une membrane semi-permeable pour retirer les ions. L'ionisation transforme les ions en molécules neutres, ce qui est utile pour les métaux lourds. Chaque méthode a ses avantages et inconvénients selon les besoins spécifiques de la situation."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 923456765,
+    "load_duration": 115013505,
+    "prompt_eval_count": 88,
+    "prompt_eval_duration": 20930734,
+    "eval_count": 128,
+    "eval_duration": 738589067
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789020521.7101417,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020521.710142,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 18,
+            "power_w": 61.043,
+            "temp_c": 75,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020521.720643,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 264.8515625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2356.5703125,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 264.8515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2091.71875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020521.742282,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 271208,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789020522.680779,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020522.6807795,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 12,
+            "mem_util_pct": 3,
+            "power_w": 62.377,
+            "temp_c": 75,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020522.692263,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 250.23828125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2341.98046875,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 250.23828125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2091.7421875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020522.715362,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 256244,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789020521.7565317,
+      "response_received_unix": 1789020522.680722,
+      "first_byte_unix": 1789020522.680676,
+      "total_wall_ms": 924.1902828216553,
+      "queue_wait_ms": 924.1442680358887,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:08:42 GMT",
+        "Content-Length": "898",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789020522.7295299,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789020521.7564864
+    }
+  },
+  "wall_clock_unix": 1789020522.7295299
+}

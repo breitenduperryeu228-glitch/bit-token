@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0040",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n1624年、オランダの東インド会社が台湾南西部に拠点を置き、原住民の穀物生産方法を変革し、中国人労働者を雇って米や砂糖のプランテーションに従事させました。\n\n/no_think",
+    "source_text": "1624年、オランダの東インド会社が台湾南西部に拠点を置き、原住民の穀物生産方法を変革し、中国人労働者を雇って米や砂糖のプランテーションに従事させました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "1624年、台湾南西部でオランダ東インド会社が原住民の穀物生産方法を変革し始めました。会社は中国人労働者を雇って米や砂糖のプランテーションに従事させました。\n\nこのような行動により、台湾南西部で原住民の生活が改善されました。原住民は、会社によって新しい技術と品物をもらい、生活がより豊かになりました。\n\nしかし、このような行動は、台湾南西部の原住民の権利や自主性に影響を与えました。台湾政府はこのような行動について調査し、原住民の権利を守るための措置を講じたと言っています。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1188827618,
+    "load_duration": 89798185,
+    "prompt_eval_duration": 9929474,
+    "eval_duration": 1017520561,
+    "eval_count": 175,
+    "prompt_eval_count": 147,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:16:37.870323068Z",
+    "message": {
+      "role": "assistant",
+      "content": "1624年、台湾南西部でオランダ東インド会社が原住民の穀物生産方法を変革し始めました。会社は中国人労働者を雇って米や砂糖のプランテーションに従事させました。\n\nこのような行動により、台湾南西部で原住民の生活が改善されました。原住民は、会社によって新しい技術と品物をもらい、生活がより豊かになりました。\n\nしかし、このような行動は、台湾南西部の原住民の権利や自主性に影響を与えました。台湾政府はこのような行動について調査し、原住民の権利を守るための措置を講じたと言っています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1188827618,
+    "load_duration": 89798185,
+    "prompt_eval_count": 147,
+    "prompt_eval_duration": 9929474,
+    "eval_count": 175,
+    "eval_duration": 1017520561
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789024596.6322951,
+      "nvidia_smi": {
+        "timestamp_unix": 1789024596.6322954,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 82.8,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789024596.6427665,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.51171875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.34765625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.51171875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 971.8359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789024596.6657875,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264716,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789024597.8707354,
+      "nvidia_smi": {
+        "timestamp_unix": 1789024597.870736,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 82.421,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789024597.882852,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.90234375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.73828125,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.90234375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 971.8359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789024597.9089227,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265116,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789024596.6811602,
+      "response_received_unix": 1789024597.8706627,
+      "first_byte_unix": 1789024597.8706124,
+      "total_wall_ms": 1189.502477645874,
+      "queue_wait_ms": 1189.4521713256836,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:16:37 GMT",
+        "Content-Length": "997",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789024597.9249122,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789024596.6811125
+    }
+  },
+  "wall_clock_unix": 1789024597.9249122
+}

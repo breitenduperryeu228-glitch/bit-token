@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "zho_Hans",
+  "sample_id": "s0113",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n遗憾的是，随着新的书写方式的出现，铅笔的地位越来越低，使用也越来越少。\n\n/no_think",
+    "source_text": "遗憾的是，随着新的书写方式的出现，铅笔的地位越来越低，使用也越来越少。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "在过去的几十年里，铅笔一直是人们日常生活中不可或缺的一部分。然而，在近年来的新式书写技术的推出后，铅笔的地位开始受到影响。随着电子设备的普及和智能手机的出现，人们越来越倾向于使用这些高效、方便且无需手动操作的工具。同时，随着书写方式的变化，铅笔也面临着新的挑战。许多人开始对铅笔缺乏兴趣，甚至认为它们过时了。然而，这并不意味着铅笔会被完全消除。事实上，新式书写技术的出现使得铅笔的使用量增加了一些，但也引发了人们对其可持续性和环境影响的担忧。一些专家开始提倡在日常生活中尽可能减少使用铅笔，并寻找更环保的替代品。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1411286790,
+    "load_duration": 78738291,
+    "prompt_eval_duration": 6666613,
+    "eval_duration": 1236172140,
+    "eval_count": 213,
+    "prompt_eval_count": 103,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T06:57:08.601260056Z",
+    "message": {
+      "role": "assistant",
+      "content": "在过去的几十年里，铅笔一直是人们日常生活中不可或缺的一部分。然而，在近年来的新式书写技术的推出后，铅笔的地位开始受到影响。随着电子设备的普及和智能手机的出现，人们越来越倾向于使用这些高效、方便且无需手动操作的工具。同时，随着书写方式的变化，铅笔也面临着新的挑战。许多人开始对铅笔缺乏兴趣，甚至认为它们过时了。然而，这并不意味着铅笔会被完全消除。事实上，新式书写技术的出现使得铅笔的使用量增加了一些，但也引发了人们对其可持续性和环境影响的担忧。一些专家开始提倡在日常生活中尽可能减少使用铅笔，并寻找更环保的替代品。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1411286790,
+    "load_duration": 78738291,
+    "prompt_eval_count": 103,
+    "prompt_eval_duration": 6666613,
+    "eval_count": 213,
+    "eval_duration": 1236172140
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789023427.1428058,
+      "nvidia_smi": {
+        "timestamp_unix": 1789023427.1428063,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 82.915,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789023427.1533396,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.46484375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.56640625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.46484375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 972.1015625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789023427.1751285,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264668,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789023428.6016574,
+      "nvidia_smi": {
+        "timestamp_unix": 1789023428.6016576,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 82.938,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789023428.6125505,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.28125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.40234375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.28125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 972.12109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789023428.6365077,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264480,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789023427.1896136,
+      "response_received_unix": 1789023428.601596,
+      "first_byte_unix": 1789023428.601555,
+      "total_wall_ms": 1411.982536315918,
+      "queue_wait_ms": 1411.9415283203125,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:57:08 GMT",
+        "Content-Length": "1066",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789023428.6513267,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789023427.1895702
+    }
+  },
+  "wall_clock_unix": 1789023428.6513267
+}

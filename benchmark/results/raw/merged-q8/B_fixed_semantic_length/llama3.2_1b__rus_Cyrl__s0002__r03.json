@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0002",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nМонтевидео расположен в субтропиках. В летние месяцы температура воздуха выше +30°С является обычным явлением.\n\n/no_think",
+    "source_text": "Монтевидео расположен в субтропиках. В летние месяцы температура воздуха выше +30°С является обычным явлением."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Монтевидéo - это город на юго-западной части Испании, расположенный в субтропиках, где климат характеризуется высокими температурами в летние месяцы. В июле и августе средняя температура воздуха в Монтевидео составляет от +25 до +32 градусов Сельзия, что является обычным явлением в этом регионе.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 648434614,
+    "load_duration": 77175141,
+    "prompt_eval_duration": 5924535,
+    "eval_duration": 529502300,
+    "eval_count": 92,
+    "prompt_eval_count": 116,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:40:14.938914953Z",
+    "message": {
+      "role": "assistant",
+      "content": "Монтевидéo - это город на юго-западной части Испании, расположенный в субтропиках, где климат характеризуется высокими температурами в летние месяцы. В июле и августе средняя температура воздуха в Монтевидео составляет от +25 до +32 градусов Сельзия, что является обычным явлением в этом регионе."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 648434614,
+    "load_duration": 77175141,
+    "prompt_eval_count": 116,
+    "prompt_eval_duration": 5924535,
+    "eval_count": 92,
+    "eval_duration": 529502300
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789137614.245462,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137614.2454622,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 71.639,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137614.255901,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 242.69140625,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 10927,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1102.375,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 242.69140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 859.68359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137614.2764628,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 248516,
+        "proc_threads": 32,
+        "proc_vol_ctx": 10726,
+        "proc_invol_ctx": 201,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789137614.93925,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137614.9392507,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 42,
+            "mem_util_pct": 47,
+            "power_w": 72.889,
+            "temp_c": 76,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137614.950477,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 242.50390625,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 10951,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1102.1875,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 242.50390625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 859.68359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137614.9737163,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 248324,
+        "proc_threads": 32,
+        "proc_vol_ctx": 10750,
+        "proc_invol_ctx": 201,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789137614.290178,
+      "response_received_unix": 1789137614.9391947,
+      "first_byte_unix": 1789137614.9391522,
+      "total_wall_ms": 649.0166187286377,
+      "queue_wait_ms": 648.9741802215576,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:40:14 GMT",
+        "Content-Length": "832",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789137614.9874935,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789137614.2901378
+    }
+  },
+  "wall_clock_unix": 1789137614.9874935
+}

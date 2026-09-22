@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "spa_Latn",
+  "sample_id": "s0136",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nEn 1994, este conflicto condujo a la formación de la autoproclamada República de Transnistria, al este de Moldavia, que cuenta con gobierno y moneda propios, pero que ningún estado miembro de la ONU reconoce.\n\n/no_think",
+    "source_text": "En 1994, este conflicto condujo a la formación de la autoproclamada República de Transnistria, al este de Moldavia, que cuenta con gobierno y moneda propios, pero que ningún estado miembro de la ONU reconoce."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "La República de Transnistria es una región autónoma dentro del estado de Moldavia, con su propia gobernanza y moneda, pero sin reconocimiento internacional.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 320241369,
+    "load_duration": 73186747,
+    "prompt_eval_duration": 5913929,
+    "eval_duration": 221497484,
+    "eval_count": 39,
+    "prompt_eval_count": 131,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T08:10:05.994603818Z",
+    "message": {
+      "role": "assistant",
+      "content": "La República de Transnistria es una región autónoma dentro del estado de Moldavia, con su propia gobernanza y moneda, pero sin reconocimiento internacional."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 320241369,
+    "load_duration": 73186747,
+    "prompt_eval_count": 131,
+    "prompt_eval_duration": 5913929,
+    "eval_count": 39,
+    "eval_duration": 221497484
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789027805.6271737,
+      "nvidia_smi": {
+        "timestamp_unix": 1789027805.6271737,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 0,
+            "mem_util_pct": 0,
+            "power_w": 61.971,
+            "temp_c": 76,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789027805.6376991,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.765625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1278.1015625,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.765625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1019.3359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789027805.6596887,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264976,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789027805.994935,
+      "nvidia_smi": {
+        "timestamp_unix": 1789027805.9949355,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 91,
+            "mem_util_pct": 100,
+            "power_w": 60.731,
+            "temp_c": 77,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789027806.005788,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.6796875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1278.02734375,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.6796875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1019.34765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789027806.0289361,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264888,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789027805.6740384,
+      "response_received_unix": 1789027805.9948795,
+      "first_byte_unix": 1789027805.994837,
+      "total_wall_ms": 320.84107398986816,
+      "queue_wait_ms": 320.7986354827881,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 08:10:05 GMT",
+        "Content-Length": "454",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789027806.043298,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789027805.6739945
+    }
+  },
+  "wall_clock_unix": 1789027806.043298
+}

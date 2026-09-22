@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b",
+  "language": "kor_Hang",
+  "sample_id": "s0065",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n문명이라는 단어는 '시민답다'를 뜻하는 라틴어 시빌리스(civilis), 시민을 뜻하는 라틴어 시비스(civis), 그리고 도시 혹은 도시 주를 뜻하는 라틴어 시비타스(citavas)에서 비롯된 것으로 사회의 규모를 정의합니다.\n\n/no_think",
+    "source_text": "문명이라는 단어는 '시민답다'를 뜻하는 라틴어 시빌리스(civilis), 시민을 뜻하는 라틴어 시비스(civis), 그리고 도시 혹은 도시 주를 뜻하는 라틴어 시비타스(citavas)에서 비롯된 것으로 사회의 규모를 정의합니다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "문명은 시민을 뜻하는 라틴어 시비스, 도시를 뜻하는 라틴어 시비타스, 그리고 시민답다는 뜻하는 라틴어 시민에서 비롯된 것으로, 사회의 규모를 정의합니다.",
+  "ollama": {
+    "model": "qwen3:0.6b",
+    "total_duration": 1063844632,
+    "load_duration": 49694992,
+    "prompt_eval_duration": 16039250,
+    "eval_duration": 977500963,
+    "eval_count": 64,
+    "prompt_eval_count": 166,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-09-09T10:48:21.246762423Z",
+    "message": {
+      "role": "assistant",
+      "content": "문명은 시민을 뜻하는 라틴어 시비스, 도시를 뜻하는 라틴어 시비타스, 그리고 시민답다는 뜻하는 라틴어 시민에서 비롯된 것으로, 사회의 규모를 정의합니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1063844632,
+    "load_duration": 49694992,
+    "prompt_eval_count": 166,
+    "prompt_eval_duration": 16039250,
+    "eval_count": 64,
+    "eval_duration": 977500963
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788950900.1491964,
+      "nvidia_smi": {
+        "timestamp_unix": 1788950900.1491969,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.094,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788950900.1627202,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 221.265625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1006333,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1529.859375,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 221.265625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1308.59375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788950900.1742527,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 226576,
+        "proc_threads": 40,
+        "proc_vol_ctx": 998442,
+        "proc_invol_ctx": 7891,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788950901.2473986,
+      "nvidia_smi": {
+        "timestamp_unix": 1788950901.247399,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.078,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788950901.2622428,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 221.62109375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1006334,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1530.87890625,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 221.62109375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1309.2578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788950901.2782497,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 226940,
+        "proc_threads": 40,
+        "proc_vol_ctx": 998443,
+        "proc_invol_ctx": 7891,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788950900.182519,
+      "response_received_unix": 1788950901.2473042,
+      "first_byte_unix": 1788950901.2472231,
+      "total_wall_ms": 1064.7852420806885,
+      "queue_wait_ms": 1064.704179763794,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 10:48:21 GMT",
+        "Content-Length": "507",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788950901.2876363,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788950900.1824746
+    }
+  },
+  "wall_clock_unix": 1788950901.2876363
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0172",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n今年最大の大会は12月にラスカニタスのポロ競技場で開催されます。\n\n/no_think",
+    "source_text": "今年最大の大会は12月にラスカニタスのポロ競技場で開催されます。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "12月、LASカニタス市のポロ競技場で、世界の選手たちが集まる大きな大会です。ポロ競技は、馬を乗り、競技をして勝負するスポーツです。日本では、1960年に初めて開催されました。\n\nこの大会には、世界の各国から選手たちが参加します。選手たちは、ポロ競技の技術とスキルを身につけていきます。選手たちが競技をして勝負するのは、ポロ競技の基本的な側面です。\n\nこの大会は、ポロ競技の文化やスポーツの知識を広めることを目的としています。選手たちが競技をして勝負することで、ポロ競技の文化やスポーツの知識を身につけていきます。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1218848975,
+    "load_duration": 85237485,
+    "prompt_eval_duration": 6706226,
+    "eval_duration": 1043499080,
+    "eval_count": 180,
+    "prompt_eval_count": 102,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:35:00.002327277Z",
+    "message": {
+      "role": "assistant",
+      "content": "12月、LASカニタス市のポロ競技場で、世界の選手たちが集まる大きな大会です。ポロ競技は、馬を乗り、競技をして勝負するスポーツです。日本では、1960年に初めて開催されました。\n\nこの大会には、世界の各国から選手たちが参加します。選手たちは、ポロ競技の技術とスキルを身につけていきます。選手たちが競技をして勝負するのは、ポロ競技の基本的な側面です。\n\nこの大会は、ポロ競技の文化やスポーツの知識を広めることを目的としています。選手たちが競技をして勝負することで、ポロ競技の文化やスポーツの知識を身につけていきます。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1218848975,
+    "load_duration": 85237485,
+    "prompt_eval_count": 102,
+    "prompt_eval_duration": 6706226,
+    "eval_count": 180,
+    "eval_duration": 1043499080
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789025698.7367053,
+      "nvidia_smi": {
+        "timestamp_unix": 1789025698.7367053,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 80.893,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789025698.74735,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.5390625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1231.8984375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.5390625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789025698.7687242,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264744,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789025700.0026808,
+      "nvidia_smi": {
+        "timestamp_unix": 1789025700.002681,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 79.708,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789025700.0137668,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.890625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1232.25,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789025700.036944,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265104,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789025698.7831237,
+      "response_received_unix": 1789025700.0026174,
+      "first_byte_unix": 1789025700.0025756,
+      "total_wall_ms": 1219.4936275482178,
+      "queue_wait_ms": 1219.451904296875,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:35:00 GMT",
+        "Content-Length": "1047",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789025700.0513008,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789025698.7830787
+    }
+  },
+  "wall_clock_unix": 1789025700.0513008
+}

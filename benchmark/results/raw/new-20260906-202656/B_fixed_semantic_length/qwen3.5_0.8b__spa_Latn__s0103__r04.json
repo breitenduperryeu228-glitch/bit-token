@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "spa_Latn",
+  "sample_id": "s0103",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nDel total del agua proveniente de los ríos del mundo que desemboca en los océanos, el 20 por ciento deriva del Amazonas.\n\n/no_think",
+    "source_text": "Del total del agua proveniente de los ríos del mundo que desemboca en los océanos, el 20 por ciento deriva del Amazonas."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "El 20% del agua que llega a los océanos proviene del Amazonas, lo que representa una fracción significativa del total de ríos del mundo. Este río es crucial para el ciclo hidrológico global, transportando agua desde sus fuentes hasta los grandes océanos.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 499165574,
+    "load_duration": 122755800,
+    "prompt_eval_duration": 22222721,
+    "eval_duration": 329498746,
+    "eval_count": 57,
+    "prompt_eval_count": 99,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T06:00:53.519424346Z",
+    "message": {
+      "role": "assistant",
+      "content": "El 20% del agua que llega a los océanos proviene del Amazonas, lo que representa una fracción significativa del total de ríos del mundo. Este río es crucial para el ciclo hidrológico global, transportando agua desde sus fuentes hasta los grandes océanos."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 499165574,
+    "load_duration": 122755800,
+    "prompt_eval_count": 99,
+    "prompt_eval_duration": 22222721,
+    "eval_count": 57,
+    "eval_duration": 329498746
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789020052.969238,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020052.9692383,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 68,
+            "mem_util_pct": 54,
+            "power_w": 56.098,
+            "temp_c": 76,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020052.9819732,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 253.1171875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2343.3984375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 253.1171875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2090.28125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020053.0048175,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 259192,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789020053.5199158,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020053.5199163,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 68,
+            "mem_util_pct": 54,
+            "power_w": 52.354,
+            "temp_c": 76,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020053.531976,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 256.90625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2347.1875,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 256.90625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2090.28125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020053.556867,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 263072,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789020053.019906,
+      "response_received_unix": 1789020053.5198505,
+      "first_byte_unix": 1789020053.5197923,
+      "total_wall_ms": 499.94444847106934,
+      "queue_wait_ms": 499.88627433776855,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:00:53 GMT",
+        "Content-Length": "557",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789020053.5720067,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789020053.0198574
+    }
+  },
+  "wall_clock_unix": 1789020053.5720067
+}

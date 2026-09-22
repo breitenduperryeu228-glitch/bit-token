@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "spa_Latn",
+  "sample_id": "s0079",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nLa meta de USA Gymnastics y USOC es la misma: lograr que la gimnasia y otros deportes sean lo más seguro posible para que los atletas persigan sus sueños en un entorno protegido, positivo y potenciado.\n\n/no_think",
+    "source_text": "La meta de USA Gymnastics y USOC es la misma: lograr que la gimnasia y otros deportes sean lo más seguro posible para que los atletas persigan sus sueños en un entorno protegido, positivo y potenciado."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "La seguridad es el objetivo común de USA Gymnastics y USOC, buscando crear un entorno donde los deportistas puedan alcanzar sus objetivos sin riesgos innecesarios.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 346016824,
+    "load_duration": 83633838,
+    "prompt_eval_duration": 5990058,
+    "eval_duration": 238383017,
+    "eval_count": 42,
+    "prompt_eval_count": 130,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T08:07:42.138480254Z",
+    "message": {
+      "role": "assistant",
+      "content": "La seguridad es el objetivo común de USA Gymnastics y USOC, buscando crear un entorno donde los deportistas puedan alcanzar sus objetivos sin riesgos innecesarios."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 346016824,
+    "load_duration": 83633838,
+    "prompt_eval_count": 130,
+    "prompt_eval_duration": 5990058,
+    "eval_count": 42,
+    "eval_duration": 238383017
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789027661.7418807,
+      "nvidia_smi": {
+        "timestamp_unix": 1789027661.741881,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 0,
+            "mem_util_pct": 0,
+            "power_w": 60.64,
+            "temp_c": 75,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789027661.7524846,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.51171875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1251.23046875,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.51171875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 992.71875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789027661.7765493,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264716,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789027662.1388092,
+      "nvidia_smi": {
+        "timestamp_unix": 1789027662.1388094,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 41,
+            "power_w": 62.175,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789027662.1497836,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.75390625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1251.47265625,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.75390625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 992.71875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789027662.174818,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264964,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789027661.7920988,
+      "response_received_unix": 1789027662.1387594,
+      "first_byte_unix": 1789027662.1387184,
+      "total_wall_ms": 346.6606140136719,
+      "queue_wait_ms": 346.6196060180664,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 08:07:42 GMT",
+        "Content-Length": "459",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789027662.1902845,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789027661.7920475
+    }
+  },
+  "wall_clock_unix": 1789027662.1902845
+}

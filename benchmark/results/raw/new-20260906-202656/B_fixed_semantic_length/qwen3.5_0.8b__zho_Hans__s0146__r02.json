@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "zho_Hans",
+  "sample_id": "s0146",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n投票存在两极分化的情况，29% 的受访者认为澳大利亚应该尽快成立共和国，31% 的人则认为澳大利亚永远不应该成立共和国。\n\n/no_think",
+    "source_text": "投票存在两极分化的情况，29% 的受访者认为澳大利亚应该尽快成立共和国，31% 的人则认为澳大利亚永远不应该成立共和国。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "投票机制呈现出明显的两极分化态势，多数选民倾向于激进立场，而另一部分人则持保守态度。其中，29% 的受访者强烈主张澳大利亚应迅速组建共和国，而 31% 的人则坚决反对任何可能引发分裂的举措。这种分歧反映了社会对未来的深刻焦虑与期待。",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 550150320,
+    "load_duration": 114611061,
+    "prompt_eval_duration": 20717095,
+    "eval_duration": 388856990,
+    "eval_count": 68,
+    "prompt_eval_count": 91,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T01:07:13.064293027Z",
+    "message": {
+      "role": "assistant",
+      "content": "投票机制呈现出明显的两极分化态势，多数选民倾向于激进立场，而另一部分人则持保守态度。其中，29% 的受访者强烈主张澳大利亚应迅速组建共和国，而 31% 的人则坚决反对任何可能引发分裂的举措。这种分歧反映了社会对未来的深刻焦虑与期待。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 550150320,
+    "load_duration": 114611061,
+    "prompt_eval_count": 91,
+    "prompt_eval_duration": 20717095,
+    "eval_count": 68,
+    "eval_duration": 388856990
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789002432.4683533,
+      "nvidia_smi": {
+        "timestamp_unix": 1789002432.4683535,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 89,
+            "mem_util_pct": 71,
+            "power_w": 60.453,
+            "temp_c": 72,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789002432.4787993,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 245.2109375,
+        "vms_mib": 4154.27734375,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2210.515625,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 245.2109375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 1965.3046875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789002432.4997973,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4253980,
+        "proc_vm_rss_kib": 251096,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789002433.0646966,
+      "nvidia_smi": {
+        "timestamp_unix": 1789002433.064697,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 0,
+            "mem_util_pct": 0,
+            "power_w": 58.431,
+            "temp_c": 69,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789002433.0759819,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 249.9921875,
+        "vms_mib": 4154.27734375,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2215.296875,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 249.9921875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 1965.3046875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789002433.0997765,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4253980,
+        "proc_vm_rss_kib": 255992,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789002432.5138006,
+      "response_received_unix": 1789002433.0646422,
+      "first_byte_unix": 1789002433.064596,
+      "total_wall_ms": 550.8415699005127,
+      "queue_wait_ms": 550.795316696167,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 01:07:13 GMT",
+        "Content-Length": "627",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789002433.113989,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789002432.513761
+    }
+  },
+  "wall_clock_unix": 1789002433.113989
+}

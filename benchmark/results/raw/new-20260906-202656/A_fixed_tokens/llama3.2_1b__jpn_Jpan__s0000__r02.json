@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0000",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章を日本語で続けて、短い段落で書いてください。\n\n英国ポンドは一般的に島内のどこでも利用でき、スタンレーのクレジットカードや米ドルもよく利用できます。\n\n/no_think",
+    "source_text": "英国ポンドは一般的に島内のどこでも利用でき、スタンレーのクレジットカードや米ドルもよく利用できます。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "英国のポンドは島内に使えることが多く、スタンレーのクレジットカードや米ドルもよく使われる。ポンドは英国のドルの1/1000です。ポンドを買うと、約2,000円になります。\n\nポンドを買うときには、クレジットカードやビザなどを使います。クレジットカードは、スタンレーのクレジットカードのようなもので、ポンドを購入することができます。ビザは、米国に住んでいる人だけが使えるかもしれません。\n\nポンドを買うときには、ポンドを買う前に、クレジットカードやビザなどを準備しておくことが重要です。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 5859109633,
+    "load_duration": 75753532,
+    "prompt_eval_duration": 34602476,
+    "eval_duration": 5652181380,
+    "eval_count": 162,
+    "prompt_eval_count": 83,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-07T00:44:51.759365939Z",
+    "message": {
+      "role": "assistant",
+      "content": "英国のポンドは島内に使えることが多く、スタンレーのクレジットカードや米ドルもよく使われる。ポンドは英国のドルの1/1000です。ポンドを買うと、約2,000円になります。\n\nポンドを買うときには、クレジットカードやビザなどを使います。クレジットカードは、スタンレーのクレジットカードのようなもので、ポンドを購入することができます。ビザは、米国に住んでいる人だけが使えるかもしれません。\n\nポンドを買うときには、ポンドを買う前に、クレジットカードやビザなどを準備しておくことが重要です。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 5859109633,
+    "load_duration": 75753532,
+    "prompt_eval_count": 83,
+    "prompt_eval_duration": 34602476,
+    "eval_count": 162,
+    "eval_duration": 5652181380
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788741885.864978,
+      "nvidia_smi": {
+        "timestamp_unix": 1788741885.8649783,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.5625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 25,
+            "mem_util_pct": 14,
+            "power_w": 12.588,
+            "temp_c": 54,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788741885.8786373,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 237.01171875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2190.30078125,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 237.01171875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1953.2890625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788741885.8912587,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 242700,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788741891.7597227,
+      "nvidia_smi": {
+        "timestamp_unix": 1788741891.759723,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.5625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 24,
+            "mem_util_pct": 14,
+            "power_w": 12.572,
+            "temp_c": 54,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788741891.774013,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 236.90625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2190.1953125,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 236.90625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1953.2890625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788741891.7884142,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 242592,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788741885.8998647,
+      "response_received_unix": 1788741891.759673,
+      "first_byte_unix": 1788741891.7596276,
+      "total_wall_ms": 5859.808444976807,
+      "queue_wait_ms": 5859.762907028198,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 07 Sep 2026 00:44:51 GMT",
+        "Content-Length": "998",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788741891.7973232,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788741885.8998215
+    }
+  },
+  "wall_clock_unix": 1788741891.7973232
+}

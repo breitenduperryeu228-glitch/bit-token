@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "rus_Cyrl",
+  "sample_id": "s0170",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, продолжите следующее предложение на русском языке, одним коротким абзацем:\n\nВ статье \"Речь президента\" Оливер Сакс описал, как люди, которые из-за повреждения мозга неспособны понимать речь, тем не менее могут правильно оценить искренность говорящего.\n\n/no_think",
+    "source_text": "В статье \"Речь президента\" Оливер Сакс описал, как люди, которые из-за повреждения мозга неспособны понимать речь, тем не менее могут правильно оценить искренность говорящего."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Оливер Сакс подчеркнул, что despite the damage to the brain, people can still correctly assess the sincerity of the speaker through subtle cues like tone, body language, and context.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 813108493,
+    "load_duration": 34968605,
+    "prompt_eval_duration": 255579029,
+    "eval_duration": 510295784,
+    "eval_count": 45,
+    "prompt_eval_count": 111,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-06T15:59:57.96632115Z",
+    "message": {
+      "role": "assistant",
+      "content": "Оливер Сакс подчеркнул, что despite the damage to the brain, people can still correctly assess the sincerity of the speaker through subtle cues like tone, body language, and context."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 813108493,
+    "load_duration": 34968605,
+    "prompt_eval_count": 111,
+    "prompt_eval_duration": 255579029,
+    "eval_count": 45,
+    "eval_duration": 510295784
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788710397.1143105,
+      "nvidia_smi": {
+        "timestamp_unix": 1788710397.1143107,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.3125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 26,
+            "mem_util_pct": 14,
+            "power_w": 12.673,
+            "temp_c": 52,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788710397.1283078,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 589.046875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 352880,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1373.97265625,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 589.046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 784.92578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788710397.1434689,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 603184,
+        "proc_threads": 40,
+        "proc_vol_ctx": 351572,
+        "proc_invol_ctx": 1308,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788710397.9668465,
+      "nvidia_smi": {
+        "timestamp_unix": 1788710397.966847,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.3125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 25,
+            "mem_util_pct": 14,
+            "power_w": 12.664,
+            "temp_c": 52,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788710397.9847898,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 589.140625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 352880,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1374.94140625,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 589.140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 785.80078125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788710398.0004957,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 603280,
+        "proc_threads": 40,
+        "proc_vol_ctx": 351572,
+        "proc_invol_ctx": 1308,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788710397.1528091,
+      "response_received_unix": 1788710397.9667518,
+      "first_byte_unix": 1788710397.9666884,
+      "total_wall_ms": 813.9426708221436,
+      "queue_wait_ms": 813.8792514801025,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sun, 06 Sep 2026 15:59:57 GMT",
+        "Content-Length": "517",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788710398.0100255,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788710397.1527605
+    }
+  },
+  "wall_clock_unix": 1788710398.0100255
+}

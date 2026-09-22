@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "zho_Hans",
+  "sample_id": "s0040",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n1624 年，荷兰东印度公司在台湾地区西南部建立基地，开始改变原住民的粮食生产方式，并雇佣华工在其水稻和蔗糖种植园工作。\n\n/no_think",
+    "source_text": "1624 年，荷兰东印度公司在台湾地区西南部建立基地，开始改变原住民的粮食生产方式，并雇佣华工在其水稻和蔗糖种植园工作。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "1624年荷兰东印度公司在台湾西南部建立基地，开始对原住民的粮食生产方式进行深刻改变。他们雇佣了华工，担任种植园的管理者和技术人员，推动农业现代化。\n\n华工是荷兰东印度公司的核心技术人员，他们掌握了最新的种植技术和管理方法，提升了生产效率。他们的经验和技能在当地得到了广泛应用，促进了当地经济的发展。\n\n同时，荷兰东印度公司还注重文化融合，试图将当地习俗与现代农业结合。他们在种植园中推广了一些传统的农业实践，帮助原住民提高粮食产量。\n\n这种双重策略——技术改造与文化融合——在短时间内显著提升了当地的农业生产力。然而，随着时间的推移，原住民的生存环境也面临挑战，部分社区因资源争夺而面临困境。\n\n这种历史背景在现代社会中依然具有现实意义，反映了殖民时期的影响和当前全球化带来的复杂局面。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 3331538295,
+    "load_duration": 25884737,
+    "prompt_eval_duration": 258825494,
+    "eval_duration": 3016632132,
+    "eval_count": 259,
+    "prompt_eval_count": 117,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T07:37:44.227030445Z",
+    "message": {
+      "role": "assistant",
+      "content": "1624年荷兰东印度公司在台湾西南部建立基地，开始对原住民的粮食生产方式进行深刻改变。他们雇佣了华工，担任种植园的管理者和技术人员，推动农业现代化。\n\n华工是荷兰东印度公司的核心技术人员，他们掌握了最新的种植技术和管理方法，提升了生产效率。他们的经验和技能在当地得到了广泛应用，促进了当地经济的发展。\n\n同时，荷兰东印度公司还注重文化融合，试图将当地习俗与现代农业结合。他们在种植园中推广了一些传统的农业实践，帮助原住民提高粮食产量。\n\n这种双重策略——技术改造与文化融合——在短时间内显著提升了当地的农业生产力。然而，随着时间的推移，原住民的生存环境也面临挑战，部分社区因资源争夺而面临困境。\n\n这种历史背景在现代社会中依然具有现实意义，反映了殖民时期的影响和当前全球化带来的复杂局面。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 3331538295,
+    "load_duration": 25884737,
+    "prompt_eval_count": 117,
+    "prompt_eval_duration": 258825494,
+    "eval_count": 259,
+    "eval_duration": 3016632132
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788939460.856066,
+      "nvidia_smi": {
+        "timestamp_unix": 1788939460.8560667,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.583,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788939460.871618,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 205.06640625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 931480,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 980.80078125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 205.06640625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 775.734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788939460.8859634,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209988,
+        "proc_threads": 40,
+        "proc_vol_ctx": 924317,
+        "proc_invol_ctx": 7163,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788939464.227453,
+      "nvidia_smi": {
+        "timestamp_unix": 1788939464.2274535,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.519,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788939464.245463,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.86328125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 931890,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 978.59765625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.86328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 775.734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788939464.2593486,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207732,
+        "proc_threads": 40,
+        "proc_vol_ctx": 924726,
+        "proc_invol_ctx": 7164,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788939460.8950846,
+      "response_received_unix": 1788939464.2273622,
+      "first_byte_unix": 1788939464.2273042,
+      "total_wall_ms": 3332.277536392212,
+      "queue_wait_ms": 3332.2196006774902,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 07:37:44 GMT",
+        "Content-Length": "1332",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788939464.2677221,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788939460.8950398
+    }
+  },
+  "wall_clock_unix": 1788939464.2677221
+}

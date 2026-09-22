@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "llama3.2:1b",
+  "language": "zho_Hans",
+  "sample_id": "s0013",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请用中文继续下面这句话，写成一段简短的文字：\n\n亚马孙河干流长 6387 公里（3980 英里）。河水来自数千条较小的支流。\n\n/no_think",
+    "source_text": "亚马孙河干流长 6387 公里（3980 英里）。河水来自数千条较小的支流。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "亚马孙河是南美洲最长的河流之一，源自阿拉斯加山脉和安第斯山脉的高原。它从中美洲的巴拿马州出发，经过几座大都会城市后， finally 结束于巴西的巴拉利亚州。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 2568214148,
+    "load_duration": 70608635,
+    "prompt_eval_duration": 35724825,
+    "eval_duration": 2419180752,
+    "eval_count": 70,
+    "prompt_eval_count": 82,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-07T00:09:33.571793918Z",
+    "message": {
+      "role": "assistant",
+      "content": "亚马孙河是南美洲最长的河流之一，源自阿拉斯加山脉和安第斯山脉的高原。它从中美洲的巴拿马州出发，经过几座大都会城市后， finally 结束于巴西的巴拉利亚州。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2568214148,
+    "load_duration": 70608635,
+    "prompt_eval_count": 82,
+    "prompt_eval_duration": 35724825,
+    "eval_count": 70,
+    "eval_duration": 2419180752
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788739770.9683454,
+      "nvidia_smi": {
+        "timestamp_unix": 1788739770.9683456,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.5,
+            "vram_total_mib": 8188.0,
+            "util_pct": 23,
+            "mem_util_pct": 13,
+            "power_w": 12.579,
+            "temp_c": 54,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788739770.9818738,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 232.8515625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 475956,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2161.6875,
+        "tree_threads": 55,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 232.8515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1928.8359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788739770.9945297,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 238440,
+        "proc_threads": 40,
+        "proc_vol_ctx": 472195,
+        "proc_invol_ctx": 3761,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788739773.57208,
+      "nvidia_smi": {
+        "timestamp_unix": 1788739773.5720801,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 24,
+            "mem_util_pct": 13,
+            "power_w": 12.573,
+            "temp_c": 54,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788739773.5864704,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 238.015625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 475963,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2166.8515625,
+        "tree_threads": 55,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 238.015625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1928.8359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788739773.600546,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 243728,
+        "proc_threads": 40,
+        "proc_vol_ctx": 472202,
+        "proc_invol_ctx": 3761,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788739771.0031931,
+      "response_received_unix": 1788739773.5720346,
+      "first_byte_unix": 1788739773.5719984,
+      "total_wall_ms": 2568.8414573669434,
+      "queue_wait_ms": 2568.80521774292,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 07 Sep 2026 00:09:33 GMT",
+        "Content-Length": "516",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788739773.609597,
+      "vram_delta_mib": 0.125
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788739771.0031507
+    }
+  },
+  "wall_clock_unix": 1788739773.609597
+}

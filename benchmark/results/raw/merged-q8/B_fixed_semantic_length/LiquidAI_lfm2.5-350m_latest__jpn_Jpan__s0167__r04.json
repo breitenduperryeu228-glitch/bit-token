@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0167",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n馬から放り出される瞬間に鐙に足が引っかかっていると、逃げようとする馬に引きずられてしまう恐れがあります。この危険を最小限に抑えるために、いくつもの安全対策を講じることができます。\n\n/no_think",
+    "source_text": "馬から放り出される瞬間に鐙に足が引っかかっていると、逃げようとする馬に引きずられてしまう恐れがあります。この危険を最小限に抑えるために、いくつもの安全対策を講じることができます。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "馬から放り出される瞬間、鐙に足が引っかかると、逃げようとする馬は無力になり、危険にさらされます。鐙の重さや位置、馬の体格によって影響は大きく、特に大型の馬や狭い路地ではより注意が必要です。安全対策としては、まず鐙の位置を正確に把握し、馬の動きを予測することが重要です。また、馬の疲労やストレスを軽減するため、休憩を挟んだり、適切な水分補給を促したりすることが効果的です。さらに、鐙の周囲に障害物を設置したり、警戒を強めるための柵を設置したりすることで、逃げ道を確保できます。最後に、馬の行動を観察し、危険を感じた場合は即座に停止することが最善です。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2724146431,
+    "load_duration": 23783637,
+    "prompt_eval_duration": 289531826,
+    "eval_duration": 2384817074,
+    "eval_count": 199,
+    "prompt_eval_count": 123,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:30:26.118493551Z",
+    "message": {
+      "role": "assistant",
+      "content": "馬から放り出される瞬間、鐙に足が引っかかると、逃げようとする馬は無力になり、危険にさらされます。鐙の重さや位置、馬の体格によって影響は大きく、特に大型の馬や狭い路地ではより注意が必要です。安全対策としては、まず鐙の位置を正確に把握し、馬の動きを予測することが重要です。また、馬の疲労やストレスを軽減するため、休憩を挟んだり、適切な水分補給を促したりすることが効果的です。さらに、鐙の周囲に障害物を設置したり、警戒を強めるための柵を設置したりすることで、逃げ道を確保できます。最後に、馬の行動を観察し、危険を感じた場合は即座に停止することが最善です。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2724146431,
+    "load_duration": 23783637,
+    "prompt_eval_count": 123,
+    "prompt_eval_duration": 289531826,
+    "eval_count": 199,
+    "eval_duration": 2384817074
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788942623.3586774,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942623.358678,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 31,
+            "mem_util_pct": 14,
+            "power_w": 12.37,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942623.372352,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.453125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 971895,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 989.484375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.03125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942623.3860846,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207312,
+        "proc_threads": 40,
+        "proc_vol_ctx": 964486,
+        "proc_invol_ctx": 7409,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788942626.1189845,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942626.118985,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.417,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942626.1337261,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.203125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 971895,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 990.296875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.203125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.09375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942626.1494467,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208080,
+        "proc_threads": 40,
+        "proc_vol_ctx": 964486,
+        "proc_invol_ctx": 7409,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788942623.393818,
+      "response_received_unix": 1788942626.1188922,
+      "first_byte_unix": 1788942626.1188283,
+      "total_wall_ms": 2725.074291229248,
+      "queue_wait_ms": 2725.010395050049,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:30:26 GMT",
+        "Content-Length": "1138",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788942626.1590824,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788942623.3937685
+    }
+  },
+  "wall_clock_unix": 1788942626.1590824
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0180",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章を日本語で続けて、短い段落で書いてください。\n\nサンゴ礁への旅行は一年中行われ、サンゴ礁での上記のい原因によるする怪我は稀にしかありません。\n\n/no_think",
+    "source_text": "サンゴ礁への旅行は一年中行われ、サンゴ礁での上記のい原因によるする怪我は稀にしかありません。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "サンゴ礁では、海の中に多くのサンゴが生えているため、サンゴ礁への旅行をする人も多いです。ですが、サンゴ礁での旅行をするときに起こる怪我は少ないと言われています。\n\nサンゴ礁の海面が低く、水深が深い所があります。したがって、サンゴ礁で泳ぐ人や、サンゴを取る人などが、水の中に入り込む危険があります。そのため、サンゴ礁での旅行をするときは、安全な方法で泳ぎ、サンゴを取ることができます。\n\nサンゴ礁では、海の水温が低く、体に害を受ける可能性もあります。したがって、サンゴ礁での旅行をするときは、水温が高くて健康的な水を飲むことを心配してください。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 7348433839,
+    "load_duration": 66372220,
+    "prompt_eval_duration": 35112723,
+    "eval_duration": 7107246019,
+    "eval_count": 203,
+    "prompt_eval_count": 88,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-07T02:28:08.373765118Z",
+    "message": {
+      "role": "assistant",
+      "content": "サンゴ礁では、海の中に多くのサンゴが生えているため、サンゴ礁への旅行をする人も多いです。ですが、サンゴ礁での旅行をするときに起こる怪我は少ないと言われています。\n\nサンゴ礁の海面が低く、水深が深い所があります。したがって、サンゴ礁で泳ぐ人や、サンゴを取る人などが、水の中に入り込む危険があります。そのため、サンゴ礁での旅行をするときは、安全な方法で泳ぎ、サンゴを取ることができます。\n\nサンゴ礁では、海の水温が低く、体に害を受ける可能性もあります。したがって、サンゴ礁での旅行をするときは、水温が高くて健康的な水を飲むことを心配してください。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 7348433839,
+    "load_duration": 66372220,
+    "prompt_eval_count": 88,
+    "prompt_eval_duration": 35112723,
+    "eval_count": 203,
+    "eval_duration": 7107246019
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788748080.9881105,
+      "nvidia_smi": {
+        "timestamp_unix": 1788748080.988111,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.4375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 14,
+            "power_w": 12.651,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788748081.0023053,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 233.83984375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2189.09765625,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 233.83984375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1955.2578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788748081.016,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 239452,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788748088.3740368,
+      "nvidia_smi": {
+        "timestamp_unix": 1788748088.374037,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 28,
+            "mem_util_pct": 14,
+            "power_w": 12.601,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788748088.3879437,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 234.40234375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2189.66015625,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 234.40234375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1955.2578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788748088.40204,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 240028,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788748081.024964,
+      "response_received_unix": 1788748088.3739924,
+      "first_byte_unix": 1788748088.373952,
+      "total_wall_ms": 7349.0283489227295,
+      "queue_wait_ms": 7348.987817764282,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 07 Sep 2026 02:28:08 GMT",
+        "Content-Length": "1107",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788748088.410738,
+      "vram_delta_mib": -0.0625
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788748081.0249205
+    }
+  },
+  "wall_clock_unix": 1788748088.410738
+}

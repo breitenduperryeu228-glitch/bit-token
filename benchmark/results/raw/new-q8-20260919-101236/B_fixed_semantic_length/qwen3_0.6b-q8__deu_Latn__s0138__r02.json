@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b-q8",
+  "language": "deu_Latn",
+  "sample_id": "s0138",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Bitte schreiben Sie ungefähr 256 Zeichen Text auf Deutsch über das Thema des folgenden Satzes. Keine Begrüßung, keine Erklärungen, nur den Absatz selbst:\n\nDie angemessene Nutzung von Blogs „kann Schülerinnen und Schüler befähigen, analytischer und kritischer zu werden; durch die aktive Reaktion auf Internetmaterialien können die Schülerinnen und Schüler ihre Positionen im Kontext der Texte anderer definieren und ihre eigenen Perspektiven zu bestimmten Themen darlegen“ (Oravec, 2002).\n\n/no_think",
+    "source_text": "Die angemessene Nutzung von Blogs „kann Schülerinnen und Schüler befähigen, analytischer und kritischer zu werden; durch die aktive Reaktion auf Internetmaterialien können die Schülerinnen und Schüler ihre Positionen im Kontext der Texte anderer definieren und ihre eigenen Perspektiven zu bestimmten Themen darlegen“ (Oravec, 2002)."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "Die angemessene Nutzung von Blogs kann Schülerinnen und Schüler befähigen, analytischer und kritischer zu werden; durch die aktive Reaktion auf Internetmaterialien können die Schülerinnen und Schüler ihre Positionen im Kontext der Texte anderer definieren und ihre eigenen Perspektiven zu bestimmten Themen darlegen.",
+  "ollama": {
+    "model": "qwen3:0.6b-q8",
+    "total_duration": 408066005,
+    "load_duration": 48607740,
+    "prompt_eval_duration": 4591932,
+    "eval_duration": 334476647,
+    "eval_count": 75,
+    "prompt_eval_count": 147,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b-q8",
+    "created_at": "2026-09-19T03:36:27.724234377Z",
+    "message": {
+      "role": "assistant",
+      "content": "<think>\n\n</think>\n\nDie angemessene Nutzung von Blogs kann Schülerinnen und Schüler befähigen, analytischer und kritischer zu werden; durch die aktive Reaktion auf Internetmaterialien können die Schülerinnen und Schüler ihre Positionen im Kontext der Texte anderer definieren und ihre eigenen Perspektiven zu bestimmten Themen darlegen."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 408066005,
+    "load_duration": 48607740,
+    "prompt_eval_count": 147,
+    "prompt_eval_duration": 4591932,
+    "eval_count": 75,
+    "eval_duration": 334476647
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789788987.2840633,
+      "nvidia_smi": {
+        "timestamp_unix": 1789788987.2840636,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2347.25,
+            "vram_total_mib": 8188.0,
+            "util_pct": 97,
+            "mem_util_pct": 80,
+            "power_w": 50.254,
+            "temp_c": 58,
+            "sm_clock_mhz": 2355,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789788987.2956834,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 107.5625,
+        "vms_mib": 3980.078125,
+        "num_threads": 38,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 764.7890625,
+        "tree_threads": 85,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 107.5625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 657.2265625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789788987.3073318,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4075600,
+        "proc_vm_rss_kib": 110144,
+        "proc_threads": 38,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789788987.7246363,
+      "nvidia_smi": {
+        "timestamp_unix": 1789788987.7246366,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2347.25,
+            "vram_total_mib": 8188.0,
+            "util_pct": 94,
+            "mem_util_pct": 78,
+            "power_w": 50.77,
+            "temp_c": 59,
+            "sm_clock_mhz": 2355,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789788987.737702,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 111.46484375,
+        "vms_mib": 3980.078125,
+        "num_threads": 38,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 769.93359375,
+        "tree_threads": 85,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 111.46484375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 658.46875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789788987.750151,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4075600,
+        "proc_vm_rss_kib": 114140,
+        "proc_threads": 38,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789788987.315836,
+      "response_received_unix": 1789788987.7245789,
+      "first_byte_unix": 1789788987.7245321,
+      "total_wall_ms": 408.74290466308594,
+      "queue_wait_ms": 408.69617462158203,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 19 Sep 2026 03:36:27 GMT",
+        "Content-Length": "662",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789788987.758116,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789788987.3157926
+    }
+  },
+  "wall_clock_unix": 1789788987.758116
+}

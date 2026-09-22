@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "kor_Hang",
+  "sample_id": "s0014",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n분리 및 재조합은 각 세대마다 두 유전자풀 사이에서 일어난 변이를 이리저리 뒤섞습니다.\n\n/no_think",
+    "source_text": "분리 및 재조합은 각 세대마다 두 유전자풀 사이에서 일어난 변이를 이리저리 뒤섞습니다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "분리와 재조합은 각 세대마다 두 유전자가 다른 위치에 있는지 여부를 결정하는 과정을 말합니다. 이 과정을 통해 유전자의 위치가 바뀌는 경우, 새로운 유전자pool을 형성할 수 있습니다.\n\n유전자의 위치가 바뀌면, 새로운 유전자 pool이 형성되며, 이 pool에서 새로운 유전자가 선택될 수 있습니다. 이로 인해 유전자의 특성은 변할 수 있으며, 새로운 유전자가 선택될 수 있기 때문에 유전자의 특성은 constantly 바뀌는 것으로 보입니다.\n\n분리와 재조합의 주된 목적은 유전자의 특성을 결정하는 데 도움을 줄 수 있습니다. 이 과정을 통해 유전자의 특성을 결정할 수 있는 방법이 제공됩니다.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1202033420,
+    "load_duration": 83429128,
+    "prompt_eval_duration": 6710144,
+    "eval_duration": 1026949568,
+    "eval_count": 177,
+    "prompt_eval_count": 110,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:40:49.618834248Z",
+    "message": {
+      "role": "assistant",
+      "content": "분리와 재조합은 각 세대마다 두 유전자가 다른 위치에 있는지 여부를 결정하는 과정을 말합니다. 이 과정을 통해 유전자의 위치가 바뀌는 경우, 새로운 유전자pool을 형성할 수 있습니다.\n\n유전자의 위치가 바뀌면, 새로운 유전자 pool이 형성되며, 이 pool에서 새로운 유전자가 선택될 수 있습니다. 이로 인해 유전자의 특성은 변할 수 있으며, 새로운 유전자가 선택될 수 있기 때문에 유전자의 특성은 constantly 바뀌는 것으로 보입니다.\n\n분리와 재조합의 주된 목적은 유전자의 특성을 결정하는 데 도움을 줄 수 있습니다. 이 과정을 통해 유전자의 특성을 결정할 수 있는 방법이 제공됩니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1202033420,
+    "load_duration": 83429128,
+    "prompt_eval_count": 110,
+    "prompt_eval_duration": 6710144,
+    "eval_count": 177,
+    "eval_duration": 1026949568
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789026048.366035,
+      "nvidia_smi": {
+        "timestamp_unix": 1789026048.3660352,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 91,
+            "mem_util_pct": 100,
+            "power_w": 82.362,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789026048.3768253,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 257.0859375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.35546875,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 257.0859375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.26953125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789026048.4004812,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 263256,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789026049.6191986,
+      "nvidia_smi": {
+        "timestamp_unix": 1789026049.6191988,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 91,
+            "mem_util_pct": 100,
+            "power_w": 82.287,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789026049.6301868,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.765625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1232.03515625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.765625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.26953125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789026049.6556783,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264976,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789026048.4164054,
+      "response_received_unix": 1789026049.6191332,
+      "first_byte_unix": 1789026049.6190913,
+      "total_wall_ms": 1202.7277946472168,
+      "queue_wait_ms": 1202.685832977295,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:40:49 GMT",
+        "Content-Length": "1078",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789026049.6715379,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789026048.416349
+    }
+  },
+  "wall_clock_unix": 1789026049.6715379
+}

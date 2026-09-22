@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0183",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n수천 km(마일) 떨어진 사람과 통화한다면 인공위성을 쓰고 있는 겁니다.\n\n/no_think",
+    "source_text": "수천 km(마일) 떨어진 사람과 통화한다면 인공위성을 쓰고 있는 겁니다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "인공위성을 쓰는 것은 우주 탐사에 있어 필수적인 기술입니다. 이는 지구와의 거리를 줄여 지구를 관측할 수 있게 하며, 인간의 존재를 보다 넓은 우주에서 확인할 수 있습니다. 또한, 인공위성을 통해 지구의 미래를 예측하고, 지속 가능한 생활 방식을 연구할 수 있습니다. 이러한 기술은 미래의 생태계 보존과 지구 환경 개선에 중요한 역할을 할 것입니다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1594376598,
+    "load_duration": 24110866,
+    "prompt_eval_duration": 156935672,
+    "eval_duration": 1397389272,
+    "eval_count": 121,
+    "prompt_eval_count": 104,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T09:15:39.854875505Z",
+    "message": {
+      "role": "assistant",
+      "content": "인공위성을 쓰는 것은 우주 탐사에 있어 필수적인 기술입니다. 이는 지구와의 거리를 줄여 지구를 관측할 수 있게 하며, 인간의 존재를 보다 넓은 우주에서 확인할 수 있습니다. 또한, 인공위성을 통해 지구의 미래를 예측하고, 지속 가능한 생활 방식을 연구할 수 있습니다. 이러한 기술은 미래의 생태계 보존과 지구 환경 개선에 중요한 역할을 할 것입니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1594376598,
+    "load_duration": 24110866,
+    "prompt_eval_count": 104,
+    "prompt_eval_duration": 156935672,
+    "eval_count": 121,
+    "eval_duration": 1397389272
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788945338.224579,
+      "nvidia_smi": {
+        "timestamp_unix": 1788945338.2245796,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.522,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788945338.240124,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.5078125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 998.46484375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.5078125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.95703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788945338.2522202,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209416,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788945339.8554146,
+      "nvidia_smi": {
+        "timestamp_unix": 1788945339.855415,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.541,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788945339.8703332,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.6796875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 997.16015625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.6796875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.48046875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788945339.8831909,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208568,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788945338.2600546,
+      "response_received_unix": 1788945339.8553374,
+      "first_byte_unix": 1788945339.8552694,
+      "total_wall_ms": 1595.282793045044,
+      "queue_wait_ms": 1595.21484375,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 09:15:39 GMT",
+        "Content-Length": "789",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788945339.891024,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788945338.2600124
+    }
+  },
+  "wall_clock_unix": 1788945339.891024
+}

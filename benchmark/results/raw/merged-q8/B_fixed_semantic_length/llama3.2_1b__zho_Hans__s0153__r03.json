@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "zho_Hans",
+  "sample_id": "s0153",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n如果他们使用航空的方式运输货物，在某些航线上，可能要花几天的时间才能卸货和通关。\n\n/no_think",
+    "source_text": "如果他们使用航空的方式运输货物，在某些航线上，可能要花几天的时间才能卸货和通关。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "在一些飞行商业运输公司中，为了确保货物安全和有效运输，通常会采取多种措施。例如，如果他们使用航空的方式运输货物，在某些航线上，可能要花几天的时间才能卸货和通关。这是因为需要进行严格的检查和验收，以确保货物符合要求和安全标准。同时，也需要等待飞机上的乘客 disembark，进行最后一次检查和验收，这可能会延误运输时间。为了解决这个问题，航空公司通常会采取措施减少卸货和通关的时间。例如，他们可以增加货物的重量限制或使用特殊的货物车型来提高运输效率。同时，也可以通过改善货物的安全性和防止损坏等措施来降低通关时间。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1248953113,
+    "load_duration": 77673378,
+    "prompt_eval_duration": 6695648,
+    "eval_duration": 1090540803,
+    "eval_count": 188,
+    "prompt_eval_count": 104,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:03:37.433981863Z",
+    "message": {
+      "role": "assistant",
+      "content": "在一些飞行商业运输公司中，为了确保货物安全和有效运输，通常会采取多种措施。例如，如果他们使用航空的方式运输货物，在某些航线上，可能要花几天的时间才能卸货和通关。这是因为需要进行严格的检查和验收，以确保货物符合要求和安全标准。同时，也需要等待飞机上的乘客 disembark，进行最后一次检查和验收，这可能会延误运输时间。为了解决这个问题，航空公司通常会采取措施减少卸货和通关的时间。例如，他们可以增加货物的重量限制或使用特殊的货物车型来提高运输效率。同时，也可以通过改善货物的安全性和防止损坏等措施来降低通关时间。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1248953113,
+    "load_duration": 77673378,
+    "prompt_eval_count": 104,
+    "prompt_eval_duration": 6695648,
+    "eval_count": 188,
+    "eval_duration": 1090540803
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789023816.1385164,
+      "nvidia_smi": {
+        "timestamp_unix": 1789023816.1385167,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 81.208,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789023816.1488016,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.8828125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1235.1171875,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.8828125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 976.234375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789023816.1701055,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265096,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789023817.434342,
+      "nvidia_smi": {
+        "timestamp_unix": 1789023817.4343424,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 83.369,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789023817.4451704,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.4140625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1234.6484375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.4140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 976.234375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789023817.4688933,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264616,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789023816.1846745,
+      "response_received_unix": 1789023817.43428,
+      "first_byte_unix": 1789023817.4342384,
+      "total_wall_ms": 1249.605417251587,
+      "queue_wait_ms": 1249.5639324188232,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:03:37 GMT",
+        "Content-Length": "1049",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789023817.4830115,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789023816.184629
+    }
+  },
+  "wall_clock_unix": 1789023817.4830115
+}

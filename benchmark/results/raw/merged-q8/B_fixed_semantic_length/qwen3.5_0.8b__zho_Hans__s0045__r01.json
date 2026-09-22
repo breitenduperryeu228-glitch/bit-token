@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "zho_Hans",
+  "sample_id": "s0045",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n20 世纪 80 年代，他在《出租车》、《欢呼》以及《特蕾西·厄尔曼秀》等节目工作。\n\n/no_think",
+    "source_text": "20 世纪 80 年代，他在《出租车》、《欢呼》以及《特蕾西·厄尔曼秀》等节目工作。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "20 世纪 80 年代，这位艺术家在电视荧屏上频繁亮相，他的表演风格独树一帜。他擅长捕捉瞬间的戏剧张力，将生活中的琐碎与宏大叙事巧妙融合。观众往往被那种独特的幽默感所深深吸引，仿佛能透过他的眼睛看到世界的另一面。他的角色塑造既真实又充满理想主义色彩，常常在平凡的日常中挖掘出深刻的社会意义。这种独特的艺术表达方式，不仅赢得了无数观众的喜爱，也深深影响了后来的影视创作。他通过镜头语言，构建了一个个充满想象力的世界，让观众在笑声中感受到生活的丰富与美好。",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 5523423667,
+    "load_duration": 107172232,
+    "prompt_eval_duration": 355899144,
+    "eval_duration": 5012186339,
+    "eval_count": 127,
+    "prompt_eval_count": 92,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-09T16:57:38.043573635Z",
+    "message": {
+      "role": "assistant",
+      "content": "20 世纪 80 年代，这位艺术家在电视荧屏上频繁亮相，他的表演风格独树一帜。他擅长捕捉瞬间的戏剧张力，将生活中的琐碎与宏大叙事巧妙融合。观众往往被那种独特的幽默感所深深吸引，仿佛能透过他的眼睛看到世界的另一面。他的角色塑造既真实又充满理想主义色彩，常常在平凡的日常中挖掘出深刻的社会意义。这种独特的艺术表达方式，不仅赢得了无数观众的喜爱，也深深影响了后来的影视创作。他通过镜头语言，构建了一个个充满想象力的世界，让观众在笑声中感受到生活的丰富与美好。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 5523423667,
+    "load_duration": 107172232,
+    "prompt_eval_count": 92,
+    "prompt_eval_duration": 355899144,
+    "eval_count": 127,
+    "eval_duration": 5012186339
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788973052.486427,
+      "nvidia_smi": {
+        "timestamp_unix": 1788973052.4864275,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 25,
+            "mem_util_pct": 14,
+            "power_w": 12.185,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788973052.4995005,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 246.55859375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1036323,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2952.21484375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 246.55859375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1675624,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 37131",
+            "rss_mib": 2705.65625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788973052.5119166,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 252476,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1027928,
+        "proc_invol_ctx": 8395,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788973058.044135,
+      "nvidia_smi": {
+        "timestamp_unix": 1788973058.0441353,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 28,
+            "mem_util_pct": 14,
+            "power_w": 12.033,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788973058.0584686,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 283.65625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1036323,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2989.3359375,
+        "tree_threads": 86,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 283.65625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1675624,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 37131",
+            "rss_mib": 2705.6796875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788973058.076092,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 290464,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1027928,
+        "proc_invol_ctx": 8395,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788973052.5197458,
+      "response_received_unix": 1788973058.0440814,
+      "first_byte_unix": 1788973058.0440168,
+      "total_wall_ms": 5524.335622787476,
+      "queue_wait_ms": 5524.271011352539,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 16:57:38 GMT",
+        "Content-Length": "965",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788973058.0874083,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788973052.519695
+    }
+  },
+  "wall_clock_unix": 1788973058.0874083
+}

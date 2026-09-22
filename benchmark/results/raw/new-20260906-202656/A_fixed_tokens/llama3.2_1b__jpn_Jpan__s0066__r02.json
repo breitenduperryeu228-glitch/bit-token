@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0066",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章を日本語で続けて、短い段落で書いてください。\n\nドイツの焼き菓子の多くは、アーモンドやヘーゼルナッツなどの木の実を使っています。人気のあるケーキは、特に強いコーヒーとよく合います。\n\n/no_think",
+    "source_text": "ドイツの焼き菓子の多くは、アーモンドやヘーゼルナッツなどの木の実を使っています。人気のあるケーキは、特に強いコーヒーとよく合います。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "ドイツでは、焼き菓子の多くはアーモンドやヘーゼルナッツなどの木の実を使っています。木の実を使用した菓子は人気があります。\n\n特に強いコーヒーとよく合うケーキが人気です。木の実を使用したケーキには、コーヒーの味が強く、甘さもあるものがあります。木の実を使ったケーキは、ドイツで人気のある菓子です。\n\n木の実を使った菓子は、多くの人にとってはおいしいものです。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 4729061460,
+    "load_duration": 64050708,
+    "prompt_eval_duration": 34862262,
+    "eval_duration": 4552233339,
+    "eval_count": 134,
+    "prompt_eval_count": 104,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-07T01:25:55.843153767Z",
+    "message": {
+      "role": "assistant",
+      "content": "ドイツでは、焼き菓子の多くはアーモンドやヘーゼルナッツなどの木の実を使っています。木の実を使用した菓子は人気があります。\n\n特に強いコーヒーとよく合うケーキが人気です。木の実を使用したケーキには、コーヒーの味が強く、甘さもあるものがあります。木の実を使ったケーキは、ドイツで人気のある菓子です。\n\n木の実を使った菓子は、多くの人にとってはおいしいものです。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 4729061460,
+    "load_duration": 64050708,
+    "prompt_eval_count": 104,
+    "prompt_eval_duration": 34862262,
+    "eval_count": 134,
+    "eval_duration": 4552233339
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788744351.0798173,
+      "nvidia_smi": {
+        "timestamp_unix": 1788744351.0798175,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2619.5,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 13,
+            "power_w": 12.696,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788744351.093009,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 230.9921875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2183.49609375,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 230.9921875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1952.50390625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788744351.1053877,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 236536,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788744355.8434563,
+      "nvidia_smi": {
+        "timestamp_unix": 1788744355.8434565,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2619.3125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 13,
+            "power_w": 12.691,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788744355.8570867,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 234.09375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2186.59765625,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 234.09375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1952.50390625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788744355.8702328,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 239712,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788744351.113696,
+      "response_received_unix": 1788744355.8434114,
+      "first_byte_unix": 1788744355.8433719,
+      "total_wall_ms": 4729.715347290039,
+      "queue_wait_ms": 4729.675769805908,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 07 Sep 2026 01:25:55 GMT",
+        "Content-Length": "829",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788744355.8784077,
+      "vram_delta_mib": -0.1875
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788744351.113649
+    }
+  },
+  "wall_clock_unix": 1788744355.8784077
+}

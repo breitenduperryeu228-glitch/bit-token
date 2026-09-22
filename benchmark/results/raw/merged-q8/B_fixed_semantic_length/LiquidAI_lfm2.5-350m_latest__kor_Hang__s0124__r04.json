@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0124",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n각 나라가 '스칸디나비아'에 속했지만, 덴마크와 스웨덴, 노르웨이, 그리고 아이슬란드의 국민과 왕, 관습과 역사에는 많은 차이가 있었다.\n\n/no_think",
+    "source_text": "각 나라가 '스칸디나비아'에 속했지만, 덴마크와 스웨덴, 노르웨이, 그리고 아이슬란드의 국민과 왕, 관습과 역사에는 많은 차이가 있었다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "각 나라가 '스칸디나비아'에 속했지만, 그 독특한 문화와 사회 구조는 전 세계적으로 다양한 관점에서 감상된다. 덴마크는 혁신과 자유를 중시하는 문화로, 스웨덴은 평화와 자연과의 연결을 강조하며, 노르웨이와 아이슬란드는 전통과 민족 정체성을 중시하는 방식으로 발전해왔다. 이러한 차이에도 불구하고, 각 나라는 공동체 의식과 지속 가능한 발전을 추구하며, 세계의 다양한 문화와 가치를 이해하려는 노력을 기울이고 있다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2236063620,
+    "load_duration": 24595724,
+    "prompt_eval_duration": 298819359,
+    "eval_duration": 1893326815,
+    "eval_count": 162,
+    "prompt_eval_count": 136,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T09:02:07.15152855Z",
+    "message": {
+      "role": "assistant",
+      "content": "각 나라가 '스칸디나비아'에 속했지만, 그 독특한 문화와 사회 구조는 전 세계적으로 다양한 관점에서 감상된다. 덴마크는 혁신과 자유를 중시하는 문화로, 스웨덴은 평화와 자연과의 연결을 강조하며, 노르웨이와 아이슬란드는 전통과 민족 정체성을 중시하는 방식으로 발전해왔다. 이러한 차이에도 불구하고, 각 나라는 공동체 의식과 지속 가능한 발전을 추구하며, 세계의 다양한 문화와 가치를 이해하려는 노력을 기울이고 있다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2236063620,
+    "load_duration": 24595724,
+    "prompt_eval_count": 136,
+    "prompt_eval_duration": 298819359,
+    "eval_count": 162,
+    "eval_duration": 1893326815
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788944524.8795693,
+      "nvidia_smi": {
+        "timestamp_unix": 1788944524.8795698,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 29,
+            "mem_util_pct": 14,
+            "power_w": 12.466,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788944524.893183,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.9453125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 998.15625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.9453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.2109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788944524.9066892,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209864,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788944527.152072,
+      "nvidia_smi": {
+        "timestamp_unix": 1788944527.1520724,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 31,
+            "mem_util_pct": 14,
+            "power_w": 12.453,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788944527.168195,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.87890625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 998.71484375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.87890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.8359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788944527.182734,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209796,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788944524.9150453,
+      "response_received_unix": 1788944527.1519866,
+      "first_byte_unix": 1788944527.1519258,
+      "total_wall_ms": 2236.941337585449,
+      "queue_wait_ms": 2236.8805408477783,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 09:02:07 GMT",
+        "Content-Length": "888",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788944527.190817,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788944524.9150023
+    }
+  },
+  "wall_clock_unix": 1788944527.190817
+}

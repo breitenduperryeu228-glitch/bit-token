@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0043",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nイスラエルは、この協定が結ばれれば10年間にわたる峡谷での駐留継続を要求するとしていますが、その一方でパレスチナ自治政府が同意している駐在期間は5年間のみです。\n\n/no_think",
+    "source_text": "イスラエルは、この協定が結ばれれば10年間にわたる峡谷での駐留継続を要求するとしていますが、その一方でパレスチナ自治政府が同意している駐在期間は5年間のみです。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "イスラエルとパレスチナ自治政府の協定は、イスラエルがこの協定を結ばれると、10年間にわたって峡谷で駐留することを要求することになると言っています。しかし、この一方では、パレスチナ自治政府は5年間だけに駐在期間を決めていることがわかりました。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 590099369,
+    "load_duration": 91983326,
+    "prompt_eval_duration": 5938409,
+    "eval_duration": 459925266,
+    "eval_count": 80,
+    "prompt_eval_count": 133,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:16:56.361382115Z",
+    "message": {
+      "role": "assistant",
+      "content": "イスラエルとパレスチナ自治政府の協定は、イスラエルがこの協定を結ばれると、10年間にわたって峡谷で駐留することを要求することになると言っています。しかし、この一方では、パレスチナ自治政府は5年間だけに駐在期間を決めていることがわかりました。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 590099369,
+    "load_duration": 91983326,
+    "prompt_eval_count": 133,
+    "prompt_eval_duration": 5938409,
+    "eval_count": 80,
+    "eval_duration": 459925266
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789024615.7213786,
+      "nvidia_smi": {
+        "timestamp_unix": 1789024615.7213788,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 72.591,
+            "temp_c": 77,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789024615.7320533,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 256.9296875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1228.95703125,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 256.9296875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 972.02734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789024615.7553966,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 263096,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789024616.361741,
+      "nvidia_smi": {
+        "timestamp_unix": 1789024616.3617413,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 72.308,
+            "temp_c": 79,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789024616.3727148,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.390625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.41796875,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.390625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 972.02734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789024616.3982837,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264592,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789024615.7709477,
+      "response_received_unix": 1789024616.3616846,
+      "first_byte_unix": 1789024616.3616397,
+      "total_wall_ms": 590.7368659973145,
+      "queue_wait_ms": 590.6920433044434,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:16:56 GMT",
+        "Content-Length": "649",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789024616.414097,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789024615.7709002
+    }
+  },
+  "wall_clock_unix": 1789024616.414097
+}

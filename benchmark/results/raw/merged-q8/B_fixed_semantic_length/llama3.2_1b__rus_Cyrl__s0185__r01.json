@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0185",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nНаиболее доступными растительными ресурсами были бы белки, находящиеся в листьях и бобовых, но они плохо усваиваются такими приматами, как мы, если их не готовить.\n\n/no_think",
+    "source_text": "Наиболее доступными растительными ресурсами были бы белки, находящиеся в листьях и бобовых, но они плохо усваиваются такими приматами, как мы, если их не готовить."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Белки, содержащие в листьях и бобах, являются наиболее доступными растительными ресурсами для humans. Они могут быть легко усвойаны, если их правильно приготовить. Белки, которые содержат в themselves фенолы, такие как танины, могут быть вредными для человека, если не будутproperно разумевать и preparing их.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 591121727,
+    "load_duration": 84352981,
+    "prompt_eval_duration": 5947423,
+    "eval_duration": 466307397,
+    "eval_count": 81,
+    "prompt_eval_count": 132,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:51:58.404537576Z",
+    "message": {
+      "role": "assistant",
+      "content": "Белки, содержащие в листьях и бобах, являются наиболее доступными растительными ресурсами для humans. Они могут быть легко усвойаны, если их правильно приготовить. Белки, которые содержат в themselves фенолы, такие как танины, могут быть вредными для человека, если не будутproperно разумевать и preparing их."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 591121727,
+    "load_duration": 84352981,
+    "prompt_eval_count": 132,
+    "prompt_eval_duration": 5947423,
+    "eval_count": 81,
+    "eval_duration": 466307397
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789138317.7627122,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138317.7627125,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 72.789,
+            "temp_c": 78,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138317.773595,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.83203125,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 37017,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1188.77734375,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.83203125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 944.9453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138317.7975383,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249684,
+        "proc_threads": 32,
+        "proc_vol_ctx": 36388,
+        "proc_invol_ctx": 629,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789138318.4048998,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138318.4049008,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 72.001,
+            "temp_c": 75,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138318.4155862,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.83203125,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 37045,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1188.78125,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.83203125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 944.94921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138318.4404593,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249684,
+        "proc_threads": 32,
+        "proc_vol_ctx": 36416,
+        "proc_invol_ctx": 629,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789138317.813041,
+      "response_received_unix": 1789138318.4048407,
+      "first_byte_unix": 1789138318.4047992,
+      "total_wall_ms": 591.7997360229492,
+      "queue_wait_ms": 591.7582511901855,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:51:58 GMT",
+        "Content-Length": "830",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789138318.4559958,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789138317.81299
+    }
+  },
+  "wall_clock_unix": 1789138318.4559958
+}

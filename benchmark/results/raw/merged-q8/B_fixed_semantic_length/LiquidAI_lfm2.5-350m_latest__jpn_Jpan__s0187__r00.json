@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0187",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nカレーは、ハーブやスパイスをベースに、肉や野菜を煮込む料理です。\n\n/no_think",
+    "source_text": "カレーは、ハーブやスパイスをベースに、肉や野菜を煮込む料理です。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "カレーは、ハーブやスパイスをベースに、肉や野菜を煮込む料理です。特に中国の唐辛子やインドのカレーは、独特の風味と深い味わいを生み出します。日本では、和食の代表格として知られ、季節の野菜や魚を中心に調理されます。例えば、秋には紅葉した野菜とカレーの相性抜群で、春には新鮮な野菜と豆腐の煮込みが人気です。カレーは、単なる食事ではなく、季節感や地域の食文化を表現する重要な料理と言えるでしょう。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1844816128,
+    "load_duration": 21577670,
+    "prompt_eval_duration": 191227615,
+    "eval_duration": 1614380631,
+    "eval_count": 141,
+    "prompt_eval_count": 89,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:33:11.862131816Z",
+    "message": {
+      "role": "assistant",
+      "content": "カレーは、ハーブやスパイスをベースに、肉や野菜を煮込む料理です。特に中国の唐辛子やインドのカレーは、独特の風味と深い味わいを生み出します。日本では、和食の代表格として知られ、季節の野菜や魚を中心に調理されます。例えば、秋には紅葉した野菜とカレーの相性抜群で、春には新鮮な野菜と豆腐の煮込みが人気です。カレーは、単なる食事ではなく、季節感や地域の食文化を表現する重要な料理と言えるでしょう。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1844816128,
+    "load_duration": 21577670,
+    "prompt_eval_count": 89,
+    "prompt_eval_duration": 191227615,
+    "eval_count": 141,
+    "eval_duration": 1614380631
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788942789.981892,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942789.9818923,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.513,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942789.9954724,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 201.95703125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 973572,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 989.08203125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 201.95703125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942790.0081742,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 206804,
+        "proc_threads": 40,
+        "proc_vol_ctx": 966150,
+        "proc_invol_ctx": 7422,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788942791.862562,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942791.862563,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 13,
+            "power_w": 12.523,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942791.8776152,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 201.9609375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 973575,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 989.0859375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 201.9609375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942791.8913643,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 206808,
+        "proc_threads": 40,
+        "proc_vol_ctx": 966153,
+        "proc_invol_ctx": 7422,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788942790.016788,
+      "response_received_unix": 1788942791.8624926,
+      "first_byte_unix": 1788942791.8624315,
+      "total_wall_ms": 1845.7045555114746,
+      "queue_wait_ms": 1845.6435203552246,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:33:11 GMT",
+        "Content-Length": "897",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788942791.9001598,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788942790.0167224
+    }
+  },
+  "wall_clock_unix": 1788942791.9001598
+}

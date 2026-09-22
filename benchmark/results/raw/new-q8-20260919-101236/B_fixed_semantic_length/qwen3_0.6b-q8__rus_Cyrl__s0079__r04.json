@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b-q8",
+  "language": "rus_Cyrl",
+  "sample_id": "s0079",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nФедерация гимнастики США и Олимпийский комитет США имеют одинаковую цель — сделать гимнастику и другие виды спорта настолько безопасными для спортсменов, насколько это возможно, чтобы они могли стремиться к своим целям в безопасной, позитивной среде и были наделены всеми правами.\n\n/no_think",
+    "source_text": "Федерация гимнастики США и Олимпийский комитет США имеют одинаковую цель — сделать гимнастику и другие виды спорта настолько безопасными для спортсменов, насколько это возможно, чтобы они могли стремиться к своим целям в безопасной, позитивной среде и были наделены всеми правами."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "Федерация гимнастики США и Олимпийский комитет США имеют одинаковую цель — сделать гимнастику и другие виды спорта настолько безопасными для спортсменов, насколько это возможно, чтобы они могли стремиться к своим целям в безопасной, позитивной среде и были наделены всеми правами.",
+  "ollama": {
+    "model": "qwen3:0.6b-q8",
+    "total_duration": 494732966,
+    "load_duration": 50427019,
+    "prompt_eval_duration": 4528939,
+    "eval_duration": 416394456,
+    "eval_count": 91,
+    "prompt_eval_count": 168,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b-q8",
+    "created_at": "2026-09-19T03:40:39.088207568Z",
+    "message": {
+      "role": "assistant",
+      "content": "<think>\n\n</think>\n\nФедерация гимнастики США и Олимпийский комитет США имеют одинаковую цель — сделать гимнастику и другие виды спорта настолько безопасными для спортсменов, насколько это возможно, чтобы они могли стремиться к своим целям в безопасной, позитивной среде и были наделены всеми правами."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 494732966,
+    "load_duration": 50427019,
+    "prompt_eval_count": 168,
+    "prompt_eval_duration": 4528939,
+    "eval_count": 91,
+    "eval_duration": 416394456
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789789238.5610158,
+      "nvidia_smi": {
+        "timestamp_unix": 1789789238.561016,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2345.125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 48,
+            "mem_util_pct": 42,
+            "power_w": 51.185,
+            "temp_c": 59,
+            "sm_clock_mhz": 2385,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789789238.572329,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 94.2109375,
+        "vms_mib": 3980.078125,
+        "num_threads": 38,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 752.07421875,
+        "tree_threads": 85,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 94.2109375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 657.86328125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789789238.5841515,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4075600,
+        "proc_vm_rss_kib": 96472,
+        "proc_threads": 38,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789789239.08859,
+      "nvidia_smi": {
+        "timestamp_unix": 1789789239.0885901,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2345.125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 14,
+            "mem_util_pct": 15,
+            "power_w": 50.063,
+            "temp_c": 56,
+            "sm_clock_mhz": 2385,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789789239.1017392,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 100.8359375,
+        "vms_mib": 3980.078125,
+        "num_threads": 38,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 761.1171875,
+        "tree_threads": 85,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 100.8359375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 660.28125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789789239.1139581,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4075600,
+        "proc_vm_rss_kib": 103256,
+        "proc_threads": 38,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789789238.5930786,
+      "response_received_unix": 1789789239.0885255,
+      "first_byte_unix": 1789789239.0884767,
+      "total_wall_ms": 495.44692039489746,
+      "queue_wait_ms": 495.39804458618164,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 19 Sep 2026 03:40:39 GMT",
+        "Content-Length": "858",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789789239.1220117,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789789238.593033
+    }
+  },
+  "wall_clock_unix": 1789789239.1220117
+}

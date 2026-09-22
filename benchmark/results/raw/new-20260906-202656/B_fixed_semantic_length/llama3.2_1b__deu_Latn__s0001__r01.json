@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "deu_Latn",
+  "sample_id": "s0001",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Bitte schreiben Sie ungefähr 256 Zeichen Text auf Deutsch über das Thema des folgenden Satzes. Keine Begrüßung, keine Erklärungen, nur den Absatz selbst:\n\nEine wurde am 6. Juli an George Washington geschickt, der es seinen Truppen in New York am 9. Juli vorlesen ließ. Eine Kopie erreichte London am 10. August.\n\n/no_think",
+    "source_text": "Eine wurde am 6. Juli an George Washington geschickt, der es seinen Truppen in New York am 9. Juli vorlesen ließ. Eine Kopie erreichte London am 10. August."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Die Königin von England war sehr stolz auf die neue Waffe und nahm sie persönlich zu sich. Sie gab ihr eine kleine Präsentation an George Washington, der sie als \"die beste Waffe in ganz Amerika\" bezeichnete.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 408021082,
+    "load_duration": 77694300,
+    "prompt_eval_duration": 5943283,
+    "eval_duration": 302703098,
+    "eval_count": 53,
+    "prompt_eval_count": 119,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T08:25:53.688171833Z",
+    "message": {
+      "role": "assistant",
+      "content": "Die Königin von England war sehr stolz auf die neue Waffe und nahm sie persönlich zu sich. Sie gab ihr eine kleine Präsentation an George Washington, der sie als \"die beste Waffe in ganz Amerika\" bezeichnete."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 408021082,
+    "load_duration": 77694300,
+    "prompt_eval_count": 119,
+    "prompt_eval_duration": 5943283,
+    "eval_count": 53,
+    "eval_duration": 302703098
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789028753.2326863,
+      "nvidia_smi": {
+        "timestamp_unix": 1789028753.2326865,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 48,
+            "mem_util_pct": 54,
+            "power_w": 73.272,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789028753.2432876,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 259.39453125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1299.0,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 259.39453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1039.60546875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789028753.2653499,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265620,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789028753.6885285,
+      "nvidia_smi": {
+        "timestamp_unix": 1789028753.688529,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 71.246,
+            "temp_c": 78,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789028753.699762,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 259.72265625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1299.328125,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 259.72265625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1039.60546875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789028753.7228556,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265956,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789028753.2798328,
+      "response_received_unix": 1789028753.6884696,
+      "first_byte_unix": 1789028753.688423,
+      "total_wall_ms": 408.63680839538574,
+      "queue_wait_ms": 408.59007835388184,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 08:25:53 GMT",
+        "Content-Length": "508",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789028753.73715,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789028753.2797868
+    }
+  },
+  "wall_clock_unix": 1789028753.73715
+}

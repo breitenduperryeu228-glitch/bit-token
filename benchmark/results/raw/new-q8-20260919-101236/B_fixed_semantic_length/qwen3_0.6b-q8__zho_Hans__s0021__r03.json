@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b-q8",
+  "language": "zho_Hans",
+  "sample_id": "s0021",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n亚文化让志同道合的个人团结起来，这些人感到自己被社会标准所忽视，亚文化在他们之间培养出一种认同感。\n\n/no_think",
+    "source_text": "亚文化让志同道合的个人团结起来，这些人感到自己被社会标准所忽视，亚文化在他们之间培养出一种认同感。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "亚文化让志同道合的个人团结起来，这些人感到自己被社会标准所忽视，亚文化在他们之间培养出一种认同感。",
+  "ollama": {
+    "model": "qwen3:0.6b-q8",
+    "total_duration": 224137408,
+    "load_duration": 47787608,
+    "prompt_eval_duration": 4715063,
+    "eval_duration": 159737046,
+    "eval_count": 37,
+    "prompt_eval_count": 87,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b-q8",
+    "created_at": "2026-09-19T03:05:55.107817055Z",
+    "message": {
+      "role": "assistant",
+      "content": "<think>\n\n</think>\n\n亚文化让志同道合的个人团结起来，这些人感到自己被社会标准所忽视，亚文化在他们之间培养出一种认同感。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 224137408,
+    "load_duration": 47787608,
+    "prompt_eval_count": 87,
+    "prompt_eval_duration": 4715063,
+    "eval_count": 37,
+    "eval_duration": 159737046
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789787154.851045,
+      "nvidia_smi": {
+        "timestamp_unix": 1789787154.8510451,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2686.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 95,
+            "mem_util_pct": 84,
+            "power_w": 45.731,
+            "temp_c": 57,
+            "sm_clock_mhz": 2175,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789787154.8621354,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 103.21875,
+        "vms_mib": 3763.69140625,
+        "num_threads": 35,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 754.15625,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 103.21875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 650.9375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789787154.8743575,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3854020,
+        "proc_vm_rss_kib": 105696,
+        "proc_threads": 35,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789787155.1081562,
+      "nvidia_smi": {
+        "timestamp_unix": 1789787155.1081564,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2686.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 95,
+            "mem_util_pct": 84,
+            "power_w": 47.771,
+            "temp_c": 57,
+            "sm_clock_mhz": 2175,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789787155.1202128,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 104.5234375,
+        "vms_mib": 3763.69140625,
+        "num_threads": 35,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 755.7890625,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 104.5234375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 651.265625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789787155.1330652,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3854020,
+        "proc_vm_rss_kib": 107032,
+        "proc_threads": 35,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789787154.883203,
+      "response_received_unix": 1789787155.1081133,
+      "first_byte_unix": 1789787155.1080768,
+      "total_wall_ms": 224.91025924682617,
+      "queue_wait_ms": 224.87378120422363,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 19 Sep 2026 03:05:55 GMT",
+        "Content-Length": "486",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789787155.1414592,
+      "vram_delta_mib": -0.125
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789787154.883161
+    }
+  },
+  "wall_clock_unix": 1789787155.1414592
+}

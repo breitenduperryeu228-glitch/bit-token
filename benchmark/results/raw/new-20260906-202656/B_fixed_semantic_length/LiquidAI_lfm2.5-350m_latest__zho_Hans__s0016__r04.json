@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "zho_Hans",
+  "sample_id": "s0016",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n共享资源管理员亚当·库尔登 (Adam Cuerden) 上个月在接受维基新闻 (Wikinews) 采访时表达了他对删除相关内容的不满。\n\n/no_think",
+    "source_text": "共享资源管理员亚当·库尔登 (Adam Cuerden) 上个月在接受维基新闻 (Wikinews) 采访时表达了他对删除相关内容的不满。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "共享资源管理员亚当·库尔登（Adam Cuerden）上个月在接受维基新闻（Wikinews）采访时，深刻反思删除相关内容的必要性。他指出，信息的真实性和可靠性往往在公开平台上难以保证，删除可能会影响信息的传播效果。\n\n/no_think",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1152108573,
+    "load_duration": 23709394,
+    "prompt_eval_duration": 131805983,
+    "eval_duration": 986356484,
+    "eval_count": 86,
+    "prompt_eval_count": 115,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T07:33:07.167984191Z",
+    "message": {
+      "role": "assistant",
+      "content": "共享资源管理员亚当·库尔登（Adam Cuerden）上个月在接受维基新闻（Wikinews）采访时，深刻反思删除相关内容的必要性。他指出，信息的真实性和可靠性往往在公开平台上难以保证，删除可能会影响信息的传播效果。\n\n/no_think"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1152108573,
+    "load_duration": 23709394,
+    "prompt_eval_count": 115,
+    "prompt_eval_duration": 131805983,
+    "eval_count": 86,
+    "eval_duration": 986356484
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788939185.9817193,
+      "nvidia_smi": {
+        "timestamp_unix": 1788939185.9817197,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.378,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788939185.995755,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 196.625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 927236,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 970.85546875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 196.625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 774.23046875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788939186.0077465,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 201344,
+        "proc_threads": 40,
+        "proc_vol_ctx": 920093,
+        "proc_invol_ctx": 7143,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788939187.1686344,
+      "nvidia_smi": {
+        "timestamp_unix": 1788939187.168635,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.373,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788939187.184788,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 197.62890625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 927239,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 971.609375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 197.62890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 773.98046875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788939187.1975343,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 202372,
+        "proc_threads": 40,
+        "proc_vol_ctx": 920096,
+        "proc_invol_ctx": 7143,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788939186.0154638,
+      "response_received_unix": 1788939187.1685305,
+      "first_byte_unix": 1788939187.1684713,
+      "total_wall_ms": 1153.066635131836,
+      "queue_wait_ms": 1153.0075073242188,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 07:33:07 GMT",
+        "Content-Length": "610",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788939187.2051191,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788939186.0154207
+    }
+  },
+  "wall_clock_unix": 1788939187.2051191
+}

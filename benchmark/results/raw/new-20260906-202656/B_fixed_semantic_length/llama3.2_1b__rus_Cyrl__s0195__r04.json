@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0195",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nКогда Лиггинс работал в больнице, в свободное от работы время он начал расследовать случаи преждевременных родов.\n\n/no_think",
+    "source_text": "Когда Лиггинс работал в больнице, в свободное от работы время он начал расследовать случаи преждевременных родов."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "В больнице Лиггинс работал более 20 лет и từng был лектурой по матerno-научной подготовке. Однако в свободное от работы время он начал расследовать случаи преждевременных родов, которые часто не были зарегистрированными. Он изучал медицинские документы и spoke с пациентками, чтобы понять их опыт и проблемы. Лиггинс был привержен своей работе и стремился найти объяснения для этих случаев, даже если они были сложными и неоднозначными.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 860783573,
+    "load_duration": 85815226,
+    "prompt_eval_duration": 5933356,
+    "eval_duration": 716846384,
+    "eval_count": 124,
+    "prompt_eval_count": 118,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:52:38.517914227Z",
+    "message": {
+      "role": "assistant",
+      "content": "В больнице Лиггинс работал более 20 лет и từng был лектурой по матerno-научной подготовке. Однако в свободное от работы время он начал расследовать случаи преждевременных родов, которые часто не были зарегистрированными. Он изучал медицинские документы и spoke с пациентками, чтобы понять их опыт и проблемы. Лиггинс был привержен своей работе и стремился найти объяснения для этих случаев, даже если они были сложными и неоднозначными."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 860783573,
+    "load_duration": 85815226,
+    "prompt_eval_count": 118,
+    "prompt_eval_duration": 5933356,
+    "eval_count": 124,
+    "eval_duration": 716846384
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789138357.6060715,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138357.6060717,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 70.318,
+            "temp_c": 78,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138357.6167598,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 244.24609375,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 38733,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1193.5546875,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 244.24609375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 949.30859375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138357.6413193,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 250108,
+        "proc_threads": 32,
+        "proc_vol_ctx": 38080,
+        "proc_invol_ctx": 653,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789138358.5182993,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138358.5182996,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 71.875,
+            "temp_c": 78,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138358.5297086,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.72265625,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 38765,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1193.03125,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.72265625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 949.30859375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138358.5551333,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249572,
+        "proc_threads": 32,
+        "proc_vol_ctx": 38112,
+        "proc_invol_ctx": 653,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789138357.6567771,
+      "response_received_unix": 1789138358.5182407,
+      "first_byte_unix": 1789138358.518195,
+      "total_wall_ms": 861.4635467529297,
+      "queue_wait_ms": 861.4177703857422,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:52:38 GMT",
+        "Content-Length": "1084",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789138358.570416,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789138357.6567264
+    }
+  },
+  "wall_clock_unix": 1789138358.570416
+}

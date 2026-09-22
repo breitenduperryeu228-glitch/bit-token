@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0011",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n睡眠の中断とは、通常の睡眠時間中に意図的に目を覚まし、しばらく（10～60分）してから眠りに落ちるプロセスです。\n\n/no_think",
+    "source_text": "睡眠の中断とは、通常の睡眠時間中に意図的に目を覚まし、しばらく（10～60分）してから眠りに落ちるプロセスです。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "睡眠の中断は、脳が休息を求める自然な反応であり、通常の睡眠時間中に意図的に目を覚まし、しばらく（10～60分）してから眠りに落ちるプロセスです。特に夜中に目覚めることは、ストレスや不安、睡眠障害の原因となることもあります。例えば、仕事のプレッシャーや人間関係の問題が原因で、夜中に目覚めることが多くなります。また、デジタル機器の使用や過度な睡眠時間の設定も、睡眠の質を低下させる要因となります。睡眠の中断を避けるためには、就寝前のルーティンを作る、就寝時間の固定、就寝前にはスクリーンを見ないといった対策が有効です。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2274458411,
+    "load_duration": 22687962,
+    "prompt_eval_duration": 170113742,
+    "eval_duration": 2058440982,
+    "eval_count": 173,
+    "prompt_eval_count": 107,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:06:25.302088578Z",
+    "message": {
+      "role": "assistant",
+      "content": "睡眠の中断は、脳が休息を求める自然な反応であり、通常の睡眠時間中に意図的に目を覚まし、しばらく（10～60分）してから眠りに落ちるプロセスです。特に夜中に目覚めることは、ストレスや不安、睡眠障害の原因となることもあります。例えば、仕事のプレッシャーや人間関係の問題が原因で、夜中に目覚めることが多くなります。また、デジタル機器の使用や過度な睡眠時間の設定も、睡眠の質を低下させる要因となります。睡眠の中断を避けるためには、就寝前のルーティンを作る、就寝時間の固定、就寝前にはスクリーンを見ないといった対策が有効です。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2274458411,
+    "load_duration": 22687962,
+    "prompt_eval_count": 107,
+    "prompt_eval_duration": 170113742,
+    "eval_count": 173,
+    "eval_duration": 2058440982
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788941182.9934993,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941182.9934998,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.517,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941183.007282,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.10546875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 956278,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 984.984375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.10546875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.87890625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941183.0192068,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209004,
+        "proc_threads": 40,
+        "proc_vol_ctx": 948967,
+        "proc_invol_ctx": 7311,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788941185.3025737,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941185.3025742,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.3125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 14,
+            "power_w": 12.6,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941185.317409,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.86328125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 956278,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 983.7421875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.86328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.87890625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941185.3305843,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207732,
+        "proc_threads": 40,
+        "proc_vol_ctx": 948967,
+        "proc_invol_ctx": 7311,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788941183.0272574,
+      "response_received_unix": 1788941185.3025007,
+      "first_byte_unix": 1788941185.302437,
+      "total_wall_ms": 2275.2432823181152,
+      "queue_wait_ms": 2275.179624557495,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:06:25 GMT",
+        "Content-Length": "1082",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788941185.3388994,
+      "vram_delta_mib": 0.4375
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788941183.0272138
+    }
+  },
+  "wall_clock_unix": 1788941185.3388994
+}

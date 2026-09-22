@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0062",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nモルドバは多民族国家であり、民族紛争に悩まされてきました。\n\n/no_think",
+    "source_text": "モルドバは多民族国家であり、民族紛争に悩まされてきました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "モルドバは、歴史的に複数の民族が共存してきた多民族国家であり、近年も内戦や民族対立が深刻な問題となっています。特に、2011年のトルコ革命以降、ムスリムやキリスト教徒、イスラム教徒といった宗教的少数派の権利が争われ、社会の分断が進んでいます。経済的には、石油資源の豊富さが一部の民族に集中し、発展の機会を巡って対立が続いています。国際社会からは、多様性を尊重する姿勢が求められる一方で、政治的な安定を維持するための改革が急務とされています。モルドバは、民族間の対話と相互理解を深めることで、持続可能な社会を築くための鍵を握っていると言えるでしょう。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2485462633,
+    "load_duration": 23930210,
+    "prompt_eval_duration": 195749410,
+    "eval_duration": 2236609035,
+    "eval_count": 190,
+    "prompt_eval_count": 86,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:13:54.680957745Z",
+    "message": {
+      "role": "assistant",
+      "content": "モルドバは、歴史的に複数の民族が共存してきた多民族国家であり、近年も内戦や民族対立が深刻な問題となっています。特に、2011年のトルコ革命以降、ムスリムやキリスト教徒、イスラム教徒といった宗教的少数派の権利が争われ、社会の分断が進んでいます。経済的には、石油資源の豊富さが一部の民族に集中し、発展の機会を巡って対立が続いています。国際社会からは、多様性を尊重する姿勢が求められる一方で、政治的な安定を維持するための改革が急務とされています。モルドバは、民族間の対話と相互理解を深めることで、持続可能な社会を築くための鍵を握っていると言えるでしょう。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2485462633,
+    "load_duration": 23930210,
+    "prompt_eval_count": 86,
+    "prompt_eval_duration": 195749410,
+    "eval_count": 190,
+    "eval_duration": 2236609035
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788941632.1587665,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941632.158767,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.537,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941632.1740394,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.49609375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 959925,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 982.5625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.49609375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.06640625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941632.1869137,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207356,
+        "proc_threads": 40,
+        "proc_vol_ctx": 952587,
+        "proc_invol_ctx": 7338,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788941634.6815562,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941634.681557,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.531,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941634.700083,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.34375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 959927,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 983.41015625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.34375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 781.06640625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941634.7152135,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207200,
+        "proc_threads": 40,
+        "proc_vol_ctx": 952589,
+        "proc_invol_ctx": 7338,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788941632.195135,
+      "response_received_unix": 1788941634.6814444,
+      "first_byte_unix": 1788941634.6813655,
+      "total_wall_ms": 2486.309289932251,
+      "queue_wait_ms": 2486.2303733825684,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:13:54 GMT",
+        "Content-Length": "1129",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788941634.724016,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788941632.1950889
+    }
+  },
+  "wall_clock_unix": 1788941634.724016
+}

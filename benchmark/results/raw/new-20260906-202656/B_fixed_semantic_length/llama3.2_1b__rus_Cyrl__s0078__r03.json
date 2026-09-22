@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0078",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nФинляндия — отличное место для лодочного туризма. В \"стране тысячи озёр\" также есть тысячи островов на озёрах и в прибрежных архипелагах.\n\n/no_think",
+    "source_text": "Финляндия — отличное место для лодочного туризма. В \"стране тысячи озёр\" также есть тысячи островов на озёрах и в прибрежных архипелагах."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Финляндия - это страна, которая не только является популярным местом для лодочного туризма, но и для relaxation и отдыха. В ее \"стране тысячи озёр\" также есть тысяча островов на озёрах и в прибрежных архипелагах, которые обеспечивают отличный机会 для пешего или kayakового путешествия. Финляндия известна своей природной красотой и уникальными geological формами, что делает ее идеальным местом для любого туриста, который хочет relaxировать на море или exploreть природные wonders.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 933640627,
+    "load_duration": 69214908,
+    "prompt_eval_duration": 6649017,
+    "eval_duration": 804099264,
+    "eval_count": 139,
+    "prompt_eval_count": 133,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:45:10.153823135Z",
+    "message": {
+      "role": "assistant",
+      "content": "Финляндия - это страна, которая не только является популярным местом для лодочного туризма, но и для relaxation и отдыха. В ее \"стране тысячи озёр\" также есть тысяча островов на озёрах и в прибрежных архипелагах, которые обеспечивают отличный机会 для пешего или kayakового путешествия. Финляндия известна своей природной красотой и уникальными geological формами, что делает ее идеальным местом для любого туриста, который хочет relaxировать на море или exploreть природные wonders."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 933640627,
+    "load_duration": 69214908,
+    "prompt_eval_count": 133,
+    "prompt_eval_duration": 6649017,
+    "eval_count": 139,
+    "eval_duration": 804099264
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789137909.1752255,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137909.175226,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 70.761,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137909.1855438,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.484375,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 23047,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1161.9921875,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.484375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 918.5078125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137909.206094,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249328,
+        "proc_threads": 32,
+        "proc_vol_ctx": 22666,
+        "proc_invol_ctx": 381,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789137910.1542218,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137910.154222,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 73.34,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137910.1649795,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.19140625,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 23047,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1161.69921875,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.19140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 918.5078125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137910.187613,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249028,
+        "proc_threads": 32,
+        "proc_vol_ctx": 22666,
+        "proc_invol_ctx": 381,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789137909.219871,
+      "response_received_unix": 1789137910.154154,
+      "first_byte_unix": 1789137910.154101,
+      "total_wall_ms": 934.2830181121826,
+      "queue_wait_ms": 934.229850769043,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:45:10 GMT",
+        "Content-Length": "1138",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789137910.2012599,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789137909.2198288
+    }
+  },
+  "wall_clock_unix": 1789137910.2012599
+}

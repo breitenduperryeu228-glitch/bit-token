@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "zho_Hans",
+  "sample_id": "s0007",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n昆虫学家们用“虫子 (bug)”一词来正式称呼这一类的昆虫。\n\n/no_think",
+    "source_text": "昆虫学家们用“虫子 (bug)”一词来正式称呼这一类的昆虫。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "在昆虫学中，研究人员通常使用“昆虫”（insect）或“昆虫类”（class Insecta）的术语来描述这些小型生物。然而，有些人仍然会使用“虫子”（bug）作为昆虫的正式名称。这可能是因为在某些文化中，使用“虫子”这个词有着历史和传统意义。例如，在古代中国，人们将昆虫视为神灵或精神性存在。因此，当我们讨论昆虫时，我们通常会用“虫子”来描述它们，而不是“昆虫”。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 929928204,
+    "load_duration": 74124082,
+    "prompt_eval_duration": 5930354,
+    "eval_duration": 785435749,
+    "eval_count": 136,
+    "prompt_eval_count": 98,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T06:43:16.941873849Z",
+    "message": {
+      "role": "assistant",
+      "content": "在昆虫学中，研究人员通常使用“昆虫”（insect）或“昆虫类”（class Insecta）的术语来描述这些小型生物。然而，有些人仍然会使用“虫子”（bug）作为昆虫的正式名称。这可能是因为在某些文化中，使用“虫子”这个词有着历史和传统意义。例如，在古代中国，人们将昆虫视为神灵或精神性存在。因此，当我们讨论昆虫时，我们通常会用“虫子”来描述它们，而不是“昆虫”。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 929928204,
+    "load_duration": 74124082,
+    "prompt_eval_count": 98,
+    "prompt_eval_duration": 5930354,
+    "eval_count": 136,
+    "eval_duration": 785435749
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789022595.9647093,
+      "nvidia_smi": {
+        "timestamp_unix": 1789022595.9647095,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 71.775,
+            "temp_c": 79,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789022595.9752786,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.09765625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1207.24609375,
+        "tree_threads": 59,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.09765625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 949.1484375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789022595.9969006,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264292,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789022596.9422235,
+      "nvidia_smi": {
+        "timestamp_unix": 1789022596.9422245,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 73.081,
+            "temp_c": 79,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789022596.9532242,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 257.62109375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1206.77734375,
+        "tree_threads": 59,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 257.62109375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 949.15625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789022596.976384,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 263804,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789022596.0116265,
+      "response_received_unix": 1789022596.9421628,
+      "first_byte_unix": 1789022596.9421206,
+      "total_wall_ms": 930.5362701416016,
+      "queue_wait_ms": 930.4940700531006,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:43:16 GMT",
+        "Content-Length": "800",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789022596.9907634,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789022596.011577
+    }
+  },
+  "wall_clock_unix": 1789022596.9907634
+}

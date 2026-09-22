@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "kor_Hang",
+  "sample_id": "s0006",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n철학자 아리스토텔레스(Aristotle)는 모든 물질이 네 가지 요소 중 하나 혹은 하나 이상의 요소와 혼합하여 구성되어 있다고 이론화했다. 그 네 가지 요소는 땅과 물과 공기와 불이었다.\n\n/no_think",
+    "source_text": "철학자 아리스토텔레스(Aristotle)는 모든 물질이 네 가지 요소 중 하나 혹은 하나 이상의 요소와 혼합하여 구성되어 있다고 이론화했다. 그 네 가지 요소는 땅과 물과 공기와 불이었다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "아리스토텔레스는 모든 물질이 네 가지 요소 중 하나 혹은 하나 이상의 요소와 혼합하여 구성되어 있다고 이론화했다. 그 네 가지 요소는 땅과 물과 공기와 불이었다. 이 네 가지 요소는 자연의 근본적인 구성 요소로, 각각의 성질과 기능을 설명하는 핵심적인 틀을 제공했다. 이 이론은 인간이 자연을 이해하고 이해하려는 근본적인 출발점이 되었고, 이후 현대 과학과 철학이 이 네 가지 요소에 대한 깊은 이해를 바탕으로 발전해 왔음을 보여준다.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 864252888,
+    "load_duration": 134890383,
+    "prompt_eval_duration": 22703877,
+    "eval_duration": 661283599,
+    "eval_count": 114,
+    "prompt_eval_count": 117,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T04:50:29.078141458Z",
+    "message": {
+      "role": "assistant",
+      "content": "아리스토텔레스는 모든 물질이 네 가지 요소 중 하나 혹은 하나 이상의 요소와 혼합하여 구성되어 있다고 이론화했다. 그 네 가지 요소는 땅과 물과 공기와 불이었다. 이 네 가지 요소는 자연의 근본적인 구성 요소로, 각각의 성질과 기능을 설명하는 핵심적인 틀을 제공했다. 이 이론은 인간이 자연을 이해하고 이해하려는 근본적인 출발점이 되었고, 이후 현대 과학과 철학이 이 네 가지 요소에 대한 깊은 이해를 바탕으로 발전해 왔음을 보여준다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 864252888,
+    "load_duration": 134890383,
+    "prompt_eval_count": 117,
+    "prompt_eval_duration": 22703877,
+    "eval_count": 114,
+    "eval_duration": 661283599
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789015828.1670384,
+      "nvidia_smi": {
+        "timestamp_unix": 1789015828.1670384,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 53,
+            "mem_util_pct": 42,
+            "power_w": 63.237,
+            "temp_c": 78,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789015828.1776643,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 252.6796875,
+        "vms_mib": 4218.85546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2339.66015625,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 252.6796875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2086.98046875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789015828.1990712,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320108,
+        "proc_vm_rss_kib": 258744,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789015829.078611,
+      "nvidia_smi": {
+        "timestamp_unix": 1789015829.0786111,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 7,
+            "mem_util_pct": 6,
+            "power_w": 62.601,
+            "temp_c": 78,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789015829.0904574,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 254.53125,
+        "vms_mib": 4218.85546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2340.51171875,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 254.53125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2085.98046875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789015829.1143997,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320108,
+        "proc_vm_rss_kib": 260640,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789015828.2135408,
+      "response_received_unix": 1789015829.078543,
+      "first_byte_unix": 1789015829.078486,
+      "total_wall_ms": 865.0021553039551,
+      "queue_wait_ms": 864.9451732635498,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 04:50:29 GMT",
+        "Content-Length": "892",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789015829.12924,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789015828.2134948
+    }
+  },
+  "wall_clock_unix": 1789015829.12924
+}

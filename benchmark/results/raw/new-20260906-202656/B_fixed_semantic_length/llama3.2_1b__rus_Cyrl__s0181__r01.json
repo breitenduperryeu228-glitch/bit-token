@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0181",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nКаждый может достичь просветления. Единственное, что стоит на пути к этой цели, – это наша собственная напряженность и негативный настрой.\n\n/no_think",
+    "source_text": "Каждый может достичь просветления. Единственное, что стоит на пути к этой цели, – это наша собственная напряженность и негативный настрой."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Без приветствий и пояснений, только сам абзац:\n\nПросвещение - это процесс, при котором человек осознаывает свою ошибку или неуместную behavior и начинает изменяться. Это требует от человека отстранения себя от своих эмоций и негативных мыслей, чтобы понять, что он делает wrong. Неправильные убеждения и навязчивые цели могут привести к тому, что человек будет продолжать действовать в вредном направлении. Чтобы достичь просветления, необходимо уметь различать правильное и неправильное, а также признать своюOwn ошибку и начать изменяться.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 968287115,
+    "load_duration": 74939946,
+    "prompt_eval_duration": 6748921,
+    "eval_duration": 828274278,
+    "eval_count": 143,
+    "prompt_eval_count": 123,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:51:37.220030714Z",
+    "message": {
+      "role": "assistant",
+      "content": "Без приветствий и пояснений, только сам абзац:\n\nПросвещение - это процесс, при котором человек осознаывает свою ошибку или неуместную behavior и начинает изменяться. Это требует от человека отстранения себя от своих эмоций и негативных мыслей, чтобы понять, что он делает wrong. Неправильные убеждения и навязчивые цели могут привести к тому, что человек будет продолжать действовать в вредном направлении. Чтобы достичь просветления, необходимо уметь различать правильное и неправильное, а также признать своюOwn ошибку и начать изменяться."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 968287115,
+    "load_duration": 74939946,
+    "prompt_eval_count": 123,
+    "prompt_eval_duration": 6748921,
+    "eval_count": 143,
+    "eval_duration": 828274278
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789138296.2011702,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138296.2011704,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 76.732,
+            "temp_c": 78,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138296.2118251,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.89453125,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 36909,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1188.83984375,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.89453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 944.9453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138296.2356718,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249748,
+        "proc_threads": 32,
+        "proc_vol_ctx": 36283,
+        "proc_invol_ctx": 626,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789138297.2203982,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138297.220399,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 62,
+            "mem_util_pct": 70,
+            "power_w": 72.489,
+            "temp_c": 78,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138297.231715,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.71484375,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 36933,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1188.66015625,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.71484375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 944.9453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138297.2569523,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249564,
+        "proc_threads": 32,
+        "proc_vol_ctx": 36305,
+        "proc_invol_ctx": 628,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789138296.2513664,
+      "response_received_unix": 1789138297.2203372,
+      "first_byte_unix": 1789138297.2202923,
+      "total_wall_ms": 968.970775604248,
+      "queue_wait_ms": 968.925952911377,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:51:37 GMT",
+        "Content-Length": "1276",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789138297.2724144,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789138296.2513118
+    }
+  },
+  "wall_clock_unix": 1789138297.2724144
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "rus_Cyrl",
+  "sample_id": "s0030",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nЭти иногда сопровождавшиеся насилием протесты были вызваны непроведением выборов, некоторые из которых должны были состояться ещё в 2011 году.\n\n/no_think",
+    "source_text": "Эти иногда сопровождавшиеся насилием протесты были вызваны непроведением выборов, некоторые из которых должны были состояться ещё в 2011 году."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "These sometimes provoked protests were triggered by lack of voting. Some should have taken place in 2011 as well.",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 581085968,
+    "load_duration": 43596183,
+    "prompt_eval_duration": 211852060,
+    "eval_duration": 313026308,
+    "eval_count": 24,
+    "prompt_eval_count": 157,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T07:05:00.327088616Z",
+    "message": {
+      "role": "assistant",
+      "content": "These sometimes provoked protests were triggered by lack of voting. Some should have taken place in 2011 as well."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 581085968,
+    "load_duration": 43596183,
+    "prompt_eval_count": 157,
+    "prompt_eval_duration": 211852060,
+    "eval_count": 24,
+    "eval_duration": 313026308
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788937499.7106726,
+      "nvidia_smi": {
+        "timestamp_unix": 1788937499.7106729,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 38,
+            "mem_util_pct": 14,
+            "power_w": 12.383,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788937499.7243335,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 187.37890625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 913698,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 995.00390625,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 187.37890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 807.625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788937499.7377539,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 191876,
+        "proc_threads": 40,
+        "proc_vol_ctx": 906712,
+        "proc_invol_ctx": 6986,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788937500.3273585,
+      "nvidia_smi": {
+        "timestamp_unix": 1788937500.3273587,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.362,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788937500.342515,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 185.1796875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 913707,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 992.8046875,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 185.1796875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 807.625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788937500.3551674,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 189624,
+        "proc_threads": 40,
+        "proc_vol_ctx": 906720,
+        "proc_invol_ctx": 6987,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788937499.7456067,
+      "response_received_unix": 1788937500.327317,
+      "first_byte_unix": 1788937500.3272774,
+      "total_wall_ms": 581.7103385925293,
+      "queue_wait_ms": 581.6707611083984,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 07:05:00 GMT",
+        "Content-Length": "414",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788937500.362521,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788937499.745562
+    }
+  },
+  "wall_clock_unix": 1788937500.362521
+}

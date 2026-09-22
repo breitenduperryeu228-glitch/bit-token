@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0100",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n警察によれば、写真家をはねた車の運転手が刑事告訴される可能性は低いとのことです。\n\n/no_think",
+    "source_text": "警察によれば、写真家をはねた車の運転手が刑事告訴される可能性は低いとのことです。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "日本では、写真を撮ることができる場所に「照明」や「景色」などを入れる写真を撮ったり、写真を撮ってその場の様子を撮ったりすることは、警察によっては違法とみなされることがある。\n\n警察によると、写真家が取った写真を撮ったり、撮った写真に記載した情報を共有したりすることなどが、刑事告訴される可能性があるということです。特に、警察が取った写真の内容や、取った写真に記載された情報が、犯罪行為の場所や犯人などの個人に関する情報である場合、警察は取った写真を使用して、刑事告訴することができます。\n\nしかし、警察によると、写真家が取った写真を撮ったり、撮った写真に記載した情報を共有したりすることなどが、違法とみなされることはありません。日本では、写真を撮ることができる場所に「照明」や「景色」などを入れる写真を撮ったり、写真を撮ってその場の様子を撮ったりすることは、法律で規制されているためです。\n\n警察は、取った写真を使用して刑事告訴することについて、具体的な情報を提供していません。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1834940203,
+    "load_duration": 73463100,
+    "prompt_eval_duration": 6687265,
+    "eval_duration": 1628603930,
+    "eval_count": 280,
+    "prompt_eval_count": 107,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:24:01.319447467Z",
+    "message": {
+      "role": "assistant",
+      "content": "日本では、写真を撮ることができる場所に「照明」や「景色」などを入れる写真を撮ったり、写真を撮ってその場の様子を撮ったりすることは、警察によっては違法とみなされることがある。\n\n警察によると、写真家が取った写真を撮ったり、撮った写真に記載した情報を共有したりすることなどが、刑事告訴される可能性があるということです。特に、警察が取った写真の内容や、取った写真に記載された情報が、犯罪行為の場所や犯人などの個人に関する情報である場合、警察は取った写真を使用して、刑事告訴することができます。\n\nしかし、警察によると、写真家が取った写真を撮ったり、撮った写真に記載した情報を共有したりすることなどが、違法とみなされることはありません。日本では、写真を撮ることができる場所に「照明」や「景色」などを入れる写真を撮ったり、写真を撮ってその場の様子を撮ったりすることは、法律で規制されているためです。\n\n警察は、取った写真を使用して刑事告訴することについて、具体的な情報を提供していません。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1834940203,
+    "load_duration": 73463100,
+    "prompt_eval_count": 107,
+    "prompt_eval_duration": 6687265,
+    "eval_count": 280,
+    "eval_duration": 1628603930
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789025039.4371123,
+      "nvidia_smi": {
+        "timestamp_unix": 1789025039.4371126,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 80.912,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789025039.44781,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.87109375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1232.23046875,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.87109375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789025039.469687,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265084,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789025041.31984,
+      "nvidia_smi": {
+        "timestamp_unix": 1789025041.3198407,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 82.754,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789025041.330692,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.47265625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1231.859375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.47265625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.38671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789025041.3536756,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264676,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789025039.484177,
+      "response_received_unix": 1789025041.3197718,
+      "first_byte_unix": 1789025041.3197193,
+      "total_wall_ms": 1835.594654083252,
+      "queue_wait_ms": 1835.5422019958496,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:24:01 GMT",
+        "Content-Length": "1609",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789025041.3679278,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789025039.484128
+    }
+  },
+  "wall_clock_unix": 1789025041.3679278
+}

@@ -1,0 +1,538 @@
+{
+  "diagnostics": {
+    "empty_response_counts": {},
+    "n_empty_total": 0,
+    "n_total": 16000,
+    "note": "Runs with empty response_text are kept in the raw JSON for auditability but are excluded from mean-per-cell statistics below because their Bit/s = 0 would be misleading."
+  },
+  "RQ1_ranking_consistency": {
+    "overall": {
+      "spearman_r": 0.4764705882352941,
+      "spearman_p": 0.062059174189226164,
+      "kendall_tau": 0.35,
+      "kendall_p": 0.06411343260237781
+    },
+    "by_language": {
+      "deu_Latn": {
+        "spearman_r": null,
+        "spearman_p": null,
+        "kendall_tau": null,
+        "kendall_p": null,
+        "note": "not enough points"
+      },
+      "eng_Latn": {
+        "spearman_r": null,
+        "spearman_p": null,
+        "kendall_tau": null,
+        "kendall_p": null,
+        "note": "not enough points"
+      },
+      "fra_Latn": {
+        "spearman_r": null,
+        "spearman_p": null,
+        "kendall_tau": null,
+        "kendall_p": null,
+        "note": "not enough points"
+      },
+      "jpn_Jpan": {
+        "spearman_r": null,
+        "spearman_p": null,
+        "kendall_tau": null,
+        "kendall_p": null,
+        "note": "not enough points"
+      },
+      "kor_Hang": {
+        "spearman_r": null,
+        "spearman_p": null,
+        "kendall_tau": null,
+        "kendall_p": null,
+        "note": "not enough points"
+      },
+      "rus_Cyrl": {
+        "spearman_r": null,
+        "spearman_p": null,
+        "kendall_tau": null,
+        "kendall_p": null,
+        "note": "not enough points"
+      },
+      "spa_Latn": {
+        "spearman_r": null,
+        "spearman_p": null,
+        "kendall_tau": null,
+        "kendall_p": null,
+        "note": "not enough points"
+      },
+      "zho_Hans": {
+        "spearman_r": null,
+        "spearman_p": null,
+        "kendall_tau": null,
+        "kendall_p": null,
+        "note": "not enough points"
+      }
+    }
+  },
+  "RQ2_language_changes_mapping": {
+    "deu_Latn": {
+      "spearman_r": null,
+      "spearman_p": null,
+      "kendall_tau": null,
+      "kendall_p": null,
+      "note": "not enough points"
+    },
+    "eng_Latn": {
+      "spearman_r": null,
+      "spearman_p": null,
+      "kendall_tau": null,
+      "kendall_p": null,
+      "note": "not enough points"
+    },
+    "fra_Latn": {
+      "spearman_r": null,
+      "spearman_p": null,
+      "kendall_tau": null,
+      "kendall_p": null,
+      "note": "not enough points"
+    },
+    "jpn_Jpan": {
+      "spearman_r": null,
+      "spearman_p": null,
+      "kendall_tau": null,
+      "kendall_p": null,
+      "note": "not enough points"
+    },
+    "kor_Hang": {
+      "spearman_r": null,
+      "spearman_p": null,
+      "kendall_tau": null,
+      "kendall_p": null,
+      "note": "not enough points"
+    },
+    "rus_Cyrl": {
+      "spearman_r": null,
+      "spearman_p": null,
+      "kendall_tau": null,
+      "kendall_p": null,
+      "note": "not enough points"
+    },
+    "spa_Latn": {
+      "spearman_r": null,
+      "spearman_p": null,
+      "kendall_tau": null,
+      "kendall_p": null,
+      "note": "not enough points"
+    },
+    "zho_Hans": {
+      "spearman_r": null,
+      "spearman_p": null,
+      "kendall_tau": null,
+      "kendall_p": null,
+      "note": "not enough points"
+    }
+  },
+  "RQ3_tokenizer_explains_gap": {
+    "linear_regression_Bit_per_s_on_Token_per_s": {
+      "slope": 59.776290772136974,
+      "intercept": -6911.947416418808,
+      "r": 0.42899407025075104,
+      "r2": 0.1840359123103063,
+      "p": 0.09729753574410657,
+      "se": 33.63947259178592,
+      "note": "If R² ≈ 1, Token/s alone is enough. If R² < 1, Bytes/Token explains the residual — Bit/s carries extra information."
+    },
+    "spearman_BytesPerToken_vs_BitsPerToken": {
+      "spearman_r": 1.0,
+      "spearman_p": 0.0,
+      "kendall_tau": 1.0,
+      "kendall_p": 9.55895466477477e-14
+    }
+  },
+  "RQ4_ranking_flips": {
+    "significant_flips": [
+      {
+        "model": "qwen3:0.6b-q8",
+        "language": "eng_Latn",
+        "token_rank": 1,
+        "bit_rank": 2,
+        "rank_diff": 1
+      },
+      {
+        "model": "qwen3:0.6b-q8",
+        "language": "eng_Latn",
+        "token_rank": 2,
+        "bit_rank": 1,
+        "rank_diff": -1
+      },
+      {
+        "model": "qwen3:0.6b-q8",
+        "language": "spa_Latn",
+        "token_rank": 1,
+        "bit_rank": 2,
+        "rank_diff": 1
+      },
+      {
+        "model": "qwen3:0.6b-q8",
+        "language": "spa_Latn",
+        "token_rank": 2,
+        "bit_rank": 1,
+        "rank_diff": -1
+      }
+    ],
+    "n_significant": 4,
+    "n_cells_compared": 16
+  },
+  "RQ5_model_size_effect": {
+    "tiny_<2B": {
+      "n": 16000,
+      "models": [
+        "qwen3:0.6b-q8"
+      ],
+      "token_per_second_mean": 229.35263249003714,
+      "bit_per_second_mean": 6797.902232660722,
+      "bytes_per_token_mean": 3.702614921628146
+    }
+  },
+  "RQ6_language_systematic_effect": {
+    "n_per_language": {
+      "deu_Latn": 2000,
+      "eng_Latn": 2000,
+      "fra_Latn": 2000,
+      "jpn_Jpan": 2000,
+      "kor_Hang": 2000,
+      "rus_Cyrl": 2000,
+      "spa_Latn": 2000,
+      "zho_Hans": 2000
+    },
+    "means": {
+      "deu_Latn": 3.254120030912921,
+      "eng_Latn": 4.094351863842453,
+      "fra_Latn": 3.38892604611502,
+      "jpn_Jpan": 3.6912033228778127,
+      "kor_Hang": 3.1195809002338115,
+      "rus_Cyrl": 4.8036546516093335,
+      "spa_Latn": 3.527566086583897,
+      "zho_Hans": 3.741516470849917
+    },
+    "one_way_anova_F": 2439.884812458526,
+    "one_way_anova_p": 0.0,
+    "pairwise": [
+      {
+        "lang_a": "deu_Latn",
+        "lang_b": "eng_Latn",
+        "mean_a": 3.254120030912921,
+        "mean_b": 4.094351863842453,
+        "cohens_d": -1.805691484624656,
+        "welch_t": -57.10097842984824,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "deu_Latn",
+        "lang_b": "fra_Latn",
+        "mean_a": 3.254120030912921,
+        "mean_b": 3.38892604611502,
+        "cohens_d": -0.3775759836838537,
+        "welch_t": -11.940000982195512,
+        "welch_p": 2.5983104753273717e-32
+      },
+      {
+        "lang_a": "deu_Latn",
+        "lang_b": "jpn_Jpan",
+        "mean_a": 3.254120030912921,
+        "mean_b": 3.6912033228778127,
+        "cohens_d": -0.9361010995420869,
+        "welch_t": -29.602115947409978,
+        "welch_p": 5.547980062247582e-171
+      },
+      {
+        "lang_a": "deu_Latn",
+        "lang_b": "kor_Hang",
+        "mean_a": 3.254120030912921,
+        "mean_b": 3.1195809002338115,
+        "cohens_d": 0.3684521776597908,
+        "welch_t": 11.651480902539435,
+        "welch_p": 7.189855533187833e-31
+      },
+      {
+        "lang_a": "deu_Latn",
+        "lang_b": "rus_Cyrl",
+        "mean_a": 3.254120030912921,
+        "mean_b": 4.8036546516093335,
+        "cohens_d": -2.9258755849466156,
+        "welch_t": -92.52430998708776,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "deu_Latn",
+        "lang_b": "spa_Latn",
+        "mean_a": 3.254120030912921,
+        "mean_b": 3.527566086583897,
+        "cohens_d": -0.7403309400676058,
+        "welch_t": -23.411319929072448,
+        "welch_p": 1.4387049530002995e-113
+      },
+      {
+        "lang_a": "deu_Latn",
+        "lang_b": "zho_Hans",
+        "mean_a": 3.254120030912921,
+        "mean_b": 3.741516470849917,
+        "cohens_d": -1.1051151539606348,
+        "welch_t": -34.946809632832576,
+        "welch_p": 2.1560194374763724e-229
+      },
+      {
+        "lang_a": "eng_Latn",
+        "lang_b": "fra_Latn",
+        "mean_a": 4.094351863842453,
+        "mean_b": 3.38892604611502,
+        "cohens_d": 1.4821047363071094,
+        "welch_t": 46.868266976537186,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "eng_Latn",
+        "lang_b": "jpn_Jpan",
+        "mean_a": 4.094351863842453,
+        "mean_b": 3.6912033228778127,
+        "cohens_d": 0.7159435838234117,
+        "welch_t": 22.64012401065662,
+        "welch_p": 7.024738674200645e-107
+      },
+      {
+        "lang_a": "eng_Latn",
+        "lang_b": "kor_Hang",
+        "mean_a": 4.094351863842453,
+        "mean_b": 3.1195809002338115,
+        "cohens_d": 2.022008518942858,
+        "welch_t": 63.94152368123147,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "eng_Latn",
+        "lang_b": "rus_Cyrl",
+        "mean_a": 4.094351863842453,
+        "mean_b": 4.8036546516093335,
+        "cohens_d": -1.1513345878316694,
+        "welch_t": -36.40839646479262,
+        "welch_p": 5.2954131740769174e-250
+      },
+      {
+        "lang_a": "eng_Latn",
+        "lang_b": "spa_Latn",
+        "mean_a": 4.094351863842453,
+        "mean_b": 3.527566086583897,
+        "cohens_d": 1.1679635591237851,
+        "welch_t": 36.93425070907895,
+        "welch_p": 2.4997770770826272e-253
+      },
+      {
+        "lang_a": "eng_Latn",
+        "lang_b": "zho_Hans",
+        "mean_a": 4.094351863842453,
+        "mean_b": 3.741516470849917,
+        "cohens_d": 0.651188541823491,
+        "welch_t": 20.592389783660447,
+        "welch_p": 1.3059340497610128e-89
+      },
+      {
+        "lang_a": "fra_Latn",
+        "lang_b": "jpn_Jpan",
+        "mean_a": 3.38892604611502,
+        "mean_b": 3.6912033228778127,
+        "cohens_d": -0.6330130167781721,
+        "welch_t": -20.01762921553405,
+        "welch_p": 1.9941102669990132e-84
+      },
+      {
+        "lang_a": "fra_Latn",
+        "lang_b": "kor_Hang",
+        "mean_a": 3.38892604611502,
+        "mean_b": 3.1195809002338115,
+        "cohens_d": 0.7114050081986312,
+        "welch_t": 22.496601647584306,
+        "welch_p": 1.2783118598148388e-105
+      },
+      {
+        "lang_a": "fra_Latn",
+        "lang_b": "rus_Cyrl",
+        "mean_a": 3.38892604611502,
+        "mean_b": 4.8036546516093335,
+        "cohens_d": -2.624885051539586,
+        "welch_t": -83.00615358993564,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "fra_Latn",
+        "lang_b": "spa_Latn",
+        "mean_a": 3.38892604611502,
+        "mean_b": 3.527566086583897,
+        "cohens_d": -0.3622949187428932,
+        "welch_t": -11.456771279331694,
+        "welch_p": 6.36756269659553e-30
+      },
+      {
+        "lang_a": "fra_Latn",
+        "lang_b": "zho_Hans",
+        "mean_a": 3.38892604611502,
+        "mean_b": 3.741516470849917,
+        "cohens_d": -0.7796421160558422,
+        "welch_t": -24.654448465297957,
+        "welch_p": 3.592361471995772e-124
+      },
+      {
+        "lang_a": "jpn_Jpan",
+        "lang_b": "kor_Hang",
+        "mean_a": 3.6912033228778127,
+        "mean_b": 3.1195809002338115,
+        "cohens_d": 1.1819659334687738,
+        "welch_t": 37.37704466488365,
+        "welch_p": 5.731759420514215e-258
+      },
+      {
+        "lang_a": "jpn_Jpan",
+        "lang_b": "rus_Cyrl",
+        "mean_a": 3.6912033228778127,
+        "mean_b": 4.8036546516093335,
+        "cohens_d": -1.8021958273807441,
+        "welch_t": -56.990436041748,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "jpn_Jpan",
+        "lang_b": "spa_Latn",
+        "mean_a": 3.6912033228778127,
+        "mean_b": 3.527566086583897,
+        "cohens_d": 0.3361444271007862,
+        "welch_t": 10.629820124109145,
+        "welch_p": 5.273347061564243e-26
+      },
+      {
+        "lang_a": "jpn_Jpan",
+        "lang_b": "zho_Hans",
+        "mean_a": 3.6912033228778127,
+        "mean_b": 3.741516470849917,
+        "cohens_d": -0.09262308473241093,
+        "welch_t": -2.9289991166518856,
+        "welch_p": 0.0034198977693798258
+      },
+      {
+        "lang_a": "kor_Hang",
+        "lang_b": "rus_Cyrl",
+        "mean_a": 3.1195809002338115,
+        "mean_b": 4.8036546516093335,
+        "cohens_d": -3.0935713103592604,
+        "welch_t": -97.8273144488691,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "kor_Hang",
+        "lang_b": "spa_Latn",
+        "mean_a": 3.1195809002338115,
+        "mean_b": 3.527566086583897,
+        "cohens_d": -1.0454310537962404,
+        "welch_t": -33.059432666661344,
+        "welch_p": 4.3784757521263753e-212
+      },
+      {
+        "lang_a": "kor_Hang",
+        "lang_b": "zho_Hans",
+        "mean_a": 3.1195809002338115,
+        "mean_b": 3.741516470849917,
+        "cohens_d": -1.3559208841061199,
+        "welch_t": -42.87798320764541,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "rus_Cyrl",
+        "lang_b": "spa_Latn",
+        "mean_a": 4.8036546516093335,
+        "mean_b": 3.527566086583897,
+        "cohens_d": 2.3319857626029874,
+        "welch_t": 73.74386480910155,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "rus_Cyrl",
+        "lang_b": "zho_Hans",
+        "mean_a": 4.8036546516093335,
+        "mean_b": 3.741516470849917,
+        "cohens_d": 1.7763365016272648,
+        "welch_t": 56.17269236037553,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "spa_Latn",
+        "lang_b": "zho_Hans",
+        "mean_a": 3.527566086583897,
+        "mean_b": 3.741516470849917,
+        "cohens_d": -0.4630563689573642,
+        "welch_t": -14.643128109525621,
+        "welch_p": 3.000005576039076e-47
+      }
+    ]
+  },
+  "ANOVA_token_per_second": {
+    "metric": "token_per_second",
+    "n_observations": 16000,
+    "df_model": 0,
+    "df_language": 7,
+    "df_interaction": 0,
+    "df_within": 15992,
+    "F_model": NaN,
+    "p_model": null,
+    "F_language": 786.1034147273199,
+    "p_language": 1.1102230246251565e-16,
+    "F_interaction": NaN,
+    "p_interaction": null,
+    "eta2_model": 0.0,
+    "eta2_language": 0.2560034698701048,
+    "eta2_interaction": 0.0,
+    "partial_eta2_model": 0.0,
+    "partial_eta2_language": 0.2560034698701048,
+    "partial_eta2_interaction": 0.0,
+    "ss_total": 2437442.447482921,
+    "ss_within": 1813448.7233186127
+  },
+  "ANOVA_bit_per_second": {
+    "metric": "bit_per_second",
+    "n_observations": 16000,
+    "df_model": 0,
+    "df_language": 7,
+    "df_interaction": 0,
+    "df_within": 15992,
+    "F_model": NaN,
+    "p_model": null,
+    "F_language": 2587.884886077529,
+    "p_language": 1.1102230246251565e-16,
+    "F_interaction": NaN,
+    "p_interaction": null,
+    "eta2_model": 0.0,
+    "eta2_language": 0.5311253131807661,
+    "eta2_interaction": 0.0,
+    "partial_eta2_model": 0.0,
+    "partial_eta2_language": 0.5311253131807661,
+    "partial_eta2_interaction": 0.0,
+    "ss_total": 29697785001.348633,
+    "ss_within": 13924539641.732283
+  },
+  "ANOVA_bytes_per_token": {
+    "metric": "bytes_per_token",
+    "n_observations": 16000,
+    "df_model": 0,
+    "df_language": 7,
+    "df_interaction": 0,
+    "df_within": 15992,
+    "F_model": NaN,
+    "p_model": null,
+    "F_language": 2439.8848124585256,
+    "p_language": 1.1102230246251565e-16,
+    "F_interaction": NaN,
+    "p_interaction": null,
+    "eta2_model": 0.0,
+    "eta2_language": 0.5164371703285411,
+    "eta2_interaction": 0.0,
+    "partial_eta2_model": 0.0,
+    "partial_eta2_language": 0.5164371703285411,
+    "partial_eta2_interaction": 0.0,
+    "ss_total": 7890.6365902597745,
+    "ss_within": 3815.6185574951683
+  }
+}

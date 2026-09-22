@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0152",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章を日本語で続けて、短い段落で書いてください。\n\nAngelは2006年に、組織がより高いパフォーマンスレベルに到達するうえで役立つ方法として連続体アプローチを説明しています。\n\n/no_think",
+    "source_text": "Angelは2006年に、組織がより高いパフォーマンスレベルに到達するうえで役立つ方法として連続体アプローチを説明しています。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Angelは、組織のパフォーマンスを向上させるために、連続体アプローチを提案しています。連続体アプローチとは、組織全員が同じ目標と価値観を持って行動することです。\n\nこのアプローチでは、各部門やチームは、他の部門やチームの仕事に協力して、共同で作業します。つまり、すべての部門が同じ目標を達成できるようになります。\n\n例えば、製品開発部と販売部門は、同じ目標を持って一緒に新しい製品を開発することです。同様に、研究部門と製品部門は、同じ目標を持って一緒に新しい技術を開発することができます。\n\nこの連続体アプローチでは、組織全員が同じ力で働いて、共同で作業し、パフォーマンスを向上させることができます。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 7294266598,
+    "load_duration": 82342693,
+    "prompt_eval_duration": 37676509,
+    "eval_duration": 7050911955,
+    "eval_count": 199,
+    "prompt_eval_count": 91,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-07T02:12:42.731738628Z",
+    "message": {
+      "role": "assistant",
+      "content": "Angelは、組織のパフォーマンスを向上させるために、連続体アプローチを提案しています。連続体アプローチとは、組織全員が同じ目標と価値観を持って行動することです。\n\nこのアプローチでは、各部門やチームは、他の部門やチームの仕事に協力して、共同で作業します。つまり、すべての部門が同じ目標を達成できるようになります。\n\n例えば、製品開発部と販売部門は、同じ目標を持って一緒に新しい製品を開発することです。同様に、研究部門と製品部門は、同じ目標を持って一緒に新しい技術を開発することができます。\n\nこの連続体アプローチでは、組織全員が同じ力で働いて、共同で作業し、パフォーマンスを向上させることができます。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 7294266598,
+    "load_duration": 82342693,
+    "prompt_eval_count": 91,
+    "prompt_eval_duration": 37676509,
+    "eval_count": 199,
+    "eval_duration": 7050911955
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788747155.4013724,
+      "nvidia_smi": {
+        "timestamp_unix": 1788747155.4013727,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.5625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.579,
+            "temp_c": 52,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788747155.414288,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 242.9296875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2198.24609375,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 242.9296875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1955.31640625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788747155.4278517,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 248760,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788747162.732037,
+      "nvidia_smi": {
+        "timestamp_unix": 1788747162.7320373,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.5625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.596,
+            "temp_c": 52,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788747162.7467375,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 232.7265625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2188.04296875,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 232.7265625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1955.31640625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788747162.7621953,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 238312,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788747155.4371462,
+      "response_received_unix": 1788747162.731988,
+      "first_byte_unix": 1788747162.7319422,
+      "total_wall_ms": 7294.841766357422,
+      "queue_wait_ms": 7294.795989990234,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 07 Sep 2026 02:12:42 GMT",
+        "Content-Length": "1185",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788747162.772205,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788747155.4371028
+    }
+  },
+  "wall_clock_unix": 1788747162.772205
+}

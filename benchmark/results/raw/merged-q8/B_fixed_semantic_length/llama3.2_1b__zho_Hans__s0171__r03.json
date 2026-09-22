@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "zho_Hans",
+  "sample_id": "s0171",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n离岸流是海浪从海滩快速回流到海中的回流，通常发生在暗礁或类似的地方。\n\n/no_think",
+    "source_text": "离岸流是海浪从海滩快速回流到海中的回流，通常发生在暗礁或类似的地方。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "海洋科学家们发现，在某些特定的海洋环境中，海浪会被吸引回海中的流动力学。这种现象称为离岸流。离岸流通常发生在暗礁或类似的地方，因为这些区域的水深较大，导致海浪受到阻碍。同时，暗礁也会减少海洋流速，使得海浪更容易被吸引回海中的流动力学。这一现象在某些地区，如加拿大和美国的太平洋沿岸，已经被观察到。研究人员正在努力了解离岸流对海洋生态系统的影响，并探索如何利用这种现象来改善海洋环境。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1076633093,
+    "load_duration": 83069269,
+    "prompt_eval_duration": 6717462,
+    "eval_duration": 909502044,
+    "eval_count": 157,
+    "prompt_eval_count": 102,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:06:18.23731057Z",
+    "message": {
+      "role": "assistant",
+      "content": "海洋科学家们发现，在某些特定的海洋环境中，海浪会被吸引回海中的流动力学。这种现象称为离岸流。离岸流通常发生在暗礁或类似的地方，因为这些区域的水深较大，导致海浪受到阻碍。同时，暗礁也会减少海洋流速，使得海浪更容易被吸引回海中的流动力学。这一现象在某些地区，如加拿大和美国的太平洋沿岸，已经被观察到。研究人员正在努力了解离岸流对海洋生态系统的影响，并探索如何利用这种现象来改善海洋环境。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1076633093,
+    "load_duration": 83069269,
+    "prompt_eval_count": 102,
+    "prompt_eval_duration": 6717462,
+    "eval_count": 157,
+    "eval_duration": 909502044
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789023977.1142595,
+      "nvidia_smi": {
+        "timestamp_unix": 1789023977.1142597,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 77.752,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789023977.124737,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.3046875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.296875,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.3046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 971.9921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789023977.1459975,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264504,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789023978.2376838,
+      "nvidia_smi": {
+        "timestamp_unix": 1789023978.2376845,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 73.103,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789023978.2485995,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.3671875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.359375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.3671875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 971.9921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789023978.2726362,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264568,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789023977.1603296,
+      "response_received_unix": 1789023978.2376258,
+      "first_byte_unix": 1789023978.2375798,
+      "total_wall_ms": 1077.296257019043,
+      "queue_wait_ms": 1077.2502422332764,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:06:18 GMT",
+        "Content-Length": "869",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789023978.287335,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789023977.1602857
+    }
+  },
+  "wall_clock_unix": 1789023978.287335
+}

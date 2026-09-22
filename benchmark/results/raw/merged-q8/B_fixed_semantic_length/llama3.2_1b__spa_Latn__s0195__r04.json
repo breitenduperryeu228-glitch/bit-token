@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "spa_Latn",
+  "sample_id": "s0195",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nLiggins comenzó sus investigaciones sobre el parto prematuro en su tiempo libre, mientras trabajaba en el hospital.\n\n/no_think",
+    "source_text": "Liggins comenzó sus investigaciones sobre el parto prematuro en su tiempo libre, mientras trabajaba en el hospital."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "En el hospital, Liggins se encontraba rodeado de mujeres embarazadas y bebés, lo que le permitió observar de primera mano los desafíos del parto prematuro. Su interés por este tema lo llevó a realizar investigaciones en su tiempo libre, donde pudo recopilar datos valiosos sobre la salud y el bienestar de las mujeres embarazadas en riesgo.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 629698376,
+    "load_duration": 89246521,
+    "prompt_eval_duration": 5940961,
+    "eval_duration": 500114907,
+    "eval_count": 87,
+    "prompt_eval_count": 100,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T08:12:39.464224154Z",
+    "message": {
+      "role": "assistant",
+      "content": "En el hospital, Liggins se encontraba rodeado de mujeres embarazadas y bebés, lo que le permitió observar de primera mano los desafíos del parto prematuro. Su interés por este tema lo llevó a realizar investigaciones en su tiempo libre, donde pudo recopilar datos valiosos sobre la salud y el bienestar de las mujeres embarazadas en riesgo."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 629698376,
+    "load_duration": 89246521,
+    "prompt_eval_count": 100,
+    "prompt_eval_duration": 5940961,
+    "eval_count": 87,
+    "eval_duration": 500114907
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789027958.7883935,
+      "nvidia_smi": {
+        "timestamp_unix": 1789027958.7883937,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 72.525,
+            "temp_c": 78,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789027958.798695,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.7421875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1292.4765625,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.7421875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1033.734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789027958.819865,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264952,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789027959.4646342,
+      "nvidia_smi": {
+        "timestamp_unix": 1789027959.4646347,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 2,
+            "mem_util_pct": 2,
+            "power_w": 72.256,
+            "temp_c": 78,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789027959.475654,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 259.0546875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1292.7890625,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 259.0546875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1033.734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789027959.4996817,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265272,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789027958.8341777,
+      "response_received_unix": 1789027959.4645731,
+      "first_byte_unix": 1789027959.464514,
+      "total_wall_ms": 630.3954124450684,
+      "queue_wait_ms": 630.3362846374512,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 08:12:39 GMT",
+        "Content-Length": "640",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789027959.5143578,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789027958.8341348
+    }
+  },
+  "wall_clock_unix": 1789027959.5143578
+}

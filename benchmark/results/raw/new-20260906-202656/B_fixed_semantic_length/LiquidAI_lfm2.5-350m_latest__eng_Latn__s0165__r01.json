@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "eng_Latn",
+  "sample_id": "s0165",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Please write exactly about 256 characters of text in English on the topic implied by the following sentence. Do not add greetings, do not add explanations, just the paragraph itself:\n\nThe Portuguese destroyed it and rebuilt it under the name Casa Branca, only to abandon it after an earthquake in 1755.\n\n/no_think",
+    "source_text": "The Portuguese destroyed it and rebuilt it under the name Casa Branca, only to abandon it after an earthquake in 1755."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "The Portuguese destroyed the city, rebuilt it, and named it Casa Branca. After the earthquake in 1755, they abandoned it, leaving behind a legacy of colonial architecture.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 670429895,
+    "load_duration": 24959363,
+    "prompt_eval_duration": 208632376,
+    "eval_duration": 430541916,
+    "eval_count": 37,
+    "prompt_eval_count": 89,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T07:28:22.328066901Z",
+    "message": {
+      "role": "assistant",
+      "content": "The Portuguese destroyed the city, rebuilt it, and named it Casa Branca. After the earthquake in 1755, they abandoned it, leaving behind a legacy of colonial architecture."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 670429895,
+    "load_duration": 24959363,
+    "prompt_eval_count": 89,
+    "prompt_eval_duration": 208632376,
+    "eval_count": 37,
+    "eval_duration": 430541916
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788938901.6206954,
+      "nvidia_smi": {
+        "timestamp_unix": 1788938901.6206956,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 11.823,
+            "temp_c": 47,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788938901.6341267,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.03125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 924882,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 976.0390625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.03125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 773.0078125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788938901.6483784,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207904,
+        "proc_threads": 40,
+        "proc_vol_ctx": 917756,
+        "proc_invol_ctx": 7126,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788938902.328587,
+      "nvidia_smi": {
+        "timestamp_unix": 1788938902.3285875,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 38,
+            "mem_util_pct": 14,
+            "power_w": 11.869,
+            "temp_c": 47,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788938902.3457227,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.03515625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 924884,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 976.41796875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.03515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 773.3828125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788938902.360854,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207908,
+        "proc_threads": 40,
+        "proc_vol_ctx": 917758,
+        "proc_invol_ctx": 7126,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788938901.657201,
+      "response_received_unix": 1788938902.3284981,
+      "first_byte_unix": 1788938902.3284214,
+      "total_wall_ms": 671.2970733642578,
+      "queue_wait_ms": 671.2203025817871,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 07:28:22 GMT",
+        "Content-Length": "483",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788938902.3698463,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788938901.6571574
+    }
+  },
+  "wall_clock_unix": 1788938902.3698463
+}

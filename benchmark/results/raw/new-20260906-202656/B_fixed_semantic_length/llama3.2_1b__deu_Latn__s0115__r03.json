@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "deu_Latn",
+  "sample_id": "s0115",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Bitte schreiben Sie ungefähr 256 Zeichen Text auf Deutsch über das Thema des folgenden Satzes. Keine Begrüßung, keine Erklärungen, nur den Absatz selbst:\n\nSie befindet sich bis zur Anklageerhebung und Verhandlung in Untersuchungshaft, doch Aussagen von Augenzeugen könnten verfälscht sein, da ihr Bild weithin veröffentlicht wurde.\n\n/no_think",
+    "source_text": "Sie befindet sich bis zur Anklageerhebung und Verhandlung in Untersuchungshaft, doch Aussagen von Augenzeugen könnten verfälscht sein, da ihr Bild weithin veröffentlicht wurde."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Die Straßenlaternen schimmerten im Mondlicht, während sie sich auf den Weg machten, um ihre Arbeit zu erledigen. Sie trugen ihre Sonnenbrillen und ihre Hüte, um die Sonne abzuschirmen. Die Straße war still, nur der leise Rauschen des Windes war zu hören.\n\nSie fand einen Platz in einem kleinen Café, wo sie sich mit einigen Freunden unterhielten. Sie sprachen über alles Mögliche, von ihren Lieblingsfilmen bis hin zu ihren Lieblingsreisen. Die Kaffeeautomaten ruften ihre Namen, und sie bestellten sich ein paar Getränke.\n\nNach dem Café ging sie zum nächsten Ort, wo sie ihre Freunde wiedersehen wollte. Sie waren alle sehr aufgeregt, weil sie wissen wollten, dass es endlich Zeit war, die Dinge zu tun, die sie seit Jahren vermeiden wollten. Die Erwartung war groß, aber auch ein bisschen nervenaufreibend.\n\nSie ging weiter, bis sie schließlich an einem alten Park vorbeigelaufen ist. Sie saßen auf einer Bank und sprachen über ihre Träume und Hoffnungen. Es war ein ruhiger Ort, der ihnen beiden eine Zeit der Ruhe bot.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1818631830,
+    "load_duration": 81930223,
+    "prompt_eval_duration": 6741170,
+    "eval_duration": 1618436027,
+    "eval_count": 278,
+    "prompt_eval_count": 126,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T08:37:05.510820714Z",
+    "message": {
+      "role": "assistant",
+      "content": "Die Straßenlaternen schimmerten im Mondlicht, während sie sich auf den Weg machten, um ihre Arbeit zu erledigen. Sie trugen ihre Sonnenbrillen und ihre Hüte, um die Sonne abzuschirmen. Die Straße war still, nur der leise Rauschen des Windes war zu hören.\n\nSie fand einen Platz in einem kleinen Café, wo sie sich mit einigen Freunden unterhielten. Sie sprachen über alles Mögliche, von ihren Lieblingsfilmen bis hin zu ihren Lieblingsreisen. Die Kaffeeautomaten ruften ihre Namen, und sie bestellten sich ein paar Getränke.\n\nNach dem Café ging sie zum nächsten Ort, wo sie ihre Freunde wiedersehen wollte. Sie waren alle sehr aufgeregt, weil sie wissen wollten, dass es endlich Zeit war, die Dinge zu tun, die sie seit Jahren vermeiden wollten. Die Erwartung war groß, aber auch ein bisschen nervenaufreibend.\n\nSie ging weiter, bis sie schließlich an einem alten Park vorbeigelaufen ist. Sie saßen auf einer Bank und sprachen über ihre Träume und Hoffnungen. Es war ein ruhiger Ort, der ihnen beiden eine Zeit der Ruhe bot."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1818631830,
+    "load_duration": 81930223,
+    "prompt_eval_count": 126,
+    "prompt_eval_duration": 6741170,
+    "eval_count": 278,
+    "eval_duration": 1618436027
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789029423.6418443,
+      "nvidia_smi": {
+        "timestamp_unix": 1789029423.6418445,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 82.909,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789029423.652498,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.9375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1298.703125,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.9375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1039.765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789029423.676307,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265152,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789029425.511191,
+      "nvidia_smi": {
+        "timestamp_unix": 1789029425.5111916,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 83.01,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789029425.5221593,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 259.0,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1298.765625,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 259.0,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1039.765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789029425.547471,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265216,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789029423.6918435,
+      "response_received_unix": 1789029425.5111294,
+      "first_byte_unix": 1789029425.5110843,
+      "total_wall_ms": 1819.2858695983887,
+      "queue_wait_ms": 1819.2408084869385,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 08:37:05 GMT",
+        "Content-Length": "1342",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789029425.5632238,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789029423.6917934
+    }
+  },
+  "wall_clock_unix": 1789029425.5632238
+}

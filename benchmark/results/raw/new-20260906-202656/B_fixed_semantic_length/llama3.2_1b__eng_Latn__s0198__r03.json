@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "eng_Latn",
+  "sample_id": "s0198",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Please write exactly about 256 characters of text in English on the topic implied by the following sentence. Do not add greetings, do not add explanations, just the paragraph itself:\n\nThe work done was mostly theoretical, but the program was written to simulate observations made of the Sagittarius galaxy.\n\n/no_think",
+    "source_text": "The work done was mostly theoretical, but the program was written to simulate observations made of the Sagittarius galaxy."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "The team spent months developing a complex algorithm to model the galaxy's behavior, incorporating data from various telescopes and astronomical surveys. Their simulation took into account factors such as star formation, gas dynamics, and dark matter interactions. The results were impressive, with the simulated galaxy exhibiting similar characteristics to observations made by astronomers.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 478270726,
+    "load_duration": 82247678,
+    "prompt_eval_duration": 5919849,
+    "eval_duration": 359467562,
+    "eval_count": 63,
+    "prompt_eval_count": 92,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T06:42:17.501507189Z",
+    "message": {
+      "role": "assistant",
+      "content": "The team spent months developing a complex algorithm to model the galaxy's behavior, incorporating data from various telescopes and astronomical surveys. Their simulation took into account factors such as star formation, gas dynamics, and dark matter interactions. The results were impressive, with the simulated galaxy exhibiting similar characteristics to observations made by astronomers."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 478270726,
+    "load_duration": 82247678,
+    "prompt_eval_count": 92,
+    "prompt_eval_duration": 5919849,
+    "eval_count": 63,
+    "eval_duration": 359467562
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789022536.9766197,
+      "nvidia_smi": {
+        "timestamp_unix": 1789022536.97662,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 31,
+            "mem_util_pct": 35,
+            "power_w": 65.215,
+            "temp_c": 76,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789022536.9870517,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.0234375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1213.9921875,
+        "tree_threads": 59,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.0234375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 955.96875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789022537.0085807,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264216,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789022537.5018332,
+      "nvidia_smi": {
+        "timestamp_unix": 1789022537.5018334,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 31,
+            "mem_util_pct": 35,
+            "power_w": 63.136,
+            "temp_c": 73,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789022537.5126894,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.484375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1214.453125,
+        "tree_threads": 59,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.484375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 955.96875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789022537.5358028,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264688,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789022537.0228903,
+      "response_received_unix": 1789022537.5017805,
+      "first_byte_unix": 1789022537.5017388,
+      "total_wall_ms": 478.89018058776855,
+      "queue_wait_ms": 478.8484573364258,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:42:17 GMT",
+        "Content-Length": "685",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789022537.5502017,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789022537.0228477
+    }
+  },
+  "wall_clock_unix": 1789022537.5502017
+}

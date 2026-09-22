@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "spa_Latn",
+  "sample_id": "s0184",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nEsta teoría sostiene que la mayor parte de la materia oscura que rodea a una galaxia se sitúa en torno a esta en una clase de halo y se compone por numerosas partículas pequeñas.\n\n/no_think",
+    "source_text": "Esta teoría sostiene que la mayor parte de la materia oscura que rodea a una galaxia se sitúa en torno a esta en una clase de halo y se compone por numerosas partículas pequeñas."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Esta teoría sugiere que la mayoría del material oscura cerca de una galaxia está en un halo, compuesto por muchas partículas.",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 761908389,
+    "load_duration": 37246867,
+    "prompt_eval_duration": 263826307,
+    "eval_duration": 441348677,
+    "eval_count": 33,
+    "prompt_eval_count": 111,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T06:36:35.910517876Z",
+    "message": {
+      "role": "assistant",
+      "content": "Esta teoría sugiere que la mayoría del material oscura cerca de una galaxia está en un halo, compuesto por muchas partículas."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 761908389,
+    "load_duration": 37246867,
+    "prompt_eval_count": 111,
+    "prompt_eval_duration": 263826307,
+    "eval_count": 33,
+    "eval_duration": 441348677
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788935795.1125693,
+      "nvidia_smi": {
+        "timestamp_unix": 1788935795.1125698,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.16,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788935795.126285,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 188.5234375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 890726,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 994.87109375,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 188.5234375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 806.34765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788935795.1396048,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 193048,
+        "proc_threads": 40,
+        "proc_vol_ctx": 884105,
+        "proc_invol_ctx": 6621,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788935795.9108012,
+      "nvidia_smi": {
+        "timestamp_unix": 1788935795.9108012,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.125,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788935795.9250076,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 185.44140625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 890736,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 991.7890625,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 185.44140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 806.34765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788935795.9379919,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 189892,
+        "proc_threads": 40,
+        "proc_vol_ctx": 884115,
+        "proc_invol_ctx": 6621,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788935795.1482742,
+      "response_received_unix": 1788935795.9107597,
+      "first_byte_unix": 1788935795.9107182,
+      "total_wall_ms": 762.4855041503906,
+      "queue_wait_ms": 762.444019317627,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 06:36:35 GMT",
+        "Content-Length": "430",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788935795.9459336,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788935795.1482327
+    }
+  },
+  "wall_clock_unix": 1788935795.9459336
+}

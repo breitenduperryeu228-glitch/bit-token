@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0184",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nこの理論によると、銀河の周りにある暗黒物質のほとんどは、一種のハローのように銀河を取り巻き、たくさんの小粒子でできていると言われています。\n\n/no_think",
+    "source_text": "この理論によると、銀河の周りにある暗黒物質のほとんどは、一種のハローのように銀河を取り巻き、たくさんの小粒子でできていると言われています。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "この理論によると、銀河の周りには暗黒物質が存在し、銀河を包むハローのような構造を形成していると考えられています。ハローのような構造は、銀河の形成過程で重要な役割を果たし、銀河の質量分布や進化にも影響を与えていると推測されています。特に、銀河の回転曲線を調べる研究では、ハローのような密度分布が観測結果と一致していることが示されており、暗黒物質の存在が重要な鍵であると結論付けられています。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1815810267,
+    "load_duration": 22233029,
+    "prompt_eval_duration": 194770758,
+    "eval_duration": 1579369160,
+    "eval_count": 137,
+    "prompt_eval_count": 110,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:32:47.149027101Z",
+    "message": {
+      "role": "assistant",
+      "content": "この理論によると、銀河の周りには暗黒物質が存在し、銀河を包むハローのような構造を形成していると考えられています。ハローのような構造は、銀河の形成過程で重要な役割を果たし、銀河の質量分布や進化にも影響を与えていると推測されています。特に、銀河の回転曲線を調べる研究では、ハローのような密度分布が観測結果と一致していることが示されており、暗黒物質の存在が重要な鍵であると結論付けられています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1815810267,
+    "load_duration": 22233029,
+    "prompt_eval_count": 110,
+    "prompt_eval_duration": 194770758,
+    "eval_count": 137,
+    "eval_duration": 1579369160
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788942765.297967,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942765.2979672,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 38,
+            "mem_util_pct": 14,
+            "power_w": 12.49,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942765.3118846,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 199.4609375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 973552,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 986.6171875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 199.4609375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.15625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942765.3246102,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 204248,
+        "proc_threads": 40,
+        "proc_vol_ctx": 966131,
+        "proc_invol_ctx": 7421,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788942767.1496181,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942767.1496186,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 37,
+            "mem_util_pct": 14,
+            "power_w": 12.47,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942767.1647544,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 199.7890625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 973552,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 987.5078125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 199.7890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.71875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942767.177984,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 204584,
+        "proc_threads": 40,
+        "proc_vol_ctx": 966131,
+        "proc_invol_ctx": 7421,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788942765.332814,
+      "response_received_unix": 1788942767.1495402,
+      "first_byte_unix": 1788942767.14948,
+      "total_wall_ms": 1816.7262077331543,
+      "queue_wait_ms": 1816.6661262512207,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:32:47 GMT",
+        "Content-Length": "898",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788942767.1863363,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788942765.3327706
+    }
+  },
+  "wall_clock_unix": 1788942767.1863363
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "zho_Hans",
+  "sample_id": "s0086",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n在哈尔达斯维克村 (Haldarsvík) 可以欣赏附近依斯特洛伊岛 (Eysturoy) 的美景。村中有一个与众不同的八角形教堂。\n\n/no_think",
+    "source_text": "在哈尔达斯维克村 (Haldarsvík) 可以欣赏附近依斯特洛伊岛 (Eysturoy) 的美景。村中有一个与众不同的八角形教堂。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "哈尔达斯维克的郊区，邻近的埃斯特罗伊岛，拥有独特的风景。八角形教堂，看似简单，却蕴藏着深刻的历史意义。每一座教堂都带有独特的装饰风格，仿佛在诉说着古老的故事。村民们常常在清晨，静谧的夜晚，听到教堂的钟声，感受到一种宁静的力量。埃斯特罗伊岛的海滩，沿海风景如画，海浪在沙子上摇曳，令人心动。村庄的中心，古老的石桥，连接着两座岛屿，象征着连接与传承。每当夜幕降临，村里的居民会聚集，分享故事，感受这片土地的宁静与魅力。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2642958209,
+    "load_duration": 23972723,
+    "prompt_eval_duration": 170015143,
+    "eval_duration": 2423584917,
+    "eval_count": 207,
+    "prompt_eval_count": 119,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T07:45:26.471162174Z",
+    "message": {
+      "role": "assistant",
+      "content": "哈尔达斯维克的郊区，邻近的埃斯特罗伊岛，拥有独特的风景。八角形教堂，看似简单，却蕴藏着深刻的历史意义。每一座教堂都带有独特的装饰风格，仿佛在诉说着古老的故事。村民们常常在清晨，静谧的夜晚，听到教堂的钟声，感受到一种宁静的力量。埃斯特罗伊岛的海滩，沿海风景如画，海浪在沙子上摇曳，令人心动。村庄的中心，古老的石桥，连接着两座岛屿，象征着连接与传承。每当夜幕降临，村里的居民会聚集，分享故事，感受这片土地的宁静与魅力。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2642958209,
+    "load_duration": 23972723,
+    "prompt_eval_count": 119,
+    "prompt_eval_duration": 170015143,
+    "eval_count": 207,
+    "eval_duration": 2423584917
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788939923.7915995,
+      "nvidia_smi": {
+        "timestamp_unix": 1788939923.7916,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.75,
+            "vram_total_mib": 8188.0,
+            "util_pct": 37,
+            "mem_util_pct": 14,
+            "power_w": 12.503,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788939923.8070812,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.31640625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 936360,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 982.87109375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.31640625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 779.5546875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788939923.819586,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208196,
+        "proc_threads": 40,
+        "proc_vol_ctx": 929162,
+        "proc_invol_ctx": 7198,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788939926.4716463,
+      "nvidia_smi": {
+        "timestamp_unix": 1788939926.4716468,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 38,
+            "mem_util_pct": 14,
+            "power_w": 12.454,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788939926.4887855,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.765625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 936360,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 981.3828125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.765625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 778.6171875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788939926.5026522,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207632,
+        "proc_threads": 40,
+        "proc_vol_ctx": 929162,
+        "proc_invol_ctx": 7198,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788939923.8278162,
+      "response_received_unix": 1788939926.4715707,
+      "first_byte_unix": 1788939926.471516,
+      "total_wall_ms": 2643.754482269287,
+      "queue_wait_ms": 2643.6996459960938,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 07:45:26 GMT",
+        "Content-Length": "937",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788939926.5119445,
+      "vram_delta_mib": 0.3125
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788939923.8277748
+    }
+  },
+  "wall_clock_unix": 1788939926.5119445
+}

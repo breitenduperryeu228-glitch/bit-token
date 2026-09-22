@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "fra_Latn",
+  "sample_id": "s0078",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Veuillez écrire environ 256 caractères de texte en français sur le sujet suggéré par la phrase suivante. Pas de salutations ni d'explications, juste le paragraphe :\n\nLa Finlande est une destination de choix pour la navigation de plaisance. Le « Pays des mille lacs » compte aussi des milliers d’îles, dans les lacs et dans les archipels côtiers.\n\n/no_think",
+    "source_text": "La Finlande est une destination de choix pour la navigation de plaisance. Le « Pays des mille lacs » compte aussi des milliers d’îles, dans les lacs et dans les archipels côtiers."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Finlande offre un excellent environnement de pêche. Ses millions d'islands et ses vastes lacs offrent une multitude de possibilités pour la navigation en mer.",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 849230016,
+    "load_duration": 36499640,
+    "prompt_eval_duration": 275383687,
+    "eval_duration": 514252278,
+    "eval_count": 39,
+    "prompt_eval_count": 116,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T06:42:51.393173914Z",
+    "message": {
+      "role": "assistant",
+      "content": "Finlande offre un excellent environnement de pêche. Ses millions d'islands et ses vastes lacs offrent une multitude de possibilités pour la navigation en mer."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 849230016,
+    "load_duration": 36499640,
+    "prompt_eval_count": 116,
+    "prompt_eval_duration": 275383687,
+    "eval_count": 39,
+    "eval_duration": 514252278
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788936170.5074856,
+      "nvidia_smi": {
+        "timestamp_unix": 1788936170.5074859,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.392,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788936170.5217614,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 189.16796875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 896585,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1000.30859375,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 189.16796875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 811.140625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788936170.535114,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 193708,
+        "proc_threads": 40,
+        "proc_vol_ctx": 889866,
+        "proc_invol_ctx": 6719,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788936171.3934836,
+      "nvidia_smi": {
+        "timestamp_unix": 1788936171.3934839,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 29,
+            "mem_util_pct": 14,
+            "power_w": 12.408,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788936171.408249,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 187.01953125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 896599,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 998.16796875,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 187.01953125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 811.1484375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788936171.4213774,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 191508,
+        "proc_threads": 40,
+        "proc_vol_ctx": 889880,
+        "proc_invol_ctx": 6719,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788936170.5435662,
+      "response_received_unix": 1788936171.3934407,
+      "first_byte_unix": 1788936171.3933997,
+      "total_wall_ms": 849.8744964599609,
+      "queue_wait_ms": 849.8334884643555,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 06:42:51 GMT",
+        "Content-Length": "461",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788936171.4292805,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788936170.5435245
+    }
+  },
+  "wall_clock_unix": 1788936171.4292805
+}

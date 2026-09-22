@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "kor_Hang",
+  "sample_id": "s0188",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n예를 들어, 세계에서 가장 일반적인 정지 화상 사진 포맷은 35 mm인데, 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다.\n\n/no_think",
+    "source_text": "예를 들어, 세계에서 가장 일반적인 정지 화상 사진 포맷은 35 mm인데, 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "35 mm 필름은 아날로그 필름 시대의 가장 일반적인 포맷 중 하나입니다. 이 포맷은 1960년대 초에 세계적으로 phổ biến하게되었습니다. 35 mm 필름은 아날로그 필름의 대표적인 포맷 중 하나로, 1970년대 후반부터 1990년대까지는 대중화가 진행되었으며, 2000년대 이후에는 소형 필름으로 인해 popularity가下降했습니다.\n\n이 포맷은 35mm 필름의 특징을 가지는 필름 사이즈로, 1960년대 초에 주로 사용되던 120mm 필름보다 작고, 1970년대 후반부터 1990년대까지는 대중화가 진행되었으며, 2000년대 이후에는 소형 필름으로 인해 popularity가下降했습니다.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1287077853,
+    "load_duration": 81419174,
+    "prompt_eval_duration": 6697616,
+    "eval_duration": 1125843376,
+    "eval_count": 194,
+    "prompt_eval_count": 125,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T08:02:29.97659211Z",
+    "message": {
+      "role": "assistant",
+      "content": "35 mm 필름은 아날로그 필름 시대의 가장 일반적인 포맷 중 하나입니다. 이 포맷은 1960년대 초에 세계적으로 phổ biến하게되었습니다. 35 mm 필름은 아날로그 필름의 대표적인 포맷 중 하나로, 1970년대 후반부터 1990년대까지는 대중화가 진행되었으며, 2000년대 이후에는 소형 필름으로 인해 popularity가下降했습니다.\n\n이 포맷은 35mm 필름의 특징을 가지는 필름 사이즈로, 1960년대 초에 주로 사용되던 120mm 필름보다 작고, 1970년대 후반부터 1990년대까지는 대중화가 진행되었으며, 2000년대 이후에는 소형 필름으로 인해 popularity가下降했습니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1287077853,
+    "load_duration": 81419174,
+    "prompt_eval_count": 125,
+    "prompt_eval_duration": 6697616,
+    "eval_count": 194,
+    "eval_duration": 1125843376
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789027348.6430871,
+      "nvidia_smi": {
+        "timestamp_unix": 1789027348.6430874,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 82.682,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789027348.653541,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.5625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1237.7265625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.5625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 979.1640625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789027348.675036,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264768,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789027349.9769518,
+      "nvidia_smi": {
+        "timestamp_unix": 1789027349.9769528,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 83.271,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789027349.9879427,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 259.0390625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1239.671875,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 259.0390625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 980.6328125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789027350.0119576,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265256,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789027348.6892025,
+      "response_received_unix": 1789027349.976896,
+      "first_byte_unix": 1789027349.9768553,
+      "total_wall_ms": 1287.6935005187988,
+      "queue_wait_ms": 1287.6527309417725,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 08:02:29 GMT",
+        "Content-Length": "1007",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789027350.0269463,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789027348.6891565
+    }
+  },
+  "wall_clock_unix": 1789027350.0269463
+}

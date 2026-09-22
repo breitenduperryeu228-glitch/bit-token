@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0081",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nノバスコシア州ハリファックスにあるダルハウジー大学医学部教授でカナダ糖尿病協会の臨床・科学部門の責任者を務めるエフード・ウル博士は、この研究はまだ初期段階にあるとして注意を促しました。\n\n/no_think",
+    "source_text": "ノバスコシア州ハリファックスにあるダルハウジー大学医学部教授でカナダ糖尿病協会の臨床・科学部門の責任者を務めるエフード・ウル博士は、この研究はまだ初期段階にあるとして注意を促しました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "エフード・ウル博士は、ノバスコシア州のハリファックスにあるダルハウジー大学医学部で、糖尿病の新たな治療法開発に向けた研究を進めています。彼のチームは、臨床試験の結果を基に、血糖値の管理をより効果的にする新薬の候補を絞り込んでおり、早期の臨床応用が期待されています。特に、患者の生活の質を向上させるための介入が注目されており、糖尿病患者のQOL（生活の質）向上に大きく貢献する可能性が示唆されています。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2183473697,
+    "load_duration": 28474795,
+    "prompt_eval_duration": 311397052,
+    "eval_duration": 1814895471,
+    "eval_count": 146,
+    "prompt_eval_count": 130,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:16:42.646048553Z",
+    "message": {
+      "role": "assistant",
+      "content": "エフード・ウル博士は、ノバスコシア州のハリファックスにあるダルハウジー大学医学部で、糖尿病の新たな治療法開発に向けた研究を進めています。彼のチームは、臨床試験の結果を基に、血糖値の管理をより効果的にする新薬の候補を絞り込んでおり、早期の臨床応用が期待されています。特に、患者の生活の質を向上させるための介入が注目されており、糖尿病患者のQOL（生活の質）向上に大きく貢献する可能性が示唆されています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2183473697,
+    "load_duration": 28474795,
+    "prompt_eval_count": 130,
+    "prompt_eval_duration": 311397052,
+    "eval_count": 146,
+    "eval_duration": 1814895471
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788941800.4220536,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941800.4220538,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.204,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941800.4374423,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 201.82421875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 961122,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 982.9609375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 201.82421875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 781.13671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941800.4528313,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 206668,
+        "proc_threads": 40,
+        "proc_vol_ctx": 953778,
+        "proc_invol_ctx": 7344,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788941802.6466813,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941802.646682,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 14,
+            "power_w": 12.174,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941802.6647837,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.80078125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 961124,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 983.0,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.80078125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.19921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941802.6803474,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207668,
+        "proc_threads": 40,
+        "proc_vol_ctx": 953780,
+        "proc_invol_ctx": 7344,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788941800.4621456,
+      "response_received_unix": 1788941802.6465647,
+      "first_byte_unix": 1788941802.646481,
+      "total_wall_ms": 2184.4191551208496,
+      "queue_wait_ms": 2184.335470199585,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:16:42 GMT",
+        "Content-Length": "910",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788941802.6895587,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788941800.4620938
+    }
+  },
+  "wall_clock_unix": 1788941802.6895587
+}

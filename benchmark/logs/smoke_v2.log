@@ -1,0 +1,38 @@
+[20:07:54] === run_benchmark config: models=1 langs=2 samples=2 repeats=2 phase=A resume=True out_dir=new-smoke
+[20:07:54]   models in order: ['granite4:350m-h']
+[20:07:54]   languages: ['eng_Latn', 'rus_Cyrl']
+[20:07:54] -- PHASE A_fixed_tokens --
+[20:07:54]   >>> granite4:350m-h × A_fixed_tokens START
+[20:07:54]   [preflight] 'granite4:350m-h' available=True VRAM=2657MiB loaded_before=[]
+[20:07:55]   [ensure_loaded] ok — load_duration=499ms VRAM: 2657 -> 2657 MiB
+[20:07:55]   >>> granite4:350m-h cells_target = 8
+[20:08:03] !!! granite4:350m-h × A_fixed_tokens FATAL: 'rus_Cyrl'
+Traceback (most recent call last):
+  File "/home/hope/桌面/token/benchmark/scripts/run_benchmark.py", line 513, in _run
+    summary = run_one_model(
+        out_dir=out_dir,
+    ...<10 lines>...
+        retries=args.retries,
+    )
+  File "/home/hope/桌面/token/benchmark/scripts/run_benchmark.py", line 241, in run_one_model
+    user_prompt = render_user_prompt(
+        prompt_template, lang["code"], source_text, target_chars
+    )
+  File "/home/hope/桌面/token/benchmark/scripts/run_benchmark.py", line 126, in render_user_prompt
+    tmpl = template["templates"][language]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'rus_Cyrl'
+
+[20:08:03] === run_benchmark done — report at results/raw/new-smoke/RUN_REPORT.md ===
+[20:08:18] === run_benchmark config: models=1 langs=2 samples=2 repeats=2 phase=A resume=True out_dir=new-smoke
+[20:08:18]   models in order: ['granite4:350m-h']
+[20:08:18]   languages: ['eng_Latn', 'rus_Cyrl']
+[20:08:18] -- PHASE A_fixed_tokens --
+[20:08:18]   >>> granite4:350m-h × A_fixed_tokens START
+[20:08:18]   [preflight] 'granite4:350m-h' available=True VRAM=2657MiB loaded_before=['granite4:350m-h']
+[20:08:24]   [ensure_loaded] ok — load_duration=5562ms VRAM: 2657 -> 2657 MiB
+[20:08:24]   >>> granite4:350m-h cells_target = 8
+[20:08:34]   >>> granite4:350m-h cells=8 saved=8 skipped=0 failed=0 retries=0
+[20:08:36]   [unload] 'granite4:350m-h' success=True elapsed=1.0s VRAM_after=2657MiB
+[20:08:36]   >>> granite4:350m-h × A_fixed_tokens DONE
+[20:08:36] === run_benchmark done — report at results/raw/new-smoke/RUN_REPORT.md ===

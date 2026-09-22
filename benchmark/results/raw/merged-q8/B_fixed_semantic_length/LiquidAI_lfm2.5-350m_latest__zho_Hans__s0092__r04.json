@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "zho_Hans",
+  "sample_id": "s0092",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n北岸海滩（位于北港区内）在太平洋上，从北部的长湾 (Long Bay) 一直延伸到南部的德文波特 (Devonport)。\n\n/no_think",
+    "source_text": "北岸海滩（位于北港区内）在太平洋上，从北部的长湾 (Long Bay) 一直延伸到南部的德文波特 (Devonport)。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "北岸海滩位于北港区内，连接长湾与德文波特。长湾以其宁静的海岸线闻名，德文波特则以其历史悠久的港口著称。沿海地区的风景如画，海滩上常见的小船和游客在阳光下享受。长湾的深水域适合渔业，德文波特的港口则是重要的贸易枢纽。海滩的周边生态系统繁荣，海洋生物多样性令人惊叹。沿岸的交通网络完善，便于游客前往其他地方。海滩的景色变化令人期待，春天的阳光洒在海滩上，夏天的阳光透过树林洒下，秋天的色彩渐变，冬天的静谧。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2560849885,
+    "load_duration": 20236696,
+    "prompt_eval_duration": 191753031,
+    "eval_duration": 2321057071,
+    "eval_count": 199,
+    "prompt_eval_count": 111,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T07:46:40.266132383Z",
+    "message": {
+      "role": "assistant",
+      "content": "北岸海滩位于北港区内，连接长湾与德文波特。长湾以其宁静的海岸线闻名，德文波特则以其历史悠久的港口著称。沿海地区的风景如画，海滩上常见的小船和游客在阳光下享受。长湾的深水域适合渔业，德文波特的港口则是重要的贸易枢纽。海滩的周边生态系统繁荣，海洋生物多样性令人惊叹。沿岸的交通网络完善，便于游客前往其他地方。海滩的景色变化令人期待，春天的阳光洒在海滩上，夏天的阳光透过树林洒下，秋天的色彩渐变，冬天的静谧。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2560849885,
+    "load_duration": 20236696,
+    "prompt_eval_count": 111,
+    "prompt_eval_duration": 191753031,
+    "eval_count": 199,
+    "eval_duration": 2321057071
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788939997.671471,
+      "nvidia_smi": {
+        "timestamp_unix": 1788939997.6714714,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.449,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788939997.6846347,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.48046875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 937383,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 983.03515625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.48046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 779.5546875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788939997.696565,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208364,
+        "proc_threads": 40,
+        "proc_vol_ctx": 930178,
+        "proc_invol_ctx": 7205,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788940000.2667096,
+      "nvidia_smi": {
+        "timestamp_unix": 1788940000.26671,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.477,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788940000.2824967,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 201.71875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 937386,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 980.2734375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 201.71875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 778.5546875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788940000.295566,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 206560,
+        "proc_threads": 40,
+        "proc_vol_ctx": 930181,
+        "proc_invol_ctx": 7205,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788939997.7048347,
+      "response_received_unix": 1788940000.2666192,
+      "first_byte_unix": 1788940000.26653,
+      "total_wall_ms": 2561.784505844116,
+      "queue_wait_ms": 2561.695337295532,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 07:46:40 GMT",
+        "Content-Length": "919",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788940000.303804,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788939997.7047899
+    }
+  },
+  "wall_clock_unix": 1788940000.303804
+}

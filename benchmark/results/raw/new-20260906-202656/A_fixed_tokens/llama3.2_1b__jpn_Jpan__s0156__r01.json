@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0156",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章を日本語で続けて、短い段落で書いてください。\n\nギリシャの知識が衰退するにつれて、西洋諸国はギリシャの哲学や科学のルーツから切り離されていることに気づきました。\n\n/no_think",
+    "source_text": "ギリシャの知識が衰退するにつれて、西洋諸国はギリシャの哲学や科学のルーツから切り離されていることに気づきました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "ギリシャは古くから世界的に知られていた哲学と科学の中心地でした。 but 20年前から、西洋諸国の研究者がギリシャの哲学や科学のルーツを調べ始めていて、気づきました。\n\nギリシャの歴史家は「ギリシャの知識が衰退することは、世界的に知識が低下していることを意味します」と話しています。 また、ギリシャの哲学や科学のルーツから切り離されたため、研究者は、ギリシャの知識を再び発見したいと考えています。\n\nこのような気づきは、世界的な知識の低下に影響を与える可能性があります。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 5941393222,
+    "load_duration": 72843688,
+    "prompt_eval_duration": 35638593,
+    "eval_duration": 5716103902,
+    "eval_count": 163,
+    "prompt_eval_count": 93,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-07T02:15:04.285014429Z",
+    "message": {
+      "role": "assistant",
+      "content": "ギリシャは古くから世界的に知られていた哲学と科学の中心地でした。 but 20年前から、西洋諸国の研究者がギリシャの哲学や科学のルーツを調べ始めていて、気づきました。\n\nギリシャの歴史家は「ギリシャの知識が衰退することは、世界的に知識が低下していることを意味します」と話しています。 また、ギリシャの哲学や科学のルーツから切り離されたため、研究者は、ギリシャの知識を再び発見したいと考えています。\n\nこのような気づきは、世界的な知識の低下に影響を与える可能性があります。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 5941393222,
+    "load_duration": 72843688,
+    "prompt_eval_count": 93,
+    "prompt_eval_duration": 35638593,
+    "eval_count": 163,
+    "eval_duration": 5716103902
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788747298.305194,
+      "nvidia_smi": {
+        "timestamp_unix": 1788747298.3051941,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 28,
+            "mem_util_pct": 14,
+            "power_w": 12.681,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788747298.3192542,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 233.7890625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2189.2109375,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 233.7890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1955.421875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788747298.333577,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 239400,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788747304.285429,
+      "nvidia_smi": {
+        "timestamp_unix": 1788747304.2854292,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.642,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788747304.2998807,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 228.4140625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2183.84765625,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 228.4140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1955.43359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788747304.313168,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 233896,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788747298.3432138,
+      "response_received_unix": 1788747304.2853808,
+      "first_byte_unix": 1788747304.2853374,
+      "total_wall_ms": 5942.167043685913,
+      "queue_wait_ms": 5942.123651504517,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 07 Sep 2026 02:15:04 GMT",
+        "Content-Length": "983",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788747304.322359,
+      "vram_delta_mib": -0.0625
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788747298.343169
+    }
+  },
+  "wall_clock_unix": 1788747304.322359
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "zho_Hans",
+  "sample_id": "s0034",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n科学家表示，这种动物的羽毛顶部为栗棕色，底部为浅色或胡萝卜色。\n\n/no_think",
+    "source_text": "科学家表示，这种动物的羽毛顶部为栗棕色，底部为浅色或胡萝卜色。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "在动物界中，有许多种类的鸟类都有著 distinctive 的羽毛颜色。例如，某些种类的鸵鸟和麻雀的羽毛顶部呈现出栗棕色的特征，而底部则是浅色或胡萝卜色的。这种特殊的羽毛颜色可能与它们的生态环境有关，也可能是为了 camouflage 或展示自己的身份。科学家们正在研究这些鸟类的羽毛结构和功能，以 better 了解它们的生理机制和行为模式。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 827577520,
+    "load_duration": 76218491,
+    "prompt_eval_duration": 5958671,
+    "eval_duration": 686583325,
+    "eval_count": 119,
+    "prompt_eval_count": 103,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T06:46:14.90125476Z",
+    "message": {
+      "role": "assistant",
+      "content": "在动物界中，有许多种类的鸟类都有著 distinctive 的羽毛颜色。例如，某些种类的鸵鸟和麻雀的羽毛顶部呈现出栗棕色的特征，而底部则是浅色或胡萝卜色的。这种特殊的羽毛颜色可能与它们的生态环境有关，也可能是为了 camouflage 或展示自己的身份。科学家们正在研究这些鸟类的羽毛结构和功能，以 better 了解它们的生理机制和行为模式。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 827577520,
+    "load_duration": 76218491,
+    "prompt_eval_count": 103,
+    "prompt_eval_duration": 5958671,
+    "eval_count": 119,
+    "eval_duration": 686583325
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789022774.0239356,
+      "nvidia_smi": {
+        "timestamp_unix": 1789022774.0239358,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 71.51,
+            "temp_c": 79,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789022774.0345867,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.12890625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1228.21484375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.12890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 970.0859375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789022774.0579617,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264324,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789022774.9017186,
+      "nvidia_smi": {
+        "timestamp_unix": 1789022774.901719,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 91,
+            "mem_util_pct": 100,
+            "power_w": 72.462,
+            "temp_c": 79,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789022774.9135613,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.69140625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1228.77734375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.69140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 970.0859375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789022774.9386024,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264900,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789022774.0733259,
+      "response_received_unix": 1789022774.9016445,
+      "first_byte_unix": 1789022774.9015913,
+      "total_wall_ms": 828.3185958862305,
+      "queue_wait_ms": 828.2654285430908,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:46:14 GMT",
+        "Content-Length": "745",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789022774.9540787,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789022774.0732784
+    }
+  },
+  "wall_clock_unix": 1789022774.9540787
+}

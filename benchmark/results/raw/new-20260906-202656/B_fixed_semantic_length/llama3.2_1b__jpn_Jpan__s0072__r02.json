@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0072",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nほとんどが砂浜で安全に泳ぐことができ、ポフツカワの木陰が日除けになります。\n\n/no_think",
+    "source_text": "ほとんどが砂浜で安全に泳ぐことができ、ポフツカワの木陰が日除けになります。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "日本の東海地方では、夏の暑さの中でも砂浜で泳ぐことができる場所が多くあります。特にポフツカワの木陰が日除けになるので、夏の日が早くなってからも安全に泳ぐことができます。\n\nこの地域では、夏の暑さを乗り越えるために、多くの人が砂浜で泳ぐことができます。ただし、夏の日が早くなるにつれて、水 temperature が高くなってからも泳ぐことができる場所は少なくなります。\n\n夏の日が早くなるにつれて、海面が上昇するため、水中の温度が上がることもあります。そのため、安全な泳ぎ方を心がけながら泳ぐことができます。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1122270942,
+    "load_duration": 84089562,
+    "prompt_eval_duration": 6696948,
+    "eval_duration": 967153390,
+    "eval_count": 167,
+    "prompt_eval_count": 107,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:20:34.490007881Z",
+    "message": {
+      "role": "assistant",
+      "content": "日本の東海地方では、夏の暑さの中でも砂浜で泳ぐことができる場所が多くあります。特にポフツカワの木陰が日除けになるので、夏の日が早くなってからも安全に泳ぐことができます。\n\nこの地域では、夏の暑さを乗り越えるために、多くの人が砂浜で泳ぐことができます。ただし、夏の日が早くなるにつれて、水 temperature が高くなってからも泳ぐことができる場所は少なくなります。\n\n夏の日が早くなるにつれて、海面が上昇するため、水中の温度が上がることもあります。そのため、安全な泳ぎ方を心がけながら泳ぐことができます。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1122270942,
+    "load_duration": 84089562,
+    "prompt_eval_count": 107,
+    "prompt_eval_duration": 6696948,
+    "eval_count": 167,
+    "eval_duration": 967153390
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789024833.3218114,
+      "nvidia_smi": {
+        "timestamp_unix": 1789024833.3218117,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 79.663,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789024833.3321342,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.33984375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.20703125,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.33984375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 971.8671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789024833.3530147,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264540,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789024834.4904397,
+      "nvidia_smi": {
+        "timestamp_unix": 1789024834.49044,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 79.419,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789024834.5013444,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.4140625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.28125,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.4140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 971.8671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789024834.5251188,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264616,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789024833.3674386,
+      "response_received_unix": 1789024834.4903545,
+      "first_byte_unix": 1789024834.490296,
+      "total_wall_ms": 1122.9159832000732,
+      "queue_wait_ms": 1122.8573322296143,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:20:34 GMT",
+        "Content-Length": "1029",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789024834.5397604,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789024833.367389
+    }
+  },
+  "wall_clock_unix": 1789024834.5397604
+}

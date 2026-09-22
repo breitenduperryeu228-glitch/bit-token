@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "fra_Latn",
+  "sample_id": "s0170",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Veuillez écrire environ 256 caractères de texte en français sur le sujet suggéré par la phrase suivante. Pas de salutations ni d'explications, juste le paragraphe :\n\nOliver Sacks, dans son article Le discours du président, a indiqué comment les personnes ne pouvant pas comprendre le discours en raison de lésions cérébrales sont néanmoins en mesure d’évaluer la sincérité avec précision.\n\n/no_think",
+    "source_text": "Oliver Sacks, dans son article Le discours du président, a indiqué comment les personnes ne pouvant pas comprendre le discours en raison de lésions cérébrales sont néanmoins en mesure d’évaluer la sincérité avec précision."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Les personnes atteintes de maladies neurodégénératives ou de troubles du langage articulé peuvent avoir un niveau d'émotion et de compréhension des émotions plus élevé que les individus normaux, ce qui leur permet de reconnaître la sincérité dans le discours. Cependant, cela ne signifie pas qu'ils sont capables de comprendre pleinement le contexte ou l'importance du discours, car ils peuvent avoir des difficultés à comprendre les nuances linguistiques et culturelles.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 846013565,
+    "load_duration": 82068093,
+    "prompt_eval_duration": 5935512,
+    "eval_duration": 703994194,
+    "eval_count": 122,
+    "prompt_eval_count": 135,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T08:23:44.119284822Z",
+    "message": {
+      "role": "assistant",
+      "content": "Les personnes atteintes de maladies neurodégénératives ou de troubles du langage articulé peuvent avoir un niveau d'émotion et de compréhension des émotions plus élevé que les individus normaux, ce qui leur permet de reconnaître la sincérité dans le discours. Cependant, cela ne signifie pas qu'ils sont capables de comprendre pleinement le contexte ou l'importance du discours, car ils peuvent avoir des difficultés à comprendre les nuances linguistiques et culturelles."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 846013565,
+    "load_duration": 82068093,
+    "prompt_eval_count": 135,
+    "prompt_eval_duration": 5935512,
+    "eval_count": 122,
+    "eval_duration": 703994194
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789028623.2230048,
+      "nvidia_smi": {
+        "timestamp_unix": 1789028623.2230053,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 70.18,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789028623.2338796,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.98046875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1294.078125,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.98046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1035.09765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789028623.2574475,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265196,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789028624.1197693,
+      "nvidia_smi": {
+        "timestamp_unix": 1789028624.1197696,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 72.341,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789028624.1312273,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 259.16796875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1294.265625,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 259.16796875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1035.09765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789028624.1560664,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265388,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789028623.2729218,
+      "response_received_unix": 1789028624.1197066,
+      "first_byte_unix": 1789028624.1196535,
+      "total_wall_ms": 846.7848300933838,
+      "queue_wait_ms": 846.7316627502441,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 08:23:44 GMT",
+        "Content-Length": "781",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789028624.1715038,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789028623.272872
+    }
+  },
+  "wall_clock_unix": 1789028624.1715038
+}

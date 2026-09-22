@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "spa_Latn",
+  "sample_id": "s0094",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nSe encontraron concentraciones de ácido cianúrico y melamina en las muestras de orina analizadas de animales que murieron tras ingerir comida para mascotas contaminada.\n\n/no_think",
+    "source_text": "Se encontraron concentraciones de ácido cianúrico y melamina en las muestras de orina analizadas de animales que murieron tras ingerir comida para mascotas contaminada."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "La ingesta de alimentos para mascotas contaminados con sustancias tóxicas puede tener graves consecuencias para la salud de los animales. El consumo de alimentos adulterados o infundios puede causar daños graves en el hígado, el riñón y otros órganos.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 483820136,
+    "load_duration": 79259115,
+    "prompt_eval_duration": 5945546,
+    "eval_duration": 372197829,
+    "eval_count": 65,
+    "prompt_eval_count": 115,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T08:08:19.332210349Z",
+    "message": {
+      "role": "assistant",
+      "content": "La ingesta de alimentos para mascotas contaminados con sustancias tóxicas puede tener graves consecuencias para la salud de los animales. El consumo de alimentos adulterados o infundios puede causar daños graves en el hígado, el riñón y otros órganos."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 483820136,
+    "load_duration": 79259115,
+    "prompt_eval_count": 115,
+    "prompt_eval_duration": 5945546,
+    "eval_count": 65,
+    "eval_duration": 372197829
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789027698.7982223,
+      "nvidia_smi": {
+        "timestamp_unix": 1789027698.7982225,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 59,
+            "mem_util_pct": 66,
+            "power_w": 66.68,
+            "temp_c": 77,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789027698.8087776,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.49609375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1265.90234375,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.49609375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1007.40625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789027698.832436,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264700,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789027699.332578,
+      "nvidia_smi": {
+        "timestamp_unix": 1789027699.3325787,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 59,
+            "mem_util_pct": 66,
+            "power_w": 65.059,
+            "temp_c": 73,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789027699.3437269,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.63671875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1266.04296875,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.63671875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1007.40625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789027699.3699038,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264844,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789027698.848032,
+      "response_received_unix": 1789027699.3325245,
+      "first_byte_unix": 1789027699.3324797,
+      "total_wall_ms": 484.49254035949707,
+      "queue_wait_ms": 484.447717666626,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 08:08:19 GMT",
+        "Content-Length": "552",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789027699.3861728,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789027698.84798
+    }
+  },
+  "wall_clock_unix": 1789027699.3861728
+}

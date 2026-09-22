@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0171",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n離岸流とは、砕けて浜辺に戻ってくる引き波のことで、多くの場合、岩礁やそれに似た場所で発生します。\n\n/no_think",
+    "source_text": "離岸流とは、砕けて浜辺に戻ってくる引き波のことで、多くの場合、岩礁やそれに似た場所で発生します。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "日本では、海の水は、地面から上がることがあります。海の水が地面に降りると、海岸流となります。このような流れを離岸流と呼びます。岩礁や砂浜などの場所で発生するこの流れを、砕けて浜辺に戻ってくる引き波と言います。\n\n海の水は、地面から上がることがありますが、地面には水が入っていない場所では、海の水は地面に降りることがありません。したがって、海岸流や離岸流は、地面に水が入っていない場所で発生します。\n\nこの流れは、岩礁や砂浜などの場所で発生することが多く、海岸流や離岸流と呼ばれています。海岸流や離岸流の特徴は、地面に水が入っていない場所で発生することです。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1368915795,
+    "load_duration": 79538014,
+    "prompt_eval_duration": 8771502,
+    "eval_duration": 1202843670,
+    "eval_count": 207,
+    "prompt_eval_count": 115,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:34:47.393559979Z",
+    "message": {
+      "role": "assistant",
+      "content": "日本では、海の水は、地面から上がることがあります。海の水が地面に降りると、海岸流となります。このような流れを離岸流と呼びます。岩礁や砂浜などの場所で発生するこの流れを、砕けて浜辺に戻ってくる引き波と言います。\n\n海の水は、地面から上がることがありますが、地面には水が入っていない場所では、海の水は地面に降りることがありません。したがって、海岸流や離岸流は、地面に水が入っていない場所で発生します。\n\nこの流れは、岩礁や砂浜などの場所で発生することが多く、海岸流や離岸流と呼ばれています。海岸流や離岸流の特徴は、地面に水が入っていない場所で発生することです。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1368915795,
+    "load_duration": 79538014,
+    "prompt_eval_count": 115,
+    "prompt_eval_duration": 8771502,
+    "eval_count": 207,
+    "eval_duration": 1202843670
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789025685.977246,
+      "nvidia_smi": {
+        "timestamp_unix": 1789025685.9772463,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 82.647,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789025685.9876587,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.96875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1232.3203125,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.96875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.3515625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789025686.0098321,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265184,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789025687.3939211,
+      "nvidia_smi": {
+        "timestamp_unix": 1789025687.3939216,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 83.467,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789025687.4049754,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.578125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1231.9296875,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.578125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.3515625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789025687.4291928,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264784,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789025686.0242817,
+      "response_received_unix": 1789025687.3938613,
+      "first_byte_unix": 1789025687.39381,
+      "total_wall_ms": 1369.579553604126,
+      "queue_wait_ms": 1369.5282936096191,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:34:47 GMT",
+        "Content-Length": "1128",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789025687.4443917,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789025686.0242374
+    }
+  },
+  "wall_clock_unix": 1789025687.4443917
+}

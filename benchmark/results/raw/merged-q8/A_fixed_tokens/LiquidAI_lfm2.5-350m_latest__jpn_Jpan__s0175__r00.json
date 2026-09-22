@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0175",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章を日本語で続けて、短い段落で書いてください。\n\n「三分割法」 は、軽視する人もいるようですが、映像の秩序を保ちながらダイナミズムを生み出すシンプルな目安です。\n\n/no_think",
+    "source_text": "「三分割法」 は、軽視する人もいるようですが、映像の秩序を保ちながらダイナミズムを生み出すシンプルな目安です。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "三分割法は、映像の流れを自然に保ちつつ、重要な瞬間を強調するためのシンプルな手法です。例えば、ドラマのシーンでは3分割でカットを分け、緊張感を演出したり、スポーツの試合では3分割で試合の流れを明確にしたりします。この方法は、視聴者が自然に内容を追うことができるため、視聴体験を豊かにします。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1353934466,
+    "load_duration": 24014789,
+    "prompt_eval_duration": 189121376,
+    "eval_duration": 1126402757,
+    "eval_count": 100,
+    "prompt_eval_count": 83,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-06T14:58:24.406052904Z",
+    "message": {
+      "role": "assistant",
+      "content": "三分割法は、映像の流れを自然に保ちつつ、重要な瞬間を強調するためのシンプルな手法です。例えば、ドラマのシーンでは3分割でカットを分け、緊張感を演出したり、スポーツの試合では3分割で試合の流れを明確にしたりします。この方法は、視聴者が自然に内容を追うことができるため、視聴体験を豊かにします。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1353934466,
+    "load_duration": 24014789,
+    "prompt_eval_count": 83,
+    "prompt_eval_duration": 189121376,
+    "eval_count": 100,
+    "eval_duration": 1126402757
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788706703.0129712,
+      "nvidia_smi": {
+        "timestamp_unix": 1788706703.012972,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.726,
+            "temp_c": 54,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788706703.0273967,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 588.2890625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 321035,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1363.66015625,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 588.2890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 775.37109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788706703.041905,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 602408,
+        "proc_threads": 40,
+        "proc_vol_ctx": 320072,
+        "proc_invol_ctx": 963,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788706704.406577,
+      "nvidia_smi": {
+        "timestamp_unix": 1788706704.4065776,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 26,
+            "mem_util_pct": 14,
+            "power_w": 12.646,
+            "temp_c": 54,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788706704.4212894,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 588.61328125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 321035,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1364.359375,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 588.61328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 775.74609375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788706704.4371774,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 602740,
+        "proc_threads": 40,
+        "proc_vol_ctx": 320072,
+        "proc_invol_ctx": 963,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788706703.051672,
+      "response_received_unix": 1788706704.406497,
+      "first_byte_unix": 1788706704.406443,
+      "total_wall_ms": 1354.8250198364258,
+      "queue_wait_ms": 1354.7711372375488,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sun, 06 Sep 2026 14:58:24 GMT",
+        "Content-Length": "746",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788706704.4475245,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788706703.0516195
+    }
+  },
+  "wall_clock_unix": 1788706704.4475245
+}

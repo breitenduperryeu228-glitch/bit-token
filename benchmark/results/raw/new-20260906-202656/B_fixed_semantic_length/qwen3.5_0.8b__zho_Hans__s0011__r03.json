@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "zho_Hans",
+  "sample_id": "s0011",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n睡眠中断是指这样的过程：在正常睡眠期间有意地醒来，并且在短时间之后（10-60分钟）睡着。\n\n/no_think",
+    "source_text": "睡眠中断是指这样的过程：在正常睡眠期间有意地醒来，并且在短时间之后（10-60分钟）睡着。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "睡眠中断是指这样的过程：在正常睡眠期间有意地醒来，并且在短时间之后（10-60 分钟）睡着。这种状态通常伴随着清醒时的警觉感，但随后迅速进入深度睡眠。它不同于普通的睡眠周期，因为醒来后并未立即进入浅睡眠，而是直接过渡到深睡眠阶段。这一过程对于维持生物钟的稳定性至关重要，因为它帮助身体重新分配能量储备，使次日清晨能够保持清醒状态。此外，睡眠中断还可能影响个体的认知功能，如注意力集中力和记忆力，这些方面在随后的恢复期可能会有所改善。值得注意的是，睡眠中断的频率和持续时间因人而异，有些人可能频繁发生，而另一些人则较为少见。对于健康个体而言，适度控制睡眠中断的频率有助于维持良好的睡眠质量，但过度频繁的发生则可能带来负面影响。因此，了解睡眠中断的定义及其机制，对于改善个人健康状况具有重要意义。",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 7660464911,
+    "load_duration": 92720813,
+    "prompt_eval_duration": 364403661,
+    "eval_duration": 7117165754,
+    "eval_count": 180,
+    "prompt_eval_count": 86,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-09T13:57:53.824647938Z",
+    "message": {
+      "role": "assistant",
+      "content": "睡眠中断是指这样的过程：在正常睡眠期间有意地醒来，并且在短时间之后（10-60 分钟）睡着。这种状态通常伴随着清醒时的警觉感，但随后迅速进入深度睡眠。它不同于普通的睡眠周期，因为醒来后并未立即进入浅睡眠，而是直接过渡到深睡眠阶段。这一过程对于维持生物钟的稳定性至关重要，因为它帮助身体重新分配能量储备，使次日清晨能够保持清醒状态。此外，睡眠中断还可能影响个体的认知功能，如注意力集中力和记忆力，这些方面在随后的恢复期可能会有所改善。值得注意的是，睡眠中断的频率和持续时间因人而异，有些人可能频繁发生，而另一些人则较为少见。对于健康个体而言，适度控制睡眠中断的频率有助于维持良好的睡眠质量，但过度频繁的发生则可能带来负面影响。因此，了解睡眠中断的定义及其机制，对于改善个人健康状况具有重要意义。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 7660464911,
+    "load_duration": 92720813,
+    "prompt_eval_count": 86,
+    "prompt_eval_duration": 364403661,
+    "eval_count": 180,
+    "eval_duration": 7117165754
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788962266.130615,
+      "nvidia_smi": {
+        "timestamp_unix": 1788962266.1306152,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.203,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788962266.1438859,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 278.76171875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1036323,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2880.9921875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 278.76171875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1675624,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 37131",
+            "rss_mib": 2602.23046875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788962266.1562133,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 285452,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1027928,
+        "proc_invol_ctx": 8395,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788962273.825142,
+      "nvidia_smi": {
+        "timestamp_unix": 1788962273.8251426,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.211,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788962273.8415108,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 275.30859375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1036323,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2879.5703125,
+        "tree_threads": 86,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 275.30859375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1675624,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 37131",
+            "rss_mib": 2604.26171875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788962273.8588376,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 281916,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1027928,
+        "proc_invol_ctx": 8395,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788962266.1638007,
+      "response_received_unix": 1788962273.8250618,
+      "first_byte_unix": 1788962273.824996,
+      "total_wall_ms": 7661.261081695557,
+      "queue_wait_ms": 7661.195278167725,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 13:57:53 GMT",
+        "Content-Length": "1326",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788962273.8696566,
+      "vram_delta_mib": -0.1875
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788962266.1637585
+    }
+  },
+  "wall_clock_unix": 1788962273.8696566
+}

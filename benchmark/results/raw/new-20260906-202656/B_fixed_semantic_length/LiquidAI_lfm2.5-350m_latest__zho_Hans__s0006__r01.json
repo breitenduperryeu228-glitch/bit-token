@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "zho_Hans",
+  "sample_id": "s0006",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n哲学家亚里士多德提出一种理论，即任何事物都是由土、水、空气和火四种元素中的一种或多种组成的。\n\n/no_think",
+    "source_text": "哲学家亚里士多德提出一种理论，即任何事物都是由土、水、空气和火四种元素中的一种或多种组成的。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "哲学家亚里士多德提出一种理论，即任何事物都是由土、水、空气和火四种元素中的一种或多种组成的。\n\n这一观点在古希腊哲学中占据重要地位，亚里士多德在《形而上学》中详细阐述了这一思想。他认为，物体的本质是由这些元素的相互作用构成的，例如，一个植物的生长依赖于土壤的养分，而火的存在则影响植物的开花时间。亚里士多德强调，理解这些元素之间的关系是解释自然现象的关键，而不仅仅是简单地记录事物的属性。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2080458831,
+    "load_duration": 24832567,
+    "prompt_eval_duration": 160553363,
+    "eval_duration": 1876762670,
+    "eval_count": 162,
+    "prompt_eval_count": 101,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T07:31:14.427094269Z",
+    "message": {
+      "role": "assistant",
+      "content": "哲学家亚里士多德提出一种理论，即任何事物都是由土、水、空气和火四种元素中的一种或多种组成的。\n\n这一观点在古希腊哲学中占据重要地位，亚里士多德在《形而上学》中详细阐述了这一思想。他认为，物体的本质是由这些元素的相互作用构成的，例如，一个植物的生长依赖于土壤的养分，而火的存在则影响植物的开花时间。亚里士多德强调，理解这些元素之间的关系是解释自然现象的关键，而不仅仅是简单地记录事物的属性。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2080458831,
+    "load_duration": 24832567,
+    "prompt_eval_count": 101,
+    "prompt_eval_duration": 160553363,
+    "eval_count": 162,
+    "eval_duration": 1876762670
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788939072.3113418,
+      "nvidia_smi": {
+        "timestamp_unix": 1788939072.311342,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.386,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788939072.3245077,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.5859375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 927078,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 977.13671875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.5859375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 774.55078125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788939072.3371384,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207448,
+        "proc_threads": 40,
+        "proc_vol_ctx": 919936,
+        "proc_invol_ctx": 7142,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788939074.4276128,
+      "nvidia_smi": {
+        "timestamp_unix": 1788939074.4276133,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.371,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788939074.4422238,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.5859375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 927079,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 976.01171875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.5859375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 773.42578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788939074.4549243,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207448,
+        "proc_threads": 40,
+        "proc_vol_ctx": 919937,
+        "proc_invol_ctx": 7142,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788939072.3462365,
+      "response_received_unix": 1788939074.4275532,
+      "first_byte_unix": 1788939074.4274879,
+      "total_wall_ms": 2081.3167095184326,
+      "queue_wait_ms": 2081.251382827759,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 07:31:14 GMT",
+        "Content-Length": "896",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788939074.4633172,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788939072.3461907
+    }
+  },
+  "wall_clock_unix": 1788939074.4633172
+}

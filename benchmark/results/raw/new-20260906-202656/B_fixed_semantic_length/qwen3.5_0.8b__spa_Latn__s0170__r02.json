@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "spa_Latn",
+  "sample_id": "s0170",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nOliver Sacks, en su artículo El discurso del presidente, explicó la forma en que aquellos que no pueden comprender el habla a causa de un daño cerebral, pueden, no obstante, evaluar la sinceridad con precisión.\n\n/no_think",
+    "source_text": "Oliver Sacks, en su artículo El discurso del presidente, explicó la forma en que aquellos que no pueden comprender el habla a causa de un daño cerebral, pueden, no obstante, evaluar la sinceridad con precisión."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "El artículo de Oliver Sacks revela cómo los pacientes con daño cerebral pueden percibir la sinceridad de otros mediante la evaluación de la intención, demostrando que la comprensión de la mente humana trasciende la capacidad de hablar.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 423274743,
+    "load_duration": 117719980,
+    "prompt_eval_duration": 22572202,
+    "eval_duration": 264157785,
+    "eval_count": 46,
+    "prompt_eval_count": 114,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T06:04:12.245231691Z",
+    "message": {
+      "role": "assistant",
+      "content": "El artículo de Oliver Sacks revela cómo los pacientes con daño cerebral pueden percibir la sinceridad de otros mediante la evaluación de la intención, demostrando que la comprensión de la mente humana trasciende la capacidad de hablar."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 423274743,
+    "load_duration": 117719980,
+    "prompt_eval_count": 114,
+    "prompt_eval_duration": 22572202,
+    "eval_count": 46,
+    "eval_duration": 264157785
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789020251.7714646,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020251.771465,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 0,
+            "mem_util_pct": 0,
+            "power_w": 50.047,
+            "temp_c": 71,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020251.782259,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 241.4765625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2331.76953125,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 241.4765625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2090.29296875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020251.8059576,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 247272,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789020252.2456892,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020252.2456896,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 0,
+            "mem_util_pct": 0,
+            "power_w": 52.036,
+            "temp_c": 71,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020252.257263,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.109375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2333.40234375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.109375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2090.29296875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020252.2819033,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 248944,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789020251.8215744,
+      "response_received_unix": 1789020252.2456267,
+      "first_byte_unix": 1789020252.2455614,
+      "total_wall_ms": 424.05223846435547,
+      "queue_wait_ms": 423.98691177368164,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:04:12 GMT",
+        "Content-Length": "539",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789020252.29694,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789020251.8215268
+    }
+  },
+  "wall_clock_unix": 1789020252.29694
+}

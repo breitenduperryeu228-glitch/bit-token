@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "kor_Hang",
+  "sample_id": "s0103",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n지구의 강에서 바다로 쏟아져 들어가는 물의 20%는 아마존에서 흘러나온다.\n\n/no_think",
+    "source_text": "지구의 강에서 바다로 쏟아져 들어가는 물의 20%는 아마존에서 흘러나온다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "The ocean's depths, where the water flows into the mountains of Antelope Valley.",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 461519046,
+    "load_duration": 39515351,
+    "prompt_eval_duration": 180231867,
+    "eval_duration": 231674195,
+    "eval_count": 18,
+    "prompt_eval_count": 129,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T06:20:39.311762456Z",
+    "message": {
+      "role": "assistant",
+      "content": "The ocean's depths, where the water flows into the mountains of Antelope Valley."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 461519046,
+    "load_duration": 39515351,
+    "prompt_eval_count": 129,
+    "prompt_eval_duration": 180231867,
+    "eval_count": 18,
+    "eval_duration": 231674195
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788934838.8148172,
+      "nvidia_smi": {
+        "timestamp_unix": 1788934838.814818,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 29,
+            "mem_util_pct": 14,
+            "power_w": 12.339,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788934838.8288236,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 185.2265625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 880900,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 977.80078125,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 185.2265625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 792.57421875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788934838.8414495,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 189672,
+        "proc_threads": 40,
+        "proc_vol_ctx": 874478,
+        "proc_invol_ctx": 6422,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788934839.3120704,
+      "nvidia_smi": {
+        "timestamp_unix": 1788934839.3120706,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 29,
+            "mem_util_pct": 14,
+            "power_w": 12.325,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788934839.3257172,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 176.41015625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 880904,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 968.984375,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 176.41015625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 792.57421875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788934839.338588,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 180644,
+        "proc_threads": 40,
+        "proc_vol_ctx": 874482,
+        "proc_invol_ctx": 6422,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788934838.8498614,
+      "response_received_unix": 1788934839.3120315,
+      "first_byte_unix": 1788934839.3119826,
+      "total_wall_ms": 462.1701240539551,
+      "queue_wait_ms": 462.12124824523926,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 06:20:39 GMT",
+        "Content-Length": "381",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788934839.346195,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788934838.8498168
+    }
+  },
+  "wall_clock_unix": 1788934839.346195
+}

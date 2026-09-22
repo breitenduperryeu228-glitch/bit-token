@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b",
+  "language": "spa_Latn",
+  "sample_id": "s0185",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nLas proteínas presentes en las hojas y las legumbres hubiesen constituido la fuente de recursos vegetales de más sencillo acceso, pero no son fácilmente digeribles para primates como nosotros, excepto que se las cocine.\n\n/no_think",
+    "source_text": "Las proteínas presentes en las hojas y las legumbres hubiesen constituido la fuente de recursos vegetales de más sencillo acceso, pero no son fácilmente digeribles para primates como nosotros, excepto que se las cocine."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "Las proteínas presentes en las hojas y las legumbres no son fácilmente digeribles para primates, excepto que se cocinen.",
+  "ollama": {
+    "model": "qwen3:0.6b",
+    "total_duration": 554239426,
+    "load_duration": 50724562,
+    "prompt_eval_duration": 15618001,
+    "eval_duration": 477913824,
+    "eval_count": 34,
+    "prompt_eval_count": 127,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-09-09T11:10:07.464370107Z",
+    "message": {
+      "role": "assistant",
+      "content": "Las proteínas presentes en las hojas y las legumbres no son fácilmente digeribles para primates, excepto que se cocinen."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 554239426,
+    "load_duration": 50724562,
+    "prompt_eval_count": 127,
+    "prompt_eval_duration": 15618001,
+    "eval_count": 34,
+    "eval_duration": 477913824
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788952206.8757899,
+      "nvidia_smi": {
+        "timestamp_unix": 1788952206.8757904,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 49,
+            "mem_util_pct": 15,
+            "power_w": 12.234,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788952206.889443,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 224.64453125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1016795,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1534.171875,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 224.64453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1309.52734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788952206.901738,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 230036,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1008726,
+        "proc_invol_ctx": 8069,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788952207.4648135,
+      "nvidia_smi": {
+        "timestamp_unix": 1788952207.4648142,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.216,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788952207.4792345,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 215.7890625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1016801,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1527.64453125,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 215.7890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1311.85546875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788952207.4926357,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 220968,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1008732,
+        "proc_invol_ctx": 8069,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788952206.9097536,
+      "response_received_unix": 1788952207.4647496,
+      "first_byte_unix": 1788952207.4646938,
+      "total_wall_ms": 554.9960136413574,
+      "queue_wait_ms": 554.9402236938477,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 11:10:07 GMT",
+        "Content-Length": "417",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788952207.5017607,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788952206.909711
+    }
+  },
+  "wall_clock_unix": 1788952207.5017607
+}

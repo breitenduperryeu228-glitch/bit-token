@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "deu_Latn",
+  "sample_id": "s0018",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Bitte schreiben Sie ungefähr 256 Zeichen Text auf Deutsch über das Thema des folgenden Satzes. Keine Begrüßung, keine Erklärungen, nur den Absatz selbst:\n\nMehr über die Funktionsweise von Flugzeugen und die Abläufe während eines Fluges zu erfahren, kann manchen helfen, die Angst zu überwinden, die mit dem Unbekannten oder mit dem Gefühl, keine Kontrolle zu haben, zusammenhängt.\n\n/no_think",
+    "source_text": "Mehr über die Funktionsweise von Flugzeugen und die Abläufe während eines Fluges zu erfahren, kann manchen helfen, die Angst zu überwinden, die mit dem Unbekannten oder mit dem Gefühl, keine Kontrolle zu haben, zusammenhängt."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Die Luftlinie fährt durchs Land und bietet eine Vielzahl von Landschaften vor sich. Die Piloten müssen ihre Flugzeuge auf die verschiedenen Wetterbedingungen und Hindernisse vorbereiten. Sie müssen auch sicherstellen, dass alle Passagiere und Besatzungsmitglieder im Flugzeug sicher sind.\n\nDie Landung ist ein wichtiger Teil des Fluges. Der Pilot muss die Landebahn bestimmen und den Flugzeugen auf ihre Zielposition bringen. Es gibt verschiedene Arten von Landungen, von kurzen Aufstellungen bis hin zu langen Landestellen.\n\nNach der Landung müssen die Flugzeuge abgestellt werden und die Besatzungsmitglieder aus dem Flugzeug nehmen. Die Passagiere können dann entlassen werden und den Flughafen verlassen.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1184727525,
+    "load_duration": 75294573,
+    "prompt_eval_duration": 6714738,
+    "eval_duration": 1032886263,
+    "eval_count": 178,
+    "prompt_eval_count": 140,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T08:28:04.508494497Z",
+    "message": {
+      "role": "assistant",
+      "content": "Die Luftlinie fährt durchs Land und bietet eine Vielzahl von Landschaften vor sich. Die Piloten müssen ihre Flugzeuge auf die verschiedenen Wetterbedingungen und Hindernisse vorbereiten. Sie müssen auch sicherstellen, dass alle Passagiere und Besatzungsmitglieder im Flugzeug sicher sind.\n\nDie Landung ist ein wichtiger Teil des Fluges. Der Pilot muss die Landebahn bestimmen und den Flugzeugen auf ihre Zielposition bringen. Es gibt verschiedene Arten von Landungen, von kurzen Aufstellungen bis hin zu langen Landestellen.\n\nNach der Landung müssen die Flugzeuge abgestellt werden und die Besatzungsmitglieder aus dem Flugzeug nehmen. Die Passagiere können dann entlassen werden und den Flughafen verlassen."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1184727525,
+    "load_duration": 75294573,
+    "prompt_eval_count": 140,
+    "prompt_eval_duration": 6714738,
+    "eval_count": 178,
+    "eval_duration": 1032886263
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789028883.2757375,
+      "nvidia_smi": {
+        "timestamp_unix": 1789028883.2757378,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 82.806,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789028883.2864616,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.76171875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1299.00390625,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.76171875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1040.2421875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789028883.3089347,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264972,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789028884.5088446,
+      "nvidia_smi": {
+        "timestamp_unix": 1789028884.5088449,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 79.432,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789028884.5196226,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 259.22265625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1299.48046875,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 259.22265625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1040.2578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789028884.5427082,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265444,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789028883.3234386,
+      "response_received_unix": 1789028884.50879,
+      "first_byte_unix": 1789028884.5087442,
+      "total_wall_ms": 1185.3513717651367,
+      "queue_wait_ms": 1185.3055953979492,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 08:28:04 GMT",
+        "Content-Length": "1015",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789028884.5570195,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789028883.323383
+    }
+  },
+  "wall_clock_unix": 1789028884.5570195
+}

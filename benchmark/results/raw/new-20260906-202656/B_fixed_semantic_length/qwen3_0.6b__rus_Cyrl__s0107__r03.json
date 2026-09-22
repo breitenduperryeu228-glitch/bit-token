@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0107",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nБыло подтверждено, что штаммом птичьего гриппа H5N1, смертельного для людей, была заражена мёртвая дикая утка, найденная в понедельник на болоте рядом с Леоном в восточной Франции.\n\n/no_think",
+    "source_text": "Было подтверждено, что штаммом птичьего гриппа H5N1, смертельного для людей, была заражена мёртвая дикая утка, найденная в понедельник на болоте рядом с Леоном в восточной Франции."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "Было подтверждено, что штаммом птичьего гриппа H5N1, смертельного для людей, была заражена мёртвая дикая утка, найденная в понедельник на болоте рядом с Леоном в восточной Франции.",
+  "ollama": {
+    "model": "qwen3:0.6b",
+    "total_duration": 1158280199,
+    "load_duration": 47976124,
+    "prompt_eval_duration": 15724484,
+    "eval_duration": 1070283413,
+    "eval_count": 73,
+    "prompt_eval_count": 162,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-09-09T11:46:36.056937764Z",
+    "message": {
+      "role": "assistant",
+      "content": "Было подтверждено, что штаммом птичьего гриппа H5N1, смертельного для людей, была заражена мёртвая дикая утка, найденная в понедельник на болоте рядом с Леоном в восточной Франции."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1158280199,
+    "load_duration": 47976124,
+    "prompt_eval_count": 162,
+    "prompt_eval_duration": 15724484,
+    "eval_count": 73,
+    "eval_duration": 1070283413
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788954394.8634858,
+      "nvidia_smi": {
+        "timestamp_unix": 1788954394.863486,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 14,
+            "power_w": 12.291,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788954394.8773265,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 220.25,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1032528,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1530.41796875,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 220.25,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1310.16796875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788954394.8898602,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 225536,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1024190,
+        "proc_invol_ctx": 8338,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788954396.057344,
+      "nvidia_smi": {
+        "timestamp_unix": 1788954396.0573444,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 29,
+            "mem_util_pct": 14,
+            "power_w": 12.3,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788954396.0719507,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 221.9765625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1032529,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1535.21484375,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 221.9765625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1313.23828125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788954396.087613,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 227304,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1024191,
+        "proc_invol_ctx": 8338,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788954394.898171,
+      "response_received_unix": 1788954396.0572677,
+      "first_byte_unix": 1788954396.0572128,
+      "total_wall_ms": 1159.0967178344727,
+      "queue_wait_ms": 1159.0418815612793,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 11:46:36 GMT",
+        "Content-Length": "623",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788954396.0971792,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788954394.8981104
+    }
+  },
+  "wall_clock_unix": 1788954396.0971792
+}

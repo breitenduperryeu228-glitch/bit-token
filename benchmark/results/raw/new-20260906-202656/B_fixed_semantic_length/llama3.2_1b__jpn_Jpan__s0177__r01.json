@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0177",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n英国は、船舶が海洋全域に進入するのを防ぐために公海に機雷を仕掛け、中立船にまで危険をもたらしました。\n\n/no_think",
+    "source_text": "英国は、船舶が海洋全域に進入するのを防ぐために公海に機雷を仕掛け、中立船にまで危険をもたらしました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "日本では、海洋の安全性を守るためには、海上法規を遵守し、船舶が海洋全域に進入することを防ぐために機雷を仕掛けていることがあります。英国は中立船にまで危険をもたらしたと主張しています。\n\n中立船とは、国際連合の安全保障理事会の決議によって中立地位にある国や組織であることから、このような行動が違法であると判断している国の船舶です。日本はこのような行動を認めないかもしれませんが、英国は中立船に危険をもたらしたと主張しています。\n\n日本は中立船の安全性を守るために、海上法規を遵守し、機雷を仕掛けていることを確認しています。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1218202754,
+    "load_duration": 73930726,
+    "prompt_eval_duration": 6693826,
+    "eval_duration": 1049917834,
+    "eval_count": 181,
+    "prompt_eval_count": 119,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:35:21.912138145Z",
+    "message": {
+      "role": "assistant",
+      "content": "日本では、海洋の安全性を守るためには、海上法規を遵守し、船舶が海洋全域に進入することを防ぐために機雷を仕掛けていることがあります。英国は中立船にまで危険をもたらしたと主張しています。\n\n中立船とは、国際連合の安全保障理事会の決議によって中立地位にある国や組織であることから、このような行動が違法であると判断している国の船舶です。日本はこのような行動を認めないかもしれませんが、英国は中立船に危険をもたらしたと主張しています。\n\n日本は中立船の安全性を守るために、海上法規を遵守し、機雷を仕掛けていることを確認しています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1218202754,
+    "load_duration": 73930726,
+    "prompt_eval_count": 119,
+    "prompt_eval_duration": 6693826,
+    "eval_count": 181,
+    "eval_duration": 1049917834
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789025720.6476424,
+      "nvidia_smi": {
+        "timestamp_unix": 1789025720.6476426,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 81.602,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789025720.6579988,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.546875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1232.0390625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.546875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.4921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789025720.679161,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264752,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789025721.9125233,
+      "nvidia_smi": {
+        "timestamp_unix": 1789025721.9125235,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 82.177,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789025721.9233334,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 259.3671875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1232.87109375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 259.3671875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.50390625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789025721.9466875,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265592,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789025720.6936033,
+      "response_received_unix": 1789025721.9124646,
+      "first_byte_unix": 1789025721.9124184,
+      "total_wall_ms": 1218.8613414764404,
+      "queue_wait_ms": 1218.8150882720947,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:35:21 GMT",
+        "Content-Length": "1074",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789025721.960965,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789025720.69356
+    }
+  },
+  "wall_clock_unix": 1789025721.960965
+}

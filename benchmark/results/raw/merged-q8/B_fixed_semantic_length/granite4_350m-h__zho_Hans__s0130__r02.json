@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "zho_Hans",
+  "sample_id": "s0130",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n基什内尔女士在阿根廷大剧院宣布她有意参加总统竞选，2005 年也是在这里，她作为布宜诺斯艾利斯省代表开始竞选参议员。\n\n/no_think",
+    "source_text": "基什内尔女士在阿根廷大剧院宣布她有意参加总统竞选，2005 年也是在这里，她作为布宜诺斯艾利斯省代表开始竞选参议员。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "基什内尔女士在阿根廷大剧院宣布她有意参加总统竞选，2005年也是在这里。她作为布宜诺斯艾利斯省代表开始竞选参议员。",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 1374704731,
+    "load_duration": 43643809,
+    "prompt_eval_duration": 332226472,
+    "eval_duration": 962715577,
+    "eval_count": 71,
+    "prompt_eval_count": 145,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T05:47:48.704984023Z",
+    "message": {
+      "role": "assistant",
+      "content": "基什内尔女士在阿根廷大剧院宣布她有意参加总统竞选，2005年也是在这里。她作为布宜诺斯艾利斯省代表开始竞选参议员。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1374704731,
+    "load_duration": 43643809,
+    "prompt_eval_count": 145,
+    "prompt_eval_duration": 332226472,
+    "eval_count": 71,
+    "eval_duration": 962715577
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788932867.292847,
+      "nvidia_smi": {
+        "timestamp_unix": 1788932867.2928472,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 13,
+            "power_w": 12.287,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788932867.305369,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 186.43359375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 867522,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 967.09765625,
+        "tree_threads": 55,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 186.43359375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 780.6640625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788932867.3190198,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 190908,
+        "proc_threads": 40,
+        "proc_vol_ctx": 861305,
+        "proc_invol_ctx": 6217,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788932868.7054234,
+      "nvidia_smi": {
+        "timestamp_unix": 1788932868.7054236,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.298,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788932868.719944,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 185.921875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 867522,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 966.5859375,
+        "tree_threads": 55,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 185.921875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 780.6640625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788932868.7337697,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 190384,
+        "proc_threads": 40,
+        "proc_vol_ctx": 861305,
+        "proc_invol_ctx": 6217,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788932867.3299892,
+      "response_received_unix": 1788932868.705379,
+      "first_byte_unix": 1788932868.705338,
+      "total_wall_ms": 1375.389814376831,
+      "queue_wait_ms": 1375.3488063812256,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 05:47:48 GMT",
+        "Content-Length": "465",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788932868.742153,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788932867.3299482
+    }
+  },
+  "wall_clock_unix": 1788932868.742153
+}

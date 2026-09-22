@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0193",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nВ 1960-х гг. Бжезинский занимал должность советника при Джоне Ф. Кеннеди, затем в администрации Линдона Б. Джонсона.\n\n/no_think",
+    "source_text": "В 1960-х гг. Бжезинский занимал должность советника при Джоне Ф. Кеннеди, затем в администрации Линдона Б. Джонсона."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Бжезинский работал в administrationе Линдона Б. Джонсона, где он принимал участие в формировании политической политики США.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 305901843,
+    "load_duration": 74510827,
+    "prompt_eval_duration": 5930713,
+    "eval_duration": 209700650,
+    "eval_count": 37,
+    "prompt_eval_count": 129,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:52:29.394407458Z",
+    "message": {
+      "role": "assistant",
+      "content": "Бжезинский работал в administrationе Линдона Б. Джонсона, где он принимал участие в формировании политической политики США."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 305901843,
+    "load_duration": 74510827,
+    "prompt_eval_count": 129,
+    "prompt_eval_duration": 5930713,
+    "eval_count": 37,
+    "eval_duration": 209700650
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789138349.037049,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138349.0370495,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 38,
+            "mem_util_pct": 43,
+            "power_w": 60.337,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138349.0476313,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.859375,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 38598,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1188.76171875,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.859375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 944.90234375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138349.0723333,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249712,
+        "proc_threads": 32,
+        "proc_vol_ctx": 37949,
+        "proc_invol_ctx": 649,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789138349.394764,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138349.3947642,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 38,
+            "mem_util_pct": 43,
+            "power_w": 59.69,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138349.4056013,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.6953125,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 38613,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1188.59765625,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.6953125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 944.90234375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138349.430808,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249544,
+        "proc_threads": 32,
+        "proc_vol_ctx": 37964,
+        "proc_invol_ctx": 649,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789138349.0881019,
+      "response_received_unix": 1789138349.3947108,
+      "first_byte_unix": 1789138349.394666,
+      "total_wall_ms": 306.6089153289795,
+      "queue_wait_ms": 306.5640926361084,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:52:29 GMT",
+        "Content-Length": "509",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789138349.446622,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789138349.0880134
+    }
+  },
+  "wall_clock_unix": 1789138349.446622
+}

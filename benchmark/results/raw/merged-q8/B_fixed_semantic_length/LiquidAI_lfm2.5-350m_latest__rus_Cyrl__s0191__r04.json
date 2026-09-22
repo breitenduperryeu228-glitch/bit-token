@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "rus_Cyrl",
+  "sample_id": "s0191",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nБипедальные специализации обнаруживаются в останках австралопитеков из эпохи 4,2–3,9 миллионов лет назад, хотя, возможно, сахелантроп ходил на двух ногах уже 7 миллионов лет назад.\n\n/no_think",
+    "source_text": "Бипедальные специализации обнаруживаются в останках австралопитеков из эпохи 4,2–3,9 миллионов лет назад, хотя, возможно, сахелантроп ходил на двух ногах уже 7 миллионов лет назад."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Без приветствий и пояснений, только сам абзац:\n\nЭто примеры бипедальных специализированных подходов, которые обнаруживаются в останках австралопитеков, представляющих эпоху 4,2–3,9 миллионов лет назад. В то же время, возможно, сахелантроп мог передаваться на две ногах уже 7 миллионов лет, что подчеркивает сложность и длительность этих специализированных методов.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1879631818,
+    "load_duration": 25254509,
+    "prompt_eval_duration": 334454805,
+    "eval_duration": 1500101066,
+    "eval_count": 125,
+    "prompt_eval_count": 149,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T10:09:40.493666268Z",
+    "message": {
+      "role": "assistant",
+      "content": "Без приветствий и пояснений, только сам абзац:\n\nЭто примеры бипедальных специализированных подходов, которые обнаруживаются в останках австралопитеков, представляющих эпоху 4,2–3,9 миллионов лет назад. В то же время, возможно, сахелантроп мог передаваться на две ногах уже 7 миллионов лет, что подчеркивает сложность и длительность этих специализированных методов."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1879631818,
+    "load_duration": 25254509,
+    "prompt_eval_count": 149,
+    "prompt_eval_duration": 334454805,
+    "eval_count": 125,
+    "eval_duration": 1500101066
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788948578.578252,
+      "nvidia_smi": {
+        "timestamp_unix": 1788948578.5782523,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.3,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788948578.592223,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.2578125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 987533,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 998.7265625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.2578125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 794.46875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788948578.6051702,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209160,
+        "proc_threads": 40,
+        "proc_vol_ctx": 979966,
+        "proc_invol_ctx": 7567,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788948580.4944162,
+      "nvidia_smi": {
+        "timestamp_unix": 1788948580.4944167,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.25,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788948580.5120661,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 205.046875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 987533,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1000.453125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 205.046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 795.40625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788948580.5256953,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209968,
+        "proc_threads": 40,
+        "proc_vol_ctx": 979966,
+        "proc_invol_ctx": 7567,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788948578.6136348,
+      "response_received_unix": 1788948580.4942975,
+      "first_byte_unix": 1788948580.4941752,
+      "total_wall_ms": 1880.6626796722412,
+      "queue_wait_ms": 1880.540370941162,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 10:09:40 GMT",
+        "Content-Length": "985",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788948580.5339923,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788948578.6135879
+    }
+  },
+  "wall_clock_unix": 1788948580.5339923
+}

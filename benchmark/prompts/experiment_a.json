@@ -1,0 +1,16 @@
+{
+  "_doc": "Experiment A: fixed token count (num_predict configurable). The model receives a prompt that does NOT ask for a specific output length; the token-budget is enforced via Ollama's num_predict parameter. The prompt template is intentionally minimal so it does not bias the length of the generated text. We append the Qwen3 /no_think directive so that thinking-trace tokens do not consume the entire budget on Qwen-family models. The directive is a no-op for non-Qwen models.",
+
+  "system": "You are a helpful assistant.",
+
+  "templates": {
+    "eng_Latn": "Please continue the following sentence in English, in one short paragraph:\n\n{source}\n\n/no_think",
+    "zho_Hans": "请用中文继续下面这句话，写成一段简短的文字：\n\n{source}\n\n/no_think",
+    "jpn_Jpan": "次の文章を日本語で続けて、短い段落で書いてください。\n\n{source}\n\n/no_think",
+    "kor_Hang": "다음 문장을 한국어로 이어서 짧은 단락으로 작성해 주세요.\n\n{source}\n\n/no_think",
+    "spa_Latn": "Continúe la siguiente oración en español, en un párrafo corto:\n\n{source}\n\n/no_think",
+    "fra_Latn": "Veuillez continuer la phrase suivante en français, en un court paragraphe :\n\n{source}\n\n/no_think",
+    "deu_Latn": "Bitte führen Sie den folgenden Satz auf Deutsch in einem kurzen Absatz fort:\n\n{source}\n\n/no_think",
+    "rus_Cyrl": "Пожалуйста, продолжите следующее предложение на русском языке, одним коротким абзацем:\n\n{source}\n\n/no_think"
+  }
+}

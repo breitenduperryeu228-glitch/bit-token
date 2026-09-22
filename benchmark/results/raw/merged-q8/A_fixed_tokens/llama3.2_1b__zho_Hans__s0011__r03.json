@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "llama3.2:1b",
+  "language": "zho_Hans",
+  "sample_id": "s0011",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请用中文继续下面这句话，写成一段简短的文字：\n\n睡眠中断是指这样的过程：在正常睡眠期间有意地醒来，并且在短时间之后（10-60分钟）睡着。\n\n/no_think",
+    "source_text": "睡眠中断是指这样的过程：在正常睡眠期间有意地醒来，并且在短时间之后（10-60分钟）睡着。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "睡眠中断是一种常见的情况，通常发生在人体进入深度睡眠阶段后。这种情况下，人的大脑会暂时停止活动，但并不会完全清醒。睡眠中断的原因可能包括因各种原因如疲劳、压力或健康问题引起的。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 2463873085,
+    "load_duration": 74684638,
+    "prompt_eval_duration": 37400787,
+    "eval_duration": 2310629412,
+    "eval_count": 67,
+    "prompt_eval_count": 86,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-07T00:09:14.892393074Z",
+    "message": {
+      "role": "assistant",
+      "content": "睡眠中断是一种常见的情况，通常发生在人体进入深度睡眠阶段后。这种情况下，人的大脑会暂时停止活动，但并不会完全清醒。睡眠中断的原因可能包括因各种原因如疲劳、压力或健康问题引起的。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2463873085,
+    "load_duration": 74684638,
+    "prompt_eval_count": 86,
+    "prompt_eval_duration": 37400787,
+    "eval_count": 67,
+    "eval_duration": 2310629412
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788739752.3933122,
+      "nvidia_smi": {
+        "timestamp_unix": 1788739752.3933125,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.5,
+            "vram_total_mib": 8188.0,
+            "util_pct": 24,
+            "mem_util_pct": 13,
+            "power_w": 12.562,
+            "temp_c": 54,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788739752.4062026,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 236.55859375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 475752,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2162.45703125,
+        "tree_threads": 55,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 236.55859375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1925.8984375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788739752.419519,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 242236,
+        "proc_threads": 40,
+        "proc_vol_ctx": 471995,
+        "proc_invol_ctx": 3757,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788739754.8927417,
+      "nvidia_smi": {
+        "timestamp_unix": 1788739754.8927422,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.5,
+            "vram_total_mib": 8188.0,
+            "util_pct": 24,
+            "mem_util_pct": 13,
+            "power_w": 12.587,
+            "temp_c": 54,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788739754.9074628,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 227.8671875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 475766,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2153.765625,
+        "tree_threads": 55,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 227.8671875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1925.8984375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788739754.923423,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 233336,
+        "proc_threads": 40,
+        "proc_vol_ctx": 472007,
+        "proc_invol_ctx": 3759,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788739752.428122,
+      "response_received_unix": 1788739754.8926947,
+      "first_byte_unix": 1788739754.8926508,
+      "total_wall_ms": 2464.5726680755615,
+      "queue_wait_ms": 2464.528799057007,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 07 Sep 2026 00:09:14 GMT",
+        "Content-Length": "561",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788739754.933553,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788739752.4280736
+    }
+  },
+  "wall_clock_unix": 1788739754.933553
+}

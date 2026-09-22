@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0165",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nポルトガル人はそれを壊し、再建してカサ・ブランカと命名しましたが、1755年に発生した地震の後に結局街を捨てて去りました。\n\n/no_think",
+    "source_text": "ポルトガル人はそれを壊し、再建してカサ・ブランカと命名しましたが、1755年に発生した地震の後に結局街を捨てて去りました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "ポルトガルの歴史家は、1755年の地震で、カサ・ブランカという町を再建してその名を取ったと考えています。地震が起こったときに、町の中心部が壊れていて、住民が多く亡くなりました。その後、ポルトガル人はこの町を再建してカサ・ブランカという町を名付けました。\n\nしかし、この町は再建した後に去ってしまいました。1755年の地震で、町の中心部が壊れていて、住民が多く亡くなりました。そのため、ポルトガル人はこの町を捨てて去りました。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1047750626,
+    "load_duration": 81499606,
+    "prompt_eval_duration": 9244888,
+    "eval_duration": 881439525,
+    "eval_count": 152,
+    "prompt_eval_count": 125,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:33:38.832812702Z",
+    "message": {
+      "role": "assistant",
+      "content": "ポルトガルの歴史家は、1755年の地震で、カサ・ブランカという町を再建してその名を取ったと考えています。地震が起こったときに、町の中心部が壊れていて、住民が多く亡くなりました。その後、ポルトガル人はこの町を再建してカサ・ブランカという町を名付けました。\n\nしかし、この町は再建した後に去ってしまいました。1755年の地震で、町の中心部が壊れていて、住民が多く亡くなりました。そのため、ポルトガル人はこの町を捨てて去りました。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1047750626,
+    "load_duration": 81499606,
+    "prompt_eval_count": 125,
+    "prompt_eval_duration": 9244888,
+    "eval_count": 152,
+    "eval_duration": 881439525
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789025617.738411,
+      "nvidia_smi": {
+        "timestamp_unix": 1789025617.7384112,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 80.052,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789025617.748833,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.9375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1235.25390625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.9375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 976.31640625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789025617.7702897,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265152,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789025618.8332446,
+      "nvidia_smi": {
+        "timestamp_unix": 1789025618.8332453,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 91,
+            "mem_util_pct": 100,
+            "power_w": 72.793,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789025618.8441453,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.640625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1234.9609375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.640625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 976.3203125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789025618.8680656,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264848,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789025617.784745,
+      "response_received_unix": 1789025618.8331764,
+      "first_byte_unix": 1789025618.833121,
+      "total_wall_ms": 1048.431396484375,
+      "queue_wait_ms": 1048.3760833740234,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:33:38 GMT",
+        "Content-Length": "915",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789025618.8829808,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789025617.7847002
+    }
+  },
+  "wall_clock_unix": 1789025618.8829808
+}

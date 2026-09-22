@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0187",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n커리는 약용 식물과 향신료를 기본으로 하여 고기나 채소를 곁들이는 요리입니다.\n\n/no_think",
+    "source_text": "커리는 약용 식물과 향신료를 기본으로 하여 고기나 채소를 곁들이는 요리입니다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "커리는 약용 식물과 향신료를 기반으로 하며, 고기나 채소를 곁들여 다양한 맛을 더해주는 요리입니다. 그들은 신선한 재료를 활용해 맛을 균형 있게 조화시키는 데 중요한 역할을 합니다. 특히, 커리의 향은 단맛과 깊이를 더해주어, 고기와 함께 먹는 맛을 더욱 풍부하게 만듭니다. 이는 전통적인 한국 요리에서 흔히 볼 수 있는 요리 방식으로, 식사 중에 즐거움을 더합니다. 또한, 커리의 향신료는 다양한 향을 더해주어, 특별한 분위기를 연출하는 데도 활용됩니다. 이러한 요리의 맛은 단순히 맛에만 국한되지 않고, 전체적인 식사 경험을 향상시키는 요소로 작용합니다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2797516024,
+    "load_duration": 28046433,
+    "prompt_eval_duration": 236078587,
+    "eval_duration": 2504860846,
+    "eval_count": 215,
+    "prompt_eval_count": 107,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T09:16:26.243319963Z",
+    "message": {
+      "role": "assistant",
+      "content": "커리는 약용 식물과 향신료를 기반으로 하며, 고기나 채소를 곁들여 다양한 맛을 더해주는 요리입니다. 그들은 신선한 재료를 활용해 맛을 균형 있게 조화시키는 데 중요한 역할을 합니다. 특히, 커리의 향은 단맛과 깊이를 더해주어, 고기와 함께 먹는 맛을 더욱 풍부하게 만듭니다. 이는 전통적인 한국 요리에서 흔히 볼 수 있는 요리 방식으로, 식사 중에 즐거움을 더합니다. 또한, 커리의 향신료는 다양한 향을 더해주어, 특별한 분위기를 연출하는 데도 활용됩니다. 이러한 요리의 맛은 단순히 맛에만 국한되지 않고, 전체적인 식사 경험을 향상시키는 요소로 작용합니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2797516024,
+    "load_duration": 28046433,
+    "prompt_eval_count": 107,
+    "prompt_eval_duration": 236078587,
+    "eval_count": 215,
+    "eval_duration": 2504860846
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788945383.4105892,
+      "nvidia_smi": {
+        "timestamp_unix": 1788945383.4105897,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.4375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 13,
+            "power_w": 12.541,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788945383.4238622,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.9765625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 996.43359375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.9765625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.45703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788945383.4369314,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207848,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788945386.2438526,
+      "nvidia_smi": {
+        "timestamp_unix": 1788945386.243853,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.3125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.503,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788945386.2590523,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.98046875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 996.4375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.98046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.45703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788945386.2732573,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207852,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788945383.4453998,
+      "response_received_unix": 1788945386.2437742,
+      "first_byte_unix": 1788945386.2437017,
+      "total_wall_ms": 2798.3744144439697,
+      "queue_wait_ms": 2798.301935195923,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 09:16:26 GMT",
+        "Content-Length": "1076",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788945386.287364,
+      "vram_delta_mib": -0.125
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788945383.4453545
+    }
+  },
+  "wall_clock_unix": 1788945386.287364
+}

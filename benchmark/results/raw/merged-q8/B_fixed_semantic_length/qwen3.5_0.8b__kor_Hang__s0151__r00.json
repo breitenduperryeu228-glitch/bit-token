@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "kor_Hang",
+  "sample_id": "s0151",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n정수 필터들은 그 효과성이 다양합니다. 수질이 우려되는 경우에는 평판 있는 브랜드의 생수를 사 마시는 것을 추천합니다.\n\n/no_think",
+    "source_text": "정수 필터들은 그 효과성이 다양합니다. 수질이 우려되는 경우에는 평판 있는 브랜드의 생수를 사 마시는 것을 추천합니다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "정수 필터는 수질 관리의 핵심 도구로, 다양한 효과를 제공합니다. 특히 수질이 우려되는 경우, 평판 있는 브랜드의 생수를 선택하는 것이 가장 효과적입니다. 이러한 필터는 정수 처리의 효율성을 높이고, 안전한 drinking water를 보장하는 역할을 합니다. 또한, 필터의 성능은 사용자의 수질 상황에 따라 달라지며, 적절한 선택이 필수적입니다. 따라서 정수 필터는 단순한 물리적 필터링을 넘어, 수질 안전성을 확보하는 중요한 기술로 자리 잡았습니다.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 835758470,
+    "load_duration": 122076740,
+    "prompt_eval_duration": 21174665,
+    "eval_duration": 645999381,
+    "eval_count": 111,
+    "prompt_eval_count": 96,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T05:34:59.969707592Z",
+    "message": {
+      "role": "assistant",
+      "content": "정수 필터는 수질 관리의 핵심 도구로, 다양한 효과를 제공합니다. 특히 수질이 우려되는 경우, 평판 있는 브랜드의 생수를 선택하는 것이 가장 효과적입니다. 이러한 필터는 정수 처리의 효율성을 높이고, 안전한 drinking water를 보장하는 역할을 합니다. 또한, 필터의 성능은 사용자의 수질 상황에 따라 달라지며, 적절한 선택이 필수적입니다. 따라서 정수 필터는 단순한 물리적 필터링을 넘어, 수질 안전성을 확보하는 중요한 기술로 자리 잡았습니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 835758470,
+    "load_duration": 122076740,
+    "prompt_eval_count": 96,
+    "prompt_eval_duration": 21174665,
+    "eval_count": 111,
+    "eval_duration": 645999381
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789018499.086261,
+      "nvidia_smi": {
+        "timestamp_unix": 1789018499.0862617,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 89,
+            "mem_util_pct": 57,
+            "power_w": 75.926,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789018499.097007,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.98046875,
+        "vms_mib": 4219.10546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2333.8359375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.98046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2089.85546875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789018499.1189692,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320364,
+        "proc_vm_rss_kib": 249836,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789018499.9701996,
+      "nvidia_smi": {
+        "timestamp_unix": 1789018499.9702,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 82,
+            "mem_util_pct": 64,
+            "power_w": 63.361,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789018499.9830823,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 248.484375,
+        "vms_mib": 4219.10546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2338.1640625,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 248.484375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2089.6796875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789018500.0068178,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320364,
+        "proc_vm_rss_kib": 254448,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789018499.1336136,
+      "response_received_unix": 1789018499.9701111,
+      "first_byte_unix": 1789018499.9700496,
+      "total_wall_ms": 836.4975452423096,
+      "queue_wait_ms": 836.4360332489014,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 05:34:59 GMT",
+        "Content-Length": "895",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789018500.0214655,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789018499.1335623
+    }
+  },
+  "wall_clock_unix": 1789018500.0214655
+}

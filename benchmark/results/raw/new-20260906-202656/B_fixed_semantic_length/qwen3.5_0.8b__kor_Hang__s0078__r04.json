@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "kor_Hang",
+  "sample_id": "s0078",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n\"핀란드는 보트를 즐기기 위한 좋은 여행지이다. \"\"천 개의 호수의 땅(Land of a thousand lakes)\"\"은 호수와 해안 군도에도 수천 개의 섬을 가지고 있다.\"\n\n/no_think",
+    "source_text": "\"핀란드는 보트를 즐기기 위한 좋은 여행지이다. \"\"천 개의 호수의 땅(Land of a thousand lakes)\"\"은 호수와 해안 군도에도 수천 개의 섬을 가지고 있다.\""
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "핀란드는 보트를 즐기기 위한 훌륭한 여행지로 알려져 있습니다. 이 나라의 가장 유명한 명소인 \"천 개의 호수의 땅\"은 호수, 해안, 그리고 수천 개의 섬을 모두 포함하는 독특한 지형입니다. 이 지역은 자연의 아름다움과 함께 다양한 문화적 풍경을 자랑하며, 방문객들에게 보트를 즐길 수 있는 완벽한 장소가 됩니다.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 631082644,
+    "load_duration": 114715520,
+    "prompt_eval_duration": 22303553,
+    "eval_duration": 460428498,
+    "eval_count": 80,
+    "prompt_eval_count": 111,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T05:14:16.478125471Z",
+    "message": {
+      "role": "assistant",
+      "content": "핀란드는 보트를 즐기기 위한 훌륭한 여행지로 알려져 있습니다. 이 나라의 가장 유명한 명소인 \"천 개의 호수의 땅\"은 호수, 해안, 그리고 수천 개의 섬을 모두 포함하는 독특한 지형입니다. 이 지역은 자연의 아름다움과 함께 다양한 문화적 풍경을 자랑하며, 방문객들에게 보트를 즐길 수 있는 완벽한 장소가 됩니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 631082644,
+    "load_duration": 114715520,
+    "prompt_eval_count": 111,
+    "prompt_eval_duration": 22303553,
+    "eval_count": 80,
+    "eval_duration": 460428498
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789017255.8005226,
+      "nvidia_smi": {
+        "timestamp_unix": 1789017255.8005228,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 24,
+            "mem_util_pct": 9,
+            "power_w": 63.093,
+            "temp_c": 77,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789017255.811059,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 260.87890625,
+        "vms_mib": 4219.10546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2350.41796875,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 260.87890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2089.5390625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789017255.8323994,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320364,
+        "proc_vm_rss_kib": 267140,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789017256.478673,
+      "nvidia_smi": {
+        "timestamp_unix": 1789017256.478674,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 88,
+            "mem_util_pct": 70,
+            "power_w": 63.291,
+            "temp_c": 78,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789017256.4908097,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 260.87890625,
+        "vms_mib": 4219.10546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2349.47265625,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 260.87890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2088.59375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789017256.5141592,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320364,
+        "proc_vm_rss_kib": 267140,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789017255.8466966,
+      "response_received_unix": 1789017256.4785938,
+      "first_byte_unix": 1789017256.4785314,
+      "total_wall_ms": 631.8972110748291,
+      "queue_wait_ms": 631.8347454071045,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 05:14:16 GMT",
+        "Content-Length": "720",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789017256.5284379,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789017255.8466446
+    }
+  },
+  "wall_clock_unix": 1789017256.5284379
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0120",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n自分が訪れたのは本質的に巨大な集団墓地であり、世界の人口の大多数にとって計り知れないほどの意味を持つ墓地であることをお忘れにならないでください。\n\n/no_think",
+    "source_text": "自分が訪れたのは本質的に巨大な集団墓地であり、世界の人口の大多数にとって計り知れないほどの意味を持つ墓地であることをお忘れにならないでください。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "本質的に巨大な集団墓地は、単なる遺体の埋葬場所ではなく、人類の歴史と文化の結晶である。かつての王族や貴族が埋葬された場所から、現代の都市部でも同様の遺跡が点在し、過去の記憶が未来へと受け継がれる。世界の人口の約3分の1がこのような集団墓地に依存しているという事実は、単なる人口統計の数字を超えた深い意味を持つ。人々が集まることで、異なる背景を持つ人々が共に記憶を共有し、共通のアイデンティティを形成する。かつての墓地が現在も、社会の変遷や文化の進化を映し出す鏡として機能している。だからこそ、訪れる人々はその静かな空間をただ見るのではなく、そこに眠る人々の物語に耳を傾けるべきだ。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2820087690,
+    "load_duration": 26118634,
+    "prompt_eval_duration": 191218959,
+    "eval_duration": 2574266357,
+    "eval_count": 219,
+    "prompt_eval_count": 111,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:22:48.319811327Z",
+    "message": {
+      "role": "assistant",
+      "content": "本質的に巨大な集団墓地は、単なる遺体の埋葬場所ではなく、人類の歴史と文化の結晶である。かつての王族や貴族が埋葬された場所から、現代の都市部でも同様の遺跡が点在し、過去の記憶が未来へと受け継がれる。世界の人口の約3分の1がこのような集団墓地に依存しているという事実は、単なる人口統計の数字を超えた深い意味を持つ。人々が集まることで、異なる背景を持つ人々が共に記憶を共有し、共通のアイデンティティを形成する。かつての墓地が現在も、社会の変遷や文化の進化を映し出す鏡として機能している。だからこそ、訪れる人々はその静かな空間をただ見るのではなく、そこに眠る人々の物語に耳を傾けるべきだ。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2820087690,
+    "load_duration": 26118634,
+    "prompt_eval_count": 111,
+    "prompt_eval_duration": 191218959,
+    "eval_count": 219,
+    "eval_duration": 2574266357
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788942165.463485,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942165.4634852,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 31,
+            "mem_util_pct": 14,
+            "power_w": 12.539,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942165.477187,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.03515625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 965102,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 987.8046875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.03515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 785.76953125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942165.4906297,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 206884,
+        "proc_threads": 40,
+        "proc_vol_ctx": 957727,
+        "proc_invol_ctx": 7375,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788942168.3203425,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942168.320343,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.587,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942168.3347144,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.31640625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 965103,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 988.4609375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.31640625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 786.14453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942168.3478396,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207172,
+        "proc_threads": 40,
+        "proc_vol_ctx": 957728,
+        "proc_invol_ctx": 7375,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788942165.4993286,
+      "response_received_unix": 1788942168.3202832,
+      "first_byte_unix": 1788942168.3202286,
+      "total_wall_ms": 2820.9545612335205,
+      "queue_wait_ms": 2820.8999633789062,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:22:48 GMT",
+        "Content-Length": "1182",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788942168.3561823,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788942165.499284
+    }
+  },
+  "wall_clock_unix": 1788942168.3561823
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "qwen3.5:0.8b",
+  "language": "kor_Hang",
+  "sample_id": "s0006",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장을 한국어로 이어서 짧은 단락으로 작성해 주세요.\n\n철학자 아리스토텔레스(Aristotle)는 모든 물질이 네 가지 요소 중 하나 혹은 하나 이상의 요소와 혼합하여 구성되어 있다고 이론화했다. 그 네 가지 요소는 땅과 물과 공기와 불이었다.\n\n/no_think",
+    "source_text": "철학자 아리스토텔레스(Aristotle)는 모든 물질이 네 가지 요소 중 하나 혹은 하나 이상의 요소와 혼합하여 구성되어 있다고 이론화했다. 그 네 가지 요소는 땅과 물과 공기와 불이었다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "아리스토텔레스는 모든 물질이 네 가지 요소 중 하나 혹은 하나 이상의 요소와 혼합하여 구성되어 있다고 이론화했다. 그 네 가지 요소는 땅과 물과 공기와 불이었다.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 2474232122,
+    "load_duration": 99995764,
+    "prompt_eval_duration": 564453853,
+    "eval_duration": 1790672395,
+    "eval_count": 44,
+    "prompt_eval_count": 93,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-06T20:30:44.934544726Z",
+    "message": {
+      "role": "assistant",
+      "content": "아리스토텔레스는 모든 물질이 네 가지 요소 중 하나 혹은 하나 이상의 요소와 혼합하여 구성되어 있다고 이론화했다. 그 네 가지 요소는 땅과 물과 공기와 불이었다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2474232122,
+    "load_duration": 99995764,
+    "prompt_eval_count": 93,
+    "prompt_eval_duration": 564453853,
+    "eval_count": 44,
+    "eval_duration": 1790672395
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788726642.4202406,
+      "nvidia_smi": {
+        "timestamp_unix": 1788726642.420241,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 25,
+            "mem_util_pct": 14,
+            "power_w": 12.581,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788726642.4347048,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 384.13671875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 432682,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2916.390625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 384.13671875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3466094,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 34623",
+            "rss_mib": 2532.25390625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788726642.4498346,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 393356,
+        "proc_threads": 40,
+        "proc_vol_ctx": 430061,
+        "proc_invol_ctx": 2621,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788726644.9350119,
+      "nvidia_smi": {
+        "timestamp_unix": 1788726644.9350123,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 26,
+            "mem_util_pct": 14,
+            "power_w": 12.628,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788726644.9539557,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 384.6640625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 432682,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2917.87109375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 384.6640625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3466094,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 34623",
+            "rss_mib": 2533.20703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788726644.979803,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 393896,
+        "proc_threads": 40,
+        "proc_vol_ctx": 430061,
+        "proc_invol_ctx": 2621,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788726642.459961,
+      "response_received_unix": 1788726644.9349396,
+      "first_byte_unix": 1788726644.9348812,
+      "total_wall_ms": 2474.9786853790283,
+      "queue_wait_ms": 2474.9202728271484,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sun, 06 Sep 2026 20:30:44 GMT",
+        "Content-Length": "519",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788726644.98963,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788726642.4599097
+    }
+  },
+  "wall_clock_unix": 1788726644.98963
+}

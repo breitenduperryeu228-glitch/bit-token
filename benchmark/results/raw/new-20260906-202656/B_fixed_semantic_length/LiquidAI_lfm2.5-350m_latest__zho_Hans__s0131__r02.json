@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "zho_Hans",
+  "sample_id": "s0131",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n随着时间的推移，新的种群开始适应新的环境，它们开始变得与其他种群越来越不相似了。\n\n/no_think",
+    "source_text": "随着时间的推移，新的种群开始适应新的环境，它们开始变得与其他种群越来越不相似了。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "大自然的摇摆如海浪，随风而动，各个个体在微小的差异中游走。  \n每一只生物都在寻找最佳的生存环境，却难以预测未来的命运。  \n生态系统中的每一个物种都在微妙的平衡中运转，变化带来的影响复杂而深远。  \n人类活动改变了自然界的轨迹，引发了新的生态冲突与共存挑战。  \n生物多样性的减少与环境恶化并存，生态系统的韧性逐渐削弱，难以抵御突发灾难。  \n某些物种在适应过程中展现出惊人的韧性，却也可能成为生态失衡的催化剂。  \n微小的环境变化可能在短期内改变食物链结构，长期内却可能引发不可预见的生态后果。  \n自然界的复杂性如同一幅动态画卷，任何干预都可能打破原有平衡，带来不可逆转的后果。  \n在这片无形的土地上，生命的生存策略不断演变，人类与自然的关系在这片交织的景观中愈发复杂。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 3510935660,
+    "load_duration": 23804104,
+    "prompt_eval_duration": 137946375,
+    "eval_duration": 3317324188,
+    "eval_count": 281,
+    "prompt_eval_count": 96,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T07:52:47.976496022Z",
+    "message": {
+      "role": "assistant",
+      "content": "大自然的摇摆如海浪，随风而动，各个个体在微小的差异中游走。  \n每一只生物都在寻找最佳的生存环境，却难以预测未来的命运。  \n生态系统中的每一个物种都在微妙的平衡中运转，变化带来的影响复杂而深远。  \n人类活动改变了自然界的轨迹，引发了新的生态冲突与共存挑战。  \n生物多样性的减少与环境恶化并存，生态系统的韧性逐渐削弱，难以抵御突发灾难。  \n某些物种在适应过程中展现出惊人的韧性，却也可能成为生态失衡的催化剂。  \n微小的环境变化可能在短期内改变食物链结构，长期内却可能引发不可预见的生态后果。  \n自然界的复杂性如同一幅动态画卷，任何干预都可能打破原有平衡，带来不可逆转的后果。  \n在这片无形的土地上，生命的生存策略不断演变，人类与自然的关系在这片交织的景观中愈发复杂。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 3510935660,
+    "load_duration": 23804104,
+    "prompt_eval_count": 96,
+    "prompt_eval_duration": 137946375,
+    "eval_count": 281,
+    "eval_duration": 3317324188
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788940364.4308712,
+      "nvidia_smi": {
+        "timestamp_unix": 1788940364.4308715,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.477,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788940364.4440694,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 942984,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 981.0703125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 778.6953125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788940364.4562309,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207232,
+        "proc_threads": 40,
+        "proc_vol_ctx": 935751,
+        "proc_invol_ctx": 7233,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788940367.977053,
+      "nvidia_smi": {
+        "timestamp_unix": 1788940367.9770534,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.498,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788940367.9914682,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.85546875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 942985,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 981.42578125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.85546875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 778.5703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788940368.0077379,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207724,
+        "proc_threads": 40,
+        "proc_vol_ctx": 935752,
+        "proc_invol_ctx": 7233,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788940364.4651566,
+      "response_received_unix": 1788940367.9769866,
+      "first_byte_unix": 1788940367.976923,
+      "total_wall_ms": 3511.8300914764404,
+      "queue_wait_ms": 3511.7664337158203,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 07:52:47 GMT",
+        "Content-Length": "1292",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788940368.0179553,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788940364.4651027
+    }
+  },
+  "wall_clock_unix": 1788940368.0179553
+}

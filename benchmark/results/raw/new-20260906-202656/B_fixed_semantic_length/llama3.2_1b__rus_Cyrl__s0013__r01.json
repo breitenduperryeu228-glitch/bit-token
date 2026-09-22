@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0013",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nГлавная река Амазонки имеет длину 6387 км (3980 миль). В неё впадают тысячи небольших рек.\n\n/no_think",
+    "source_text": "Главная река Амазонки имеет длину 6387 км (3980 миль). В неё впадают тысячи небольших рек."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Главная река Амазонки - это самый длинный и старый из всех рек на Земле,stretching через бассейны трёх континентов. Речь Амазонки имеет длину 6387 км (3980 миль), а ее основной струм — Бразилийская Амазонка, которая входит в бассейны трёх стран: Бразилия, Перу и Эквадор. В неё впадают тысячи небольших рек, которые образуют сложную систему водных потоков, что делает Амазонку одной из наиболее экологически важных и уникальных рек на планете.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1024896351,
+    "load_duration": 76428303,
+    "prompt_eval_duration": 5928443,
+    "eval_duration": 885119420,
+    "eval_count": 153,
+    "prompt_eval_count": 119,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:41:12.137444601Z",
+    "message": {
+      "role": "assistant",
+      "content": "Главная река Амазонки - это самый длинный и старый из всех рек на Земле,stretching через бассейны трёх континентов. Речь Амазонки имеет длину 6387 км (3980 миль), а ее основной струм — Бразилийская Амазонка, которая входит в бассейны трёх стран: Бразилия, Перу и Эквадор. В неё впадают тысячи небольших рек, которые образуют сложную систему водных потоков, что делает Амазонку одной из наиболее экологически важных и уникальных рек на планете."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1024896351,
+    "load_duration": 76428303,
+    "prompt_eval_count": 119,
+    "prompt_eval_duration": 5928443,
+    "eval_count": 153,
+    "eval_duration": 885119420
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789137671.0676053,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137671.0676055,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 94,
+            "mem_util_pct": 100,
+            "power_w": 73.053,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137671.0779858,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 242.83203125,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 13742,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1126.171875,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 242.83203125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 883.33984375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137671.0986643,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 248660,
+        "proc_threads": 32,
+        "proc_vol_ctx": 13509,
+        "proc_invol_ctx": 233,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789137672.1378565,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137672.1378572,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 73.067,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137672.148909,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 242.75390625,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 13755,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1126.09375,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 242.75390625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 883.33984375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137672.1712358,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 248580,
+        "proc_threads": 32,
+        "proc_vol_ctx": 13522,
+        "proc_invol_ctx": 233,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789137671.1122415,
+      "response_received_unix": 1789137672.1377838,
+      "first_byte_unix": 1789137672.1377306,
+      "total_wall_ms": 1025.5422592163086,
+      "queue_wait_ms": 1025.489091873169,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:41:12 GMT",
+        "Content-Length": "1086",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789137672.184953,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789137671.1121984
+    }
+  },
+  "wall_clock_unix": 1789137672.184953
+}

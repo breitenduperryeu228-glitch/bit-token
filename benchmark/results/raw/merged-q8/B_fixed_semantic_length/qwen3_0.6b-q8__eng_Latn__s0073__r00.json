@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b-q8",
+  "language": "eng_Latn",
+  "sample_id": "s0073",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Please write exactly about 256 characters of text in English on the topic implied by the following sentence. Do not add greetings, do not add explanations, just the paragraph itself:\n\nIn 1683, Qing dynasty (1644-1912) forces take control of Taiwan’s western and northern coastal areas and declared Taiwan as a province of the Qing Empire in 1885.\n\n/no_think",
+    "source_text": "In 1683, Qing dynasty (1644-1912) forces take control of Taiwan’s western and northern coastal areas and declared Taiwan as a province of the Qing Empire in 1885."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "In 1683, Qing dynasty forces took control of Taiwan’s western and northern coastal areas and declared Taiwan as a province of the Qing Empire in 1885.",
+  "ollama": {
+    "model": "qwen3:0.6b-q8",
+    "total_duration": 238985961,
+    "load_duration": 45349868,
+    "prompt_eval_duration": 9411565,
+    "eval_duration": 174912683,
+    "eval_count": 42,
+    "prompt_eval_count": 107,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b-q8",
+    "created_at": "2026-09-19T03:02:44.041375435Z",
+    "message": {
+      "role": "assistant",
+      "content": "<think>\n\n</think>\n\nIn 1683, Qing dynasty forces took control of Taiwan’s western and northern coastal areas and declared Taiwan as a province of the Qing Empire in 1885."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 238985961,
+    "load_duration": 45349868,
+    "prompt_eval_count": 107,
+    "prompt_eval_duration": 9411565,
+    "eval_count": 42,
+    "eval_duration": 174912683
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789786963.772179,
+      "nvidia_smi": {
+        "timestamp_unix": 1789786963.7721791,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2608.5,
+            "vram_total_mib": 8188.0,
+            "util_pct": 58,
+            "mem_util_pct": 55,
+            "power_w": 45.335,
+            "temp_c": 54,
+            "sm_clock_mhz": 2115,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789786963.7823126,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 111.24609375,
+        "vms_mib": 3763.69140625,
+        "num_threads": 35,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 751.58203125,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 111.24609375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 640.3359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789786963.793647,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3854020,
+        "proc_vm_rss_kib": 113916,
+        "proc_threads": 35,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789786964.0417366,
+      "nvidia_smi": {
+        "timestamp_unix": 1789786964.0417373,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2608.5,
+            "vram_total_mib": 8188.0,
+            "util_pct": 58,
+            "mem_util_pct": 55,
+            "power_w": 44.947,
+            "temp_c": 54,
+            "sm_clock_mhz": 2115,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789786964.0537145,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 101.9140625,
+        "vms_mib": 3763.69140625,
+        "num_threads": 35,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 741.8125,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 101.9140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 639.8984375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789786964.066257,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3854020,
+        "proc_vm_rss_kib": 104360,
+        "proc_threads": 35,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789786963.8019943,
+      "response_received_unix": 1789786964.0416868,
+      "first_byte_unix": 1789786964.0416493,
+      "total_wall_ms": 239.69244956970215,
+      "queue_wait_ms": 239.6550178527832,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 19 Sep 2026 03:02:44 GMT",
+        "Content-Length": "492",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789786964.0742428,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789786963.8019547
+    }
+  },
+  "wall_clock_unix": 1789786964.0742428
+}

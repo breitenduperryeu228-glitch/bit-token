@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0040",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章を日本語で続けて、短い段落で書いてください。\n\n1624年、オランダの東インド会社が台湾南西部に拠点を置き、原住民の穀物生産方法を変革し、中国人労働者を雇って米や砂糖のプランテーションに従事させました。\n\n/no_think",
+    "source_text": "1624年、オランダの東インド会社が台湾南西部に拠点を置き、原住民の穀物生産方法を変革し、中国人労働者を雇って米や砂糖のプランテーションに従事させました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "1624年、オランダの東インド会社は台湾南西部に拠点を設け、原住民の農業技術を改良し、現地の労働者を雇用して米や砂糖のプランテーションを運営しました。この政策は、ヨーロッパの農業手法を導入しつつも、現地の文化や労働環境に合わせた柔軟な管理体制を構築する試みでした。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1412676568,
+    "load_duration": 24746586,
+    "prompt_eval_duration": 223248155,
+    "eval_duration": 1150179117,
+    "eval_count": 99,
+    "prompt_eval_count": 99,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-06T14:48:06.310015634Z",
+    "message": {
+      "role": "assistant",
+      "content": "1624年、オランダの東インド会社は台湾南西部に拠点を設け、原住民の農業技術を改良し、現地の労働者を雇用して米や砂糖のプランテーションを運営しました。この政策は、ヨーロッパの農業手法を導入しつつも、現地の文化や労働環境に合わせた柔軟な管理体制を構築する試みでした。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1412676568,
+    "load_duration": 24746586,
+    "prompt_eval_count": 99,
+    "prompt_eval_duration": 223248155,
+    "eval_count": 99,
+    "eval_duration": 1150179117
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788706084.8589764,
+      "nvidia_smi": {
+        "timestamp_unix": 1788706084.858977,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.3125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 14,
+            "power_w": 12.592,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788706084.87276,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 583.30078125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 315355,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1356.9453125,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 583.30078125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 773.64453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788706084.8874784,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 597300,
+        "proc_threads": 40,
+        "proc_vol_ctx": 314445,
+        "proc_invol_ctx": 910,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788706086.3106132,
+      "nvidia_smi": {
+        "timestamp_unix": 1788706086.3106139,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.3125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 14,
+            "power_w": 12.616,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788706086.3282843,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 586.3984375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 315356,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1359.87109375,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 586.3984375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 773.47265625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788706086.3438377,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 600472,
+        "proc_threads": 40,
+        "proc_vol_ctx": 314446,
+        "proc_invol_ctx": 910,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788706084.8969162,
+      "response_received_unix": 1788706086.3105319,
+      "first_byte_unix": 1788706086.3104427,
+      "total_wall_ms": 1413.6157035827637,
+      "queue_wait_ms": 1413.5265350341797,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sun, 06 Sep 2026 14:48:06 GMT",
+        "Content-Length": "702",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788706086.3535364,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788706084.896868
+    }
+  },
+  "wall_clock_unix": 1788706086.3535364
+}

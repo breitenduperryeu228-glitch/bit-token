@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0179",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n北部のセンティネル山脈には、南極大陸最高峰のヴィンソン山脈があり、標高4892mのヴィンソン山がそびえています。\n\n/no_think",
+    "source_text": "北部のセンティネル山脈には、南極大陸最高峰のヴィンソン山脈があり、標高4892mのヴィンソン山がそびえています。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "北部のセンティネル山脈は、南極大陸の極地に位置し、世界最大の山脈の一つとして知られています。ヴィンソン山はその頂点にあり、標高4892mという高さで、南極大陸の最も高い山として、極地の自然の美しさを象徴しています。この山脈は、氷河や雪の積もる地帯として、科学研究や観光に利用されています。特に、氷河の観測や気候変動の調査において重要な役割を果たしており、国際的な自然保護活動の一環としても注目されています。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1959958487,
+    "load_duration": 22638061,
+    "prompt_eval_duration": 231946074,
+    "eval_duration": 1685011361,
+    "eval_count": 144,
+    "prompt_eval_count": 108,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:32:12.107343766Z",
+    "message": {
+      "role": "assistant",
+      "content": "北部のセンティネル山脈は、南極大陸の極地に位置し、世界最大の山脈の一つとして知られています。ヴィンソン山はその頂点にあり、標高4892mという高さで、南極大陸の最も高い山として、極地の自然の美しさを象徴しています。この山脈は、氷河や雪の積もる地帯として、科学研究や観光に利用されています。特に、氷河の観測や気候変動の調査において重要な役割を果たしており、国際的な自然保護活動の一環としても注目されています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1959958487,
+    "load_duration": 22638061,
+    "prompt_eval_count": 108,
+    "prompt_eval_duration": 231946074,
+    "eval_count": 144,
+    "eval_duration": 1685011361
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788942730.1134024,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942730.1134026,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.527,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942730.1270673,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.671875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 973548,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 992.390625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.671875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.71875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942730.1390023,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209584,
+        "proc_threads": 40,
+        "proc_vol_ctx": 966127,
+        "proc_invol_ctx": 7421,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788942732.1078386,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942732.1078393,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 13,
+            "power_w": 12.502,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942732.1245232,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.5625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 973550,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 990.28125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.5625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.71875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942732.138394,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207424,
+        "proc_threads": 40,
+        "proc_vol_ctx": 966129,
+        "proc_invol_ctx": 7421,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788942730.1469557,
+      "response_received_unix": 1788942732.1077633,
+      "first_byte_unix": 1788942732.107705,
+      "total_wall_ms": 1960.8075618743896,
+      "queue_wait_ms": 1960.7493877410889,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:32:12 GMT",
+        "Content-Length": "915",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788942732.1470876,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788942730.1469145
+    }
+  },
+  "wall_clock_unix": 1788942732.1470876
+}

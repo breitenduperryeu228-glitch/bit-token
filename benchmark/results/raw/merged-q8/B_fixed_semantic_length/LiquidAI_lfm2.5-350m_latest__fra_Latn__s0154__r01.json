@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "fra_Latn",
+  "sample_id": "s0154",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Veuillez écrire environ 256 caractères de texte en français sur le sujet suggéré par la phrase suivante. Pas de salutations ni d'explications, juste le paragraphe :\n\nBien que la construction de pyramides en pierre se soit poursuivie jusqu'à la fin de l'Ancien Empire, les pyramides de Gizeh n'ont jamais été surpassées par leur taille et l'excellence technique de leur construction.\n\n/no_think",
+    "source_text": "Bien que la construction de pyramides en pierre se soit poursuivie jusqu'à la fin de l'Ancien Empire, les pyramides de Gizeh n'ont jamais été surpassées par leur taille et l'excellence technique de leur construction."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Les pyramides de Gizeh, bien que construites avec des matériaux impressionnants, n'ont jamais atteint la taille des monuments ultérieurs comme le Parthénon ou le Colisée.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 709158868,
+    "load_duration": 23964709,
+    "prompt_eval_duration": 209131725,
+    "eval_duration": 468052565,
+    "eval_count": 41,
+    "prompt_eval_count": 116,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T09:39:42.685550222Z",
+    "message": {
+      "role": "assistant",
+      "content": "Les pyramides de Gizeh, bien que construites avec des matériaux impressionnants, n'ont jamais atteint la taille des monuments ultérieurs comme le Parthénon ou le Colisée."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 709158868,
+    "load_duration": 23964709,
+    "prompt_eval_count": 116,
+    "prompt_eval_duration": 209131725,
+    "eval_count": 41,
+    "eval_duration": 468052565
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788946781.940977,
+      "nvidia_smi": {
+        "timestamp_unix": 1788946781.9409773,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.433,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788946781.9557064,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.94140625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 982255,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 997.765625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.94140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 794.82421875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788946781.9680889,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207812,
+        "proc_threads": 40,
+        "proc_vol_ctx": 974746,
+        "proc_invol_ctx": 7509,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788946782.6861687,
+      "nvidia_smi": {
+        "timestamp_unix": 1788946782.686169,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 29,
+            "mem_util_pct": 14,
+            "power_w": 12.388,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788946782.7037663,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.12890625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 982256,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 998.953125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.12890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 794.82421875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788946782.7167351,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209028,
+        "proc_threads": 40,
+        "proc_vol_ctx": 974747,
+        "proc_invol_ctx": 7509,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788946781.9759352,
+      "response_received_unix": 1788946782.6860924,
+      "first_byte_unix": 1788946782.6860082,
+      "total_wall_ms": 710.1571559906006,
+      "queue_wait_ms": 710.0729942321777,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 09:39:42 GMT",
+        "Content-Length": "487",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788946782.725025,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788946781.9758925
+    }
+  },
+  "wall_clock_unix": 1788946782.725025
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0126",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章を日本語で続けて、短い段落で書いてください。\n\n衛星はロケットで宇宙に送られました。科学者が宇宙で望遠鏡を使う理由は、地球の大気によって人間の視界に入る光や景色の一部が歪むからです。\n\n/no_think",
+    "source_text": "衛星はロケットで宇宙に送られました。科学者が宇宙で望遠鏡を使う理由は、地球の大気によって人間の視界に入る光や景色の一部が歪むからです。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "衛星を打ち上げたのは、科学者たちが宇宙に望遠鏡を使うことです。望遠鏡は、地球の大気によって人間の視界に入る光や景色の一部が歪むことがあります。このため、望遠鏡を使うことで、宇宙で見る事実をより正確に知ることができます。\n\n科学者たちは、衛星を打ち上げた後、宇宙で望遠鏡を使ってみました。景色はすばらしいものでしたが、地球の大気によって光や景色の一部が歪んでいたことがわかりました。このため、科学者たちは、衛星の打ち上げと宇宙での望遠鏡の使い方について研究を進めます。\n\n衛星は、宇宙に送られました。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 6389033537,
+    "load_duration": 67831297,
+    "prompt_eval_duration": 34759767,
+    "eval_duration": 6155310748,
+    "eval_count": 176,
+    "prompt_eval_count": 103,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-07T01:59:42.736892109Z",
+    "message": {
+      "role": "assistant",
+      "content": "衛星を打ち上げたのは、科学者たちが宇宙に望遠鏡を使うことです。望遠鏡は、地球の大気によって人間の視界に入る光や景色の一部が歪むことがあります。このため、望遠鏡を使うことで、宇宙で見る事実をより正確に知ることができます。\n\n科学者たちは、衛星を打ち上げた後、宇宙で望遠鏡を使ってみました。景色はすばらしいものでしたが、地球の大気によって光や景色の一部が歪んでいたことがわかりました。このため、科学者たちは、衛星の打ち上げと宇宙での望遠鏡の使い方について研究を進めます。\n\n衛星は、宇宙に送られました。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 6389033537,
+    "load_duration": 67831297,
+    "prompt_eval_count": 103,
+    "prompt_eval_duration": 34759767,
+    "eval_count": 176,
+    "eval_duration": 6155310748
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788746376.3102758,
+      "nvidia_smi": {
+        "timestamp_unix": 1788746376.3102763,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.75,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788746376.323903,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 237.51171875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2189.8828125,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 237.51171875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1952.37109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788746376.3382204,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 243212,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788746382.7371838,
+      "nvidia_smi": {
+        "timestamp_unix": 1788746382.737184,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 14,
+            "power_w": 12.729,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788746382.751684,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 233.69140625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2186.0625,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 233.69140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1952.37109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788746382.7658412,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 239300,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788746376.3474705,
+      "response_received_unix": 1788746382.7371354,
+      "first_byte_unix": 1788746382.7370913,
+      "total_wall_ms": 6389.664888381958,
+      "queue_wait_ms": 6389.620780944824,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 07 Sep 2026 01:59:42 GMT",
+        "Content-Length": "1042",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788746382.7744668,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788746376.347427
+    }
+  },
+  "wall_clock_unix": 1788746382.7744668
+}

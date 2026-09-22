@@ -1,0 +1,505 @@
+{
+  "diagnostics": {
+    "empty_response_counts": {},
+    "n_empty_total": 0,
+    "n_total": 79830,
+    "note": "Runs with empty response_text are kept in the raw JSON for auditability but are excluded from mean-per-cell statistics below because their Bit/s = 0 would be misleading."
+  },
+  "RQ1_ranking_consistency": {
+    "overall": {
+      "spearman_r": 0.8713080168776371,
+      "spearman_p": 7.9213175052936e-26,
+      "kendall_tau": 0.6854430379746835,
+      "kendall_p": 2.277854179920251e-19
+    },
+    "by_language": {
+      "deu_Latn": {
+        "spearman_r": 0.9636363636363635,
+        "spearman_p": 7.320974809529922e-06,
+        "kendall_tau": 0.911111111111111,
+        "kendall_p": 2.9761904761904762e-05
+      },
+      "eng_Latn": {
+        "spearman_r": 0.9515151515151514,
+        "spearman_p": 2.279854920641689e-05,
+        "kendall_tau": 0.8666666666666666,
+        "kendall_p": 0.00011518959435626102
+      },
+      "fra_Latn": {
+        "spearman_r": 0.9878787878787878,
+        "spearman_p": 9.307459988955517e-08,
+        "kendall_tau": 0.9555555555555554,
+        "kendall_p": 5.5114638447971785e-06
+      },
+      "jpn_Jpan": {
+        "spearman_r": 0.8666666666666665,
+        "spearman_p": 0.0011735381801554687,
+        "kendall_tau": 0.6888888888888888,
+        "kendall_p": 0.00468694885361552
+      },
+      "kor_Hang": {
+        "spearman_r": 0.8909090909090909,
+        "spearman_p": 0.0005421442248338665,
+        "kendall_tau": 0.7333333333333333,
+        "kendall_p": 0.002212852733686067
+      },
+      "rus_Cyrl": {
+        "spearman_r": 0.8909090909090909,
+        "spearman_p": 0.0005421442248338665,
+        "kendall_tau": 0.7777777777777777,
+        "kendall_p": 0.0009463183421516755
+      },
+      "spa_Latn": {
+        "spearman_r": 0.9030303030303028,
+        "spearman_p": 0.00034361219776328223,
+        "kendall_tau": 0.7777777777777777,
+        "kendall_p": 0.0009463183421516755
+      },
+      "zho_Hans": {
+        "spearman_r": 0.6969696969696969,
+        "spearman_p": 0.02509667588225183,
+        "kendall_tau": 0.6,
+        "kendall_p": 0.016666115520282188
+      }
+    }
+  },
+  "RQ2_language_changes_mapping": {
+    "deu_Latn": {
+      "spearman_r": 0.9636363636363635,
+      "spearman_p": 7.320974809529922e-06,
+      "kendall_tau": 0.911111111111111,
+      "kendall_p": 2.9761904761904762e-05
+    },
+    "eng_Latn": {
+      "spearman_r": 0.9515151515151514,
+      "spearman_p": 2.279854920641689e-05,
+      "kendall_tau": 0.8666666666666666,
+      "kendall_p": 0.00011518959435626102
+    },
+    "fra_Latn": {
+      "spearman_r": 0.9878787878787878,
+      "spearman_p": 9.307459988955517e-08,
+      "kendall_tau": 0.9555555555555554,
+      "kendall_p": 5.5114638447971785e-06
+    },
+    "jpn_Jpan": {
+      "spearman_r": 0.8666666666666665,
+      "spearman_p": 0.0011735381801554687,
+      "kendall_tau": 0.6888888888888888,
+      "kendall_p": 0.00468694885361552
+    },
+    "kor_Hang": {
+      "spearman_r": 0.8909090909090909,
+      "spearman_p": 0.0005421442248338665,
+      "kendall_tau": 0.7333333333333333,
+      "kendall_p": 0.002212852733686067
+    },
+    "rus_Cyrl": {
+      "spearman_r": 0.8909090909090909,
+      "spearman_p": 0.0005421442248338665,
+      "kendall_tau": 0.7777777777777777,
+      "kendall_p": 0.0009463183421516755
+    },
+    "spa_Latn": {
+      "spearman_r": 0.9030303030303028,
+      "spearman_p": 0.00034361219776328223,
+      "kendall_tau": 0.7777777777777777,
+      "kendall_p": 0.0009463183421516755
+    },
+    "zho_Hans": {
+      "spearman_r": 0.6969696969696969,
+      "spearman_p": 0.02509667588225183,
+      "kendall_tau": 0.6,
+      "kendall_p": 0.016666115520282188
+    }
+  },
+  "RQ3_tokenizer_explains_gap": {
+    "linear_regression_Bit_per_s_on_Token_per_s": {
+      "slope": 38.34925862512436,
+      "intercept": -340.30136903506127,
+      "r": 0.9328522570072321,
+      "r2": 0.8702133334034869,
+      "p": 2.5110478821688035e-36,
+      "se": 1.676918066449381,
+      "note": "If R² ≈ 1, Token/s alone is enough. If R² < 1, Bytes/Token explains the residual — Bit/s carries extra information."
+    },
+    "spearman_BytesPerToken_vs_BitsPerToken": {
+      "spearman_r": 1.0,
+      "spearman_p": 0.0,
+      "kendall_tau": 0.9999999999999999,
+      "kendall_p": 2.79448815534141e-119
+    }
+  },
+  "RQ4_ranking_flips": {
+    "significant_flips": [],
+    "n_significant": 0,
+    "n_cells_compared": 80
+  },
+  "RQ5_model_size_effect": {
+    "tiny_<2B": {
+      "n": 47995,
+      "models": [
+        "llama3.2:1b",
+        "qwen3.5:0.8b",
+        "qwen3:0.6b"
+      ],
+      "token_per_second_mean": 85.69860881637179,
+      "bit_per_second_mean": 3110.4667001761436,
+      "bytes_per_token_mean": 4.480889264977197
+    },
+    "large_>8B": {
+      "n": 31835,
+      "models": [
+        "LiquidAI/lfm2.5-350m:latest",
+        "granite4:350m-h"
+      ],
+      "token_per_second_mean": 82.57595560044545,
+      "bit_per_second_mean": 2582.1618096406296,
+      "bytes_per_token_mean": 3.914903047692057
+    }
+  },
+  "RQ6_language_systematic_effect": {
+    "n_per_language": {
+      "deu_Latn": 9955,
+      "eng_Latn": 10000,
+      "fra_Latn": 9995,
+      "jpn_Jpan": 9995,
+      "kor_Hang": 10000,
+      "rus_Cyrl": 10000,
+      "spa_Latn": 10000,
+      "zho_Hans": 9885
+    },
+    "means": {
+      "deu_Latn": 3.9253413181770163,
+      "eng_Latn": 4.840594739531299,
+      "fra_Latn": 3.977152268160624,
+      "jpn_Jpan": 4.069873662754125,
+      "kor_Hang": 3.956147464212864,
+      "rus_Cyrl": 5.560536253991988,
+      "spa_Latn": 3.9491445499669315,
+      "zho_Hans": 3.7552040178939095
+    },
+    "one_way_anova_F": 4916.14642685816,
+    "one_way_anova_p": 0.0,
+    "pairwise": [
+      {
+        "lang_a": "deu_Latn",
+        "lang_b": "eng_Latn",
+        "mean_a": 3.9253413181770163,
+        "mean_b": 4.840594739531299,
+        "cohens_d": -1.2820058130764338,
+        "welch_t": -90.58811681929,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "deu_Latn",
+        "lang_b": "fra_Latn",
+        "mean_a": 3.9253413181770163,
+        "mean_b": 3.977152268160624,
+        "cohens_d": -0.08787410884903168,
+        "welch_t": -6.2035385760424155,
+        "welch_p": 5.633364113094555e-10
+      },
+      {
+        "lang_a": "deu_Latn",
+        "lang_b": "jpn_Jpan",
+        "mean_a": 3.9253413181770163,
+        "mean_b": 4.069873662754125,
+        "cohens_d": -0.1815851491495919,
+        "welch_t": -12.832887009546141,
+        "welch_p": 1.5728752119854211e-37
+      },
+      {
+        "lang_a": "deu_Latn",
+        "lang_b": "kor_Hang",
+        "mean_a": 3.9253413181770163,
+        "mean_b": 3.956147464212864,
+        "cohens_d": -0.03983976067789442,
+        "welch_t": -2.81588417281959,
+        "welch_p": 0.0048695359436981825
+      },
+      {
+        "lang_a": "deu_Latn",
+        "lang_b": "rus_Cyrl",
+        "mean_a": 3.9253413181770163,
+        "mean_b": 5.560536253991988,
+        "cohens_d": -1.5240299990006736,
+        "welch_t": -107.79938196934343,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "deu_Latn",
+        "lang_b": "spa_Latn",
+        "mean_a": 3.9253413181770163,
+        "mean_b": 3.9491445499669315,
+        "cohens_d": -0.038749727043665916,
+        "welch_t": -2.7363551285356023,
+        "welch_p": 0.006217941737060388
+      },
+      {
+        "lang_a": "deu_Latn",
+        "lang_b": "zho_Hans",
+        "mean_a": 3.9253413181770163,
+        "mean_b": 3.7552040178939095,
+        "cohens_d": 0.19556642787282308,
+        "welch_t": 13.750985973264905,
+        "welch_p": 8.694018821989123e-43
+      },
+      {
+        "lang_a": "eng_Latn",
+        "lang_b": "fra_Latn",
+        "mean_a": 4.840594739531299,
+        "mean_b": 3.977152268160624,
+        "cohens_d": 1.2946446664755826,
+        "welch_t": 91.54207831132628,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "eng_Latn",
+        "lang_b": "jpn_Jpan",
+        "mean_a": 4.840594739531299,
+        "mean_b": 4.069873662754125,
+        "cohens_d": 0.9020252800819257,
+        "welch_t": 63.77214343746269,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "eng_Latn",
+        "lang_b": "kor_Hang",
+        "mean_a": 4.840594739531299,
+        "mean_b": 3.956147464212864,
+        "cohens_d": 1.061296005400091,
+        "welch_t": 75.04496022645999,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "eng_Latn",
+        "lang_b": "rus_Cyrl",
+        "mean_a": 4.840594739531299,
+        "mean_b": 5.560536253991988,
+        "cohens_d": -0.644828714441768,
+        "welch_t": -45.59627566855775,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "eng_Latn",
+        "lang_b": "spa_Latn",
+        "mean_a": 4.840594739531299,
+        "mean_b": 3.9491445499669315,
+        "cohens_d": 1.29424498198188,
+        "welch_t": 91.51694032760493,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "eng_Latn",
+        "lang_b": "zho_Hans",
+        "mean_a": 4.840594739531299,
+        "mean_b": 3.7552040178939095,
+        "cohens_d": 1.1747655732840647,
+        "welch_t": 82.6887596319901,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "fra_Latn",
+        "lang_b": "jpn_Jpan",
+        "mean_a": 3.977152268160624,
+        "mean_b": 4.069873662754125,
+        "cohens_d": -0.12298694321955721,
+        "welch_t": -8.694315760423398,
+        "welch_p": 3.82376066061412e-18
+      },
+      {
+        "lang_a": "fra_Latn",
+        "lang_b": "kor_Hang",
+        "mean_a": 3.977152268160624,
+        "mean_b": 3.956147464212864,
+        "cohens_d": 0.02877489547710244,
+        "welch_t": 2.0346764429653943,
+        "welch_p": 0.041899494859300515
+      },
+      {
+        "lang_a": "fra_Latn",
+        "lang_b": "rus_Cyrl",
+        "mean_a": 3.977152268160624,
+        "mean_b": 5.560536253991988,
+        "cohens_d": -1.5200729692848314,
+        "welch_t": -107.49181593204727,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "fra_Latn",
+        "lang_b": "spa_Latn",
+        "mean_a": 3.977152268160624,
+        "mean_b": 3.9491445499669315,
+        "cohens_d": 0.05008401336661731,
+        "welch_t": 3.541115708889983,
+        "welch_p": 0.00039935290744088937
+      },
+      {
+        "lang_a": "fra_Latn",
+        "lang_b": "zho_Hans",
+        "mean_a": 3.977152268160624,
+        "mean_b": 3.7552040178939095,
+        "cohens_d": 0.2669828728462432,
+        "welch_t": 18.760000257273067,
+        "welch_p": 1.3080664762521533e-77
+      },
+      {
+        "lang_a": "jpn_Jpan",
+        "lang_b": "kor_Hang",
+        "mean_a": 4.069873662754125,
+        "mean_b": 3.956147464212864,
+        "cohens_d": 0.12573437224842332,
+        "welch_t": 8.889554321872202,
+        "welch_p": 6.646438580846413e-19
+      },
+      {
+        "lang_a": "jpn_Jpan",
+        "lang_b": "rus_Cyrl",
+        "mean_a": 4.069873662754125,
+        "mean_b": 5.560536253991988,
+        "cohens_d": -1.2734236316106995,
+        "welch_t": -90.0418763574597,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "jpn_Jpan",
+        "lang_b": "spa_Latn",
+        "mean_a": 4.069873662754125,
+        "mean_b": 3.9491445499669315,
+        "cohens_d": 0.15612394285983258,
+        "welch_t": 11.03706944630661,
+        "welch_p": 3.1610512721287285e-28
+      },
+      {
+        "lang_a": "jpn_Jpan",
+        "lang_b": "zho_Hans",
+        "mean_a": 4.069873662754125,
+        "mean_b": 3.7552040178939095,
+        "cohens_d": 0.3181891700896052,
+        "welch_t": 22.415583813461673,
+        "welch_p": 6.766901388372811e-110
+      },
+      {
+        "lang_a": "kor_Hang",
+        "lang_b": "rus_Cyrl",
+        "mean_a": 3.956147464212864,
+        "mean_b": 5.560536253991988,
+        "cohens_d": -1.388796776601058,
+        "welch_t": -98.20276184246269,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "kor_Hang",
+        "lang_b": "spa_Latn",
+        "mean_a": 3.956147464212864,
+        "mean_b": 3.9491445499669315,
+        "cohens_d": 0.009337625715523788,
+        "welch_t": 0.6602698463628759,
+        "welch_p": 0.5090894459819535
+      },
+      {
+        "lang_a": "kor_Hang",
+        "lang_b": "zho_Hans",
+        "mean_a": 3.956147464212864,
+        "mean_b": 3.7552040178939095,
+        "cohens_d": 0.20701826478592242,
+        "welch_t": 14.581646177487947,
+        "welch_p": 6.619810102825419e-48
+      },
+      {
+        "lang_a": "rus_Cyrl",
+        "lang_b": "spa_Latn",
+        "mean_a": 5.560536253991988,
+        "mean_b": 3.9491445499669315,
+        "cohens_d": 1.5263800891351988,
+        "welch_t": 107.93137116956262,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "rus_Cyrl",
+        "lang_b": "zho_Hans",
+        "mean_a": 5.560536253991988,
+        "mean_b": 3.7552040178939095,
+        "cohens_d": 1.4753237905483014,
+        "welch_t": 104.17668544442164,
+        "welch_p": 0.0
+      },
+      {
+        "lang_a": "spa_Latn",
+        "lang_b": "zho_Hans",
+        "mean_a": 3.9491445499669315,
+        "mean_b": 3.7552040178939095,
+        "cohens_d": 0.22843110624882668,
+        "welch_t": 16.05677816014997,
+        "welch_p": 1.4981598139028455e-57
+      }
+    ]
+  },
+  "ANOVA_token_per_second": {
+    "metric": "token_per_second",
+    "n_observations": 79830,
+    "df_model": 4,
+    "df_language": 7,
+    "df_interaction": 28,
+    "df_within": 79790,
+    "F_model": 1182.9604883394697,
+    "p_model": 1.1102230246251565e-16,
+    "F_language": 148.11259236204117,
+    "p_language": 1.1102230246251565e-16,
+    "F_interaction": 154.58192952238042,
+    "p_interaction": 1.1102230246251565e-16,
+    "eta2_model": 0.052642161241357587,
+    "eta2_language": 0.01153436004857586,
+    "eta2_interaction": 0.04815265477918051,
+    "partial_eta2_model": 0.055983658708823165,
+    "partial_eta2_language": 0.012827283754671178,
+    "partial_eta2_interaction": 0.051454847922338766,
+    "ss_total": 178347315.07331112,
+    "ss_within": 158313708.11698744
+  },
+  "ANOVA_bit_per_second": {
+    "metric": "bit_per_second",
+    "n_observations": 79830,
+    "df_model": 4,
+    "df_language": 7,
+    "df_interaction": 28,
+    "df_within": 79790,
+    "F_model": 1921.3720928089722,
+    "p_model": 1.1102230246251565e-16,
+    "F_language": 641.4347317037511,
+    "p_language": 1.1102230246251565e-16,
+    "F_interaction": 281.4601215816155,
+    "p_interaction": 1.1102230246251565e-16,
+    "eta2_model": 0.07697310293143407,
+    "eta2_language": 0.04496949766837395,
+    "eta2_interaction": 0.07893005885468916,
+    "partial_eta2_model": 0.087858764944753,
+    "partial_eta2_language": 0.05327528268383302,
+    "partial_eta2_interaction": 0.08989168465365353,
+    "ss_total": 316502171705.4907,
+    "ss_within": 252925538751.8849
+  },
+  "ANOVA_bytes_per_token": {
+    "metric": "bytes_per_token",
+    "n_observations": 79830,
+    "df_model": 4,
+    "df_language": 7,
+    "df_interaction": 28,
+    "df_within": 79790,
+    "F_model": 9198.359034411227,
+    "p_model": 1.1102230246251565e-16,
+    "F_language": 9226.848121560013,
+    "p_language": 1.1102230246251565e-16,
+    "F_interaction": 1169.9391917088208,
+    "p_interaction": 1.1102230246251565e-16,
+    "eta2_model": 0.17198846740775206,
+    "eta2_language": 0.30191201035048126,
+    "eta2_interaction": 0.15312647990001044,
+    "partial_eta2_model": 0.31559745840913905,
+    "partial_eta2_language": 0.44735323318556264,
+    "partial_eta2_interaction": 0.29105991058026826,
+    "ss_total": 89518.75371034202,
+    "ss_within": 33388.08191798864
+  }
+}

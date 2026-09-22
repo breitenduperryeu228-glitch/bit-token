@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0103",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n地球上の川から海に注ぐ水の20%は、アマゾン川から流れ出ています。\n\n/no_think",
+    "source_text": "地球上の川から海に注ぐ水の20%は、アマゾン川から流れ出ています。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "地球上の川から海に注ぐ水の20%は、アマゾン川から流れ出ています。アマゾン川は世界最大の河川で、年間約2兆トンに達しています。ここでは、熱帯雨林の豊かな生態系が支えられ、生物多様性が極めて高いことが伺えます。川の流れは季節によって大きく変動し、乾季には水が減少し、洪水のリスクが高まります。さらに、アマゾン川は地球規模の水循環に重要な役割を果たしており、気候変動の影響も無視できません。水資源の持続可能性を考えると、国際的な協力が不可欠です。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2112454836,
+    "load_duration": 22109765,
+    "prompt_eval_duration": 158746894,
+    "eval_duration": 1903825878,
+    "eval_count": 163,
+    "prompt_eval_count": 89,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:20:12.320841768Z",
+    "message": {
+      "role": "assistant",
+      "content": "地球上の川から海に注ぐ水の20%は、アマゾン川から流れ出ています。アマゾン川は世界最大の河川で、年間約2兆トンに達しています。ここでは、熱帯雨林の豊かな生態系が支えられ、生物多様性が極めて高いことが伺えます。川の流れは季節によって大きく変動し、乾季には水が減少し、洪水のリスクが高まります。さらに、アマゾン川は地球規模の水循環に重要な役割を果たしており、気候変動の影響も無視できません。水資源の持続可能性を考えると、国際的な協力が不可欠です。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2112454836,
+    "load_duration": 22109765,
+    "prompt_eval_count": 89,
+    "prompt_eval_duration": 158746894,
+    "eval_count": 163,
+    "eval_duration": 1903825878
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788942010.1727612,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942010.1727614,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.528,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942010.1858692,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 205.23046875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 963826,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 990.99609375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 205.23046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 785.765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942010.1987004,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 210156,
+        "proc_threads": 40,
+        "proc_vol_ctx": 956457,
+        "proc_invol_ctx": 7369,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788942012.3213863,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942012.321387,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.54,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942012.3382602,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.91796875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 963827,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 990.62109375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.91796875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 785.703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942012.3517163,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209836,
+        "proc_threads": 40,
+        "proc_vol_ctx": 956458,
+        "proc_invol_ctx": 7369,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788942010.2079504,
+      "response_received_unix": 1788942012.3213048,
+      "first_byte_unix": 1788942012.3212438,
+      "total_wall_ms": 2113.354444503784,
+      "queue_wait_ms": 2113.293409347534,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:20:12 GMT",
+        "Content-Length": "970",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788942012.3599122,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788942010.2079055
+    }
+  },
+  "wall_clock_unix": 1788942012.3599122
+}

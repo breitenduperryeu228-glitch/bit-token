@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0172",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n今年最大の大会は12月にラスカニタスのポロ競技場で開催されます。\n\n/no_think",
+    "source_text": "今年最大の大会は12月にラスカニタスのポロ競技場で開催されます。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "今年最大の大会は12月にラスカニタスのポロ競技場で開催されます。ラサニタスは、南米の豊かな自然と歴史が息づく場所であり、特に冬の時期には雪景色が美しく、競技場の静寂が格式を保ちます。大会では、伝統的なポロの技法と最新の技術が融合し、観客に新たな驚きを提供します。特に、雪の下で開催される大会は、雪景色と競技の両方が一体となった特別な体験として評価されています。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1723809096,
+    "load_duration": 23066004,
+    "prompt_eval_duration": 179821683,
+    "eval_duration": 1505742304,
+    "eval_count": 130,
+    "prompt_eval_count": 87,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:31:13.890231722Z",
+    "message": {
+      "role": "assistant",
+      "content": "今年最大の大会は12月にラスカニタスのポロ競技場で開催されます。ラサニタスは、南米の豊かな自然と歴史が息づく場所であり、特に冬の時期には雪景色が美しく、競技場の静寂が格式を保ちます。大会では、伝統的なポロの技法と最新の技術が融合し、観客に新たな驚きを提供します。特に、雪の下で開催される大会は、雪景色と競技の両方が一体となった特別な体験として評価されています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1723809096,
+    "load_duration": 23066004,
+    "prompt_eval_count": 87,
+    "prompt_eval_duration": 179821683,
+    "eval_count": 130,
+    "eval_duration": 1505742304
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788942672.130794,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942672.1307945,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 37,
+            "mem_util_pct": 14,
+            "power_w": 12.526,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942672.1453762,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.78125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 972065,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 990.75,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.78125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 786.96875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942672.1579351,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208672,
+        "proc_threads": 40,
+        "proc_vol_ctx": 964656,
+        "proc_invol_ctx": 7409,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788942673.890751,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942673.8907516,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.469,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942673.9079826,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.78125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 972066,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 991.375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.78125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.59375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942673.9210596,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208672,
+        "proc_threads": 40,
+        "proc_vol_ctx": 964657,
+        "proc_invol_ctx": 7409,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788942672.165976,
+      "response_received_unix": 1788942673.8906786,
+      "first_byte_unix": 1788942673.8906152,
+      "total_wall_ms": 1724.7025966644287,
+      "queue_wait_ms": 1724.6391773223877,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:31:13 GMT",
+        "Content-Length": "851",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788942673.9290855,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788942672.165935
+    }
+  },
+  "wall_clock_unix": 1788942673.9290855
+}

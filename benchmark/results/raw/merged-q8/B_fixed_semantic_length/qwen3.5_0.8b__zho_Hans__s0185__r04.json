@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "zho_Hans",
+  "sample_id": "s0185",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n最容易获得的植物性资源应该是叶子和豆科植物中的蛋白质，但像我们这样的灵长类动物很难消化这种蛋白质，除非是煮熟的。\n\n/no_think",
+    "source_text": "最容易获得的植物性资源应该是叶子和豆科植物中的蛋白质，但像我们这样的灵长类动物很难消化这种蛋白质，除非是煮熟的。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "在自然界中，植物性食物往往以叶子的形态存在，或是豆科植物中蕴含的蛋白质结构。然而，作为灵长类动物而言，消化这些蛋白质极为困难，除非经过特定的烹饪方式将其转化为可消化的状态。烹饪不仅是改变形态的过程，更是将难以分解的复杂分子结构转化为人体易于吸收的简单氨基酸的过程。这种转化不仅改变了食物的物理状态，更从根本上改变了其生物化学性质，使得原本难以消化的蛋白质得以被有效利用。",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 747677024,
+    "load_duration": 112404953,
+    "prompt_eval_duration": 21010927,
+    "eval_duration": 574490517,
+    "eval_count": 100,
+    "prompt_eval_count": 91,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T01:44:24.864097163Z",
+    "message": {
+      "role": "assistant",
+      "content": "在自然界中，植物性食物往往以叶子的形态存在，或是豆科植物中蕴含的蛋白质结构。然而，作为灵长类动物而言，消化这些蛋白质极为困难，除非经过特定的烹饪方式将其转化为可消化的状态。烹饪不仅是改变形态的过程，更是将难以分解的复杂分子结构转化为人体易于吸收的简单氨基酸的过程。这种转化不仅改变了食物的物理状态，更从根本上改变了其生物化学性质，使得原本难以消化的蛋白质得以被有效利用。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 747677024,
+    "load_duration": 112404953,
+    "prompt_eval_count": 91,
+    "prompt_eval_duration": 21010927,
+    "eval_count": 100,
+    "eval_duration": 574490517
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789004664.0705142,
+      "nvidia_smi": {
+        "timestamp_unix": 1789004664.0705144,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 88,
+            "mem_util_pct": 70,
+            "power_w": 61.835,
+            "temp_c": 74,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789004664.0811894,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 254.4453125,
+        "vms_mib": 4154.78515625,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2270.51953125,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 254.4453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2016.07421875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789004664.102056,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4254500,
+        "proc_vm_rss_kib": 260552,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789004664.8645074,
+      "nvidia_smi": {
+        "timestamp_unix": 1789004664.864508,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 89,
+            "mem_util_pct": 71,
+            "power_w": 62.347,
+            "temp_c": 74,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789004664.8761315,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 259.28515625,
+        "vms_mib": 4154.78515625,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2275.359375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 259.28515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2016.07421875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789004664.8989093,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4254500,
+        "proc_vm_rss_kib": 265508,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789004664.1160405,
+      "response_received_unix": 1789004664.8644335,
+      "first_byte_unix": 1789004664.8643794,
+      "total_wall_ms": 748.3930587768555,
+      "queue_wait_ms": 748.3389377593994,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 01:44:24 GMT",
+        "Content-Length": "853",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789004664.9129233,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789004664.1159947
+    }
+  },
+  "wall_clock_unix": 1789004664.9129233
+}

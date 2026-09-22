@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "qwen3:0.6b-q8",
+  "language": "kor_Hang",
+  "sample_id": "s0136",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장을 한국어로 이어서 짧은 단락으로 작성해 주세요.\n\n1994년의 분쟁으로 인해 몰도바(Moldova) 동부에 트란스니스트리아(Transnistria Republic) 자체 공화국이 생겼다. 고유의 정부와 화폐가 있지만 어떤 UN 회원국에도 인정되진 않는다.\n\n/no_think",
+    "source_text": "1994년의 분쟁으로 인해 몰도바(Moldova) 동부에 트란스니스트리아(Transnistria Republic) 자체 공화국이 생겼다. 고유의 정부와 화폐가 있지만 어떤 UN 회원국에도 인정되진 않는다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "1994년의 분쟁으로 인해 몰도바 동부에 트란스니스트리아 자체 공화국이 생겼다. 이는 고유의 정부와 화폐를 가진 반면, UN 회원국에 인정되지 않으며, 어떤 국가에도 인정되지 않았다.",
+  "ollama": {
+    "model": "qwen3:0.6b-q8",
+    "total_duration": 415557954,
+    "load_duration": 52949937,
+    "prompt_eval_duration": 4943585,
+    "eval_duration": 335104636,
+    "eval_count": 74,
+    "prompt_eval_count": 108,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b-q8",
+    "created_at": "2026-09-19T02:33:33.905131406Z",
+    "message": {
+      "role": "assistant",
+      "content": "<think>\n\n</think>\n\n1994년의 분쟁으로 인해 몰도바 동부에 트란스니스트리아 자체 공화국이 생겼다. 이는 고유의 정부와 화폐를 가진 반면, UN 회원국에 인정되지 않으며, 어떤 국가에도 인정되지 않았다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 415557954,
+    "load_duration": 52949937,
+    "prompt_eval_count": 108,
+    "prompt_eval_duration": 4943585,
+    "eval_count": 74,
+    "eval_duration": 335104636
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789785213.4584055,
+      "nvidia_smi": {
+        "timestamp_unix": 1789785213.4584057,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2312.375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 97,
+            "mem_util_pct": 80,
+            "power_w": 51.224,
+            "temp_c": 56,
+            "sm_clock_mhz": 2445,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789785213.4688742,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 98.2109375,
+        "vms_mib": 3475.67578125,
+        "num_threads": 31,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 763.41015625,
+        "tree_threads": 81,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 98.2109375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 12521,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 41755",
+            "rss_mib": 665.19921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789785213.4808042,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3559092,
+        "proc_vm_rss_kib": 100568,
+        "proc_threads": 31,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789785213.905635,
+      "nvidia_smi": {
+        "timestamp_unix": 1789785213.9056356,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2312.375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 96,
+            "mem_util_pct": 79,
+            "power_w": 50.736,
+            "temp_c": 56,
+            "sm_clock_mhz": 2445,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789785213.9174016,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 103.2734375,
+        "vms_mib": 3475.67578125,
+        "num_threads": 31,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 768.59765625,
+        "tree_threads": 81,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 103.2734375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 12521,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 41755",
+            "rss_mib": 665.32421875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789785213.9295952,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3559092,
+        "proc_vm_rss_kib": 105752,
+        "proc_threads": 31,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789785213.4892054,
+      "response_received_unix": 1789785213.9054537,
+      "first_byte_unix": 1789785213.905404,
+      "total_wall_ms": 416.2483215332031,
+      "queue_wait_ms": 416.19873046875,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 19 Sep 2026 02:33:33 GMT",
+        "Content-Length": "582",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789785213.9387379,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789785213.4891572
+    }
+  },
+  "wall_clock_unix": 1789785213.9387379
+}

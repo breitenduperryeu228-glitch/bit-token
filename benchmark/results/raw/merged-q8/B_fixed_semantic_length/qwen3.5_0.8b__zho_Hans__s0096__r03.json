@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "zho_Hans",
+  "sample_id": "s0096",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n虽然没有人能确定作者是谁，但这个大型羊皮纸文档（尺寸为 29¾ 英寸乘以 24½ 英寸）据称在刚写成的时候是卷起来存放的。\n\n/no_think",
+    "source_text": "虽然没有人能确定作者是谁，但这个大型羊皮纸文档（尺寸为 29¾ 英寸乘以 24½ 英寸）据称在刚写成的时候是卷起来存放的。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "虽然无法确切知晓这位作者的身份，但这份巨大的羊皮纸文献（尺寸约为 29 ¾ 英寸乘以 24 ½ 英寸）据传在刚刚完成书写时，已被卷起并妥善存放于某个隐秘的角落。纸张的质地显得古朴而厚重，边缘微微卷曲，显示出它曾经历过岁月的洗礼。这种特殊的纸张材质，往往意味着它被用于保存珍贵的历史资料或重要文件，而非日常书写之用。其尺寸之大，足以容纳大量文字，却又不显笨重，体现了古人对于纸张承载能力的巧妙考量。",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 5237512646,
+    "load_duration": 93500654,
+    "prompt_eval_duration": 294919454,
+    "eval_duration": 4801902629,
+    "eval_count": 123,
+    "prompt_eval_count": 101,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-09T23:37:40.184722145Z",
+    "message": {
+      "role": "assistant",
+      "content": "虽然无法确切知晓这位作者的身份，但这份巨大的羊皮纸文献（尺寸约为 29 ¾ 英寸乘以 24 ½ 英寸）据传在刚刚完成书写时，已被卷起并妥善存放于某个隐秘的角落。纸张的质地显得古朴而厚重，边缘微微卷曲，显示出它曾经历过岁月的洗礼。这种特殊的纸张材质，往往意味着它被用于保存珍贵的历史资料或重要文件，而非日常书写之用。其尺寸之大，足以容纳大量文字，却又不显笨重，体现了古人对于纸张承载能力的巧妙考量。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 5237512646,
+    "load_duration": 93500654,
+    "prompt_eval_count": 101,
+    "prompt_eval_duration": 294919454,
+    "eval_count": 123,
+    "eval_duration": 4801902629
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788997054.9108849,
+      "nvidia_smi": {
+        "timestamp_unix": 1788997054.9108853,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1674.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 26,
+            "mem_util_pct": 14,
+            "power_w": 12.171,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788997054.9248712,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 278.55859375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1036323,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 3084.65625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 278.55859375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1675624,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 37131",
+            "rss_mib": 2806.09765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788997054.9385464,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 285244,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1027928,
+        "proc_invol_ctx": 8395,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788997060.1850662,
+      "nvidia_smi": {
+        "timestamp_unix": 1788997060.1850665,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1674.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 25,
+            "mem_util_pct": 13,
+            "power_w": 12.135,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788997060.1995666,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 278.4140625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1036323,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 3084.53515625,
+        "tree_threads": 86,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 278.4140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1675624,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 37131",
+            "rss_mib": 2806.12109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788997060.2168193,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 285096,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1027928,
+        "proc_invol_ctx": 8395,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788997054.9467852,
+      "response_received_unix": 1788997060.1849973,
+      "first_byte_unix": 1788997060.1849325,
+      "total_wall_ms": 5238.212108612061,
+      "queue_wait_ms": 5238.147258758545,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 23:37:40 GMT",
+        "Content-Length": "873",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788997060.2274125,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788997054.946742
+    }
+  },
+  "wall_clock_unix": 1788997060.2274125
+}

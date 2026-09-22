@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0018",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nПонимание того, как работает самолет и что происходит во время полета, может помочь преодолеть страх, который возникает из-за неизвестности или неспособности контролировать процесс.\n\n/no_think",
+    "source_text": "Понимание того, как работает самолет и что происходит во время полета, может помочь преодолеть страх, который возникает из-за неизвестности или неспособности контролировать процесс."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Всего 256 символов. \n\nСамолет - это сложная система, состоящая из множества компонентов, которые работают вместе для обеспечения безопасного и эффективного полета. Сначала самолет состоит из двух частей: основной частью и лифта. Основная часть самолета представляет собой коробку, в которой находится двигатель, электрики и другие важные системы. Лифт - это часть самолета, которая позволяет пилоту подняться на высоту и hạиться обратно на поле. During flight, pilot controls the plane using a complex system of levers, pedals and buttons. He also uses visual and auditory cues to navigate through the air. The plane's systems, such as engines, fuel, and navigation equipment, are monitored by the pilot in real-time. This allows him to make adjustments and take control of the flight path.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1243513026,
+    "load_duration": 68530269,
+    "prompt_eval_duration": 6624045,
+    "eval_duration": 1097315219,
+    "eval_count": 189,
+    "prompt_eval_count": 128,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:41:37.398847552Z",
+    "message": {
+      "role": "assistant",
+      "content": "Всего 256 символов. \n\nСамолет - это сложная система, состоящая из множества компонентов, которые работают вместе для обеспечения безопасного и эффективного полета. Сначала самолет состоит из двух частей: основной частью и лифта. Основная часть самолета представляет собой коробку, в которой находится двигатель, электрики и другие важные системы. Лифт - это часть самолета, которая позволяет пилоту подняться на высоту и hạиться обратно на поле. During flight, pilot controls the plane using a complex system of levers, pedals and buttons. He also uses visual and auditory cues to navigate through the air. The plane's systems, such as engines, fuel, and navigation equipment, are monitored by the pilot in real-time. This allows him to make adjustments and take control of the flight path."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1243513026,
+    "load_duration": 68530269,
+    "prompt_eval_count": 128,
+    "prompt_eval_duration": 6624045,
+    "eval_count": 189,
+    "eval_duration": 1097315219
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789137696.1099517,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137696.1099522,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 80.225,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137696.120549,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 242.73046875,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 15556,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1122.96484375,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 242.73046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 880.234375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137696.1411445,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 248556,
+        "proc_threads": 32,
+        "proc_vol_ctx": 15312,
+        "proc_invol_ctx": 244,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789137697.3992512,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137697.3992517,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 82.227,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137697.4105349,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.27734375,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 15578,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1123.51171875,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.27734375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 880.234375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137697.4334645,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249116,
+        "proc_threads": 32,
+        "proc_vol_ctx": 15332,
+        "proc_invol_ctx": 246,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789137696.1549835,
+      "response_received_unix": 1789137697.399181,
+      "first_byte_unix": 1789137697.399128,
+      "total_wall_ms": 1244.1973686218262,
+      "queue_wait_ms": 1244.1444396972656,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:41:37 GMT",
+        "Content-Length": "1456",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789137697.447426,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789137696.1549385
+    }
+  },
+  "wall_clock_unix": 1789137697.447426
+}

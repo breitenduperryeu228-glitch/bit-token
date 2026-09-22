@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "kor_Hang",
+  "sample_id": "s0008",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n보고서는 행정부의 현재 이라크 정책에 대해 거의 모든 측면에서 매우 비판적이며 즉각적인 방향 변경을 촉구합니다.\n\n/no_think",
+    "source_text": "보고서는 행정부의 현재 이라크 정책에 대해 거의 모든 측면에서 매우 비판적이며 즉각적인 방향 변경을 촉구합니다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "본문은 행정부의 현재 이라크 정책에 대해 거의 모든 측면에서 매우 비판적이며 즉각적인 방향 변경을 촉구하는 내용입니다. 이 보고서는 정책의 현실적 문제점을 지적하고, 이를 해결하기 위한 즉각적인 조치를 요구합니다. 이는 정부의 정책 결정 과정에 대한 비판적 시각을 보여줍니다. 또한, 이라크 정책의 지속 가능성과 효과성을 평가하기 위해 구체적인 개선 방안을 제시하고 있습니다. 보고서의 주제는 이라크 정책의 개선 필요성을 강조하며, 이를 통해 정부의 정책 방향을 수정하거나 재편하는 것을 요구합니다.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 884985472,
+    "load_duration": 119684530,
+    "prompt_eval_duration": 21181867,
+    "eval_duration": 696304303,
+    "eval_count": 120,
+    "prompt_eval_count": 94,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T04:50:40.445191285Z",
+    "message": {
+      "role": "assistant",
+      "content": "본문은 행정부의 현재 이라크 정책에 대해 거의 모든 측면에서 매우 비판적이며 즉각적인 방향 변경을 촉구하는 내용입니다. 이 보고서는 정책의 현실적 문제점을 지적하고, 이를 해결하기 위한 즉각적인 조치를 요구합니다. 이는 정부의 정책 결정 과정에 대한 비판적 시각을 보여줍니다. 또한, 이라크 정책의 지속 가능성과 효과성을 평가하기 위해 구체적인 개선 방안을 제시하고 있습니다. 보고서의 주제는 이라크 정책의 개선 필요성을 강조하며, 이를 통해 정부의 정책 방향을 수정하거나 재편하는 것을 요구합니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 884985472,
+    "load_duration": 119684530,
+    "prompt_eval_count": 94,
+    "prompt_eval_duration": 21181867,
+    "eval_count": 120,
+    "eval_duration": 696304303
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789015839.5078478,
+      "nvidia_smi": {
+        "timestamp_unix": 1789015839.507848,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 87,
+            "mem_util_pct": 70,
+            "power_w": 60.946,
+            "temp_c": 79,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789015839.5219681,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 255.8984375,
+        "vms_mib": 4218.85546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2344.80078125,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 255.8984375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2088.90234375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789015839.5452735,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320108,
+        "proc_vm_rss_kib": 262040,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789015840.4456189,
+      "nvidia_smi": {
+        "timestamp_unix": 1789015840.4456193,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 88,
+            "mem_util_pct": 70,
+            "power_w": 62.819,
+            "temp_c": 79,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789015840.457228,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 264.515625,
+        "vms_mib": 4218.85546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2349.58203125,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 264.515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2085.06640625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789015840.4810693,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320108,
+        "proc_vm_rss_kib": 270864,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789015839.5598505,
+      "response_received_unix": 1789015840.4455578,
+      "first_byte_unix": 1789015840.4454951,
+      "total_wall_ms": 885.7073783874512,
+      "queue_wait_ms": 885.6446743011475,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 04:50:40 GMT",
+        "Content-Length": "989",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789015840.4958642,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789015839.5598009
+    }
+  },
+  "wall_clock_unix": 1789015840.4958642
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b",
+  "language": "spa_Latn",
+  "sample_id": "s0110",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nEl satélite en el espacio recibe la llamada y, luego, la refleja de vuelta casi de forma instantánea.\n\n/no_think",
+    "source_text": "El satélite en el espacio recibe la llamada y, luego, la refleja de vuelta casi de forma instantánea."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "El satélite recibe la llamada y refleja su señal instantáneamente.",
+  "ollama": {
+    "model": "qwen3:0.6b",
+    "total_duration": 393124224,
+    "load_duration": 58823050,
+    "prompt_eval_duration": 16643558,
+    "eval_duration": 307666034,
+    "eval_count": 21,
+    "prompt_eval_count": 102,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-09-09T11:05:23.705206379Z",
+    "message": {
+      "role": "assistant",
+      "content": "El satélite recibe la llamada y refleja su señal instantáneamente."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 393124224,
+    "load_duration": 58823050,
+    "prompt_eval_count": 102,
+    "prompt_eval_duration": 16643558,
+    "eval_count": 21,
+    "eval_duration": 307666034
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788951923.2745056,
+      "nvidia_smi": {
+        "timestamp_unix": 1788951923.2745063,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 41,
+            "mem_util_pct": 14,
+            "power_w": 11.977,
+            "temp_c": 47,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788951923.288267,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 219.47265625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1014729,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1530.58984375,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 219.47265625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1311.1171875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788951923.3029084,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 224740,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1006695,
+        "proc_invol_ctx": 8034,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788951923.7055192,
+      "nvidia_smi": {
+        "timestamp_unix": 1788951923.7055197,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 11.989,
+            "temp_c": 47,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788951923.719575,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 220.78125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1014732,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1531.2109375,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 220.78125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1310.4296875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788951923.7348907,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 226080,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1006698,
+        "proc_invol_ctx": 8034,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788951923.3117573,
+      "response_received_unix": 1788951923.7054653,
+      "first_byte_unix": 1788951923.7054102,
+      "total_wall_ms": 393.7079906463623,
+      "queue_wait_ms": 393.65291595458984,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 11:05:23 GMT",
+        "Content-Length": "364",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788951923.744527,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788951923.3117092
+    }
+  },
+  "wall_clock_unix": 1788951923.744527
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0085",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n橋下の上方空間は15メートルです。2011年8月に竣工し、2017年3月まで開通しませんでした。\n\n/no_think",
+    "source_text": "橋下の上方空間は15メートルです。2011年8月に竣工し、2017年3月まで開通しませんでした。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "橋下の上方空間は、東京電力が2011年8月に完成させました。15メートルの高さで、約2,000人ぐらいの人が通ることができます。この空間には、電気機器やガスなどを取り扱う仕事をする人々が集まっています。\n\n橋下の上方空間は、電力会社の工場から出てきます。ここでは、電気機器やガスの作業に使わないようにするため、安全で tidy な環境になっています。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 829750767,
+    "load_duration": 86837857,
+    "prompt_eval_duration": 8748781,
+    "eval_duration": 687153760,
+    "eval_count": 119,
+    "prompt_eval_count": 115,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:21:48.821111849Z",
+    "message": {
+      "role": "assistant",
+      "content": "橋下の上方空間は、東京電力が2011年8月に完成させました。15メートルの高さで、約2,000人ぐらいの人が通ることができます。この空間には、電気機器やガスなどを取り扱う仕事をする人々が集まっています。\n\n橋下の上方空間は、電力会社の工場から出てきます。ここでは、電気機器やガスの作業に使わないようにするため、安全で tidy な環境になっています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 829750767,
+    "load_duration": 86837857,
+    "prompt_eval_count": 115,
+    "prompt_eval_duration": 8748781,
+    "eval_count": 119,
+    "eval_duration": 687153760
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789024907.9442108,
+      "nvidia_smi": {
+        "timestamp_unix": 1789024907.9442108,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 70.614,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789024907.9547112,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.37109375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1231.515625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.37109375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.14453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789024907.9765255,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264572,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789024908.8214731,
+      "nvidia_smi": {
+        "timestamp_unix": 1789024908.8214736,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 79,
+            "mem_util_pct": 86,
+            "power_w": 72.869,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789024908.83241,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.31640625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1231.4609375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.31640625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.14453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789024908.8560474,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264516,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789024907.991037,
+      "response_received_unix": 1789024908.8213983,
+      "first_byte_unix": 1789024908.8213573,
+      "total_wall_ms": 830.3613662719727,
+      "queue_wait_ms": 830.3203582763672,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:21:48 GMT",
+        "Content-Length": "783",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789024908.8705459,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789024907.99099
+    }
+  },
+  "wall_clock_unix": 1789024908.8705459
+}

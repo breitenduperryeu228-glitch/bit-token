@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0005",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nサブカルチャーの特徴を決定付ける性質は、言語、美、宗教、政治、性、地理、またはそれらの要素の組み合わせかもしれません。\n\n/no_think",
+    "source_text": "サブカルチャーの特徴を決定付ける性質は、言語、美、宗教、政治、性、地理、またはそれらの要素の組み合わせかもしれません。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "サブカルチャーの特徴を決定付ける性質は、言語の多様性と表現の自由度にあります。例えば、特定の地域で独自の言葉や表現が生まれることで、その文化のアイデンティティが強化されます。美の観点では、伝統的な工芸品や音楽が持つ象徴性が、世代を超えて受け継がれることで価値が定着します。宗教的な側面では、特定の信仰に基づく儀式や言語が、コミュニティの結束を支える重要な要素となります。政治的には、社会運動や政治的イデオロギーがサブカルチャーのテーマを形成し、公共の議論を活性化させます。地理的な要素では、特定の地域の歴史や自然環境が、そこに根ざした文化や価値観を形成します。これらの要素が複雑に絡み合うことで、サブカルチャーは独自の独創性と普遍的な魅力を持ち、時代と共に進化し続けるのです。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 3005887287,
+    "load_duration": 27718856,
+    "prompt_eval_duration": 222921395,
+    "eval_duration": 2727767792,
+    "eval_count": 233,
+    "prompt_eval_count": 104,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:05:25.200010977Z",
+    "message": {
+      "role": "assistant",
+      "content": "サブカルチャーの特徴を決定付ける性質は、言語の多様性と表現の自由度にあります。例えば、特定の地域で独自の言葉や表現が生まれることで、その文化のアイデンティティが強化されます。美の観点では、伝統的な工芸品や音楽が持つ象徴性が、世代を超えて受け継がれることで価値が定着します。宗教的な側面では、特定の信仰に基づく儀式や言語が、コミュニティの結束を支える重要な要素となります。政治的には、社会運動や政治的イデオロギーがサブカルチャーのテーマを形成し、公共の議論を活性化させます。地理的な要素では、特定の地域の歴史や自然環境が、そこに根ざした文化や価値観を形成します。これらの要素が複雑に絡み合うことで、サブカルチャーは独自の独創性と普遍的な魅力を持ち、時代と共に進化し続けるのです。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 3005887287,
+    "load_duration": 27718856,
+    "prompt_eval_count": 104,
+    "prompt_eval_duration": 222921395,
+    "eval_count": 233,
+    "eval_duration": 2727767792
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788941122.1539185,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941122.1539187,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.75,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.515,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941122.1684053,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.37109375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 955432,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 985.25,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.37109375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.87890625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941122.184988,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209276,
+        "proc_threads": 40,
+        "proc_vol_ctx": 948123,
+        "proc_invol_ctx": 7309,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788941125.2005167,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941125.2005172,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 14,
+            "power_w": 12.502,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941125.2155824,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.1328125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 955434,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 983.19921875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.1328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.06640625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941125.2304456,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208008,
+        "proc_threads": 40,
+        "proc_vol_ctx": 948124,
+        "proc_invol_ctx": 7310,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788941122.1937711,
+      "response_received_unix": 1788941125.2004406,
+      "first_byte_unix": 1788941125.200383,
+      "total_wall_ms": 3006.669521331787,
+      "queue_wait_ms": 3006.6118240356445,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:05:25 GMT",
+        "Content-Length": "1330",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788941125.2402277,
+      "vram_delta_mib": 0.4375
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788941122.193726
+    }
+  },
+  "wall_clock_unix": 1788941125.2402277
+}

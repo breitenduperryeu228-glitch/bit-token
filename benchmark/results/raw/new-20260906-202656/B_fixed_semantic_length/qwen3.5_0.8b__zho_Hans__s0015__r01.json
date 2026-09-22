@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "zho_Hans",
+  "sample_id": "s0015",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n赫尔希和蔡斯利用噬菌体或病毒，将他们自己的 DNA 植入到细菌之中。\n\n/no_think",
+    "source_text": "赫尔希和蔡斯利用噬菌体或病毒，将他们自己的 DNA 植入到细菌之中。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "赫尔希和蔡斯的研究团队在实验室里进行了一项极具开创性的实验，他们试图揭开生命起源的奥秘。科学家们发现，噬菌体是一种专门感染细菌的病毒，其遗传物质由 DNA 构成。这项研究不仅揭示了病毒与细菌之间的复杂关系，也为理解生命如何从简单到复杂进化提供了关键线索。实验过程中，研究人员巧妙地利用放射性同位素标记技术，追踪噬菌体在感染细菌后如何复制自身并整合到宿主细胞中。通过精密的操作，他们成功地将噬菌体的 DNA 注入细菌细胞内，从而观察到遗传物质在复制过程中展现出独特的行为模式。这一发现不仅挑战了当时对生命本质的认知，也为现代生物学奠定了重要的理论基础。科学家们由此认识到，遗传信息的传递依赖于特定的分子机制，而这些机制在自然界中无处不在且至关重要。",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 7349816016,
+    "load_duration": 102492158,
+    "prompt_eval_duration": 373981096,
+    "eval_duration": 6805176196,
+    "eval_count": 171,
+    "prompt_eval_count": 80,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-09T14:14:16.471513797Z",
+    "message": {
+      "role": "assistant",
+      "content": "赫尔希和蔡斯的研究团队在实验室里进行了一项极具开创性的实验，他们试图揭开生命起源的奥秘。科学家们发现，噬菌体是一种专门感染细菌的病毒，其遗传物质由 DNA 构成。这项研究不仅揭示了病毒与细菌之间的复杂关系，也为理解生命如何从简单到复杂进化提供了关键线索。实验过程中，研究人员巧妙地利用放射性同位素标记技术，追踪噬菌体在感染细菌后如何复制自身并整合到宿主细胞中。通过精密的操作，他们成功地将噬菌体的 DNA 注入细菌细胞内，从而观察到遗传物质在复制过程中展现出独特的行为模式。这一发现不仅挑战了当时对生命本质的认知，也为现代生物学奠定了重要的理论基础。科学家们由此认识到，遗传信息的传递依赖于特定的分子机制，而这些机制在自然界中无处不在且至关重要。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 7349816016,
+    "load_duration": 102492158,
+    "prompt_eval_count": 80,
+    "prompt_eval_duration": 373981096,
+    "eval_count": 171,
+    "eval_duration": 6805176196
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788963249.0856388,
+      "nvidia_smi": {
+        "timestamp_unix": 1788963249.0856392,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.232,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788963249.0999036,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 265.5859375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1036323,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2875.8515625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 265.5859375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1675624,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 37131",
+            "rss_mib": 2610.265625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788963249.1135552,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 271960,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1027928,
+        "proc_invol_ctx": 8395,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788963256.4719768,
+      "nvidia_smi": {
+        "timestamp_unix": 1788963256.471977,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.17,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788963256.4895723,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 267.515625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1036323,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2875.7734375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 267.515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1675624,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 37131",
+            "rss_mib": 2608.2578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788963256.5175967,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 273936,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1027928,
+        "proc_invol_ctx": 8395,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788963249.12131,
+      "response_received_unix": 1788963256.4719105,
+      "first_byte_unix": 1788963256.4718602,
+      "total_wall_ms": 7350.600481033325,
+      "queue_wait_ms": 7350.550174713135,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 14:14:16 GMT",
+        "Content-Length": "1250",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788963256.5258584,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788963249.1212678
+    }
+  },
+  "wall_clock_unix": 1788963256.5258584
+}

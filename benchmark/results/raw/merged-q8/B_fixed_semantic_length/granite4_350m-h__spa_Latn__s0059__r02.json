@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "spa_Latn",
+  "sample_id": "s0059",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nArly Velásquez, de México, obtuvo la posición número quince en el Super-G masculino sentado. Adam Hall, de Nueva Zelanda, finalizó en el puesto nueve en la categoría Super-G masculina.\n\n/no_think",
+    "source_text": "Arly Velásquez, de México, obtuvo la posición número quince en el Super-G masculino sentado. Adam Hall, de Nueva Zelanda, finalizó en el puesto nueve en la categoría Super-G masculina."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Arly Velásquez, México, supera al Super-G masculino.",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 559726139,
+    "load_duration": 39656640,
+    "prompt_eval_duration": 282960986,
+    "eval_duration": 224273142,
+    "eval_count": 17,
+    "prompt_eval_count": 114,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T06:30:15.246874438Z",
+    "message": {
+      "role": "assistant",
+      "content": "Arly Velásquez, México, supera al Super-G masculino."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 559726139,
+    "load_duration": 39656640,
+    "prompt_eval_count": 114,
+    "prompt_eval_duration": 282960986,
+    "eval_count": 17,
+    "eval_duration": 224273142
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788935414.6492422,
+      "nvidia_smi": {
+        "timestamp_unix": 1788935414.6492424,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 31,
+            "mem_util_pct": 14,
+            "power_w": 12.194,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788935414.665524,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 177.48828125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 884897,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 980.4375,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 177.48828125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 802.94921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788935414.678648,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 181748,
+        "proc_threads": 40,
+        "proc_vol_ctx": 878392,
+        "proc_invol_ctx": 6505,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788935415.24738,
+      "nvidia_smi": {
+        "timestamp_unix": 1788935415.2473803,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 26,
+            "mem_util_pct": 14,
+            "power_w": 12.161,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788935415.2615378,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 183.31640625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 884914,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 987.4140625,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 183.31640625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 804.09765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788935415.276287,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 187716,
+        "proc_threads": 40,
+        "proc_vol_ctx": 878409,
+        "proc_invol_ctx": 6505,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788935414.6867704,
+      "response_received_unix": 1788935415.247326,
+      "first_byte_unix": 1788935415.2472734,
+      "total_wall_ms": 560.5554580688477,
+      "queue_wait_ms": 560.5030059814453,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 06:30:15 GMT",
+        "Content-Length": "355",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788935415.285073,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788935414.6867282
+    }
+  },
+  "wall_clock_unix": 1788935415.285073
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0165",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n포르투갈인들은 이곳을 파괴한 다음 Casa Branca라는 이름으로 재건했지만, 1755년 지진 이후에 그곳을 버리고 떠났습니다.\n\n/no_think",
+    "source_text": "포르투갈인들은 이곳을 파괴한 다음 Casa Branca라는 이름으로 재건했지만, 1755년 지진 이후에 그곳을 버리고 떠났습니다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "포르투갈인들은 이곳을 파괴한 다음 Casa Branca라는 이름으로 재건했지만, 1755년 지진 이후 그곳을 버리고 떠났습니다. 그들의 재건 과정은 단순한 건축적 변화가 아니라, 그들이 가진 역사와 문화적 유산을 보존하려는 노력이었습니다. Casa Branca는 그들의 정치적, 사회적 지위를 상징하며, 이곳은 그들이 이전에 거주했던 곳에서의 기억과 전통을 이어갔습니다. 그러나 지진으로 인해 그곳은 파괴되었고, 그 후에도 그들의 정체성을 유지하기 위해 지속적인 보존 노력이 이어졌습니다. 이러한 과정은 단순한 재건이 아니라, 그들이 과거를 지속적으로 존중하고 축하하는 문화적 실천의 일부였습니다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2839420373,
+    "load_duration": 24450912,
+    "prompt_eval_duration": 284726851,
+    "eval_duration": 2501608609,
+    "eval_count": 210,
+    "prompt_eval_count": 122,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T09:11:24.659278474Z",
+    "message": {
+      "role": "assistant",
+      "content": "포르투갈인들은 이곳을 파괴한 다음 Casa Branca라는 이름으로 재건했지만, 1755년 지진 이후 그곳을 버리고 떠났습니다. 그들의 재건 과정은 단순한 건축적 변화가 아니라, 그들이 가진 역사와 문화적 유산을 보존하려는 노력이었습니다. Casa Branca는 그들의 정치적, 사회적 지위를 상징하며, 이곳은 그들이 이전에 거주했던 곳에서의 기억과 전통을 이어갔습니다. 그러나 지진으로 인해 그곳은 파괴되었고, 그 후에도 그들의 정체성을 유지하기 위해 지속적인 보존 노력이 이어졌습니다. 이러한 과정은 단순한 재건이 아니라, 그들이 과거를 지속적으로 존중하고 축하하는 문화적 실천의 일부였습니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2839420373,
+    "load_duration": 24450912,
+    "prompt_eval_count": 122,
+    "prompt_eval_duration": 284726851,
+    "eval_count": 210,
+    "eval_duration": 2501608609
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788945081.7827904,
+      "nvidia_smi": {
+        "timestamp_unix": 1788945081.782791,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 11.997,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788945081.7967925,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.08984375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 997.96484375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.08984375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788945081.8104906,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208988,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788945084.6597118,
+      "nvidia_smi": {
+        "timestamp_unix": 1788945084.6597126,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 11.986,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788945084.6742613,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.98046875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 997.41796875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.98046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.4375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788945084.6892855,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208876,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788945081.819479,
+      "response_received_unix": 1788945084.6596367,
+      "first_byte_unix": 1788945084.6595724,
+      "total_wall_ms": 2840.1577472686768,
+      "queue_wait_ms": 2840.0933742523193,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 09:11:24 GMT",
+        "Content-Length": "1108",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788945084.6982,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788945081.8194332
+    }
+  },
+  "wall_clock_unix": 1788945084.6982
+}

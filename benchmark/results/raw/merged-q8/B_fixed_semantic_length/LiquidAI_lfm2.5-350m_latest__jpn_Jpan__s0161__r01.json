@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0161",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n残念ながら、運転手の行動を100%の確率で予測することはできないので、交通の流れを研究することは困難です。\n\n/no_think",
+    "source_text": "残念ながら、運転手の行動を100%の確率で予測することはできないので、交通の流れを研究することは困難です。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "残念ながら、運転手の行動を100%の確率で予測することは不可能です。運転手は経験や直感、環境の変化など多様な要因に影響され、予測は常に不確実です。交通の流れを研究することは、単なるデータの収集に留まらず、複雑な社会的・経済的要因を考慮する必要があります。例えば、渋滞の原因は単一の要素ではなく、道路設計、交通規制、天候、さらには人々の行動パターンにまで及びます。だからこそ、予測はあくまで一つの手がかりに過ぎず、より精度の高い分析には多角的なアプローチが求められます。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2208220226,
+    "load_duration": 23308330,
+    "prompt_eval_duration": 214250980,
+    "eval_duration": 1947895297,
+    "eval_count": 165,
+    "prompt_eval_count": 100,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:29:16.647925434Z",
+    "message": {
+      "role": "assistant",
+      "content": "残念ながら、運転手の行動を100%の確率で予測することは不可能です。運転手は経験や直感、環境の変化など多様な要因に影響され、予測は常に不確実です。交通の流れを研究することは、単なるデータの収集に留まらず、複雑な社会的・経済的要因を考慮する必要があります。例えば、渋滞の原因は単一の要素ではなく、道路設計、交通規制、天候、さらには人々の行動パターンにまで及びます。だからこそ、予測はあくまで一つの手がかりに過ぎず、より精度の高い分析には多角的なアプローチが求められます。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2208220226,
+    "load_duration": 23308330,
+    "prompt_eval_count": 100,
+    "prompt_eval_duration": 214250980,
+    "eval_count": 165,
+    "eval_duration": 1947895297
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788942554.4017544,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942554.4017546,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.458,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942554.41638,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.2890625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 971509,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 990.3828125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.2890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.09375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942554.430321,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208168,
+        "proc_threads": 40,
+        "proc_vol_ctx": 964100,
+        "proc_invol_ctx": 7409,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788942556.6483748,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942556.6483753,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.444,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942556.6643958,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.2421875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 971510,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 991.2109375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.2421875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 786.96875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942556.687576,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209144,
+        "proc_threads": 40,
+        "proc_vol_ctx": 964101,
+        "proc_invol_ctx": 7409,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788942554.4393182,
+      "response_received_unix": 1788942556.6482925,
+      "first_byte_unix": 1788942556.6482255,
+      "total_wall_ms": 2208.9743614196777,
+      "queue_wait_ms": 2208.90736579895,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:29:16 GMT",
+        "Content-Length": "1010",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788942556.6955225,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788942554.4392726
+    }
+  },
+  "wall_clock_unix": 1788942556.6955225
+}

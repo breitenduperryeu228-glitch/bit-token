@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "zho_Hans",
+  "sample_id": "s0171",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n离岸流是海浪从海滩快速回流到海中的回流，通常发生在暗礁或类似的地方。\n\n/no_think",
+    "source_text": "离岸流是海浪从海滩快速回流到海中的回流，通常发生在暗礁或类似的地方。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "离岸流，又称回流流，是海洋中一种特殊的波浪现象。它并非简单的波浪，而是海浪从海滩区域迅速向深海方向回流的过程。这种水流通常发生在暗礁附近，或是类似暗礁的浅滩区域。当波浪遇到这些地形时，能量会加速并迅速转向，导致水流方向发生逆转。这种逆转使得水流在到达深海之前，会携带大量泥沙和碎屑，形成一种类似漩涡的流动状态。这种流动状态在夜间尤为明显，因为此时光线昏暗，水流速度加快，更容易形成明显的回流现象。离岸流的存在对航海者来说是一个巨大的挑战，因为它可能导致船只失去方向，甚至直接撞向海底。因此，航海者必须时刻警惕，避免在暗礁附近航行，并遵循当地的水文部门提供的安全指南。",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 1145787977,
+    "load_duration": 111939682,
+    "prompt_eval_duration": 20261428,
+    "eval_duration": 955050718,
+    "eval_count": 166,
+    "prompt_eval_count": 80,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T01:30:19.363877038Z",
+    "message": {
+      "role": "assistant",
+      "content": "离岸流，又称回流流，是海洋中一种特殊的波浪现象。它并非简单的波浪，而是海浪从海滩区域迅速向深海方向回流的过程。这种水流通常发生在暗礁附近，或是类似暗礁的浅滩区域。当波浪遇到这些地形时，能量会加速并迅速转向，导致水流方向发生逆转。这种逆转使得水流在到达深海之前，会携带大量泥沙和碎屑，形成一种类似漩涡的流动状态。这种流动状态在夜间尤为明显，因为此时光线昏暗，水流速度加快，更容易形成明显的回流现象。离岸流的存在对航海者来说是一个巨大的挑战，因为它可能导致船只失去方向，甚至直接撞向海底。因此，航海者必须时刻警惕，避免在暗礁附近航行，并遵循当地的水文部门提供的安全指南。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1145787977,
+    "load_duration": 111939682,
+    "prompt_eval_count": 80,
+    "prompt_eval_duration": 20261428,
+    "eval_count": 166,
+    "eval_duration": 955050718
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789003818.1715777,
+      "nvidia_smi": {
+        "timestamp_unix": 1789003818.171578,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 89,
+            "mem_util_pct": 71,
+            "power_w": 68.526,
+            "temp_c": 75,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789003818.181916,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 254.05078125,
+        "vms_mib": 4154.77734375,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2256.546875,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 254.05078125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2002.49609375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789003818.203567,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4254492,
+        "proc_vm_rss_kib": 260148,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789003819.3643012,
+      "nvidia_smi": {
+        "timestamp_unix": 1789003819.364302,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 88,
+            "mem_util_pct": 70,
+            "power_w": 66.665,
+            "temp_c": 75,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789003819.3762605,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 254.796875,
+        "vms_mib": 4154.77734375,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2257.29296875,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 254.796875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2002.49609375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789003819.3989441,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4254492,
+        "proc_vm_rss_kib": 260912,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789003818.217751,
+      "response_received_unix": 1789003819.3642359,
+      "first_byte_unix": 1789003819.3641813,
+      "total_wall_ms": 1146.4848518371582,
+      "queue_wait_ms": 1146.430253982544,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 01:30:19 GMT",
+        "Content-Length": "1148",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789003819.4131064,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789003818.217706
+    }
+  },
+  "wall_clock_unix": 1789003819.4131064
+}

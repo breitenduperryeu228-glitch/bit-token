@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b",
+  "language": "spa_Latn",
+  "sample_id": "s0011",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nLa interrupción del sueño consiste en despertarse intencionalmente durante el período normal de sueño y dormirse después de un rato (10 a 60 minutos).\n\n/no_think",
+    "source_text": "La interrupción del sueño consiste en despertarse intencionalmente durante el período normal de sueño y dormirse después de un rato (10 a 60 minutos)."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "La interrupción del sueño es cuando se despertan intencionalmente durante el sueño normal, dormiendo después de un rato (10 a 60 minutos).",
+  "ollama": {
+    "model": "qwen3:0.6b",
+    "total_duration": 660942802,
+    "load_duration": 55453506,
+    "prompt_eval_duration": 14712602,
+    "eval_duration": 579017945,
+    "eval_count": 40,
+    "prompt_eval_count": 113,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-09-09T10:59:20.602229916Z",
+    "message": {
+      "role": "assistant",
+      "content": "La interrupción del sueño es cuando se despertan intencionalmente durante el sueño normal, dormiendo después de un rato (10 a 60 minutos)."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 660942802,
+    "load_duration": 55453506,
+    "prompt_eval_count": 113,
+    "prompt_eval_duration": 14712602,
+    "eval_count": 40,
+    "eval_duration": 579017945
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788951559.902677,
+      "nvidia_smi": {
+        "timestamp_unix": 1788951559.9026773,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.259,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788951559.9171302,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 223.39453125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1011288,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1532.90234375,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 223.39453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1309.5078125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788951559.9317665,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 228756,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1003319,
+        "proc_invol_ctx": 7969,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788951560.6026816,
+      "nvidia_smi": {
+        "timestamp_unix": 1788951560.602682,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.27,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788951560.6172638,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 209.32421875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1011290,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1518.83203125,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 209.32421875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1309.5078125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788951560.6333883,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 214348,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1003321,
+        "proc_invol_ctx": 7969,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788951559.940892,
+      "response_received_unix": 1788951560.602617,
+      "first_byte_unix": 1788951560.602551,
+      "total_wall_ms": 661.7250442504883,
+      "queue_wait_ms": 661.6590023040771,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 10:59:20 GMT",
+        "Content-Length": "437",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788951560.6430755,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788951559.9408488
+    }
+  },
+  "wall_clock_unix": 1788951560.6430755
+}

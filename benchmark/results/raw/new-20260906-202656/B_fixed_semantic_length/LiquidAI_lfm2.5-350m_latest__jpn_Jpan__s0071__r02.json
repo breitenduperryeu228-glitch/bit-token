@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0071",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n浄水処理には各種の方法があります、飲水の水質に脅威となる特定のリスクに対して効果のある高度な処理方法もあります。\n\n/no_think",
+    "source_text": "浄水処理には各種の方法があります、飲水の水質に脅威となる特定のリスクに対して効果のある高度な処理方法もあります。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "浄水処理は、飲水の水質を向上させるために多様な技術が活用されています。例えば、活性炭を用いた吸着法は重金属や有機物を取り除き、安全な水を提供します。また、膜分離技術は微細な粒子や病原体を効率的に分離し、飲料水の品質を飛躍的に高めます。さらに、自然浄化プロセスであるろ過や自然発酵も、環境負荷を抑えつつ効果的な水質改善に貢献しています。これらの高度な手法は、単なる衛生対策を超え、持続可能な水資源管理の鍵となっています。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2049434662,
+    "load_duration": 24624047,
+    "prompt_eval_duration": 222793352,
+    "eval_duration": 1777661591,
+    "eval_count": 151,
+    "prompt_eval_count": 100,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:15:15.381443941Z",
+    "message": {
+      "role": "assistant",
+      "content": "浄水処理は、飲水の水質を向上させるために多様な技術が活用されています。例えば、活性炭を用いた吸着法は重金属や有機物を取り除き、安全な水を提供します。また、膜分離技術は微細な粒子や病原体を効率的に分離し、飲料水の品質を飛躍的に高めます。さらに、自然浄化プロセスであるろ過や自然発酵も、環境負荷を抑えつつ効果的な水質改善に貢献しています。これらの高度な手法は、単なる衛生対策を超え、持続可能な水資源管理の鍵となっています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2049434662,
+    "load_duration": 24624047,
+    "prompt_eval_count": 100,
+    "prompt_eval_duration": 222793352,
+    "eval_count": 151,
+    "eval_duration": 1777661591
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788941713.2952597,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941713.29526,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.297,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941713.3089933,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 198.8984375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 960611,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 978.9140625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 198.8984375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.015625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941713.3230624,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 203672,
+        "proc_threads": 40,
+        "proc_vol_ctx": 953270,
+        "proc_invol_ctx": 7341,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788941715.3820221,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941715.3820226,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 38,
+            "mem_util_pct": 14,
+            "power_w": 12.342,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941715.3966293,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.51953125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 960611,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 984.59765625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.51953125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 781.078125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941715.4120414,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208404,
+        "proc_threads": 40,
+        "proc_vol_ctx": 953270,
+        "proc_invol_ctx": 7341,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788941713.3316343,
+      "response_received_unix": 1788941715.381946,
+      "first_byte_unix": 1788941715.3818593,
+      "total_wall_ms": 2050.311803817749,
+      "queue_wait_ms": 2050.225019454956,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:15:15 GMT",
+        "Content-Length": "943",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788941715.421339,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788941713.3315911
+    }
+  },
+  "wall_clock_unix": 1788941715.421339
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b",
+  "language": "spa_Latn",
+  "sample_id": "s0035",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nLas cumbres también ofrecen vistas impactantes desde los picos. Escaladores de todos los rincones del globo constantemente delimitan nuevos caminos entre sus muros de potencial infinito.\n\n/no_think",
+    "source_text": "Las cumbres también ofrecen vistas impactantes desde los picos. Escaladores de todos los rincones del globo constantemente delimitan nuevos caminos entre sus muros de potencial infinito."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "Las cumbres ofrecen vistas impactantes desde los picos, mientras que escaladores de todos los rincones del globo limitan nuevos caminos entre sus muros de potencial infinito.",
+  "ollama": {
+    "model": "qwen3:0.6b",
+    "total_duration": 721309326,
+    "load_duration": 55383926,
+    "prompt_eval_duration": 15018341,
+    "eval_duration": 638587220,
+    "eval_count": 43,
+    "prompt_eval_count": 117,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-09-09T11:00:43.97809768Z",
+    "message": {
+      "role": "assistant",
+      "content": "Las cumbres ofrecen vistas impactantes desde los picos, mientras que escaladores de todos los rincones del globo limitan nuevos caminos entre sus muros de potencial infinito."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 721309326,
+    "load_duration": 55383926,
+    "prompt_eval_count": 117,
+    "prompt_eval_duration": 15018341,
+    "eval_count": 43,
+    "eval_duration": 638587220
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788951643.2186747,
+      "nvidia_smi": {
+        "timestamp_unix": 1788951643.218675,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 11.879,
+            "temp_c": 47,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788951643.2330034,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 213.16796875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1012078,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1522.7890625,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 213.16796875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1309.62109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788951643.247593,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 218284,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1004093,
+        "proc_invol_ctx": 7985,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788951643.9786198,
+      "nvidia_smi": {
+        "timestamp_unix": 1788951643.9786205,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 11.871,
+            "temp_c": 47,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788951643.9952147,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 215.49609375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1012080,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1525.1171875,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 215.49609375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1309.62109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788951644.0116258,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 220668,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1004095,
+        "proc_invol_ctx": 7985,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788951643.2564101,
+      "response_received_unix": 1788951643.9785445,
+      "first_byte_unix": 1788951643.978466,
+      "total_wall_ms": 722.1343517303467,
+      "queue_wait_ms": 722.0559120178223,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 11:00:43 GMT",
+        "Content-Length": "468",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788951644.0209794,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788951643.2563677
+    }
+  },
+  "wall_clock_unix": 1788951644.0209794
+}

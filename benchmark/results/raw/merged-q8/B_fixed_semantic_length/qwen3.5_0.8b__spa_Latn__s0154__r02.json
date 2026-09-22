@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "spa_Latn",
+  "sample_id": "s0154",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nSi bien las pirámides de piedra continuaron construyéndose hasta el final del Reino Antiguo, nunca pudo superarse a las de Guiza, ni en tamaño ni en lo sublime de la técnica de su edificación.\n\n/no_think",
+    "source_text": "Si bien las pirámides de piedra continuaron construyéndose hasta el final del Reino Antiguo, nunca pudo superarse a las de Guiza, ni en tamaño ni en lo sublime de la técnica de su edificación."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "La oración revela una profunda contradicción entre la monumentalidad de las pirámides de piedra y la imposibilidad de superarlas en escala y grandiosidad. Aunque las estructuras de piedra se extendieron hasta el final del Antiguo Reino, su capacidad para dominar el espacio y la monumentalidad es claramente inferior a la de Guiza. Esta diferencia no se limita a la cantidad, sino que se manifiesta en la escala y la trascendencia de la edificación, donde la piedra se ve como un muro de piedra, mientras que la de Guiza representa una obra de arte que trasciende la mera construcción.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 929842041,
+    "load_duration": 116134808,
+    "prompt_eval_duration": 23048426,
+    "eval_duration": 738674843,
+    "eval_count": 127,
+    "prompt_eval_count": 116,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T06:03:25.445410422Z",
+    "message": {
+      "role": "assistant",
+      "content": "La oración revela una profunda contradicción entre la monumentalidad de las pirámides de piedra y la imposibilidad de superarlas en escala y grandiosidad. Aunque las estructuras de piedra se extendieron hasta el final del Antiguo Reino, su capacidad para dominar el espacio y la monumentalidad es claramente inferior a la de Guiza. Esta diferencia no se limita a la cantidad, sino que se manifiesta en la escala y la trascendencia de la edificación, donde la piedra se ve como un muro de piedra, mientras que la de Guiza representa una obra de arte que trasciende la mera construcción."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 929842041,
+    "load_duration": 116134808,
+    "prompt_eval_count": 116,
+    "prompt_eval_duration": 23048426,
+    "eval_count": 127,
+    "eval_duration": 738674843
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789020204.4642615,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020204.4642618,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 88,
+            "mem_util_pct": 70,
+            "power_w": 61.912,
+            "temp_c": 77,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020204.474874,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 248.03515625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2339.7109375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 248.03515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2091.67578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020204.4993548,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 253988,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789020205.4458807,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020205.4458811,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 88,
+            "mem_util_pct": 70,
+            "power_w": 61.893,
+            "temp_c": 76,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020205.4577417,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 249.07421875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2339.3671875,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 249.07421875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2090.29296875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020205.4829054,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 255052,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789020204.5151951,
+      "response_received_unix": 1789020205.445816,
+      "first_byte_unix": 1789020205.445761,
+      "total_wall_ms": 930.6209087371826,
+      "queue_wait_ms": 930.5658340454102,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:03:25 GMT",
+        "Content-Length": "889",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789020205.4981775,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789020204.5151439
+    }
+  },
+  "wall_clock_unix": 1789020205.4981775
+}

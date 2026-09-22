@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0184",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nСогласно этой теории, значительная часть темной материи вокруг Галактики располагается в виде ореола и состоит из большого количества мелких частиц.\n\n/no_think",
+    "source_text": "Согласно этой теории, значительная часть темной материи вокруг Галактики располагается в виде ореола и состоит из большого количества мелких частиц."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Без приветствий и пояснений, только сам абзац:\n\nТемная материя, представляющая собой значительную часть космического пространства, располагается в виде ореола. Это ореолы образуются из большого количества мелких частиц, которые в конечном итоге составляют основу всех форм и характеристик Галактики. Эти мелкие частицы, вероятно, представляют собой разные типы атомов или молекул, которые образуют более сложные соединения. В результате они создают сложную структуру, которая в конечном итоге формирует ореолы, которые являются основной составляющей темной материи Галактики.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1108333153,
+    "load_duration": 76406379,
+    "prompt_eval_duration": 6630455,
+    "eval_duration": 957867701,
+    "eval_count": 165,
+    "prompt_eval_count": 126,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:51:55.827895345Z",
+    "message": {
+      "role": "assistant",
+      "content": "Без приветствий и пояснений, только сам абзац:\n\nТемная материя, представляющая собой значительную часть космического пространства, располагается в виде ореола. Это ореолы образуются из большого количества мелких частиц, которые в конечном итоге составляют основу всех форм и характеристик Галактики. Эти мелкие частицы, вероятно, представляют собой разные типы атомов или молекул, которые образуют более сложные соединения. В результате они создают сложную структуру, которая в конечном итоге формирует ореолы, которые являются основной составляющей темной материи Галактики."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1108333153,
+    "load_duration": 76406379,
+    "prompt_eval_count": 126,
+    "prompt_eval_duration": 6630455,
+    "eval_count": 165,
+    "eval_duration": 957867701
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789138314.667863,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138314.6678631,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 77.168,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138314.6783347,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 244.64453125,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 36980,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1189.58984375,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 244.64453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 944.9453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138314.7033136,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 250516,
+        "proc_threads": 32,
+        "proc_vol_ctx": 36352,
+        "proc_invol_ctx": 628,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789138315.8282783,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138315.8282788,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 76.431,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138315.839051,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 244.59765625,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 36987,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1189.54296875,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 244.59765625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 944.9453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138315.8629186,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 250468,
+        "proc_threads": 32,
+        "proc_vol_ctx": 36358,
+        "proc_invol_ctx": 629,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789138314.7191973,
+      "response_received_unix": 1789138315.828219,
+      "first_byte_unix": 1789138315.828174,
+      "total_wall_ms": 1109.0216636657715,
+      "queue_wait_ms": 1108.9768409729004,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:51:55 GMT",
+        "Content-Length": "1362",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789138315.8773894,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789138314.7191405
+    }
+  },
+  "wall_clock_unix": 1789138315.8773894
+}

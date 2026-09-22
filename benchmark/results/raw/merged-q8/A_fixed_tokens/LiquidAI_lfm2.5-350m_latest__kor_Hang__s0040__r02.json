@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0040",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장을 한국어로 이어서 짧은 단락으로 작성해 주세요.\n\n1624년 네덜란드 동인도 회사는 대만 남서부 지역에 기지를 차리고, 곡물 생산 방식의 변화를 불러오고, 중국 노동자들을 고용하여 재식농업을 통해 쌀과 설탕을 생산하기 시작했다.\n\n/no_think",
+    "source_text": "1624년 네덜란드 동인도 회사는 대만 남서부 지역에 기지를 차리고, 곡물 생산 방식의 변화를 불러오고, 중국 노동자들을 고용하여 재식농업을 통해 쌀과 설탕을 생산하기 시작했다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "1624년 네덜란드 동인도 회사는 대만 남서부 지역에 기지를 차리고, 곡물 생산 방식을 변화시켜 중국 노동자들을 고용하여 쌀과 설탕을 생산하기 시작했다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 993117834,
+    "load_duration": 25478680,
+    "prompt_eval_duration": 271436698,
+    "eval_duration": 684407294,
+    "eval_count": 59,
+    "prompt_eval_count": 116,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-06T15:03:02.732009832Z",
+    "message": {
+      "role": "assistant",
+      "content": "1624년 네덜란드 동인도 회사는 대만 남서부 지역에 기지를 차리고, 곡물 생산 방식을 변화시켜 중국 노동자들을 고용하여 쌀과 설탕을 생산하기 시작했다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 993117834,
+    "load_duration": 25478680,
+    "prompt_eval_count": 116,
+    "prompt_eval_duration": 271436698,
+    "eval_count": 59,
+    "eval_duration": 684407294
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788706981.6984844,
+      "nvidia_smi": {
+        "timestamp_unix": 1788706981.698485,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.5,
+            "vram_total_mib": 8188.0,
+            "util_pct": 25,
+            "mem_util_pct": 14,
+            "power_w": 12.752,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788706981.7132063,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 581.57421875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 324317,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1357.54296875,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 581.57421875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 775.96875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788706981.7287872,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 595532,
+        "proc_threads": 40,
+        "proc_vol_ctx": 323314,
+        "proc_invol_ctx": 1003,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788706982.7326086,
+      "nvidia_smi": {
+        "timestamp_unix": 1788706982.732609,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.5,
+            "vram_total_mib": 8188.0,
+            "util_pct": 26,
+            "mem_util_pct": 14,
+            "power_w": 12.74,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788706982.7505593,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 586.11328125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 324380,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1361.83203125,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 586.11328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 775.71875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788706982.7664971,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 600180,
+        "proc_threads": 40,
+        "proc_vol_ctx": 323377,
+        "proc_invol_ctx": 1003,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788706981.7384906,
+      "response_received_unix": 1788706982.7324822,
+      "first_byte_unix": 1788706982.732388,
+      "total_wall_ms": 993.9916133880615,
+      "queue_wait_ms": 993.8974380493164,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sun, 06 Sep 2026 15:03:02 GMT",
+        "Content-Length": "518",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788706982.7761436,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788706981.7384403
+    }
+  },
+  "wall_clock_unix": 1788706982.7761436
+}

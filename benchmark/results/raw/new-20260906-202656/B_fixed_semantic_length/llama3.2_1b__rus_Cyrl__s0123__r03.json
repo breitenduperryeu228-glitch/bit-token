@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0123",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nИзложенные мнения часто поверхностны, расплывчаты и чрезмерно упрощены по сравнению с повсеместно доступной более подробной информацией.\n\n/no_think",
+    "source_text": "Изложенные мнения часто поверхностны, расплывчаты и чрезмерно упрощены по сравнению с повсеместно доступной более подробной информацией."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Без приветствий и пояснений, только сам абзац:\n\nИзложенные мнения часто поверхностны и расплывчаты, что делает их неэффективными в обосновании сложных проблем. Чрезмерно упрощенные точки зрения могут привести к неверным выводам и не обеспечить полное понимание ситуации. В контексте информационной безопасности и безопасности информации важно учитывать complexities и nuances, а также не упрощать сложные проблемы, чтобы получить точную и надежную информацию.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 794451779,
+    "load_duration": 69299924,
+    "prompt_eval_duration": 5941480,
+    "eval_duration": 674541048,
+    "eval_count": 117,
+    "prompt_eval_count": 125,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:48:01.35571949Z",
+    "message": {
+      "role": "assistant",
+      "content": "Без приветствий и пояснений, только сам абзац:\n\nИзложенные мнения часто поверхностны и расплывчаты, что делает их неэффективными в обосновании сложных проблем. Чрезмерно упрощенные точки зрения могут привести к неверным выводам и не обеспечить полное понимание ситуации. В контексте информационной безопасности и безопасности информации важно учитывать complexities и nuances, а также не упрощать сложные проблемы, чтобы получить точную и надежную информацию."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 794451779,
+    "load_duration": 69299924,
+    "prompt_eval_count": 125,
+    "prompt_eval_duration": 5941480,
+    "eval_count": 117,
+    "eval_duration": 674541048
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789138080.5157628,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138080.5157633,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 73.469,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138080.5260644,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.359375,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 29372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1183.890625,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.359375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 940.53125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138080.5472167,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249200,
+        "proc_threads": 32,
+        "proc_vol_ctx": 28910,
+        "proc_invol_ctx": 462,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789138081.3560688,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138081.356069,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 73.57,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138081.3668945,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.5,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 29390,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1184.03125,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.5,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 940.53125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138081.3896453,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249344,
+        "proc_threads": 32,
+        "proc_vol_ctx": 28928,
+        "proc_invol_ctx": 462,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789138080.5609338,
+      "response_received_unix": 1789138081.3560104,
+      "first_byte_unix": 1789138081.3559678,
+      "total_wall_ms": 795.0766086578369,
+      "queue_wait_ms": 795.0339317321777,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:48:01 GMT",
+        "Content-Length": "1128",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789138081.40336,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789138080.5608869
+    }
+  },
+  "wall_clock_unix": 1789138081.40336
+}

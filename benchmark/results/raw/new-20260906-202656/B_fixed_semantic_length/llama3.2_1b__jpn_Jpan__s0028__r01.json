@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0028",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nフランスは、オーストリア、ドイツ、スロベニア、ブルガリア、ギリシャ、イタリアに次いで欧州連合で当該ウイルス感染の被害を受けた7番目の国です。\n\n/no_think",
+    "source_text": "フランスは、オーストリア、ドイツ、スロベニア、ブルガリア、ギリシャ、イタリアに次いで欧州連合で当該ウイルス感染の被害を受けた7番目の国です。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "フランスの政府は、2023年1月から2月にかけて、オーストリア、ドイツ、スロベニア、ブルガリア、ギリシャ、イタリアに続いて欧州連合でウイルス感染の被害を受けた7番目の国です。 \n\nフランスの政府は、ウイルス感染の原因を調べるために、オーストリアなど6つの国と協力しています。 \n\nウイルス感染の原因については、2023年1月から2月にかけて、オーストリア、ドイツ、スロベニア、ブルガリア、ギリシャ、イタリアに続いて調べることができます。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1017766798,
+    "load_duration": 75454122,
+    "prompt_eval_duration": 6715496,
+    "eval_duration": 875069690,
+    "eval_count": 151,
+    "prompt_eval_count": 131,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:14:49.516230215Z",
+    "message": {
+      "role": "assistant",
+      "content": "フランスの政府は、2023年1月から2月にかけて、オーストリア、ドイツ、スロベニア、ブルガリア、ギリシャ、イタリアに続いて欧州連合でウイルス感染の被害を受けた7番目の国です。 \n\nフランスの政府は、ウイルス感染の原因を調べるために、オーストリアなど6つの国と協力しています。 \n\nウイルス感染の原因については、2023年1月から2月にかけて、オーストリア、ドイツ、スロベニア、ブルガリア、ギリシャ、イタリアに続いて調べることができます。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1017766798,
+    "load_duration": 75454122,
+    "prompt_eval_count": 131,
+    "prompt_eval_duration": 6715496,
+    "eval_count": 151,
+    "eval_duration": 875069690
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789024488.4518774,
+      "nvidia_smi": {
+        "timestamp_unix": 1789024488.4518776,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 74.311,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789024488.462308,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 257.62890625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.00390625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 257.62890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 972.375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789024488.48364,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 263812,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789024489.5166068,
+      "nvidia_smi": {
+        "timestamp_unix": 1789024489.5166073,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 26,
+            "mem_util_pct": 30,
+            "power_w": 73.486,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789024489.5274012,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.38671875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.76171875,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.38671875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 972.375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789024489.5512319,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264588,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789024488.4981709,
+      "response_received_unix": 1789024489.5165415,
+      "first_byte_unix": 1789024489.5164955,
+      "total_wall_ms": 1018.3706283569336,
+      "queue_wait_ms": 1018.324613571167,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:14:49 GMT",
+        "Content-Length": "915",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789024489.565945,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789024488.4981298
+    }
+  },
+  "wall_clock_unix": 1789024489.565945
+}

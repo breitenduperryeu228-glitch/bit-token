@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "deu_Latn",
+  "sample_id": "s0049",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Bitte schreiben Sie ungefähr 256 Zeichen Text auf Deutsch über das Thema des folgenden Satzes. Keine Begrüßung, keine Erklärungen, nur den Absatz selbst:\n\nDie Geschichte, die in der französischen Oper von Camille Saint-Saens vorgestellte wurde, handelt von einem Künstler, „dessen Leben von der Liebe zu Drogen und Japan bestimmt ist“.\n\n/no_think",
+    "source_text": "Die Geschichte, die in der französischen Oper von Camille Saint-Saens vorgestellte wurde, handelt von einem Künstler, „dessen Leben von der Liebe zu Drogen und Japan bestimmt ist“."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Lehistoire de la danse en français d'Amélie Poulain.",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 544055616,
+    "load_duration": 36167833,
+    "prompt_eval_duration": 265844567,
+    "eval_duration": 231876172,
+    "eval_count": 18,
+    "prompt_eval_count": 116,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T06:54:00.715709807Z",
+    "message": {
+      "role": "assistant",
+      "content": "Lehistoire de la danse en français d'Amélie Poulain."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 544055616,
+    "load_duration": 36167833,
+    "prompt_eval_count": 116,
+    "prompt_eval_duration": 265844567,
+    "eval_count": 18,
+    "eval_duration": 231876172
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788936840.1361594,
+      "nvidia_smi": {
+        "timestamp_unix": 1788936840.1361597,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.25,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.218,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788936840.1503649,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 187.25,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 905266,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1013.28125,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 187.25,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 826.03125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788936840.1632771,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 191744,
+        "proc_threads": 40,
+        "proc_vol_ctx": 898415,
+        "proc_invol_ctx": 6851,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788936840.7160518,
+      "nvidia_smi": {
+        "timestamp_unix": 1788936840.716052,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.25,
+            "vram_total_mib": 8188.0,
+            "util_pct": 28,
+            "mem_util_pct": 13,
+            "power_w": 12.215,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788936840.7302728,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 185.60546875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 905271,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1012.78515625,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 185.60546875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 827.1796875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788936840.7457793,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 190060,
+        "proc_threads": 40,
+        "proc_vol_ctx": 898420,
+        "proc_invol_ctx": 6851,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788936840.171268,
+      "response_received_unix": 1788936840.7159963,
+      "first_byte_unix": 1788936840.715945,
+      "total_wall_ms": 544.7282791137695,
+      "queue_wait_ms": 544.6770191192627,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 06:54:00 GMT",
+        "Content-Length": "355",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788936840.7546794,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788936840.1712267
+    }
+  },
+  "wall_clock_unix": 1788936840.7546794
+}

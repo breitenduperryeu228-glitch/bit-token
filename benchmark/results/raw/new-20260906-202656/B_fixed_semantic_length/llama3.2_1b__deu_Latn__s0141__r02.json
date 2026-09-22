@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "deu_Latn",
+  "sample_id": "s0141",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Bitte schreiben Sie ungefähr 256 Zeichen Text auf Deutsch über das Thema des folgenden Satzes. Keine Begrüßung, keine Erklärungen, nur den Absatz selbst:\n\nDie Sphinx wird als Hintergrund und Erzähler einer langen Geschichte eingesetzt.\n\n/no_think",
+    "source_text": "Die Sphinx wird als Hintergrund und Erzähler einer langen Geschichte eingesetzt."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "In der antiken Ägyptischen Mythologie war die Sphinx ein großes Tier mit dem Kopf eines Löwen, der in einem weiten Becken des Nil fließt. Sie wurde als Gott der Weisheit verehrt und diente als Erzähler einer Geschichte über den Weg der Menschen.\n\nDie Sphinx stand vor einem großen Stein, auf dem die Worte \"Wer ist der Mensch?\" standen. Der Mensch antwortete mit: \"Ich bin ein Sohn des Himmels.\" Die Sphinx fragte ihn dann: \"Und wer bist du?\" Der Mensch antwortete wieder: \"Ich bin ein Sohn der Erde\". Die Sphinx fragte ihn dann noch einmal: \"Wer bist du?\" Und dieser Mal antwortete er: \"Ich bin ein Sohn des Himmels und der Erde.\" Die Sphinx sah sich um und sagte: \"Du bist ein Mensch, aber du bist nicht der Mensch. Du bist ein Sohn von beiden\".",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1369146599,
+    "load_duration": 75114962,
+    "prompt_eval_duration": 6626469,
+    "eval_duration": 1209731301,
+    "eval_count": 208,
+    "prompt_eval_count": 96,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:34:33.170020805Z",
+    "message": {
+      "role": "assistant",
+      "content": "In der antiken Ägyptischen Mythologie war die Sphinx ein großes Tier mit dem Kopf eines Löwen, der in einem weiten Becken des Nil fließt. Sie wurde als Gott der Weisheit verehrt und diente als Erzähler einer Geschichte über den Weg der Menschen.\n\nDie Sphinx stand vor einem großen Stein, auf dem die Worte \"Wer ist der Mensch?\" standen. Der Mensch antwortete mit: \"Ich bin ein Sohn des Himmels.\" Die Sphinx fragte ihn dann: \"Und wer bist du?\" Der Mensch antwortete wieder: \"Ich bin ein Sohn der Erde\". Die Sphinx fragte ihn dann noch einmal: \"Wer bist du?\" Und dieser Mal antwortete er: \"Ich bin ein Sohn des Himmels und der Erde.\" Die Sphinx sah sich um und sagte: \"Du bist ein Mensch, aber du bist nicht der Mensch. Du bist ein Sohn von beiden\"."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1369146599,
+    "load_duration": 75114962,
+    "prompt_eval_count": 96,
+    "prompt_eval_duration": 6626469,
+    "eval_count": 208,
+    "eval_duration": 1209731301
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789137271.7527254,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137271.7527258,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 74.303,
+            "temp_c": 64,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137271.7637987,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 247.87109375,
+        "vms_mib": 3646.734375,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 2090,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 973.4921875,
+        "tree_threads": 51,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 247.87109375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 725.62109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137271.7868598,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734256,
+        "proc_vm_rss_kib": 253820,
+        "proc_threads": 32,
+        "proc_vol_ctx": 2045,
+        "proc_invol_ctx": 45,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789137273.1704414,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137273.1704419,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 77.346,
+            "temp_c": 63,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137273.18126,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 247.26171875,
+        "vms_mib": 3646.734375,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 2110,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 972.8984375,
+        "tree_threads": 51,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 247.26171875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 725.63671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137273.204776,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734256,
+        "proc_vm_rss_kib": 253196,
+        "proc_threads": 32,
+        "proc_vol_ctx": 2065,
+        "proc_invol_ctx": 45,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789137271.8005002,
+      "response_received_unix": 1789137273.1703823,
+      "first_byte_unix": 1789137273.170336,
+      "total_wall_ms": 1369.8821067810059,
+      "queue_wait_ms": 1369.8358535766602,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:34:33 GMT",
+        "Content-Length": "1067",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789137273.2185595,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789137271.8004487
+    }
+  },
+  "wall_clock_unix": 1789137273.2185595
+}

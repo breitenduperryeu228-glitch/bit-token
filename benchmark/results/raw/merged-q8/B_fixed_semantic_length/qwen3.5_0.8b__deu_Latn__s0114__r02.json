@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "deu_Latn",
+  "sample_id": "s0114",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Bitte schreiben Sie ungefähr 256 Zeichen Text auf Deutsch über das Thema des folgenden Satzes. Keine Begrüßung, keine Erklärungen, nur den Absatz selbst:\n\nSie besagt, dass der Kreuzungspunkt der Linien, die ein Bild vertikal und horizontal dritteln, der effektivste Platz für das Hauptmotiv ist (siehe Beispiel).\n\n/no_think",
+    "source_text": "Sie besagt, dass der Kreuzungspunkt der Linien, die ein Bild vertikal und horizontal dritteln, der effektivste Platz für das Hauptmotiv ist (siehe Beispiel)."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "Der Kreuzungspunkt der Linien, die ein Bild vertikal und horizontal dritteln, ist der effektivste Platz für das Hauptmotiv.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 333812083,
+    "load_duration": 120418322,
+    "prompt_eval_duration": 21984552,
+    "eval_duration": 178202952,
+    "eval_count": 31,
+    "prompt_eval_count": 102,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T06:21:52.292131347Z",
+    "message": {
+      "role": "assistant",
+      "content": "Der Kreuzungspunkt der Linien, die ein Bild vertikal und horizontal dritteln, ist der effektivste Platz für das Hauptmotiv."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 333812083,
+    "load_duration": 120418322,
+    "prompt_eval_count": 102,
+    "prompt_eval_duration": 21984552,
+    "eval_count": 31,
+    "eval_duration": 178202952
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789021311.9072118,
+      "nvidia_smi": {
+        "timestamp_unix": 1789021311.907212,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 52,
+            "mem_util_pct": 31,
+            "power_w": 50.022,
+            "temp_c": 72,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789021311.9182374,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.50390625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2350.58984375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.50390625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2092.0859375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789021311.943629,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264708,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789021312.2926536,
+      "nvidia_smi": {
+        "timestamp_unix": 1789021312.2926538,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 25,
+            "mem_util_pct": 20,
+            "power_w": 47.546,
+            "temp_c": 71,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789021312.3046057,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 267.96484375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2357.17578125,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 267.96484375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2089.2109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789021312.3283308,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 274396,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789021311.9579625,
+      "response_received_unix": 1789021312.2925913,
+      "first_byte_unix": 1789021312.2925327,
+      "total_wall_ms": 334.6288204193115,
+      "queue_wait_ms": 334.57016944885254,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:21:52 GMT",
+        "Content-Length": "422",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789021312.3425877,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789021311.9579146
+    }
+  },
+  "wall_clock_unix": 1789021312.3425877
+}

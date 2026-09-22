@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b-q8",
+  "language": "kor_Hang",
+  "sample_id": "s0116",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n마지막으로 곤충, 설치류, 도마뱀, 새와 같은 훨씬 더 많은 작은 먹이를 먹는 작은 고양이들(풀어놓은 애완용 고양이 포함)이 많이 있다.\n\n/no_think",
+    "source_text": "마지막으로 곤충, 설치류, 도마뱀, 새와 같은 훨씬 더 많은 작은 먹이를 먹는 작은 고양이들(풀어놓은 애완용 고양이 포함)이 많이 있다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "고양이들이 다양한 종류의 작은 먹이를 먹는 것은 자연의 다양성을 보여주는 모습입니다. 이들은 곤충, 설치류, 도마뱀, 새 등 다양한 생물들을 포함하며, 풀어놓은 애완용 고양이의 모습을 보여줍니다. 이는 생명의 다양성을 강조하고, 인간과 자연의 관계를 잘 표현하는 표현입니다.",
+  "ollama": {
+    "model": "qwen3:0.6b-q8",
+    "total_duration": 500032870,
+    "load_duration": 47432873,
+    "prompt_eval_duration": 4726588,
+    "eval_duration": 422573759,
+    "eval_count": 98,
+    "prompt_eval_count": 128,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b-q8",
+    "created_at": "2026-09-19T03:18:18.992126712Z",
+    "message": {
+      "role": "assistant",
+      "content": "<think>\n\n</think>\n\n고양이들이 다양한 종류의 작은 먹이를 먹는 것은 자연의 다양성을 보여주는 모습입니다. 이들은 곤충, 설치류, 도마뱀, 새 등 다양한 생물들을 포함하며, 풀어놓은 애완용 고양이의 모습을 보여줍니다. 이는 생명의 다양성을 강조하고, 인간과 자연의 관계를 잘 표현하는 표현입니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 500032870,
+    "load_duration": 47432873,
+    "prompt_eval_count": 128,
+    "prompt_eval_duration": 4726588,
+    "eval_count": 98,
+    "eval_duration": 422573759
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789787898.4620013,
+      "nvidia_smi": {
+        "timestamp_unix": 1789787898.4620016,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2421.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 75,
+            "mem_util_pct": 70,
+            "power_w": 51.634,
+            "temp_c": 56,
+            "sm_clock_mhz": 2580,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789787898.472471,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 95.15234375,
+        "vms_mib": 3979.828125,
+        "num_threads": 38,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 752.50390625,
+        "tree_threads": 85,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 95.15234375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 657.3515625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789787898.4836862,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4075344,
+        "proc_vm_rss_kib": 97436,
+        "proc_threads": 38,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789787898.9925342,
+      "nvidia_smi": {
+        "timestamp_unix": 1789787898.9925346,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2421.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 26,
+            "mem_util_pct": 27,
+            "power_w": 50.743,
+            "temp_c": 56,
+            "sm_clock_mhz": 2580,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789787899.0046802,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 100.31640625,
+        "vms_mib": 3979.828125,
+        "num_threads": 38,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 759.48828125,
+        "tree_threads": 85,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 100.31640625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 659.171875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789787899.0169098,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4075344,
+        "proc_vm_rss_kib": 102724,
+        "proc_threads": 38,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789787898.4917383,
+      "response_received_unix": 1789787898.9924653,
+      "first_byte_unix": 1789787898.9924145,
+      "total_wall_ms": 500.72693824768066,
+      "queue_wait_ms": 500.67615509033203,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 19 Sep 2026 03:18:18 GMT",
+        "Content-Length": "715",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789787899.0247967,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789787898.4916995
+    }
+  },
+  "wall_clock_unix": 1789787899.0247967
+}

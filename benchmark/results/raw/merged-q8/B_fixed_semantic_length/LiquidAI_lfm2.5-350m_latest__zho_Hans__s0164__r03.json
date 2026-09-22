@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "zho_Hans",
+  "sample_id": "s0164",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n裂变原子弹的工作原理如下：把一个原子核和许多质子及中子聚在一起需要能量。\n\n/no_think",
+    "source_text": "裂变原子弹的工作原理如下：把一个原子核和许多质子及中子聚在一起需要能量。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "裂变原子弹的工作原理如下：原子核中的质子和中子并非固定，而是通过核聚变过程不断产生新的原子核。核聚变是核反应的一种，能量释放源于核内部的碰撞和重新组合。\n\n/no_think",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 999098490,
+    "load_duration": 25882856,
+    "prompt_eval_duration": 126830995,
+    "eval_duration": 836218603,
+    "eval_count": 73,
+    "prompt_eval_count": 99,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T07:58:54.914015109Z",
+    "message": {
+      "role": "assistant",
+      "content": "裂变原子弹的工作原理如下：原子核中的质子和中子并非固定，而是通过核聚变过程不断产生新的原子核。核聚变是核反应的一种，能量释放源于核内部的碰撞和重新组合。\n\n/no_think"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 999098490,
+    "load_duration": 25882856,
+    "prompt_eval_count": 99,
+    "prompt_eval_duration": 126830995,
+    "eval_count": 73,
+    "eval_duration": 836218603
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788940733.8804853,
+      "nvidia_smi": {
+        "timestamp_unix": 1788940733.8804858,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 37,
+            "mem_util_pct": 14,
+            "power_w": 12.321,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788940733.8952925,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.0078125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 948240,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 984.1796875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.0078125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.171875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788940733.9066055,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208904,
+        "proc_threads": 40,
+        "proc_vol_ctx": 940977,
+        "proc_invol_ctx": 7263,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788940734.914443,
+      "nvidia_smi": {
+        "timestamp_unix": 1788940734.9144437,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.342,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788940734.932111,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.0078125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 948242,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 983.8671875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.0078125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 779.859375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788940734.9461462,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208904,
+        "proc_threads": 40,
+        "proc_vol_ctx": 940979,
+        "proc_invol_ctx": 7263,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788940733.914505,
+      "response_received_unix": 1788940734.9143543,
+      "first_byte_unix": 1788940734.9142902,
+      "total_wall_ms": 999.8493194580078,
+      "queue_wait_ms": 999.7851848602295,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 07:58:54 GMT",
+        "Content-Length": "553",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788940734.9555316,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788940733.9144576
+    }
+  },
+  "wall_clock_unix": 1788940734.9555316
+}

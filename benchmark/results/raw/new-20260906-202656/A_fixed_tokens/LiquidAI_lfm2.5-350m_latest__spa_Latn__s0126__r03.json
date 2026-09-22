@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "spa_Latn",
+  "sample_id": "s0126",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Continúe la siguiente oración en español, en un párrafo corto:\n\nEl satélite fue enviado al espacio a través de un cohete. Los científicos utilizan telescopios en el espacio, dado que la luz de la atmósfera de la Terra distorsiona parte de la luz y vista que tenemos.\n\n/no_think",
+    "source_text": "El satélite fue enviado al espacio a través de un cohete. Los científicos utilizan telescopios en el espacio, dado que la luz de la atmósfera de la Terra distorsiona parte de la luz y vista que tenemos."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "El satélite fue enviado al espacio a través de un cohete, y los científicos utilizan telescopios en el espacio, ya que la luz de la atmósfera de la Tierra distorsiona parte de la luz y la vista que vemos.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 908568098,
+    "load_duration": 22004836,
+    "prompt_eval_duration": 222306283,
+    "eval_duration": 652703203,
+    "eval_count": 58,
+    "prompt_eval_count": 98,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-06T15:21:10.867915799Z",
+    "message": {
+      "role": "assistant",
+      "content": "El satélite fue enviado al espacio a través de un cohete, y los científicos utilizan telescopios en el espacio, ya que la luz de la atmósfera de la Tierra distorsiona parte de la luz y la vista que vemos."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 908568098,
+    "load_duration": 22004836,
+    "prompt_eval_count": 98,
+    "prompt_eval_duration": 222306283,
+    "eval_count": 58,
+    "eval_duration": 652703203
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788708069.9211366,
+      "nvidia_smi": {
+        "timestamp_unix": 1788708069.9211369,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 26,
+            "mem_util_pct": 14,
+            "power_w": 12.68,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788708069.9352608,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 587.36328125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 336677,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1369.55859375,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 587.36328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 782.1953125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788708069.9498222,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 601460,
+        "proc_threads": 40,
+        "proc_vol_ctx": 335529,
+        "proc_invol_ctx": 1148,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788708070.868344,
+      "nvidia_smi": {
+        "timestamp_unix": 1788708070.8683445,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 25,
+            "mem_util_pct": 14,
+            "power_w": 12.658,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788708070.8829079,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 587.67578125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 336679,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1369.87109375,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 587.67578125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 782.1953125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788708070.8967414,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 601780,
+        "proc_threads": 40,
+        "proc_vol_ctx": 335531,
+        "proc_invol_ctx": 1148,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788708069.9590216,
+      "response_received_unix": 1788708070.868263,
+      "first_byte_unix": 1788708070.868202,
+      "total_wall_ms": 909.2414379119873,
+      "queue_wait_ms": 909.1804027557373,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sun, 06 Sep 2026 15:21:10 GMT",
+        "Content-Length": "520",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788708070.9054365,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788708069.9589734
+    }
+  },
+  "wall_clock_unix": 1788708070.9054365
+}

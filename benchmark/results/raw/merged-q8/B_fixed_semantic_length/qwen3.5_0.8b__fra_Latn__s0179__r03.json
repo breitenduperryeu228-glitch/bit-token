@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "fra_Latn",
+  "sample_id": "s0179",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Veuillez écrire environ 256 caractères de texte en français sur le sujet suggéré par la phrase suivante. Pas de salutations ni d'explications, juste le paragraphe :\n\nLa partie nord, ou chaîne Sentinelle, comporte les plus hautes montagnes de l'Antarctique, le massif du Vinson, qui culmine à 4892 m.\n\n/no_think",
+    "source_text": "La partie nord, ou chaîne Sentinelle, comporte les plus hautes montagnes de l'Antarctique, le massif du Vinson, qui culmine à 4892 m."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "La chaîne Sentinelle, située au nord de l'Antarctique, constitue l'une des plus hautes montagnes de l'océan Pacifique. Ce massif, connu sous le nom de Vinson, culmine à une altitude record de 4892 mètres, faisant de la région le plus haut point de l'Antarctique. Cette altitude exceptionnelle rend la chaîne une destination incontournable pour les explorateurs et les scientifiques cherchant à atteindre les sommets les plus élevés de la planète.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 793931264,
+    "load_duration": 117384136,
+    "prompt_eval_duration": 22219704,
+    "eval_duration": 612738846,
+    "eval_count": 106,
+    "prompt_eval_count": 108,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T06:16:27.637210521Z",
+    "message": {
+      "role": "assistant",
+      "content": "La chaîne Sentinelle, située au nord de l'Antarctique, constitue l'une des plus hautes montagnes de l'océan Pacifique. Ce massif, connu sous le nom de Vinson, culmine à une altitude record de 4892 mètres, faisant de la région le plus haut point de l'Antarctique. Cette altitude exceptionnelle rend la chaîne une destination incontournable pour les explorateurs et les scientifiques cherchant à atteindre les sommets les plus élevés de la planète."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 793931264,
+    "load_duration": 117384136,
+    "prompt_eval_count": 108,
+    "prompt_eval_duration": 22219704,
+    "eval_count": 106,
+    "eval_duration": 612738846
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789020986.7964134,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020986.7964134,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 22,
+            "mem_util_pct": 17,
+            "power_w": 62.705,
+            "temp_c": 77,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020986.8070223,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 257.30078125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2347.46484375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 257.30078125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2090.1640625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020986.8285716,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 263476,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789020987.6376956,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020987.637696,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 0,
+            "mem_util_pct": 0,
+            "power_w": 62.724,
+            "temp_c": 77,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020987.6493597,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 257.30078125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2347.46484375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 257.30078125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2090.1640625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020987.67417,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 263476,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789020986.8429482,
+      "response_received_unix": 1789020987.6376317,
+      "first_byte_unix": 1789020987.6375718,
+      "total_wall_ms": 794.6834564208984,
+      "queue_wait_ms": 794.623613357544,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:16:27 GMT",
+        "Content-Length": "756",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789020987.68989,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789020986.8429003
+    }
+  },
+  "wall_clock_unix": 1789020987.68989
+}

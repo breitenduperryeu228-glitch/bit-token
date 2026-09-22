@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "fra_Latn",
+  "sample_id": "s0134",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Veuillez écrire environ 256 caractères de texte en français sur le sujet suggéré par la phrase suivante. Pas de salutations ni d'explications, juste le paragraphe :\n\nLes critères varient selon le lieu où l'on se trouve ; dans certaines parties du monde, comme en Amérique du Nord, la limite d'âge peut être inférieure à celle en vigueur en Europe.\n\n/no_think",
+    "source_text": "Les critères varient selon le lieu où l'on se trouve ; dans certaines parties du monde, comme en Amérique du Nord, la limite d'âge peut être inférieure à celle en vigueur en Europe."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Les critères varient selon le lieu où on se trouve. Dans certaines parties du monde, comme en Amérique du Nord, la limite d'âge peut être plus jeune que dans d'autres régions.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 684284017,
+    "load_duration": 22264941,
+    "prompt_eval_duration": 181807562,
+    "eval_duration": 473638068,
+    "eval_count": 41,
+    "prompt_eval_count": 117,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T09:38:24.777290942Z",
+    "message": {
+      "role": "assistant",
+      "content": "Les critères varient selon le lieu où on se trouve. Dans certaines parties du monde, comme en Amérique du Nord, la limite d'âge peut être plus jeune que dans d'autres régions."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 684284017,
+    "load_duration": 22264941,
+    "prompt_eval_count": 117,
+    "prompt_eval_duration": 181807562,
+    "eval_count": 41,
+    "eval_duration": 473638068
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788946704.05717,
+      "nvidia_smi": {
+        "timestamp_unix": 1788946704.0571702,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.3125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.363,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788946704.0708325,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.23828125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 981662,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 998.1953125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.23828125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.95703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788946704.0840359,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209140,
+        "proc_threads": 40,
+        "proc_vol_ctx": 974162,
+        "proc_invol_ctx": 7500,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788946704.777837,
+      "nvidia_smi": {
+        "timestamp_unix": 1788946704.7778378,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 14,
+            "power_w": 12.396,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788946704.795185,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.39453125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 981663,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 996.0390625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.39453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.64453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788946704.8082194,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207252,
+        "proc_threads": 40,
+        "proc_vol_ctx": 974163,
+        "proc_invol_ctx": 7500,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788946704.0925863,
+      "response_received_unix": 1788946704.7777538,
+      "first_byte_unix": 1788946704.777666,
+      "total_wall_ms": 685.1675510406494,
+      "queue_wait_ms": 685.07981300354,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 09:38:24 GMT",
+        "Content-Length": "494",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788946704.8160412,
+      "vram_delta_mib": -0.125
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788946704.0925424
+    }
+  },
+  "wall_clock_unix": 1788946704.8160412
+}

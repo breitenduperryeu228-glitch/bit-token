@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0093",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nАгностик Чемберс утверждает, что его иск \"несерьезный\" и \"каждый может подать в суд на кого угодно\".\n\n/no_think",
+    "source_text": "Агностик Чемберс утверждает, что его иск \"несерьезный\" и \"каждый может подать в суд на кого угодно\"."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Вопрос, который он طرحал, вызывает много споров и разногласий среди ученых и общественности. С одной стороны, он утверждает, что его иск не является серьезным и что каждый может подать в суд на кого угодно. Это вызывает опасения по поводу его целостности и достоверности. С другой стороны, это утверждение вызывает интерес и разногласия среди ученых и общественности, которые wonder, как он может быть так, чтобы его иск был таким неуместным.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 788524619,
+    "load_duration": 69239709,
+    "prompt_eval_duration": 5997246,
+    "eval_duration": 669201297,
+    "eval_count": 116,
+    "prompt_eval_count": 118,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:46:08.436174884Z",
+    "message": {
+      "role": "assistant",
+      "content": "Вопрос, который он طرحал, вызывает много споров и разногласий среди ученых и общественности. С одной стороны, он утверждает, что его иск не является серьезным и что каждый может подать в суд на кого угодно. Это вызывает опасения по поводу его целостности и достоверности. С другой стороны, это утверждение вызывает интерес и разногласия среди ученых и общественности, которые wonder, как он может быть так, чтобы его иск был таким неуместным."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 788524619,
+    "load_duration": 69239709,
+    "prompt_eval_count": 118,
+    "prompt_eval_duration": 5997246,
+    "eval_count": 116,
+    "eval_duration": 669201297
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789137967.6021855,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137967.6021857,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 80,
+            "mem_util_pct": 90,
+            "power_w": 72.998,
+            "temp_c": 78,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137967.6126423,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 244.0390625,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 24201,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1171.46484375,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 244.0390625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 927.42578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137967.6335595,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249896,
+        "proc_threads": 32,
+        "proc_vol_ctx": 23799,
+        "proc_invol_ctx": 402,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789137968.4366603,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137968.4366612,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 80,
+            "mem_util_pct": 90,
+            "power_w": 73.571,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137968.44801,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 241.5390625,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 24333,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1168.77734375,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 241.5390625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 927.23828125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137968.4705882,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 247336,
+        "proc_threads": 32,
+        "proc_vol_ctx": 23931,
+        "proc_invol_ctx": 402,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789137967.6473322,
+      "response_received_unix": 1789137968.436582,
+      "first_byte_unix": 1789137968.436527,
+      "total_wall_ms": 789.2498970031738,
+      "queue_wait_ms": 789.1948223114014,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:46:08 GMT",
+        "Content-Length": "1094",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789137968.484356,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789137967.6472907
+    }
+  },
+  "wall_clock_unix": 1789137968.484356
+}

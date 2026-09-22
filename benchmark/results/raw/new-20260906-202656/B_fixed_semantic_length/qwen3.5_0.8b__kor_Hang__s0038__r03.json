@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "kor_Hang",
+  "sample_id": "s0038",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n대기업은 일부 항로에서 자사 소속 항공기를 사용합니다만 그밖에 다른 항로이거나 소기업이라면 문제가 있습니다.\n\n/no_think",
+    "source_text": "대기업은 일부 항로에서 자사 소속 항공기를 사용합니다만 그밖에 다른 항로이거나 소기업이라면 문제가 있습니다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "대기업의 항공 운항 정책은 엄격한 규제와 안전 기준을 준수하는 것이 핵심입니다. 특히 주요 항로에서는 자사 소속 항공기를 우선 사용하도록 의무화되어 있어, 이는 항공사의 안전과 신뢰성을 보장하기 위한 필수 조치입니다. 반면, 다른 항로이거나 소기업 항공사는 이러한 규제를 따르지 않고 자사 항공기를 단독으로 운영할 수 있어, 안전 기준을 충족하지 못하게 됩니다. 이러한 불균형은 항공사들의 신뢰도를 떨어뜨리고, 운항 안전에 심각한 위협을 초래할 수 있습니다. 따라서 항공사들은 모든 항로에서 자사 항공기를 우선적으로 사용해야 하며, 이는 국제적 기준과 안전 요구사항을 충족시키기 위한 필수 조건입니다.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 1083930740,
+    "load_duration": 122568076,
+    "prompt_eval_duration": 21972471,
+    "eval_duration": 879146218,
+    "eval_count": 151,
+    "prompt_eval_count": 93,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T04:59:53.152172228Z",
+    "message": {
+      "role": "assistant",
+      "content": "대기업의 항공 운항 정책은 엄격한 규제와 안전 기준을 준수하는 것이 핵심입니다. 특히 주요 항로에서는 자사 소속 항공기를 우선 사용하도록 의무화되어 있어, 이는 항공사의 안전과 신뢰성을 보장하기 위한 필수 조치입니다. 반면, 다른 항로이거나 소기업 항공사는 이러한 규제를 따르지 않고 자사 항공기를 단독으로 운영할 수 있어, 안전 기준을 충족하지 못하게 됩니다. 이러한 불균형은 항공사들의 신뢰도를 떨어뜨리고, 운항 안전에 심각한 위협을 초래할 수 있습니다. 따라서 항공사들은 모든 항로에서 자사 항공기를 우선적으로 사용해야 하며, 이는 국제적 기준과 안전 요구사항을 충족시키기 위한 필수 조건입니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1083930740,
+    "load_duration": 122568076,
+    "prompt_eval_count": 93,
+    "prompt_eval_duration": 21972471,
+    "eval_count": 151,
+    "eval_duration": 879146218
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789016392.0207543,
+      "nvidia_smi": {
+        "timestamp_unix": 1789016392.0207546,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 86,
+            "mem_util_pct": 69,
+            "power_w": 64.615,
+            "temp_c": 79,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789016392.031481,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 253.765625,
+        "vms_mib": 4219.10546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2340.47265625,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 253.765625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2086.70703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789016392.0533338,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320364,
+        "proc_vm_rss_kib": 259856,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789016393.1526504,
+      "nvidia_smi": {
+        "timestamp_unix": 1789016393.152651,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 18,
+            "power_w": 65.383,
+            "temp_c": 79,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789016393.1646035,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 247.6484375,
+        "vms_mib": 4219.10546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2334.35546875,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 247.6484375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2086.70703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789016393.1880138,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320364,
+        "proc_vm_rss_kib": 253592,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789016392.0678866,
+      "response_received_unix": 1789016393.1525707,
+      "first_byte_unix": 1789016393.1525154,
+      "total_wall_ms": 1084.684133529663,
+      "queue_wait_ms": 1084.6288204193115,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 04:59:53 GMT",
+        "Content-Length": "1131",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789016393.202558,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789016392.0678408
+    }
+  },
+  "wall_clock_unix": 1789016393.202558
+}

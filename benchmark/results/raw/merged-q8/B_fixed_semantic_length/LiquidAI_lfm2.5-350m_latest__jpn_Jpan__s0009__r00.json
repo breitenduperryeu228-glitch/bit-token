@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0009",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n提示されている制限速度は前後の区間に比べて明らかに低く、一般的には時速35～40マイル（56～64キロ）とされ、その制限速度に厳密に従うことが他の区間よりも重要とされます。\n\n/no_think",
+    "source_text": "提示されている制限速度は前後の区間に比べて明らかに低く、一般的には時速35～40マイル（56～64キロ）とされ、その制限速度に厳密に従うことが他の区間よりも重要とされます。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "こんにちは。提示されている制限速度は、道路の設計や交通量に応じて柔軟に調整されることが多いです。特に都市部では、渋滞が発生しやすいため、時速35～40マイルという低速区間を維持することで、安全性と快適性を両立させています。この制限速度は、車両の走行効率を最大化し、ドライバーの疲労を軽減する効果も期待されています。例えば、通勤時間帯や通学時間帯など、交通量が集中する時間帯では、より低速区間を優先的に利用することで、事故のリスクを低減できます。また、環境負荷の低減にも寄与し、持続可能な交通システムの構築に貢献しています。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2286555701,
+    "load_duration": 26591566,
+    "prompt_eval_duration": 213408793,
+    "eval_duration": 2022945076,
+    "eval_count": 174,
+    "prompt_eval_count": 122,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:06:03.99624345Z",
+    "message": {
+      "role": "assistant",
+      "content": "こんにちは。提示されている制限速度は、道路の設計や交通量に応じて柔軟に調整されることが多いです。特に都市部では、渋滞が発生しやすいため、時速35～40マイルという低速区間を維持することで、安全性と快適性を両立させています。この制限速度は、車両の走行効率を最大化し、ドライバーの疲労を軽減する効果も期待されています。例えば、通勤時間帯や通学時間帯など、交通量が集中する時間帯では、より低速区間を優先的に利用することで、事故のリスクを低減できます。また、環境負荷の低減にも寄与し、持続可能な交通システムの構築に貢献しています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2286555701,
+    "load_duration": 26591566,
+    "prompt_eval_count": 122,
+    "prompt_eval_duration": 213408793,
+    "eval_count": 174,
+    "eval_duration": 2022945076
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788941161.6738756,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941161.673876,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.547,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941161.6873531,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.0078125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 956259,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 984.38671875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.0078125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.37890625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941161.7010565,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208904,
+        "proc_threads": 40,
+        "proc_vol_ctx": 948948,
+        "proc_invol_ctx": 7311,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788941163.9967923,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941163.996793,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.594,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941164.0110407,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.9765625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 956260,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 983.85546875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.9765625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 779.87890625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941164.0237896,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208872,
+        "proc_threads": 40,
+        "proc_vol_ctx": 948949,
+        "proc_invol_ctx": 7311,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788941161.709222,
+      "response_received_unix": 1788941163.9967208,
+      "first_byte_unix": 1788941163.996661,
+      "total_wall_ms": 2287.498712539673,
+      "queue_wait_ms": 2287.4388694763184,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:06:03 GMT",
+        "Content-Length": "1090",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788941164.03129,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788941161.7091725
+    }
+  },
+  "wall_clock_unix": 1788941164.03129
+}

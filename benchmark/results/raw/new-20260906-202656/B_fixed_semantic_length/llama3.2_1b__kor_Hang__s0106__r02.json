@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "kor_Hang",
+  "sample_id": "s0106",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n높은 고도나 산길을 넘어 운전하려고 하면 눈, 빙판 또는 영하의 기온 등이 생길 가능성에 대해 고려해야 한다.\n\n/no_think",
+    "source_text": "높은 고도나 산길을 넘어 운전하려고 하면 눈, 빙판 또는 영하의 기온 등이 생길 가능성에 대해 고려해야 한다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "고도 1,000m 이상의 산길을 운전하거나 높은 고도에 도달할 때는 눈, 빙판 또는 영하의 기온 등이 생길 가능성이 매우 높다. 이러한 환경에서 운전하는 것이 nguy hiểm하고, 인명피해를 유발할 수 있다.\n\n기상 조건과 산지의 특성 등 다양한 요인들이 influencing 하이브리드 운전에 대한 rủi ro스를 증가시킨다. 따라서, 높은 고도나 산길을 넘어 운전하려고 하면 눈, 빙판 또는 영하의 기온 등이 생길 가능성을 고려해야 한다.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 943423767,
+    "load_duration": 73016317,
+    "prompt_eval_duration": 6720416,
+    "eval_duration": 809224033,
+    "eval_count": 140,
+    "prompt_eval_count": 118,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:51:44.461451442Z",
+    "message": {
+      "role": "assistant",
+      "content": "고도 1,000m 이상의 산길을 운전하거나 높은 고도에 도달할 때는 눈, 빙판 또는 영하의 기온 등이 생길 가능성이 매우 높다. 이러한 환경에서 운전하는 것이 nguy hiểm하고, 인명피해를 유발할 수 있다.\n\n기상 조건과 산지의 특성 등 다양한 요인들이 influencing 하이브리드 운전에 대한 rủi ro스를 증가시킨다. 따라서, 높은 고도나 산길을 넘어 운전하려고 하면 눈, 빙판 또는 영하의 기온 등이 생길 가능성을 고려해야 한다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 943423767,
+    "load_duration": 73016317,
+    "prompt_eval_count": 118,
+    "prompt_eval_duration": 6720416,
+    "eval_count": 140,
+    "eval_duration": 809224033
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789026703.4713483,
+      "nvidia_smi": {
+        "timestamp_unix": 1789026703.4713485,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 73.633,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789026703.4819214,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 259.09765625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1236.77734375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 259.09765625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 977.6796875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789026703.5031896,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265316,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789026704.4618313,
+      "nvidia_smi": {
+        "timestamp_unix": 1789026704.461832,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 73.7,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789026704.4727757,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.76171875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1236.44140625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.76171875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 977.6796875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789026704.4968793,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264972,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789026703.517692,
+      "response_received_unix": 1789026704.4617732,
+      "first_byte_unix": 1789026704.4617348,
+      "total_wall_ms": 944.0810680389404,
+      "queue_wait_ms": 944.0426826477051,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:51:44 GMT",
+        "Content-Length": "850",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789026704.5117002,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789026703.517643
+    }
+  },
+  "wall_clock_unix": 1789026704.5117002
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0046",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章を日本語で続けて、短い段落で書いてください。\n\n2001年9月11日以降の時代になると、セキュリティチェックポイントでの検査もさらに干渉型になりました。\n\n/no_think",
+    "source_text": "2001年9月11日以降の時代になると、セキュリティチェックポイントでの検査もさらに干渉型になりました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "2001年9月11日の大恐慌以降、セキュリティチェックポイントの検査はより厳格化され、技術の進化に伴い、従来の物理的検知だけでなく、デジタル技術やAIを活用した高度な監視システムへと移行しました。この変化は、サイバー攻撃の高度化やデータ漏洩のリスク増大を背景に、組織の安全性をより多層的に確保する必要性を強調しています。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1408648012,
+    "load_duration": 26124020,
+    "prompt_eval_duration": 162339852,
+    "eval_duration": 1206677892,
+    "eval_count": 106,
+    "prompt_eval_count": 70,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-06T14:48:42.724461117Z",
+    "message": {
+      "role": "assistant",
+      "content": "2001年9月11日の大恐慌以降、セキュリティチェックポイントの検査はより厳格化され、技術の進化に伴い、従来の物理的検知だけでなく、デジタル技術やAIを活用した高度な監視システムへと移行しました。この変化は、サイバー攻撃の高度化やデータ漏洩のリスク増大を背景に、組織の安全性をより多層的に確保する必要性を強調しています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1408648012,
+    "load_duration": 26124020,
+    "prompt_eval_count": 70,
+    "prompt_eval_duration": 162339852,
+    "eval_count": 106,
+    "eval_duration": 1206677892
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788706121.2756557,
+      "nvidia_smi": {
+        "timestamp_unix": 1788706121.275656,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.4375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 25,
+            "mem_util_pct": 14,
+            "power_w": 12.644,
+            "temp_c": 52,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788706121.2901685,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 585.88671875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 315683,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1360.01953125,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 585.88671875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 774.1328125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788706121.305554,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 599948,
+        "proc_threads": 40,
+        "proc_vol_ctx": 314773,
+        "proc_invol_ctx": 910,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788706122.7250078,
+      "nvidia_smi": {
+        "timestamp_unix": 1788706122.7250078,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.4375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 26,
+            "mem_util_pct": 14,
+            "power_w": 12.613,
+            "temp_c": 52,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788706122.7400017,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 586.11328125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 315686,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1359.55859375,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 586.11328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 773.4453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788706122.7585988,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 600180,
+        "proc_threads": 40,
+        "proc_vol_ctx": 314776,
+        "proc_invol_ctx": 910,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788706121.3153934,
+      "response_received_unix": 1788706122.7249396,
+      "first_byte_unix": 1788706122.724877,
+      "total_wall_ms": 1409.546136856079,
+      "queue_wait_ms": 1409.4836711883545,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sun, 06 Sep 2026 14:48:42 GMT",
+        "Content-Length": "777",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788706122.7682002,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788706121.3153443
+    }
+  },
+  "wall_clock_unix": 1788706122.7682002
+}

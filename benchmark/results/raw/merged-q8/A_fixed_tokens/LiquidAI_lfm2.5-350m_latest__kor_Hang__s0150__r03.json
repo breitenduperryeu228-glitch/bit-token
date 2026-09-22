@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0150",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장을 한국어로 이어서 짧은 단락으로 작성해 주세요.\n\n미터법 사용, 절대주의 체제에서 공화주의로의 전환, 민족주의와 국가는 한 통치자가 아닌 여러 사람의 소유라는 생각의 발생과 같이, 사회 및 정치적인 면에 많은 영향들을 미쳤습니다.\n\n/no_think",
+    "source_text": "미터법 사용, 절대주의 체제에서 공화주의로의 전환, 민족주의와 국가는 한 통치자가 아닌 여러 사람의 소유라는 생각의 발생과 같이, 사회 및 정치적인 면에 많은 영향들을 미쳤습니다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "미터법 사용, 절대주의 체제에서 공화주의로의 전환은 사회와 정치적 변화를 촉발시켜 민족주의와 국가의 소유권을 인정하는 새로운 정치적 틀을 만들어냈습니다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 982519433,
+    "load_duration": 23644056,
+    "prompt_eval_duration": 249403084,
+    "eval_duration": 696959518,
+    "eval_count": 60,
+    "prompt_eval_count": 107,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-06T15:10:56.302702986Z",
+    "message": {
+      "role": "assistant",
+      "content": "미터법 사용, 절대주의 체제에서 공화주의로의 전환은 사회와 정치적 변화를 촉발시켜 민족주의와 국가의 소유권을 인정하는 새로운 정치적 틀을 만들어냈습니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 982519433,
+    "load_duration": 23644056,
+    "prompt_eval_count": 107,
+    "prompt_eval_duration": 249403084,
+    "eval_count": 60,
+    "eval_duration": 696959518
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788707455.282757,
+      "nvidia_smi": {
+        "timestamp_unix": 1788707455.2827573,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 14,
+            "power_w": 12.702,
+            "temp_c": 54,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788707455.2966938,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 587.484375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 329898,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1368.421875,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 587.484375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 780.9375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788707455.3108068,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 601584,
+        "proc_threads": 40,
+        "proc_vol_ctx": 328837,
+        "proc_invol_ctx": 1061,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788707456.3031545,
+      "nvidia_smi": {
+        "timestamp_unix": 1788707456.3031547,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 14,
+            "power_w": 12.707,
+            "temp_c": 54,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788707456.3208857,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 589.7578125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 329899,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1371.1328125,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 589.7578125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 781.375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788707456.3360903,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 603912,
+        "proc_threads": 40,
+        "proc_vol_ctx": 328838,
+        "proc_invol_ctx": 1061,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788707455.3197966,
+      "response_received_unix": 1788707456.303061,
+      "first_byte_unix": 1788707456.3029919,
+      "total_wall_ms": 983.2644462585449,
+      "queue_wait_ms": 983.1953048706055,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sun, 06 Sep 2026 15:10:56 GMT",
+        "Content-Length": "530",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788707456.3460135,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788707455.319748
+    }
+  },
+  "wall_clock_unix": 1788707456.3460135
+}

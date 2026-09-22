@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0145",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nしかし、これらの計画はほぼ一夜にして過去のものとなりました。ソビエト連邦赤軍の80万人以上の兵士が、リガ講和条約、ソビエト・ポーランド不可侵条約、その他の国際条約（二国間および多国間）に違反してポーランド東部地域を侵攻した後、ベラルーシ戦線とウクライナ戦線を形成したのです。\n\n/no_think",
+    "source_text": "しかし、これらの計画はほぼ一夜にして過去のものとなりました。ソビエト連邦赤軍の80万人以上の兵士が、リガ講和条約、ソビエト・ポーランド不可侵条約、その他の国際条約（二国間および多国間）に違反してポーランド東部地域を侵攻した後、ベラルーシ戦線とウクライナ戦線を形成したのです。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "ベラルーシとウクライナの戦争は、冷戦の終結後も長く続いた。ソビエト連邦の崩壊と東欧の自由化に伴い、ベラルーシはソ連の支配下に置かれ、ウクライナは独立を宣言した。両国はそれぞれの国益を追求し、戦争の影響で多くの市民が犠牲となった。ベラルーシの戦線はソ連軍の進撃を阻止し、ウクライナの抵抗を支援したが、両国の戦争は長期にわたる。冷戦の終結後も両国は互いに影響を与え合い、戦争の影響で地域の安定が揺らぐ中、両国の関係は依然として緊張していた。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2491051004,
+    "load_duration": 21514196,
+    "prompt_eval_duration": 290021092,
+    "eval_duration": 2157489347,
+    "eval_count": 186,
+    "prompt_eval_count": 164,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:26:44.650468684Z",
+    "message": {
+      "role": "assistant",
+      "content": "ベラルーシとウクライナの戦争は、冷戦の終結後も長く続いた。ソビエト連邦の崩壊と東欧の自由化に伴い、ベラルーシはソ連の支配下に置かれ、ウクライナは独立を宣言した。両国はそれぞれの国益を追求し、戦争の影響で多くの市民が犠牲となった。ベラルーシの戦線はソ連軍の進撃を阻止し、ウクライナの抵抗を支援したが、両国の戦争は長期にわたる。冷戦の終結後も両国は互いに影響を与え合い、戦争の影響で地域の安定が揺らぐ中、両国の関係は依然として緊張していた。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2491051004,
+    "load_duration": 21514196,
+    "prompt_eval_count": 164,
+    "prompt_eval_duration": 290021092,
+    "eval_count": 186,
+    "eval_duration": 2157489347
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788942402.123373,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942402.1233733,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 38,
+            "mem_util_pct": 14,
+            "power_w": 12.553,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942402.1368515,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 199.53515625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 969297,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 987.37890625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 199.53515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.84375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942402.1502318,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 204324,
+        "proc_threads": 40,
+        "proc_vol_ctx": 961900,
+        "proc_invol_ctx": 7397,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788942404.651089,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942404.6510892,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 31,
+            "mem_util_pct": 14,
+            "power_w": 12.548,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942404.6651385,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 199.8515625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 969643,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 986.90625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 199.8515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.0546875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942404.678985,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 204648,
+        "proc_threads": 40,
+        "proc_vol_ctx": 962246,
+        "proc_invol_ctx": 7397,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788942402.158988,
+      "response_received_unix": 1788942404.6510243,
+      "first_byte_unix": 1788942404.6509485,
+      "total_wall_ms": 2492.0363426208496,
+      "queue_wait_ms": 2491.9605255126953,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:26:44 GMT",
+        "Content-Length": "970",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788942404.6877515,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788942402.158941
+    }
+  },
+  "wall_clock_unix": 1788942404.6877515
+}

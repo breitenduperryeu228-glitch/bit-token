@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "kor_Hang",
+  "sample_id": "s0103",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n지구의 강에서 바다로 쏟아져 들어가는 물의 20%는 아마존에서 흘러나온다.\n\n/no_think",
+    "source_text": "지구의 강에서 바다로 쏟아져 들어가는 물의 20%는 아마존에서 흘러나온다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "지구의 강에서 바다로 쏟아져 들어가는 물의 20%는 아마존에서 흘러나온다. 이 비율은 지구 온난화 과정에서 강우량이 급증하는 데 영향을 미친다. 이 물은 수계로 흘러나갈 수 있지만, 일부는 대기 중으로 흡수되거나, 다른 강과 만나 다시 강으로 흘러나갈 수 있다. 이러한 과정은 기후 변화의 주요 원인 중 하나로 작용한다. 또한, 이 물의 이동은 생태계와 인간 사회에 깊은 영향을 미친다.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 831911660,
+    "load_duration": 113996027,
+    "prompt_eval_duration": 21184577,
+    "eval_duration": 652277255,
+    "eval_count": 112,
+    "prompt_eval_count": 92,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T05:22:39.761618842Z",
+    "message": {
+      "role": "assistant",
+      "content": "지구의 강에서 바다로 쏟아져 들어가는 물의 20%는 아마존에서 흘러나온다. 이 비율은 지구 온난화 과정에서 강우량이 급증하는 데 영향을 미친다. 이 물은 수계로 흘러나갈 수 있지만, 일부는 대기 중으로 흡수되거나, 다른 강과 만나 다시 강으로 흘러나갈 수 있다. 이러한 과정은 기후 변화의 주요 원인 중 하나로 작용한다. 또한, 이 물의 이동은 생태계와 인간 사회에 깊은 영향을 미친다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 831911660,
+    "load_duration": 113996027,
+    "prompt_eval_count": 92,
+    "prompt_eval_duration": 21184577,
+    "eval_count": 112,
+    "eval_duration": 652277255
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789017758.8822105,
+      "nvidia_smi": {
+        "timestamp_unix": 1789017758.8822107,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 86,
+            "mem_util_pct": 68,
+            "power_w": 63.049,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789017758.892839,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 265.41796875,
+        "vms_mib": 4219.10546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2353.6953125,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 265.41796875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2088.27734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789017758.9149783,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320364,
+        "proc_vm_rss_kib": 271788,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789017759.7620413,
+      "nvidia_smi": {
+        "timestamp_unix": 1789017759.7620416,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 86,
+            "mem_util_pct": 68,
+            "power_w": 63.316,
+            "temp_c": 78,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789017759.7738068,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 249.07421875,
+        "vms_mib": 4219.10546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2337.3515625,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 249.07421875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2088.27734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789017759.798659,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320364,
+        "proc_vm_rss_kib": 255052,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789017758.9293375,
+      "response_received_unix": 1789017759.7619755,
+      "first_byte_unix": 1789017759.7619164,
+      "total_wall_ms": 832.6380252838135,
+      "queue_wait_ms": 832.5788974761963,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 05:22:39 GMT",
+        "Content-Length": "814",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789017759.8131022,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789017758.929289
+    }
+  },
+  "wall_clock_unix": 1789017759.8131022
+}

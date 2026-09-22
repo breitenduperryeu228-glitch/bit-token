@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "qwen3.5:0.8b",
+  "language": "kor_Hang",
+  "sample_id": "s0058",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장을 한국어로 이어서 짧은 단락으로 작성해 주세요.\n\n불꽃놀이가 시작된 지 한 5분쯤 지났을 때 갑자기 바람이 불기 시작했어요. 그리고 1분쯤 뒤에는 풍속이 70km/h에 달했죠. 그다음엔 비가 왔고, 근데 너무 큰 빗방울이 세차게 떨어져서 마치 바늘처럼 피부를 때렸고 이후에는 우박까지 떨어졌어요. 사람들은 막 패닉에 빠져서 소리를 지르고 여기저기 뛰어다니고 난리였죠.\n\n/no_think",
+    "source_text": "불꽃놀이가 시작된 지 한 5분쯤 지났을 때 갑자기 바람이 불기 시작했어요. 그리고 1분쯤 뒤에는 풍속이 70km/h에 달했죠. 그다음엔 비가 왔고, 근데 너무 큰 빗방울이 세차게 떨어져서 마치 바늘처럼 피부를 때렸고 이후에는 우박까지 떨어졌어요. 사람들은 막 패닉에 빠져서 소리를 지르고 여기저기 뛰어다니고 난리였죠."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "불꽃놀이가 시작된 후 한 분쯤 지나서 갑자기 바람이 불어났습니다. 그 다음엔 풍속이 70km/h로 급격히 높아졌고, 이어 비가 내리며 빗방울이 바늘처럼 피부를 때렸고, 우박까지 쏟아져 내려오는 가운데 사람들은 막 패닉에 빠지고 소리를 지르고 난리였습니다.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 4248428128,
+    "load_duration": 111114391,
+    "prompt_eval_duration": 902176820,
+    "eval_duration": 3200670434,
+    "eval_count": 82,
+    "prompt_eval_count": 148,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-06T20:39:22.993704261Z",
+    "message": {
+      "role": "assistant",
+      "content": "불꽃놀이가 시작된 후 한 분쯤 지나서 갑자기 바람이 불어났습니다. 그 다음엔 풍속이 70km/h로 급격히 높아졌고, 이어 비가 내리며 빗방울이 바늘처럼 피부를 때렸고, 우박까지 쏟아져 내려오는 가운데 사람들은 막 패닉에 빠지고 소리를 지르고 난리였습니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 4248428128,
+    "load_duration": 111114391,
+    "prompt_eval_count": 148,
+    "prompt_eval_duration": 902176820,
+    "eval_count": 82,
+    "eval_duration": 3200670434
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788727158.7062867,
+      "nvidia_smi": {
+        "timestamp_unix": 1788727158.7062871,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 26,
+            "mem_util_pct": 14,
+            "power_w": 12.685,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788727158.7198956,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 384.15234375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 433944,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2917.53125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 384.15234375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3466094,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 34623",
+            "rss_mib": 2533.37890625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788727158.735872,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 393372,
+        "proc_threads": 40,
+        "proc_vol_ctx": 431287,
+        "proc_invol_ctx": 2657,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788727162.9941854,
+      "nvidia_smi": {
+        "timestamp_unix": 1788727162.994186,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.3125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 24,
+            "mem_util_pct": 14,
+            "power_w": 12.644,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788727163.0106697,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 393.62890625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 433945,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2927.2265625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 393.62890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3466094,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 34623",
+            "rss_mib": 2533.59765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788727163.0397804,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 403076,
+        "proc_threads": 40,
+        "proc_vol_ctx": 431288,
+        "proc_invol_ctx": 2657,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788727158.7449255,
+      "response_received_unix": 1788727162.994137,
+      "first_byte_unix": 1788727162.994077,
+      "total_wall_ms": 4249.211549758911,
+      "queue_wait_ms": 4249.1514682769775,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sun, 06 Sep 2026 20:39:22 GMT",
+        "Content-Length": "643",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788727163.0505238,
+      "vram_delta_mib": -0.0625
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788727158.7448778
+    }
+  },
+  "wall_clock_unix": 1788727163.0505238
+}

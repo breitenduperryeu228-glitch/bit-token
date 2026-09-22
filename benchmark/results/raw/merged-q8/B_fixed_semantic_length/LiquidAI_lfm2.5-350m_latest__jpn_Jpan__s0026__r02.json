@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0026",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n全国から集まった有名な歌手たちがシュリーシャムの足元にバジャン（聖歌）を捧げました。\n\n/no_think",
+    "source_text": "全国から集まった有名な歌手たちがシュリーシャムの足元にバジャン（聖歌）を捧げました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "全国から集まった有名な歌手たちがシュリーシャムの足元にバジャン（聖歌）を捧げたのは、伝統的な儀式の深さと、音楽が持つ精神的な重みを象徴する行為だった。シュリーシャムは、古くから日本文化の精神を守る重要な役割を担っており、その足元にバジャンが捧げられることは、単なる礼儀を超えた、深い敬意と感謝の表れだった。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1616267314,
+    "load_duration": 25411121,
+    "prompt_eval_duration": 198892671,
+    "eval_duration": 1378522757,
+    "eval_count": 120,
+    "prompt_eval_count": 97,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:08:57.786077404Z",
+    "message": {
+      "role": "assistant",
+      "content": "全国から集まった有名な歌手たちがシュリーシャムの足元にバジャン（聖歌）を捧げたのは、伝統的な儀式の深さと、音楽が持つ精神的な重みを象徴する行為だった。シュリーシャムは、古くから日本文化の精神を守る重要な役割を担っており、その足元にバジャンが捧げられることは、単なる礼儀を超えた、深い敬意と感謝の表れだった。\n\n"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1616267314,
+    "load_duration": 25411121,
+    "prompt_eval_count": 97,
+    "prompt_eval_duration": 198892671,
+    "eval_count": 120,
+    "eval_duration": 1378522757
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788941336.1335328,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941336.1335332,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.573,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941336.1473336,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 201.74609375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 958081,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 982.56640625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 201.74609375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.8203125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941336.1608405,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 206588,
+        "proc_threads": 40,
+        "proc_vol_ctx": 950756,
+        "proc_invol_ctx": 7325,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788941337.7866933,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941337.7866936,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 31,
+            "mem_util_pct": 14,
+            "power_w": 12.569,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941337.8012702,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.8203125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 958315,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 982.890625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.8203125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.0703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941337.8139215,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207688,
+        "proc_threads": 40,
+        "proc_vol_ctx": 950988,
+        "proc_invol_ctx": 7327,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788941336.1694021,
+      "response_received_unix": 1788941337.7866125,
+      "first_byte_unix": 1788941337.7865598,
+      "total_wall_ms": 1617.2103881835938,
+      "queue_wait_ms": 1617.1576976776123,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:08:57 GMT",
+        "Content-Length": "778",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788941337.8227355,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788941336.1693578
+    }
+  },
+  "wall_clock_unix": 1788941337.8227355
+}

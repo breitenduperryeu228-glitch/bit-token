@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0111",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n故障したiPodが発熱する問題が約60件も報告されており、合計6件の火災が発生し、4人が軽度の火傷を負いました。\n\n/no_think",
+    "source_text": "故障したiPodが発熱する問題が約60件も報告されており、合計6件の火災が発生し、4人が軽度の火傷を負いました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "2024 年 1 月には、iPhone 15 Pro のバッテリーが故障したケースが約 60 件見つかり、その中で 6 件の火災が発生しました。4 人が軽度の火傷を負い、医療機関へ送迎されました。\n\nこの問題は、バッテリーの内部構造が異常に敏感なため、充電時に熱が発生しやすく、特に長時間充電したケースで顕著です。\n\n多くのユーザーが、充電器の温度計を装着して充電を監視するようになり、バッテリーの温度が上昇するのを防いでいます。\n\nしかし、この問題が解決するまでには、バッテリーの設計が改善され、充電時の熱管理がより効率的に進める必要があります。\n\nまた、充電器の設計も、バッテリーの温度をより安全に制御する技術に投資すべきでしょう。\n\nこの問題は、バッテリーの耐久性や安全性を高めるために、製造メーカーやメーカーの責任を問われるべきです。\n\n今後の改善は、バッテリーの設計や製造プロセスの革新によって実現されるでしょう。",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 1503676709,
+    "load_duration": 110168305,
+    "prompt_eval_duration": 21553987,
+    "eval_duration": 1292696703,
+    "eval_count": 222,
+    "prompt_eval_count": 98,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T03:30:13.803978128Z",
+    "message": {
+      "role": "assistant",
+      "content": "2024 年 1 月には、iPhone 15 Pro のバッテリーが故障したケースが約 60 件見つかり、その中で 6 件の火災が発生しました。4 人が軽度の火傷を負い、医療機関へ送迎されました。\n\nこの問題は、バッテリーの内部構造が異常に敏感なため、充電時に熱が発生しやすく、特に長時間充電したケースで顕著です。\n\n多くのユーザーが、充電器の温度計を装着して充電を監視するようになり、バッテリーの温度が上昇するのを防いでいます。\n\nしかし、この問題が解決するまでには、バッテリーの設計が改善され、充電時の熱管理がより効率的に進める必要があります。\n\nまた、充電器の設計も、バッテリーの温度をより安全に制御する技術に投資すべきでしょう。\n\nこの問題は、バッテリーの耐久性や安全性を高めるために、製造メーカーやメーカーの責任を問われるべきです。\n\n今後の改善は、バッテリーの設計や製造プロセスの革新によって実現されるでしょう。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1503676709,
+    "load_duration": 110168305,
+    "prompt_eval_count": 98,
+    "prompt_eval_duration": 21553987,
+    "eval_count": 222,
+    "eval_duration": 1292696703
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789011012.2558465,
+      "nvidia_smi": {
+        "timestamp_unix": 1789011012.2558467,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 89,
+            "mem_util_pct": 71,
+            "power_w": 71.627,
+            "temp_c": 74,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789011012.2661653,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 264.33203125,
+        "vms_mib": 4218.85546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2335.00390625,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 264.33203125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2070.671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789011012.2862926,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320108,
+        "proc_vm_rss_kib": 270676,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789011013.8044395,
+      "nvidia_smi": {
+        "timestamp_unix": 1789011013.80444,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 89,
+            "mem_util_pct": 71,
+            "power_w": 71.585,
+            "temp_c": 74,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789011013.8161016,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 246.640625,
+        "vms_mib": 4218.85546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2317.3125,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 246.640625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2070.671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789011013.8383718,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320108,
+        "proc_vm_rss_kib": 252560,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789011012.2999885,
+      "response_received_unix": 1789011013.8043606,
+      "first_byte_unix": 1789011013.8043056,
+      "total_wall_ms": 1504.3721199035645,
+      "queue_wait_ms": 1504.317045211792,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 03:30:13 GMT",
+        "Content-Length": "1462",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789011013.8521879,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789011012.2999508
+    }
+  },
+  "wall_clock_unix": 1789011013.8521879
+}

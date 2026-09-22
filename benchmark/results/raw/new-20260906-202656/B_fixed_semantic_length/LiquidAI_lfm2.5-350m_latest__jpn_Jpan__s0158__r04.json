@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0158",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nスキーは旅の主なアクティビティであり、「スキー狂」と呼ばれる多くの愛好家たちが、特定の場所でのスキーを中心とした休暇を計画しています。\n\n/no_think",
+    "source_text": "スキーは旅の主なアクティビティであり、「スキー狂」と呼ばれる多くの愛好家たちが、特定の場所でのスキーを中心とした休暇を計画しています。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "スキーは旅の主なアクティビティであり、「スキー狂」と呼ばれる多くの愛好家たちが、雪の美しさと挑戦を楽しむために、特定の場所での休暇を計画しています。彼らは、雪の景色を美しく眺めながら、雪上でのスキー体験を楽しんだり、雪の風景を写真に収めたりするなど、多様な楽しみ方を追求しています。特に、冬の季節に訪れることで、静かな時間とともに自然の儚さを体感する喜びを感じています。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1850884583,
+    "load_duration": 23310939,
+    "prompt_eval_duration": 255158503,
+    "eval_duration": 1553394841,
+    "eval_count": 131,
+    "prompt_eval_count": 107,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:28:54.764025283Z",
+    "message": {
+      "role": "assistant",
+      "content": "スキーは旅の主なアクティビティであり、「スキー狂」と呼ばれる多くの愛好家たちが、雪の美しさと挑戦を楽しむために、特定の場所での休暇を計画しています。彼らは、雪の景色を美しく眺めながら、雪上でのスキー体験を楽しんだり、雪の風景を写真に収めたりするなど、多様な楽しみ方を追求しています。特に、冬の季節に訪れることで、静かな時間とともに自然の儚さを体感する喜びを感じています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1850884583,
+    "load_duration": 23310939,
+    "prompt_eval_count": 107,
+    "prompt_eval_duration": 255158503,
+    "eval_count": 131,
+    "eval_duration": 1553394841
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788942532.8747437,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942532.8747444,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 14,
+            "power_w": 12.443,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942532.8890774,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.70703125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 970654,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 990.05078125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.70703125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.34375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942532.9038203,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207572,
+        "proc_threads": 40,
+        "proc_vol_ctx": 963250,
+        "proc_invol_ctx": 7404,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788942534.764411,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942534.7644114,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.454,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942534.7835188,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 201.96875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 970655,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 989.0,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 201.96875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.03125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942534.796977,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 206816,
+        "proc_threads": 40,
+        "proc_vol_ctx": 963251,
+        "proc_invol_ctx": 7404,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788942532.912748,
+      "response_received_unix": 1788942534.764329,
+      "first_byte_unix": 1788942534.7642825,
+      "total_wall_ms": 1851.5808582305908,
+      "queue_wait_ms": 1851.534366607666,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:28:54 GMT",
+        "Content-Length": "871",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788942534.804577,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788942532.9127033
+    }
+  },
+  "wall_clock_unix": 1788942534.804577
+}

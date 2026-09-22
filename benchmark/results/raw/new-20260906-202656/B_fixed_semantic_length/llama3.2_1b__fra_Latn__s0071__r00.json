@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "fra_Latn",
+  "sample_id": "s0071",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Veuillez écrire environ 256 caractères de texte en français sur le sujet suggéré par la phrase suivante. Pas de salutations ni d'explications, juste le paragraphe :\n\nIl existe différentes méthodes de purification de l'eau, dont certaines sont plus efficaces contre des menaces spécifiques.\n\n/no_think",
+    "source_text": "Il existe différentes méthodes de purification de l'eau, dont certaines sont plus efficaces contre des menaces spécifiques."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "La purification de l'eau est un processus crucial pour garantir la santé et la sécurité alimentaire. Il existe plusieurs méthodes de purification, chacune avec ses propres avantages et inconvénients. La filtration active utilise des particules fines pour séparer les eaux purees des impuretés. Les filtraires biologiques, quant à elles, utilisent des micro-organismes naturels pour détruire les bactéries et les virus. Le traitement oxydant est une méthode qui utilise l'oxygène pour éliminer les contaminants organiques. La désinfection chimique est une méthode qui utilise des produits chimiques spécifiques pour effacer les bactéries et les virus. Enfin, la décontamination est une méthode qui consiste à éliminer complètement les contaminants pour garantir que l'eau est propre et sûre. Chacune de ces méthodes a ses avantages et ses inconvénients, et il est important de choisir celle qui convient le mieux aux besoins spécifiques du site ou de la région.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1530718051,
+    "load_duration": 74015505,
+    "prompt_eval_duration": 8563484,
+    "eval_duration": 1349898729,
+    "eval_count": 232,
+    "prompt_eval_count": 102,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T08:17:22.648760511Z",
+    "message": {
+      "role": "assistant",
+      "content": "La purification de l'eau est un processus crucial pour garantir la santé et la sécurité alimentaire. Il existe plusieurs méthodes de purification, chacune avec ses propres avantages et inconvénients. La filtration active utilise des particules fines pour séparer les eaux purees des impuretés. Les filtraires biologiques, quant à elles, utilisent des micro-organismes naturels pour détruire les bactéries et les virus. Le traitement oxydant est une méthode qui utilise l'oxygène pour éliminer les contaminants organiques. La désinfection chimique est une méthode qui utilise des produits chimiques spécifiques pour effacer les bactéries et les virus. Enfin, la décontamination est une méthode qui consiste à éliminer complètement les contaminants pour garantir que l'eau est propre et sûre. Chacune de ces méthodes a ses avantages et ses inconvénients, et il est important de choisir celle qui convient le mieux aux besoins spécifiques du site ou de la région."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1530718051,
+    "load_duration": 74015505,
+    "prompt_eval_count": 102,
+    "prompt_eval_duration": 8563484,
+    "eval_count": 232,
+    "eval_duration": 1349898729
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789028241.0715427,
+      "nvidia_smi": {
+        "timestamp_unix": 1789028241.071543,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 58,
+            "mem_util_pct": 65,
+            "power_w": 70.863,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789028241.0820024,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.73046875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1293.8203125,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.73046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1035.08984375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789028241.1032624,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264940,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789028242.6491585,
+      "nvidia_smi": {
+        "timestamp_unix": 1789028242.649159,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 82.489,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789028242.659961,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 259.01171875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1294.1015625,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 259.01171875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1035.08984375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789028242.684307,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265228,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789028241.1177115,
+      "response_received_unix": 1789028242.6490903,
+      "first_byte_unix": 1789028242.6490376,
+      "total_wall_ms": 1531.3787460327148,
+      "queue_wait_ms": 1531.3260555267334,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 08:17:22 GMT",
+        "Content-Length": "1285",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789028242.6996949,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789028241.1176667
+    }
+  },
+  "wall_clock_unix": 1789028242.6996949
+}

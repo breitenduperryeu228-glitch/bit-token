@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "zho_Hans",
+  "sample_id": "s0158",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n滑雪是许多滑雪爱好者的主要旅游活动，这些爱好者有时也被称为“滑雪狂人”，他们计划整个假期都在某个地点滑雪。\n\n/no_think",
+    "source_text": "滑雪是许多滑雪爱好者的主要旅游活动，这些爱好者有时也被称为“滑雪狂人”，他们计划整个假期都在某个地点滑雪。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "一些人认为滑雪是一种极端运动，需要强大的身体和心理 endurance。然而，他们却认为这项运动可以带来无限的乐趣和成就感。他们会选择最适合自己的滑雪场地，包括山顶、谷底或湖边的滑雪线。一些人还会为自己创造个人滑雪计划，包括每周一到四个小时的滑雪时间。这些计划通常以目标达成的速度和距离为衡量，而不是时间。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 770334222,
+    "load_duration": 75315400,
+    "prompt_eval_duration": 6649509,
+    "eval_duration": 634597971,
+    "eval_count": 110,
+    "prompt_eval_count": 114,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:04:03.0649897Z",
+    "message": {
+      "role": "assistant",
+      "content": "一些人认为滑雪是一种极端运动，需要强大的身体和心理 endurance。然而，他们却认为这项运动可以带来无限的乐趣和成就感。他们会选择最适合自己的滑雪场地，包括山顶、谷底或湖边的滑雪线。一些人还会为自己创造个人滑雪计划，包括每周一到四个小时的滑雪时间。这些计划通常以目标达成的速度和距离为衡量，而不是时间。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 770334222,
+    "load_duration": 75315400,
+    "prompt_eval_count": 114,
+    "prompt_eval_duration": 6649509,
+    "eval_count": 110,
+    "eval_duration": 634597971
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789023842.2476873,
+      "nvidia_smi": {
+        "timestamp_unix": 1789023842.2476876,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 91,
+            "mem_util_pct": 100,
+            "power_w": 73.209,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789023842.2580717,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.25390625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.265625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.25390625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 972.01171875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789023842.2799017,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264452,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789023843.0653346,
+      "nvidia_smi": {
+        "timestamp_unix": 1789023843.065335,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 72.95,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789023843.0762017,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.60546875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.60546875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 972.01953125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789023843.099942,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264812,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789023842.2943525,
+      "response_received_unix": 1789023843.065281,
+      "first_byte_unix": 1789023843.0652382,
+      "total_wall_ms": 770.9283828735352,
+      "queue_wait_ms": 770.885705947876,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:04:03 GMT",
+        "Content-Length": "733",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789023843.1150582,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789023842.2943022
+    }
+  },
+  "wall_clock_unix": 1789023843.1150582
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0012",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nヤギの家畜化は、約1万年前に始まり、その中心はイランのザグロス山脈西部であったとされています。\n\n/no_think",
+    "source_text": "ヤギの家畜化は、約1万年前に始まり、その中心はイランのザグロス山脈西部であったとされています。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "ヤギの家畜化は、約1万年前にイランのザグロス山脈西部で始まったとされ、現代のヤギの祖先と考えられています。この過程では、自然選択が重要な役割を果たし、環境に適応した形態が次々と生まれました。特に、乾燥地帯での生存に適した体型や、効率的な採餌行動が発達したことが注目されています。家畜化は単なる技術の進化ではなく、生態系との共生を模索した結果であり、現代のヤギが持つ多様な性質を形作る基盤となりました。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2015989746,
+    "load_duration": 22881705,
+    "prompt_eval_duration": 187097834,
+    "eval_duration": 1787402988,
+    "eval_count": 154,
+    "prompt_eval_count": 101,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:06:44.888421424Z",
+    "message": {
+      "role": "assistant",
+      "content": "ヤギの家畜化は、約1万年前にイランのザグロス山脈西部で始まったとされ、現代のヤギの祖先と考えられています。この過程では、自然選択が重要な役割を果たし、環境に適応した形態が次々と生まれました。特に、乾燥地帯での生存に適した体型や、効率的な採餌行動が発達したことが注目されています。家畜化は単なる技術の進化ではなく、生態系との共生を模索した結果であり、現代のヤギが持つ多様な性質を形作る基盤となりました。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2015989746,
+    "load_duration": 22881705,
+    "prompt_eval_count": 101,
+    "prompt_eval_duration": 187097834,
+    "eval_count": 154,
+    "eval_duration": 1787402988
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788941202.836396,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941202.8363962,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.503,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941202.8507888,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 205.26953125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 956304,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 985.1484375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 205.26953125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 779.87890625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941202.8636613,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 210196,
+        "proc_threads": 40,
+        "proc_vol_ctx": 948992,
+        "proc_invol_ctx": 7312,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788941204.8889232,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941204.888924,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.1875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 31,
+            "mem_util_pct": 14,
+            "power_w": 12.537,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941204.9041824,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.83984375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 956306,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 985.71875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.83984375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.87890625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941204.917384,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209756,
+        "proc_threads": 40,
+        "proc_vol_ctx": 948994,
+        "proc_invol_ctx": 7312,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788941202.8720121,
+      "response_received_unix": 1788941204.8888392,
+      "first_byte_unix": 1788941204.8887823,
+      "total_wall_ms": 2016.82710647583,
+      "queue_wait_ms": 2016.7701244354248,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:06:44 GMT",
+        "Content-Length": "914",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788941204.9258761,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788941202.8719687
+    }
+  },
+  "wall_clock_unix": 1788941204.9258761
+}

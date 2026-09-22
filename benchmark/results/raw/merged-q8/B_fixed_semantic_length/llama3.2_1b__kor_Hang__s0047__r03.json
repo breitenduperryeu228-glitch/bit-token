@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "kor_Hang",
+  "sample_id": "s0047",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n그 환자는 에볼라 바이러스 감염이 발생한 나이지리아에 방문한 적이 있었다.\n\n/no_think",
+    "source_text": "그 환자는 에볼라 바이러스 감염이 발생한 나이지리아에 방문한 적이 있었다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "나이지리아는 에볼라 바이러스 감염의 원인 중 하나로, 2014년 8월에 이탈리아에서 발생한 에볼라 2009년 대 dịch를 통해 인상된 것으로 알려져 있다. 이 disease는 세계적으로 30만 명 이상의 사망을 거두었으며, 2016년 7월에 이탈리아에서 발생한 에볼라 2013년 대 dịch로 인해 3000명이 사망했다.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 734591040,
+    "load_duration": 77233462,
+    "prompt_eval_duration": 5944701,
+    "eval_duration": 599572448,
+    "eval_count": 104,
+    "prompt_eval_count": 103,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:43:58.342224768Z",
+    "message": {
+      "role": "assistant",
+      "content": "나이지리아는 에볼라 바이러스 감염의 원인 중 하나로, 2014년 8월에 이탈리아에서 발생한 에볼라 2009년 대 dịch를 통해 인상된 것으로 알려져 있다. 이 disease는 세계적으로 30만 명 이상의 사망을 거두었으며, 2016년 7월에 이탈리아에서 발생한 에볼라 2013년 대 dịch로 인해 3000명이 사망했다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 734591040,
+    "load_duration": 77233462,
+    "prompt_eval_count": 103,
+    "prompt_eval_duration": 5944701,
+    "eval_count": 104,
+    "eval_duration": 599572448
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789026237.5567913,
+      "nvidia_smi": {
+        "timestamp_unix": 1789026237.5567915,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 4,
+            "mem_util_pct": 4,
+            "power_w": 69.376,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789026237.567571,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.9375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1232.22265625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.9375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.28515625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789026237.5912194,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265152,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789026238.34262,
+      "nvidia_smi": {
+        "timestamp_unix": 1789026238.3426206,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 67,
+            "mem_util_pct": 75,
+            "power_w": 72.159,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789026238.3536465,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.546875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1231.83203125,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.546875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.28515625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789026238.3786952,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264752,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789026237.6072707,
+      "response_received_unix": 1789026238.3425639,
+      "first_byte_unix": 1789026238.3425155,
+      "total_wall_ms": 735.2931499481201,
+      "queue_wait_ms": 735.2447509765625,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:43:58 GMT",
+        "Content-Length": "678",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789026238.3941872,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789026237.6072197
+    }
+  },
+  "wall_clock_unix": 1789026238.3941872
+}

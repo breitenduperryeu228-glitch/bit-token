@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0117",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n里親制度では、引き取られる前の家庭で不足していたあらゆる必需品を提供することになっています。\n\n/no_think",
+    "source_text": "里親制度では、引き取られる前の家庭で不足していたあらゆる必需品を提供することになっています。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "里親制度では、引き取られる前の家庭で不足していたあらゆる必需品を提供することになっています。例えば、食料や水、毛布、衣類、衛生用品など、日常生活の基盤を支えるものが充実しています。特に、子供の成長に伴う教育資金や医療費の補助も重要な要素です。地域のコミュニティや自治体が連携し、必要なものを効率的に調達することで、家庭の負担を軽減しています。この取り組みは、子どもたちの健やかな成長を支えるだけでなく、地域の絆を強める役割も果たしています。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1785403383,
+    "load_duration": 29966291,
+    "prompt_eval_duration": 163961137,
+    "eval_duration": 1574152229,
+    "eval_count": 135,
+    "prompt_eval_count": 90,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:22:12.511780928Z",
+    "message": {
+      "role": "assistant",
+      "content": "里親制度では、引き取られる前の家庭で不足していたあらゆる必需品を提供することになっています。例えば、食料や水、毛布、衣類、衛生用品など、日常生活の基盤を支えるものが充実しています。特に、子供の成長に伴う教育資金や医療費の補助も重要な要素です。地域のコミュニティや自治体が連携し、必要なものを効率的に調達することで、家庭の負担を軽減しています。この取り組みは、子どもたちの健やかな成長を支えるだけでなく、地域の絆を強める役割も果たしています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1785403383,
+    "load_duration": 29966291,
+    "prompt_eval_count": 90,
+    "prompt_eval_duration": 163961137,
+    "eval_count": 135,
+    "eval_duration": 1574152229
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788942130.6896167,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942130.689617,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.75,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.595,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942130.7050545,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.6796875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 964765,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 989.32421875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.6796875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 786.64453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942130.71758,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207544,
+        "proc_threads": 40,
+        "proc_vol_ctx": 957393,
+        "proc_invol_ctx": 7372,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788942132.5123277,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942132.512328,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.75,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.608,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942132.5297608,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.05859375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 964766,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 989.640625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.05859375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 785.58203125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942132.542826,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208956,
+        "proc_threads": 40,
+        "proc_vol_ctx": 957394,
+        "proc_invol_ctx": 7372,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788942130.7259119,
+      "response_received_unix": 1788942132.5122383,
+      "first_byte_unix": 1788942132.5121636,
+      "total_wall_ms": 1786.3264083862305,
+      "queue_wait_ms": 1786.2517833709717,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:22:12 GMT",
+        "Content-Length": "975",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788942132.5510871,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788942130.725865
+    }
+  },
+  "wall_clock_unix": 1788942132.5510871
+}

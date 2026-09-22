@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "kor_Hang",
+  "sample_id": "s0099",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n최남부에는 나이아가라(Niagara) 폭포가 있고 북부에는 무스코카(Muskoka) 등 개척하지 않은 자연의 아름다움의 본고장이 펼쳐져 있다.\n\n/no_think",
+    "source_text": "최남부에는 나이아가라(Niagara) 폭포가 있고 북부에는 무스코카(Muskoka) 등 개척하지 않은 자연의 아름다움의 본고장이 펼쳐져 있다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "최남부에는 나이아가라 폭포가 자리 잡고 있으며, 북부에는 무스코카 등 개척하지 않은 자연의 아름다움의 본고장이 펼쳐져 있습니다. 이 지역은 과거의 탐험가들이 찾아온 곳으로, 현재까지도 자연의 숨겨진 아름다움과 깊은 역사적 가치를 보존하고 있습니다.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 572475250,
+    "load_duration": 113418504,
+    "prompt_eval_duration": 22278518,
+    "eval_duration": 408144936,
+    "eval_count": 71,
+    "prompt_eval_count": 109,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T05:20:10.43284901Z",
+    "message": {
+      "role": "assistant",
+      "content": "최남부에는 나이아가라 폭포가 자리 잡고 있으며, 북부에는 무스코카 등 개척하지 않은 자연의 아름다움의 본고장이 펼쳐져 있습니다. 이 지역은 과거의 탐험가들이 찾아온 곳으로, 현재까지도 자연의 숨겨진 아름다움과 깊은 역사적 가치를 보존하고 있습니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 572475250,
+    "load_duration": 113418504,
+    "prompt_eval_count": 109,
+    "prompt_eval_duration": 22278518,
+    "eval_count": 71,
+    "eval_duration": 408144936
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789017609.8126915,
+      "nvidia_smi": {
+        "timestamp_unix": 1789017609.812692,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 47,
+            "mem_util_pct": 27,
+            "power_w": 63.359,
+            "temp_c": 78,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789017609.823329,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 256.09375,
+        "vms_mib": 4219.10546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2344.0234375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 256.09375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2087.9296875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789017609.8455985,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320364,
+        "proc_vm_rss_kib": 262240,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789017610.4332805,
+      "nvidia_smi": {
+        "timestamp_unix": 1789017610.4332807,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 88,
+            "mem_util_pct": 70,
+            "power_w": 60.938,
+            "temp_c": 78,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789017610.4448366,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 260.328125,
+        "vms_mib": 4219.10546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2348.2578125,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 260.328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2087.9296875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789017610.4692736,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320364,
+        "proc_vm_rss_kib": 266576,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789017609.860023,
+      "response_received_unix": 1789017610.4332142,
+      "first_byte_unix": 1789017610.433158,
+      "total_wall_ms": 573.1911659240723,
+      "queue_wait_ms": 573.1348991394043,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 05:20:10 GMT",
+        "Content-Length": "643",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789017610.4839625,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789017609.8599765
+    }
+  },
+  "wall_clock_unix": 1789017610.4839625
+}

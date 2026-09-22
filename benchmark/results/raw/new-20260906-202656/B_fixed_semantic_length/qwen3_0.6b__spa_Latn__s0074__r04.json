@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b",
+  "language": "spa_Latn",
+  "sample_id": "s0074",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nUn observador describió a Bishkek como si se hundiera en un estado de «anarquía» mientras grupos de personas vagaban por las calles y saqueaban las tiendas de venta de bienes de consumo.\n\n/no_think",
+    "source_text": "Un observador describió a Bishkek como si se hundiera en un estado de «anarquía» mientras grupos de personas vagaban por las calles y saqueaban las tiendas de venta de bienes de consumo."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "Un observador describió a Bishkek como si se hundiera en un estado de anarquía, con grupos de personas vagando por las calles y saqueando tiendas de venta.",
+  "ollama": {
+    "model": "qwen3:0.6b",
+    "total_duration": 718356078,
+    "load_duration": 51485161,
+    "prompt_eval_duration": 14415802,
+    "eval_duration": 640125234,
+    "eval_count": 44,
+    "prompt_eval_count": 122,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-09-09T11:03:16.790166957Z",
+    "message": {
+      "role": "assistant",
+      "content": "Un observador describió a Bishkek como si se hundiera en un estado de anarquía, con grupos de personas vagando por las calles y saqueando tiendas de venta."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 718356078,
+    "load_duration": 51485161,
+    "prompt_eval_count": 122,
+    "prompt_eval_duration": 14415802,
+    "eval_count": 44,
+    "eval_duration": 640125234
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788951796.0355024,
+      "nvidia_smi": {
+        "timestamp_unix": 1788951796.035503,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.75,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.129,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788951796.0503223,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 222.79296875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1013996,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1533.28125,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 222.79296875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1310.48828125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788951796.0631952,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 228140,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1005979,
+        "proc_invol_ctx": 8017,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788951796.7905998,
+      "nvidia_smi": {
+        "timestamp_unix": 1788951796.7906005,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.75,
+            "vram_total_mib": 8188.0,
+            "util_pct": 29,
+            "mem_util_pct": 14,
+            "power_w": 12.103,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788951796.8052063,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 219.59765625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1014003,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1530.0859375,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 219.59765625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1310.48828125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788951796.8195813,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 224868,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1005986,
+        "proc_invol_ctx": 8017,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788951796.0714307,
+      "response_received_unix": 1788951796.7905455,
+      "first_byte_unix": 1788951796.7904978,
+      "total_wall_ms": 719.1147804260254,
+      "queue_wait_ms": 719.0670967102051,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 11:03:16 GMT",
+        "Content-Length": "452",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788951796.8278363,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788951796.0713894
+    }
+  },
+  "wall_clock_unix": 1788951796.8278363
+}

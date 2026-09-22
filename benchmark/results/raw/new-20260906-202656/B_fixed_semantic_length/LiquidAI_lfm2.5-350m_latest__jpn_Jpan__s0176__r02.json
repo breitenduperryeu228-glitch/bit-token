@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0176",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nモルドバの首都はチインウです。現地語はルーマニア語ですが、ロシア語が広く使われています。\n\n/no_think",
+    "source_text": "モルドバの首都はチインウです。現地語はルーマニア語ですが、ロシア語が広く使われています。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "モルドバの首都チインウは、ルーマニア語で「聖なる都市」と呼ばれ、歴史と文化の象徴として知られています。ロシア語が広く使われる中でも、チインウは独自のアイデンティティを持ち、伝統的な建築や祭りが地域の誇りとして残っています。現地住民にとっては、自然の美しさと歴史の重みを感じる場所であり、訪れる人々にとっては心の拠り所となっています。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1526980648,
+    "load_duration": 26386087,
+    "prompt_eval_duration": 131373234,
+    "eval_duration": 1355663872,
+    "eval_count": 118,
+    "prompt_eval_count": 99,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:31:41.425836269Z",
+    "message": {
+      "role": "assistant",
+      "content": "モルドバの首都チインウは、ルーマニア語で「聖なる都市」と呼ばれ、歴史と文化の象徴として知られています。ロシア語が広く使われる中でも、チインウは独自のアイデンティティを持ち、伝統的な建築や祭りが地域の誇りとして残っています。現地住民にとっては、自然の美しさと歴史の重みを感じる場所であり、訪れる人々にとっては心の拠り所となっています。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1526980648,
+    "load_duration": 26386087,
+    "prompt_eval_count": 99,
+    "prompt_eval_duration": 131373234,
+    "eval_count": 118,
+    "eval_duration": 1355663872
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788942699.863877,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942699.8638773,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.486,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942699.8778956,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 201.42578125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 973181,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 988.45703125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 201.42578125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.03125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942699.8900964,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 206260,
+        "proc_threads": 40,
+        "proc_vol_ctx": 965766,
+        "proc_invol_ctx": 7415,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788942701.4262264,
+      "nvidia_smi": {
+        "timestamp_unix": 1788942701.426227,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 14,
+            "power_w": 12.47,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788942701.4413493,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 201.33984375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 973183,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 988.55859375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 201.33984375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.21875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788942701.4547634,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 206172,
+        "proc_threads": 40,
+        "proc_vol_ctx": 965768,
+        "proc_invol_ctx": 7415,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788942699.8984275,
+      "response_received_unix": 1788942701.4261518,
+      "first_byte_unix": 1788942701.4260912,
+      "total_wall_ms": 1527.724266052246,
+      "queue_wait_ms": 1527.6637077331543,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:31:41 GMT",
+        "Content-Length": "813",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788942701.4627316,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788942699.898385
+    }
+  },
+  "wall_clock_unix": 1788942701.4627316
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0066",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n독일의 구운 식품 상당수에는 또한, 아몬드, 헤이즐넛, 및 다른 견과류가 포함되어 있습니다. 인기 있는 케이크류는 특히 진하게 내린 커피와 특히 잘 어울립니다.\n\n/no_think",
+    "source_text": "독일의 구운 식품 상당수에는 또한, 아몬드, 헤이즐넛, 및 다른 견과류가 포함되어 있습니다. 인기 있는 케이크류는 특히 진하게 내린 커피와 특히 잘 어울립니다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "독일의 구운 식품은 맛과 질감을 모두 만드는 데 중요한 요소입니다. 아몬드는 부드러운 맛과 부드러운 코팅을 제공하며, 헤이즐넛은 달콤한 맛과 부드러운 코팅을 특징으로 합니다. 또한, 견과류는 단백질과 지방을 풍부하게 함유하고 있어, 건강한 식단에 이상적인 선택입니다. 인기 있는 케이크류는 특히 진하게 내린 커피와 잘 어울리는 맛이 좋습니다. 이러한 요소들이 결합되어 독일인들에게 사랑받는 구운 식품이 되었습니다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2152520380,
+    "load_duration": 24105807,
+    "prompt_eval_duration": 255596694,
+    "eval_duration": 1854467375,
+    "eval_count": 159,
+    "prompt_eval_count": 138,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:49:53.868962704Z",
+    "message": {
+      "role": "assistant",
+      "content": "독일의 구운 식품은 맛과 질감을 모두 만드는 데 중요한 요소입니다. 아몬드는 부드러운 맛과 부드러운 코팅을 제공하며, 헤이즐넛은 달콤한 맛과 부드러운 코팅을 특징으로 합니다. 또한, 견과류는 단백질과 지방을 풍부하게 함유하고 있어, 건강한 식단에 이상적인 선택입니다. 인기 있는 케이크류는 특히 진하게 내린 커피와 잘 어울리는 맛이 좋습니다. 이러한 요소들이 결합되어 독일인들에게 사랑받는 구운 식품이 되었습니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2152520380,
+    "load_duration": 24105807,
+    "prompt_eval_count": 138,
+    "prompt_eval_duration": 255596694,
+    "eval_count": 159,
+    "eval_duration": 1854467375
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788943791.6789777,
+      "nvidia_smi": {
+        "timestamp_unix": 1788943791.678978,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.481,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788943791.6930308,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.57421875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 995.109375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.57421875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 792.53515625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788943791.7069278,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207436,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788943793.8694358,
+      "nvidia_smi": {
+        "timestamp_unix": 1788943793.8694367,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.471,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788943793.885129,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.390625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 994.23828125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.390625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 791.84765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788943793.8983955,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207248,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788943791.7160008,
+      "response_received_unix": 1788943793.8693552,
+      "first_byte_unix": 1788943793.8692844,
+      "total_wall_ms": 2153.3544063568115,
+      "queue_wait_ms": 2153.2835960388184,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:49:53 GMT",
+        "Content-Length": "889",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788943793.9062889,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788943791.7159538
+    }
+  },
+  "wall_clock_unix": 1788943793.9062889
+}

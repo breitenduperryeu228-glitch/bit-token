@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0013",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n아마존 강 주류는 그 길이가 6,387㎞(3,980마일)에 달한다. 이 유역은 수 천 개의 작은 강이 합류하여 빚어진다.\n\n/no_think",
+    "source_text": "아마존 강 주류는 그 길이가 6,387㎞(3,980마일)에 달한다. 이 유역은 수 천 개의 작은 강이 합류하여 빚어진다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "아마존 강은 아마존 열대 우림의 중심에 위치하며, 그 길이가 6,387㎞에 달합니다. 이 유역은 수천 개의 작은 강이 합류하여 빚어진 독특한 지형을 형성하고 있습니다. 강은 아마존의 주요 수자원으로서 생태계와 인류의 생활에 중요한 역할을 하고 있습니다. 강의 흐름은 강가의 생태계를 지배하며, 다양한 생물종이 서식하는 중요한 서식지로 여겨집니다. 또한, 아마존 강은 전 세계의 물 공급에 큰 영향을 미치며, 수자원 관리와 환경 보전이 중요한 과제로 남아 있습니다. 강의 흐름은 지속 가능한 개발을 위한 중요한 자원으로, 지역 사회와 경제에 긍정적인 변화를 가져올 수 있습니다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2651023646,
+    "load_duration": 21914327,
+    "prompt_eval_duration": 175159743,
+    "eval_duration": 2425037612,
+    "eval_count": 207,
+    "prompt_eval_count": 126,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:38:25.821586407Z",
+    "message": {
+      "role": "assistant",
+      "content": "아마존 강은 아마존 열대 우림의 중심에 위치하며, 그 길이가 6,387㎞에 달합니다. 이 유역은 수천 개의 작은 강이 합류하여 빚어진 독특한 지형을 형성하고 있습니다. 강은 아마존의 주요 수자원으로서 생태계와 인류의 생활에 중요한 역할을 하고 있습니다. 강의 흐름은 강가의 생태계를 지배하며, 다양한 생물종이 서식하는 중요한 서식지로 여겨집니다. 또한, 아마존 강은 전 세계의 물 공급에 큰 영향을 미치며, 수자원 관리와 환경 보전이 중요한 과제로 남아 있습니다. 강의 흐름은 지속 가능한 개발을 위한 중요한 자원으로, 지역 사회와 경제에 긍정적인 변화를 가져올 수 있습니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2651023646,
+    "load_duration": 21914327,
+    "prompt_eval_count": 126,
+    "prompt_eval_duration": 175159743,
+    "eval_count": 207,
+    "eval_duration": 2425037612
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788943103.1348755,
+      "nvidia_smi": {
+        "timestamp_unix": 1788943103.1348763,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.584,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788943103.1489263,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.83984375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 991.18359375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.83984375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.34375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788943103.161892,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208732,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788943105.821954,
+      "nvidia_smi": {
+        "timestamp_unix": 1788943105.8219547,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 31,
+            "mem_util_pct": 14,
+            "power_w": 12.588,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788943105.8372653,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 201.98046875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 989.88671875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 201.98046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.90625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788943105.8499513,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 206828,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788943103.1701436,
+      "response_received_unix": 1788943105.8218758,
+      "first_byte_unix": 1788943105.8218195,
+      "total_wall_ms": 2651.7322063446045,
+      "queue_wait_ms": 2651.6759395599365,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:38:25 GMT",
+        "Content-Length": "1094",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788943105.858342,
+      "vram_delta_mib": -0.125
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788943103.1700943
+    }
+  },
+  "wall_clock_unix": 1788943105.858342
+}

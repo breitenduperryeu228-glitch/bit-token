@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "kor_Hang",
+  "sample_id": "s0087",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n교전이 발발한 직후 영국은 독일에 대한 해상 봉쇄를 시작한다.\n\n/no_think",
+    "source_text": "교전이 발발한 직후 영국은 독일에 대한 해상 봉쇄를 시작한다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "1985년 7월 14일, 영국은 독일의 해상 봉쇄를 시작했다. 이 봉쇄는 2주간 동안 지속되었으며, 영국 해군이 독일의 해상선에 대한 수비를 강화하고, 독일의 항공기와 기지에 대한 수비도 강화했다.\n\n이 봉쇄는 독일의 경제 및 정치 상황을 조절하기 위해 영국과 독일 간의 대화에 의해 시작되었다. 이 봉쇄는 독일의 경제를 장악하고, 독일의 통치 구조를 개선하기 위한 시도였다.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 873258642,
+    "load_duration": 73616948,
+    "prompt_eval_duration": 5931513,
+    "eval_duration": 744536324,
+    "eval_count": 129,
+    "prompt_eval_count": 101,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:49:25.522484767Z",
+    "message": {
+      "role": "assistant",
+      "content": "1985년 7월 14일, 영국은 독일의 해상 봉쇄를 시작했다. 이 봉쇄는 2주간 동안 지속되었으며, 영국 해군이 독일의 해상선에 대한 수비를 강화하고, 독일의 항공기와 기지에 대한 수비도 강화했다.\n\n이 봉쇄는 독일의 경제 및 정치 상황을 조절하기 위해 영국과 독일 간의 대화에 의해 시작되었다. 이 봉쇄는 독일의 경제를 장악하고, 독일의 통치 구조를 개선하기 위한 시도였다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 873258642,
+    "load_duration": 73616948,
+    "prompt_eval_count": 101,
+    "prompt_eval_duration": 5931513,
+    "eval_count": 129,
+    "eval_duration": 744536324
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789026564.6016653,
+      "nvidia_smi": {
+        "timestamp_unix": 1789026564.601666,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 94,
+            "mem_util_pct": 100,
+            "power_w": 73.208,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789026564.612239,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.51171875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1234.87890625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.51171875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 976.3671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789026564.6343274,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264716,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789026565.5228338,
+      "nvidia_smi": {
+        "timestamp_unix": 1789026565.522834,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 73.72,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789026565.5336916,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.39453125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1234.76171875,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.39453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 976.3671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789026565.5568733,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264596,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789026564.6489189,
+      "response_received_unix": 1789026565.522774,
+      "first_byte_unix": 1789026565.5227334,
+      "total_wall_ms": 873.8551139831543,
+      "queue_wait_ms": 873.814582824707,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:49:25 GMT",
+        "Content-Length": "792",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789026565.571234,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789026564.6488721
+    }
+  },
+  "wall_clock_unix": 1789026565.571234
+}

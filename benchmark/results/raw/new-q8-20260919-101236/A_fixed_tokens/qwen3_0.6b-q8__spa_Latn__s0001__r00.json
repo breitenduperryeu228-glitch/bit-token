@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "qwen3:0.6b-q8",
+  "language": "spa_Latn",
+  "sample_id": "s0001",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Continúe la siguiente oración en español, en un párrafo corto:\n\nEl 6 de julio se envió una copia a George Washington, quien ordenó que se la leyeran a su ejército en Nueva York el 9 de julio. El 10 de agosto llegó otra copia a Londres.\n\n/no_think",
+    "source_text": "El 6 de julio se envió una copia a George Washington, quien ordenó que se la leyeran a su ejército en Nueva York el 9 de julio. El 10 de agosto llegó otra copia a Londres."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "El 10 de agosto llegó otra copia a Londres, y la próxima vez que se leía a George Washington, se le entregó a su ejército en Nueva York el 9 de julio. Esto marcó un paso importante en la historia de la guerra, ya que permitió que la información se transmitiera de forma más eficiente entre los diferentes lugares.",
+  "ollama": {
+    "model": "qwen3:0.6b-q8",
+    "total_duration": 464792904,
+    "load_duration": 51616959,
+    "prompt_eval_duration": 8664891,
+    "eval_duration": 386815572,
+    "eval_count": 84,
+    "prompt_eval_count": 96,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b-q8",
+    "created_at": "2026-09-19T02:35:25.208863969Z",
+    "message": {
+      "role": "assistant",
+      "content": "<think>\n\n</think>\n\nEl 10 de agosto llegó otra copia a Londres, y la próxima vez que se leía a George Washington, se le entregó a su ejército en Nueva York el 9 de julio. Esto marcó un paso importante en la historia de la guerra, ya que permitió que la información se transmitiera de forma más eficiente entre los diferentes lugares."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 464792904,
+    "load_duration": 51616959,
+    "prompt_eval_count": 96,
+    "prompt_eval_duration": 8664891,
+    "eval_count": 84,
+    "eval_duration": 386815572
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789785324.7127182,
+      "nvidia_smi": {
+        "timestamp_unix": 1789785324.7127182,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2312.375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 97,
+            "mem_util_pct": 81,
+            "power_w": 48.217,
+            "temp_c": 56,
+            "sm_clock_mhz": 2445,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789785324.723789,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 102.5703125,
+        "vms_mib": 3475.67578125,
+        "num_threads": 31,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 768.9140625,
+        "tree_threads": 81,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 102.5703125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 12521,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 41755",
+            "rss_mib": 666.34375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789785324.7354965,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3559092,
+        "proc_vm_rss_kib": 105032,
+        "proc_threads": 31,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789785325.2092226,
+      "nvidia_smi": {
+        "timestamp_unix": 1789785325.2092233,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2312.375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 97,
+            "mem_util_pct": 81,
+            "power_w": 49.39,
+            "temp_c": 56,
+            "sm_clock_mhz": 2445,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789785325.222877,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 105.25,
+        "vms_mib": 3475.67578125,
+        "num_threads": 31,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 771.15625,
+        "tree_threads": 81,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 105.25,
+            "status": "sleeping"
+          },
+          {
+            "pid": 12521,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 41755",
+            "rss_mib": 665.90625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789785325.2353487,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3559092,
+        "proc_vm_rss_kib": 107776,
+        "proc_threads": 31,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789785324.7436624,
+      "response_received_unix": 1789785325.2091644,
+      "first_byte_unix": 1789785325.2091217,
+      "total_wall_ms": 465.5020236968994,
+      "queue_wait_ms": 465.45934677124023,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 19 Sep 2026 02:35:25 GMT",
+        "Content-Length": "661",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789785325.2443092,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789785324.7436144
+    }
+  },
+  "wall_clock_unix": 1789785325.2443092
+}

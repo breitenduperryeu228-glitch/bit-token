@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "spa_Latn",
+  "sample_id": "s0090",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nNo se han informado mayores daños o heridos en Tonga, pero se interrumpió el servicio de electricidad de forma temporal, lo que, se supone, frustró la recepción por las autoridades tonganas de la advertencia de tsunami emitida por el PTWC.\n\n/no_think",
+    "source_text": "No se han informado mayores daños o heridos en Tonga, pero se interrumpió el servicio de electricidad de forma temporal, lo que, se supone, frustró la recepción por las autoridades tonganas de la advertencia de tsunami emitida por el PTWC."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "La oración revela un conflicto entre la ausencia de evidencias de daño físico y la interrupción de servicios esenciales que, según se presume, generó una respuesta negativa por parte de las autoridades tonganas ante una advertencia de tsunami. Esta discrepancia sugiere que la interrupción de la electricidad, aunque no causó lesiones, podría haber sido un factor determinante en la percepción de la gravedad del evento, aunque la información oficial no confirma el impacto directo de la falta de energía en la zona afectada.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 773732144,
+    "load_duration": 116658384,
+    "prompt_eval_duration": 23291525,
+    "eval_duration": 590158279,
+    "eval_count": 102,
+    "prompt_eval_count": 123,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T06:00:13.30303001Z",
+    "message": {
+      "role": "assistant",
+      "content": "La oración revela un conflicto entre la ausencia de evidencias de daño físico y la interrupción de servicios esenciales que, según se presume, generó una respuesta negativa por parte de las autoridades tonganas ante una advertencia de tsunami. Esta discrepancia sugiere que la interrupción de la electricidad, aunque no causó lesiones, podría haber sido un factor determinante en la percepción de la gravedad del evento, aunque la información oficial no confirma el impacto directo de la falta de energía en la zona afectada."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 773732144,
+    "load_duration": 116658384,
+    "prompt_eval_count": 123,
+    "prompt_eval_duration": 23291525,
+    "eval_count": 102,
+    "eval_duration": 590158279
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789020012.48327,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020012.4832702,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 88,
+            "mem_util_pct": 70,
+            "power_w": 61.829,
+            "temp_c": 76,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020012.493787,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 255.97265625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2346.24609375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 255.97265625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2090.2734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020012.514907,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 262116,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789020013.303472,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020013.3034723,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 88,
+            "mem_util_pct": 70,
+            "power_w": 62.248,
+            "temp_c": 75,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020013.3151627,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 252.22265625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2345.3671875,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 252.22265625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2093.14453125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020013.3382182,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 258276,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789020012.5289812,
+      "response_received_unix": 1789020013.3034174,
+      "first_byte_unix": 1789020013.3033466,
+      "total_wall_ms": 774.4362354278564,
+      "queue_wait_ms": 774.3654251098633,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:00:13 GMT",
+        "Content-Length": "835",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789020013.3524165,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789020012.5289364
+    }
+  },
+  "wall_clock_unix": 1789020013.3524165
+}

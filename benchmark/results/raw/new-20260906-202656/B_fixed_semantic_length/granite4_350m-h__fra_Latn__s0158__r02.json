@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "fra_Latn",
+  "sample_id": "s0158",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Veuillez écrire environ 256 caractères de texte en français sur le sujet suggéré par la phrase suivante. Pas de salutations ni d'explications, juste le paragraphe :\n\nLe ski est une activité de voyage majeure qui compte de nombreux aficionados, parfois appelés « ski bums », qui organisent leurs vacances entières en fonction du ski dans des endroits spécifiques.\n\n/no_think",
+    "source_text": "Le ski est une activité de voyage majeure qui compte de nombreux aficionados, parfois appelés « ski bums », qui organisent leurs vacances entières en fonction du ski dans des endroits spécifiques."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Le ski est une activité de voyage majeure avec beaucoup d'adore. Les skieurs apprennent à s'échapper sur la piste et ont souvent un bon moment pour passer le week-end en plein air.",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 1082648873,
+    "load_duration": 55218785,
+    "prompt_eval_duration": 287274053,
+    "eval_duration": 711184035,
+    "eval_count": 50,
+    "prompt_eval_count": 112,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T06:48:32.517428061Z",
+    "message": {
+      "role": "assistant",
+      "content": "Le ski est une activité de voyage majeure avec beaucoup d'adore. Les skieurs apprennent à s'échapper sur la piste et ont souvent un bon moment pour passer le week-end en plein air."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1082648873,
+    "load_duration": 55218785,
+    "prompt_eval_count": 112,
+    "prompt_eval_duration": 287274053,
+    "eval_count": 50,
+    "eval_duration": 711184035
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788936511.3974206,
+      "nvidia_smi": {
+        "timestamp_unix": 1788936511.397421,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 11.927,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788936511.4105363,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 183.578125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 902629,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1000.484375,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 183.578125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 816.90625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788936511.4251,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 187984,
+        "proc_threads": 40,
+        "proc_vol_ctx": 895821,
+        "proc_invol_ctx": 6808,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788936512.5178506,
+      "nvidia_smi": {
+        "timestamp_unix": 1788936512.5178509,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.9375,
+            "vram_total_mib": 8188.0,
+            "util_pct": 31,
+            "mem_util_pct": 14,
+            "power_w": 11.897,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788936512.531715,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 182.8671875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 902635,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 999.7734375,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 182.8671875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 816.90625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788936512.5470355,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 187256,
+        "proc_threads": 40,
+        "proc_vol_ctx": 895827,
+        "proc_invol_ctx": 6808,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788936511.4343758,
+      "response_received_unix": 1788936512.5178027,
+      "first_byte_unix": 1788936512.5177555,
+      "total_wall_ms": 1083.4269523620605,
+      "queue_wait_ms": 1083.3797454833984,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 06:48:32 GMT",
+        "Content-Length": "485",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788936512.5561955,
+      "vram_delta_mib": 0.125
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788936511.434325
+    }
+  },
+  "wall_clock_unix": 1788936512.5561955
+}

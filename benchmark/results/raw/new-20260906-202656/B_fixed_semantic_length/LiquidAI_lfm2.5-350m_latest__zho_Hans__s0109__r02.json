@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "zho_Hans",
+  "sample_id": "s0109",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n支架式教学可以线上或线下进行，换句话说，老师是支架式教学的一种形式，就像 Microsoft Office 里的回形针小助手一样。\n\n/no_think",
+    "source_text": "支架式教学可以线上或线下进行，换句话说，老师是支架式教学的一种形式，就像 Microsoft Office 里的回形针小助手一样。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "支架式教学可以线上或线下进行，换句话说，教师是支架式教学的核心形式，就像Microsoft Office里的回形针小助手般，帮助学生通过虚拟环境进行学习。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 734983443,
+    "load_duration": 22144505,
+    "prompt_eval_duration": 139912687,
+    "eval_duration": 565289279,
+    "eval_count": 50,
+    "prompt_eval_count": 108,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T07:49:25.520104393Z",
+    "message": {
+      "role": "assistant",
+      "content": "支架式教学可以线上或线下进行，换句话说，教师是支架式教学的核心形式，就像Microsoft Office里的回形针小助手般，帮助学生通过虚拟环境进行学习。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 734983443,
+    "load_duration": 22144505,
+    "prompt_eval_count": 108,
+    "prompt_eval_duration": 139912687,
+    "eval_count": 50,
+    "eval_duration": 565289279
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788940164.75056,
+      "nvidia_smi": {
+        "timestamp_unix": 1788940164.7505603,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.542,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788940164.7641895,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 199.3671875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 938896,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 977.62109375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 199.3671875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 778.25390625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788940164.7762132,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 204152,
+        "proc_threads": 40,
+        "proc_vol_ctx": 931683,
+        "proc_invol_ctx": 7213,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788940165.520777,
+      "nvidia_smi": {
+        "timestamp_unix": 1788940165.5207775,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.529,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788940165.5400233,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 199.6796875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 938907,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 978.18359375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 199.6796875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 778.50390625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788940165.555117,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 204472,
+        "proc_threads": 40,
+        "proc_vol_ctx": 931693,
+        "proc_invol_ctx": 7214,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788940164.7847419,
+      "response_received_unix": 1788940165.5207024,
+      "first_byte_unix": 1788940165.5206282,
+      "total_wall_ms": 735.9604835510254,
+      "queue_wait_ms": 735.8863353729248,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 07:49:25 GMT",
+        "Content-Length": "512",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788940165.5645323,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788940164.784697
+    }
+  },
+  "wall_clock_unix": 1788940165.5645323
+}

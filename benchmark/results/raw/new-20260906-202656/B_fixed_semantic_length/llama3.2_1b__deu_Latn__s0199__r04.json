@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "deu_Latn",
+  "sample_id": "s0199",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Bitte schreiben Sie ungefähr 256 Zeichen Text auf Deutsch über das Thema des folgenden Satzes. Keine Begrüßung, keine Erklärungen, nur den Absatz selbst:\n\n\"Pflanzen sehen in ihrer natürlichen Umgebung am besten aus, widerstehen Sie also der Versuchung, auch \"\"nur ein\"\" Exemplar zu entfernen.\"\n\n/no_think",
+    "source_text": "\"Pflanzen sehen in ihrer natürlichen Umgebung am besten aus, widerstehen Sie also der Versuchung, auch \"\"nur ein\"\" Exemplar zu entfernen.\""
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Die Pflanzen sehen in ihrer natürlichen Umgebung am besten aus\nwiderstehen Sie also der Versuchung, auch nur ein Exemplar zu entfernen\nin einem Wald wachsen sie tief in den Boden\ndort sind sie frei von ständiger Belästigung\nsie können sich bewegen und ihre Ruhe genießen\nnicht wie Menschen, die in einer kleinen Wohnung leben müssen\nsich um ihre Pflanzen kümmern und sie pflegen\nsondern nur ein Exemplar zu entfernen\nwirden sie sich nicht mehr wohl fühlen",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 896672131,
+    "load_duration": 97723014,
+    "prompt_eval_duration": 5943003,
+    "eval_duration": 744156136,
+    "eval_count": 129,
+    "prompt_eval_count": 115,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:40:05.439784315Z",
+    "message": {
+      "role": "assistant",
+      "content": "Die Pflanzen sehen in ihrer natürlichen Umgebung am besten aus\nwiderstehen Sie also der Versuchung, auch nur ein Exemplar zu entfernen\nin einem Wald wachsen sie tief in den Boden\ndort sind sie frei von ständiger Belästigung\nsie können sich bewegen und ihre Ruhe genießen\nnicht wie Menschen, die in einer kleinen Wohnung leben müssen\nsich um ihre Pflanzen kümmern und sie pflegen\nsondern nur ein Exemplar zu entfernen\nwirden sie sich nicht mehr wohl fühlen"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 896672131,
+    "load_duration": 97723014,
+    "prompt_eval_count": 115,
+    "prompt_eval_duration": 5943003,
+    "eval_count": 129,
+    "eval_duration": 744156136
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789137604.4980123,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137604.4980128,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 72.891,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137604.50811,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 240.953125,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 10375,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1099.1484375,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 240.953125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 858.1953125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137604.5290568,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 246736,
+        "proc_threads": 32,
+        "proc_vol_ctx": 10182,
+        "proc_invol_ctx": 193,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789137605.4401913,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137605.4401917,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 72.033,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137605.4513462,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 242.5,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 10518,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1100.70703125,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 242.5,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 858.20703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137605.4740455,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 248320,
+        "proc_threads": 32,
+        "proc_vol_ctx": 10325,
+        "proc_invol_ctx": 193,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789137604.5427947,
+      "response_received_unix": 1789137605.4401186,
+      "first_byte_unix": 1789137605.440069,
+      "total_wall_ms": 897.3238468170166,
+      "queue_wait_ms": 897.2742557525635,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:40:05 GMT",
+        "Content-Length": "767",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789137605.4877374,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789137604.5427537
+    }
+  },
+  "wall_clock_unix": 1789137605.4877374
+}

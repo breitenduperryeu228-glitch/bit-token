@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "kor_Hang",
+  "sample_id": "s0104",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n오늘날 사용되는 대부분의 컴퓨터는 정보를 이진법의 코딩을 통해 조작하는 방법을 사용한다.\n\n/no_think",
+    "source_text": "오늘날 사용되는 대부분의 컴퓨터는 정보를 이진법의 코딩을 통해 조작하는 방법을 사용한다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "오늘날 일상생활과 현대 사회에서 가장 널리 쓰이는 컴퓨터는 정보를 처리하기 위해 이진법 (0 또는 1) 을 사용하여 코딩합니다. 이진법 은 0 과 1 이만 이루어진 단순한 비트로, 컴퓨터의 모든 데이터 처리와 논리运算을 가능하게 합니다. 이진법 은 컴퓨터의 기본 작동 원리를 이해하는 데 필수적인 개념이며, 현대 디지털 기술의 기초를 형성합니다.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 714772163,
+    "load_duration": 112805769,
+    "prompt_eval_duration": 21240662,
+    "eval_duration": 539547822,
+    "eval_count": 93,
+    "prompt_eval_count": 87,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T05:22:44.872039466Z",
+    "message": {
+      "role": "assistant",
+      "content": "오늘날 일상생활과 현대 사회에서 가장 널리 쓰이는 컴퓨터는 정보를 처리하기 위해 이진법 (0 또는 1) 을 사용하여 코딩합니다. 이진법 은 0 과 1 이만 이루어진 단순한 비트로, 컴퓨터의 모든 데이터 처리와 논리运算을 가능하게 합니다. 이진법 은 컴퓨터의 기본 작동 원리를 이해하는 데 필수적인 개념이며, 현대 디지털 기술의 기초를 형성합니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 714772163,
+    "load_duration": 112805769,
+    "prompt_eval_count": 87,
+    "prompt_eval_duration": 21240662,
+    "eval_count": 93,
+    "eval_duration": 539547822
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789017764.1092722,
+      "nvidia_smi": {
+        "timestamp_unix": 1789017764.1092725,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 43,
+            "mem_util_pct": 34,
+            "power_w": 61.777,
+            "temp_c": 78,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789017764.1202333,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 256.13671875,
+        "vms_mib": 4219.10546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2344.4140625,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 256.13671875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2088.27734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789017764.1425493,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320364,
+        "proc_vm_rss_kib": 262284,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789017764.8725238,
+      "nvidia_smi": {
+        "timestamp_unix": 1789017764.8725243,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 12,
+            "power_w": 63.21,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789017764.8840845,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 256.13671875,
+        "vms_mib": 4219.10546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2346.34375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 256.13671875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2090.20703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789017764.908666,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320364,
+        "proc_vm_rss_kib": 262284,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789017764.1569219,
+      "response_received_unix": 1789017764.8724363,
+      "first_byte_unix": 1789017764.8723671,
+      "total_wall_ms": 715.5144214630127,
+      "queue_wait_ms": 715.4452800750732,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 05:22:44 GMT",
+        "Content-Length": "758",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789017764.922976,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789017764.156875
+    }
+  },
+  "wall_clock_unix": 1789017764.922976
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "zho_Hans",
+  "sample_id": "s0002",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n蒙得维的亚位于亚热带地区；在夏季月份，气温常常超过 30°C 。\n\n/no_think",
+    "source_text": "蒙得维的亚位于亚热带地区；在夏季月份，气温常常超过 30°C 。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "蒙得维的亚是位于南美洲的国家，位于中部亚热带地区。夏季月份，气温通常会升高到达 35摄氏度以上，这使得该地区成为一个炎热的天气 hotspot。这种高温导致了许多人在这里面临着严重的健康问题，如皮肤干燥、眼睛干涩和呼吸系统受损等。因此，蒙得维的亚的居民需要采取各种措施来保护自己的健康，包括使用适当的防晒霜和避免过度暴露在阳光下的行为。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 916497574,
+    "load_duration": 79206572,
+    "prompt_eval_duration": 5916461,
+    "eval_duration": 771450402,
+    "eval_count": 134,
+    "prompt_eval_count": 99,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T06:42:31.721469141Z",
+    "message": {
+      "role": "assistant",
+      "content": "蒙得维的亚是位于南美洲的国家，位于中部亚热带地区。夏季月份，气温通常会升高到达 35摄氏度以上，这使得该地区成为一个炎热的天气 hotspot。这种高温导致了许多人在这里面临着严重的健康问题，如皮肤干燥、眼睛干涩和呼吸系统受损等。因此，蒙得维的亚的居民需要采取各种措施来保护自己的健康，包括使用适当的防晒霜和避免过度暴露在阳光下的行为。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 916497574,
+    "load_duration": 79206572,
+    "prompt_eval_count": 99,
+    "prompt_eval_duration": 5916461,
+    "eval_count": 134,
+    "eval_duration": 771450402
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789022550.7576363,
+      "nvidia_smi": {
+        "timestamp_unix": 1789022550.7576368,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 70.119,
+            "temp_c": 78,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789022550.768376,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 257.86328125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1202.46484375,
+        "tree_threads": 59,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 257.86328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 944.6015625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789022550.7902086,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264052,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789022551.7218034,
+      "nvidia_smi": {
+        "timestamp_unix": 1789022551.7218037,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 72.578,
+            "temp_c": 78,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789022551.7327516,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.11328125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1202.71484375,
+        "tree_threads": 59,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.11328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 944.6015625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789022551.756344,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264308,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789022550.8046062,
+      "response_received_unix": 1789022551.7217517,
+      "first_byte_unix": 1789022551.72171,
+      "total_wall_ms": 917.1454906463623,
+      "queue_wait_ms": 917.1037673950195,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:42:31 GMT",
+        "Content-Length": "777",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789022551.7712262,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789022550.8045619
+    }
+  },
+  "wall_clock_unix": 1789022551.7712262
+}

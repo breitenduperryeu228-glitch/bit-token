@@ -1,0 +1,228 @@
+# =====================================================================
+# Benchmark configuration for "Token/s vs UTF-8 Bit/s Cross-Model Study"
+# Strictly follows 跨模型、跨语种生成吞吐率的 Token-s 与 Bit-s 对比研究.md
+# =====================================================================
+
+benchmark:
+  name: "Token-s vs Bit-s Cross-Model Multilingual Benchmark"
+  version: "0.1.0"
+  description: >
+    Compares Token/s and UTF-8 Bit/s as generation throughput metrics
+    across multiple open-source LLMs (Ollama) and languages.
+
+# -------------------------- Hardware / Software -----------------------
+hardware:
+  gpu: "NVIDIA GeForce RTX 4060"
+  vram_gb: 8
+  ram_gb: 15
+  cpu: "(system)"
+  note: >
+    All measurements MUST be taken on this exact hardware.
+    Do NOT compare absolute performance across different hardware.
+
+software:
+  ollama_version: "0.23.0"
+  python_version: "3.13.9"
+  driver: "595.58.03"
+  cuda: "13.2"
+
+# -------------------------- Models ------------------------------------
+# Models actually runnable on the current hardware (8 GB VRAM, ~6 GB free RAM).
+# The bigger local models (GLM-4.7-Flash, Qwen3.5-35B-A3B, gpt-oss-20b)
+# exceed VRAM and cannot be loaded. The user is downloading more models
+# that may later be added here.
+#
+# `parameter_count_b` is the numeric form (billions) used by the orchestrator
+# for ascending sort; `parameter_size` stays the human-readable string.
+models:
+  - name: "granite4:350m-h"
+    family: "granite4"
+    parameter_size: "350M"
+    parameter_count_b: 0.350
+    quantization: "Q8_0"
+    tokenizer_type: "granite-BPE"
+    notes: "IBM Granite 4 hybrid (Mamba-2/Transformer), 1M ctx"
+  - name: "LiquidAI/lfm2.5-350m:latest"
+    family: "lfm2"
+    parameter_size: "350M"
+    parameter_count_b: 0.350
+    quantization: "Q8_0"
+    tokenizer_type: "lfm2-BPE"
+    notes: "Liquid AI LFM2.5 350M — Spark Arena speed leader"
+  - name: "qwen3:0.6b"
+    family: "qwen3"
+    parameter_size: "0.6B"
+    parameter_count_b: 0.600
+    quantization: "Q4_K_M"
+    tokenizer_type: "qwen3-BPE"
+    notes: "Qwen3 0.6B — Ollama official Q4_K_M build with `thinking` capability ENABLED. Reports 751.63M params (architecture includes thinking head, hence >0.6B raw params). Eval_count is dominated by thinking trace, so visible Token/s is artificially low (≈70 tok/s); Bit/s comparison still valid."
+  - name: "qwen3:0.6b-q8"
+    family: "qwen3"
+    parameter_size: "0.6B"
+    parameter_count_b: 0.600
+    quantization: "Q8_0"
+    tokenizer_type: "qwen3-BPE"
+    notes: "Qwen3 0.6B Q8_0 (local GGUF from /home/hope/桌面/qwen3 0.6B q8) — NOT the same weights as qwen3:0.6b. Reports 596.05M params and NO `thinking` capability (base model only, thinking head stripped). Higher Token/s (≈230) reflects absence of thinking trace, NOT quantization gain. Q4-vs-Q8 comparison via `compare_q4_q8.py` is therefore a base-model-vs-thinking-model contrast, not a pure quant sweep. For a true quant-only A/B, build Q8_0 from the same `qwen3:0.6b` weights with `ollama create -q Q8_0`."
+  - name: "qwen3.5:0.8b"
+    family: "qwen35"
+    parameter_size: "0.87B"
+    parameter_count_b: 0.870
+    quantization: "Q8_0"
+    tokenizer_type: "qwen3.5-BPE"
+    notes: "Qwen3.5 small — qwen3.5 tokenizer (different from qwen3)"
+  - name: "llama3.2:1b"
+    family: "llama3"
+    parameter_size: "1B"
+    parameter_count_b: 1.000
+    quantization: "Q8_0"
+    tokenizer_type: "llama3-BPE"
+    notes: "Meta Llama 3.2 1B — tiktoken-based BPE, different tokenizer family from Qwen/LFM2/Granite"
+  - name: "lfm2.5-thinking:latest"
+    family: "lfm2"
+    parameter_size: "1.2B"
+    parameter_count_b: 1.200
+    quantization: "Q4_K_M"
+    tokenizer_type: "lfm2-BPE"
+    notes: "Liquid AI LFM2.5 thinking variant"
+
+# -------------------------- Languages ---------------------------------
+languages:
+  - code: "eng_Latn"
+    name: "English"
+    utf8_bytes_per_char_min: 1
+    utf8_bytes_per_char_max: 1
+    script: "Latin"
+  - code: "zho_Hans"
+    name: "Chinese (Simplified)"
+    utf8_bytes_per_char_min: 3
+    utf8_bytes_per_char_max: 3
+    script: "Han"
+  - code: "jpn_Jpan"
+    name: "Japanese"
+    utf8_bytes_per_char_min: 3
+    utf8_bytes_per_char_max: 3
+    script: "Mixed (Hiragana/Katakana/Kanji)"
+  - code: "kor_Hang"
+    name: "Korean"
+    utf8_bytes_per_char_min: 3
+    utf8_bytes_per_char_max: 3
+    script: "Hangul"
+  - code: "spa_Latn"
+    name: "Spanish"
+    utf8_bytes_per_char_min: 1
+    utf8_bytes_per_char_max: 1
+    script: "Latin"
+  - code: "fra_Latn"
+    name: "French"
+    utf8_bytes_per_char_min: 1
+    utf8_bytes_per_char_max: 1
+    script: "Latin (with diacritics)"
+  - code: "deu_Latn"
+    name: "German"
+    utf8_bytes_per_char_min: 1
+    utf8_bytes_per_char_max: 1
+    script: "Latin"
+  - code: "rus_Cyrl"
+    name: "Russian"
+    utf8_bytes_per_char_min: 2
+    utf8_bytes_per_char_max: 2
+    script: "Cyrillic"
+
+# -------------------------- Dataset -----------------------------------
+dataset:
+  name: "FLORES-200"
+  source: "https://github.com/facebookresearch/flores"
+  license: "CC-BY-SA-4.0"
+  fallback_source: "https://huggingface.co/datasets/facebook/flores"
+  why_suitable: >
+    FLORES-200 provides semantically aligned sentences across 200+
+    languages, enabling the construction of 'semantically equivalent
+    multilingual samples' required by section 6 of the spec.
+  num_samples: 200               # sentences per language (FLORES-200 devtest subset)
+  selection_strategy: "first_n_after_seed_shuffle"
+
+# -------------------------- Experiments -------------------------------
+experiments:
+  # Experiment A — fixed token count
+  A_fixed_tokens:
+    description: "Stop generation after exactly N tokens are produced."
+    num_predict: 1024
+    note: >
+      num_predict must be large enough that Qwen3-family models (which use
+      internal "thinking" traces) still produce visible content. Empirically
+      1024 is sufficient for all benchmarked models. The fixed-budget property
+      is preserved (the same N applies to every model).
+    prompt_template: "minimal"   # uses prompts/experiment_a.json
+    repeat: 5
+
+  # Experiment B — fixed semantic length (let the model run ~256 chars)
+  B_fixed_semantic_length:
+    description: "Ask the model to produce ~256 characters of text."
+    target_char_count: 256
+    prompt_template: "fixed_semantic"  # uses prompts/experiment_b.json
+    max_tokens_safety: 1024
+    repeat: 5
+
+# -------------------------- Inference parameters ----------------------
+inference:
+  temperature: 0.0              # deterministic
+  top_p: 1.0
+  top_k: 1
+  seed: 42
+  num_ctx: 4096                 # context length
+  num_predict_default: 1024     # used for non-thinking-heavy models
+  num_predict_thinking: 4096    # bumped from 2048 to accommodate deepseek-r1 / qwen3 thinking traces
+  repeat: 5
+  warmup_runs: 1                # warm-up before the 5 measured runs
+  request_timeout_s: 600
+  keep_alive: "5m"              # keep model in VRAM between calls
+  note: >
+    seed=42 + temperature=0 + top_k=1 makes outputs reproducible.
+    Each cell is run `repeat=5` times AFTER 1 warm-up that is discarded.
+    Models that emit "thinking" tokens (qwen3, qwen3.5, qwen3-vl,
+    deepseek-r1, lfm2.5-thinking) use num_predict_thinking=2048.
+    Other models use num_predict_default=1024.
+    Runs that still produce empty response_text are excluded from
+    mean-per-cell statistics (Bit/s = 0 would be misleading).
+
+# -------------------------- Metrics -----------------------------------
+metrics:
+  primary:
+    - token_per_second
+    - bit_per_second
+  derived:
+    - bytes_per_token
+    - bits_per_token
+    - token_per_char
+    - bytes_per_char
+    - expansion_ratio
+  consistency_check:
+    - identity_bit_per_second_vs_token_per_second_times_bits_per_token
+
+# -------------------------- Statistical analysis ---------------------
+statistics:
+  alpha: 0.05
+  rank_correlations:
+    - spearman
+    - kendall
+  omnibus_tests:
+    - two_way_anova (model, language)
+    - mixed_effects (model + language + model*language, random=run_id)
+  effect_sizes:
+    - eta_squared
+    - partial_eta_squared
+    - cohens_d (model-vs-model on same language)
+  per_run_summary:
+    - mean
+    - median
+    - std
+    - p5
+    - p95
+    - ci95
+
+# -------------------------- Output ------------------------------------
+output:
+  raw_dir: "results/raw"
+  derived_dir: "results/derived"
+  figures_dir: "figures"
+  report_path: "results/REPORT.md"

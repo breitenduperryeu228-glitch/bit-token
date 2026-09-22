@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0150",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nメートル法の採用、絶対主義から共和主義への移行、愛国心、そして国は単独支配者ではなく国民のものであるという信念など、多くの社会的政治的影響がありました。\n\n/no_think",
+    "source_text": "メートル法の採用、絶対主義から共和主義への移行、愛国心、そして国は単独支配者ではなく国民のものであるという信念など、多くの社会的政治的影響がありました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "明治の時代は、西洋の測量技術と数学の導入により、メートル法の確立が加速されました。この新基準は、絶対的な数値の支配を意味し、旧来の度量衡制度を廃止しました。同時に、共和主義の思想も広まりました。国家は単独の支配者ではなく、国民の意志によって形成されるべきだと考えました。\n\nこの思想は、愛国心を高める役割を果たしました。国民が独立した国家を築くためには、国家の独立を前提にすべきだと考えました。国は単独支配者ではなく、国民のものであるという信念は、社会の安定を確保し、国家の発展を促しました。\n\nこの思想は、日本社会の政治構造を大きく変えました。国家は単独支配者ではなく、国民のものであるという信念は、日本社会の政治構造を大きく変えました。",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 1295374710,
+    "load_duration": 116219536,
+    "prompt_eval_duration": 22168052,
+    "eval_duration": 1079568745,
+    "eval_count": 182,
+    "prompt_eval_count": 101,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T04:09:20.524348243Z",
+    "message": {
+      "role": "assistant",
+      "content": "明治の時代は、西洋の測量技術と数学の導入により、メートル法の確立が加速されました。この新基準は、絶対的な数値の支配を意味し、旧来の度量衡制度を廃止しました。同時に、共和主義の思想も広まりました。国家は単独の支配者ではなく、国民の意志によって形成されるべきだと考えました。\n\nこの思想は、愛国心を高める役割を果たしました。国民が独立した国家を築くためには、国家の独立を前提にすべきだと考えました。国は単独支配者ではなく、国民のものであるという信念は、社会の安定を確保し、国家の発展を促しました。\n\nこの思想は、日本社会の政治構造を大きく変えました。国家は単独支配者ではなく、国民のものであるという信念は、日本社会の政治構造を大きく変えました。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1295374710,
+    "load_duration": 116219536,
+    "prompt_eval_count": 101,
+    "prompt_eval_duration": 22168052,
+    "eval_count": 182,
+    "eval_duration": 1079568745
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789013359.1781874,
+      "nvidia_smi": {
+        "timestamp_unix": 1789013359.1781883,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 88,
+            "mem_util_pct": 70,
+            "power_w": 71.567,
+            "temp_c": 77,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789013359.189131,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 254.23046875,
+        "vms_mib": 4218.85546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2331.96484375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 254.23046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2077.734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789013359.2128935,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320108,
+        "proc_vm_rss_kib": 260332,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789013360.524987,
+      "nvidia_smi": {
+        "timestamp_unix": 1789013360.5249875,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 88,
+            "mem_util_pct": 71,
+            "power_w": 70.934,
+            "temp_c": 76,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789013360.5372903,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 254.23046875,
+        "vms_mib": 4218.85546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2330.98828125,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 254.23046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2076.7578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789013360.561784,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320108,
+        "proc_vm_rss_kib": 260332,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789013359.2285738,
+      "response_received_unix": 1789013360.5248983,
+      "first_byte_unix": 1789013360.5248044,
+      "total_wall_ms": 1296.3244915008545,
+      "queue_wait_ms": 1296.2305545806885,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 04:09:20 GMT",
+        "Content-Length": "1257",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789013360.5768557,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789013359.228514
+    }
+  },
+  "wall_clock_unix": 1789013360.5768557
+}

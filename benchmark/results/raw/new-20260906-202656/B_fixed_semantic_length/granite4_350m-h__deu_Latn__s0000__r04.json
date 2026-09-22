@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "deu_Latn",
+  "sample_id": "s0000",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Bitte schreiben Sie ungefähr 256 Zeichen Text auf Deutsch über das Thema des folgenden Satzes. Keine Begrüßung, keine Erklärungen, nur den Absatz selbst:\n\nDas Britische Pfund wird grundsätzlich überall auf den Inseln und bei Stanley-Kreditkarten akzeptiert. Auch US-Dollar werden häufig akzeptiert.\n\n/no_think",
+    "source_text": "Das Britische Pfund wird grundsätzlich überall auf den Inseln und bei Stanley-Kreditkarten akzeptiert. Auch US-Dollar werden häufig akzeptiert."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Deutsch: Das britische Pfund ist grundlegend in allen Inseln und bei Stanley-Creditkarten zugänglich.",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 628011145,
+    "load_duration": 37343315,
+    "prompt_eval_duration": 199300434,
+    "eval_duration": 375917056,
+    "eval_count": 28,
+    "prompt_eval_count": 102,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T06:51:27.580689654Z",
+    "message": {
+      "role": "assistant",
+      "content": "Deutsch: Das britische Pfund ist grundlegend in allen Inseln und bei Stanley-Creditkarten zugänglich."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 628011145,
+    "load_duration": 37343315,
+    "prompt_eval_count": 102,
+    "prompt_eval_duration": 199300434,
+    "eval_count": 28,
+    "eval_duration": 375917056
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788936686.917223,
+      "nvidia_smi": {
+        "timestamp_unix": 1788936686.9172235,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.132,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788936686.931776,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 186.5078125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 902777,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1010.23828125,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 186.5078125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 823.73046875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788936686.9439828,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 190984,
+        "proc_threads": 40,
+        "proc_vol_ctx": 895965,
+        "proc_invol_ctx": 6812,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788936687.581073,
+      "nvidia_smi": {
+        "timestamp_unix": 1788936687.581073,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.122,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788936687.595235,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 183.046875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 902777,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1007.92578125,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 183.046875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 824.87890625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788936687.6114216,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 187440,
+        "proc_threads": 40,
+        "proc_vol_ctx": 895965,
+        "proc_invol_ctx": 6812,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788936686.9522643,
+      "response_received_unix": 1788936687.5810332,
+      "first_byte_unix": 1788936687.5809925,
+      "total_wall_ms": 628.7689208984375,
+      "queue_wait_ms": 628.7281513214111,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 06:51:27 GMT",
+        "Content-Length": "403",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788936687.6214464,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788936686.9522214
+    }
+  },
+  "wall_clock_unix": 1788936687.6214464
+}

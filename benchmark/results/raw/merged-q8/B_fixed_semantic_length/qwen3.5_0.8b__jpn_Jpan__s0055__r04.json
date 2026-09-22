@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0055",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n人間以外の動物に育てられて成長した野生児は、人間を恐れたり、人間に無関心であるなど、その動物とほとんど同じような行動を（物理的な範囲内）を示します。\n\n/no_think",
+    "source_text": "人間以外の動物に育てられて成長した野生児は、人間を恐れたり、人間に無関心であるなど、その動物とほとんど同じような行動を（物理的な範囲内）を示します。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "人間以外の動物に育てられて成長した野生児は、人間を恐れたり、人間に無関心であるなど、その動物とほとんど同じような行動を物理的な範囲内を示します。この現象は、動物の進化における「他者への関心」の低下を示唆しています。野生児は、人間が社会性を持つ動物であるため、その社会構造を理解し、人間との関わり方を学ぶことが困難です。そのため、人間を畏敬し、人間を無関心にする行動が自然に発生します。これは、動物が人間を「他者」として認識し、その認識に基づいて行動する結果です。人間が動物を「他者」として認識し、その認識に基づいて行動する結果です。",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 1095356811,
+    "load_duration": 110164181,
+    "prompt_eval_duration": 21818835,
+    "eval_duration": 907398276,
+    "eval_count": 157,
+    "prompt_eval_count": 106,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T02:45:24.488221839Z",
+    "message": {
+      "role": "assistant",
+      "content": "人間以外の動物に育てられて成長した野生児は、人間を恐れたり、人間に無関心であるなど、その動物とほとんど同じような行動を物理的な範囲内を示します。この現象は、動物の進化における「他者への関心」の低下を示唆しています。野生児は、人間が社会性を持つ動物であるため、その社会構造を理解し、人間との関わり方を学ぶことが困難です。そのため、人間を畏敬し、人間を無関心にする行動が自然に発生します。これは、動物が人間を「他者」として認識し、その認識に基づいて行動する結果です。人間が動物を「他者」として認識し、その認識に基づいて行動する結果です。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1095356811,
+    "load_duration": 110164181,
+    "prompt_eval_count": 106,
+    "prompt_eval_duration": 21818835,
+    "eval_count": 157,
+    "eval_duration": 907398276
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789008323.3473306,
+      "nvidia_smi": {
+        "timestamp_unix": 1789008323.3473308,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 89,
+            "mem_util_pct": 71,
+            "power_w": 66.735,
+            "temp_c": 75,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789008323.3576088,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.53515625,
+        "vms_mib": 4218.85546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2313.28515625,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.53515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2054.75,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789008323.3784757,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320108,
+        "proc_vm_rss_kib": 264740,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789008324.4886675,
+      "nvidia_smi": {
+        "timestamp_unix": 1789008324.488668,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 89,
+            "mem_util_pct": 71,
+            "power_w": 64.447,
+            "temp_c": 74,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789008324.5001984,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 255.52734375,
+        "vms_mib": 4218.85546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2310.27734375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 255.52734375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2054.75,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789008324.5224648,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320108,
+        "proc_vm_rss_kib": 261660,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789008323.3925362,
+      "response_received_unix": 1789008324.4886007,
+      "first_byte_unix": 1789008324.4885435,
+      "total_wall_ms": 1096.064567565918,
+      "queue_wait_ms": 1096.0073471069336,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 02:45:24 GMT",
+        "Content-Length": "1098",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789008324.5363836,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789008323.3924923
+    }
+  },
+  "wall_clock_unix": 1789008324.5363836
+}

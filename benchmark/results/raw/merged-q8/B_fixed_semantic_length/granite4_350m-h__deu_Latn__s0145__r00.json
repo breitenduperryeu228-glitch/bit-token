@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "deu_Latn",
+  "sample_id": "s0145",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Bitte schreiben Sie ungefähr 256 Zeichen Text auf Deutsch über das Thema des folgenden Satzes. Keine Begrüßung, keine Erklärungen, nur den Absatz selbst:\n\nDiese Pläne wurden jedoch fast über Nacht obsolet, als über 800.000 Soldaten der Roten Armee der Sowjetunion in die weißrussischen und ukrainischen Fronten eindrangen und diese schufen, nachdem sie in Verletzung des Friedensvertrags von Riga, des sowjetisch-polnischen Nichtangriffspakts und anderer bilateraler und multilateraler internationaler Verträge in die östlichen Regionen Polens eingedrungen waren.\n\n/no_think",
+    "source_text": "Diese Pläne wurden jedoch fast über Nacht obsolet, als über 800.000 Soldaten der Roten Armee der Sowjetunion in die weißrussischen und ukrainischen Fronten eindrangen und diese schufen, nachdem sie in Verletzung des Friedensvertrags von Riga, des sowjetisch-polnischen Nichtangriffspakts und anderer bilateraler und multilateraler internationaler Verträge in die östlichen Regionen Polens eingedrungen waren."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Diese Pläne wurden fast über Nacht obsolet.",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 681752181,
+    "load_duration": 49656138,
+    "prompt_eval_duration": 450331779,
+    "eval_duration": 172094352,
+    "eval_count": 13,
+    "prompt_eval_count": 177,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T06:59:28.533765312Z",
+    "message": {
+      "role": "assistant",
+      "content": "Diese Pläne wurden fast über Nacht obsolet."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 681752181,
+    "load_duration": 49656138,
+    "prompt_eval_count": 177,
+    "prompt_eval_duration": 450331779,
+    "eval_count": 13,
+    "eval_duration": 172094352
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788937167.8119867,
+      "nvidia_smi": {
+        "timestamp_unix": 1788937167.8119872,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.045,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788937167.8261406,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 187.06640625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 909278,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 996.078125,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 187.06640625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 809.01171875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788937167.841864,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 191556,
+        "proc_threads": 40,
+        "proc_vol_ctx": 902349,
+        "proc_invol_ctx": 6929,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788937168.5340755,
+      "nvidia_smi": {
+        "timestamp_unix": 1788937168.534076,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.151,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788937168.548354,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 186.07421875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 909285,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 995.0859375,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 186.07421875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 809.01171875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788937168.564302,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 190540,
+        "proc_threads": 40,
+        "proc_vol_ctx": 902356,
+        "proc_invol_ctx": 6929,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788937167.851627,
+      "response_received_unix": 1788937168.5340295,
+      "first_byte_unix": 1788937168.5339892,
+      "total_wall_ms": 682.4023723602295,
+      "queue_wait_ms": 682.3620796203613,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 06:59:28 GMT",
+        "Content-Length": "346",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788937168.5739923,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788937167.851582
+    }
+  },
+  "wall_clock_unix": 1788937168.5739923
+}

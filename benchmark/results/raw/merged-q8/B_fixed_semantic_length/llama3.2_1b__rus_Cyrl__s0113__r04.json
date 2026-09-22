@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0113",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nГрустно, что когда появились новые способы письма, карандаш утратил свой прежний статус и им стали меньше пользоваться.\n\n/no_think",
+    "source_text": "Грустно, что когда появились новые способы письма, карандаш утратил свой прежний статус и им стали меньше пользоваться."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Без приветствий и пояснений, только сам абзац:\n\nСовременные технологии, такие как электронные почты и социальные сети, сделали карандаш менее необходимым инструментом. Новые способы письма, такие как электронный ईлектронал и веб-издания, позволяют быстрее и dễше передавать информацию. Однако это также означает, что традиционные методы письма, такие как карандаш и бумага, теряют свою актуальность.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 874222708,
+    "load_duration": 68302668,
+    "prompt_eval_duration": 5931098,
+    "eval_duration": 750393764,
+    "eval_count": 130,
+    "prompt_eval_count": 118,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:47:23.991995582Z",
+    "message": {
+      "role": "assistant",
+      "content": "Без приветствий и пояснений, только сам абзац:\n\nСовременные технологии, такие как электронные почты и социальные сети, сделали карандаш менее необходимым инструментом. Новые способы письма, такие как электронный ईлектронал и веб-издания, позволяют быстрее и dễше передавать информацию. Однако это также означает, что традиционные методы письма, такие как карандаш и бумага, теряют свою актуальность."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 874222708,
+    "load_duration": 68302668,
+    "prompt_eval_count": 118,
+    "prompt_eval_duration": 5931098,
+    "eval_count": 130,
+    "eval_duration": 750393764
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789138043.0722148,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138043.072215,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 90,
+            "mem_util_pct": 100,
+            "power_w": 71.788,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138043.0826519,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.4453125,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 27985,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1182.421875,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.4453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 938.9765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138043.1035957,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249288,
+        "proc_threads": 32,
+        "proc_vol_ctx": 27537,
+        "proc_invol_ctx": 448,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789138043.992435,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138043.9924357,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 61,
+            "mem_util_pct": 69,
+            "power_w": 73.525,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138044.0038202,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.375,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 28005,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1182.3515625,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 938.9765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138044.0260687,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249216,
+        "proc_threads": 32,
+        "proc_vol_ctx": 27555,
+        "proc_invol_ctx": 450,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789138043.117447,
+      "response_received_unix": 1789138043.9923651,
+      "first_byte_unix": 1789138043.9923007,
+      "total_wall_ms": 874.9182224273682,
+      "queue_wait_ms": 874.8538494110107,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:47:23 GMT",
+        "Content-Length": "1032",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789138044.0396788,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789138043.1174037
+    }
+  },
+  "wall_clock_unix": 1789138044.0396788
+}

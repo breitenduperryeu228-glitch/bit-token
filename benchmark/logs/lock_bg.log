@@ -1,0 +1,29 @@
+[20:19:04] === run_benchmark start (pid=244376) ===
+[20:19:04]   stale .run.pid (244376) — same as current PID, removing
+[20:19:04]   acquired single-process lock (PID=244376)
+[20:19:04] === run_benchmark config: models=3 langs=1 samples=2 repeats=2 phase=A resume=True out_dir=new-locktest
+[20:19:04]   models in order: ['granite4:350m-h', 'LiquidAI/lfm2.5-350m:latest', 'qwen3:0.6b']
+[20:19:04]   languages: ['eng_Latn']
+[20:19:04] -- PHASE A_fixed_tokens --
+[20:19:04]   >>> granite4:350m-h × A_fixed_tokens START
+[20:19:04]   [preflight] 'granite4:350m-h' available=True VRAM=2657MiB loaded_before=[]
+[20:19:05]   [ensure_loaded] ok — load_duration=524ms VRAM: 2657 -> 2657 MiB
+[20:19:05]   >>> granite4:350m-h cells_target = 4
+[20:19:13]   >>> granite4:350m-h cells=4 saved=4 skipped=0 failed=0 retries=0
+[20:19:14]   [unload] 'granite4:350m-h' success=True elapsed=1.0s VRAM_after=2657MiB
+[20:19:14]   >>> granite4:350m-h × A_fixed_tokens DONE
+[20:19:14]   >>> LiquidAI/lfm2.5-350m:latest × A_fixed_tokens START
+[20:19:14]   [preflight] 'LiquidAI/lfm2.5-350m:latest' available=True VRAM=2657MiB loaded_before=[]
+[20:19:15]   [ensure_loaded] ok — load_duration=463ms VRAM: 2657 -> 2657 MiB
+[20:19:15]   >>> LiquidAI/lfm2.5-350m:latest cells_target = 4
+[20:19:22]   >>> LiquidAI/lfm2.5-350m:latest cells=4 saved=4 skipped=0 failed=0 retries=0
+[20:19:23]   [unload] 'LiquidAI/lfm2.5-350m:latest' success=True elapsed=1.0s VRAM_after=2657MiB
+[20:19:23]   >>> LiquidAI/lfm2.5-350m:latest × A_fixed_tokens DONE
+[20:19:23]   >>> qwen3:0.6b × A_fixed_tokens START
+[20:19:23]   [preflight] 'qwen3:0.6b' available=True VRAM=2657MiB loaded_before=[]
+[20:19:24]   [ensure_loaded] ok — load_duration=806ms VRAM: 2657 -> 2657 MiB
+[20:19:24]   >>> qwen3:0.6b cells_target = 4
+[20:19:27]   >>> qwen3:0.6b cells=4 saved=4 skipped=0 failed=0 retries=0
+[20:19:28]   [unload] 'qwen3:0.6b' success=True elapsed=1.0s VRAM_after=2657MiB
+[20:19:28]   >>> qwen3:0.6b × A_fixed_tokens DONE
+[20:19:28] === run_benchmark done — report at results/raw/new-locktest/RUN_REPORT.md ===

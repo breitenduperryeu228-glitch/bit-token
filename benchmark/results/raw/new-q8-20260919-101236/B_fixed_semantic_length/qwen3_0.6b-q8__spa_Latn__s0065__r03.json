@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b-q8",
+  "language": "spa_Latn",
+  "sample_id": "s0065",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nEl término civilización deriva del latín civilis, que quiere decir civil, y se relaciona tanto con la palabra civis, del mismo idioma, que significa ciudadano, como con civitas, que cuyo significado es ciudad o ciudad estado y que, además, determina de algún modo el tamaño de la sociedad.\n\n/no_think",
+    "source_text": "El término civilización deriva del latín civilis, que quiere decir civil, y se relaciona tanto con la palabra civis, del mismo idioma, que significa ciudadano, como con civitas, que cuyo significado es ciudad o ciudad estado y que, además, determina de algún modo el tamaño de la sociedad."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "El término civilización deriva del latín *civilis*, que significa ciudadano, y se relaciona tanto con la palabra *civis* (ciudadano) como con *civitas* (ciudad o estado), determinando el tamaño de la sociedad.",
+  "ollama": {
+    "model": "qwen3:0.6b-q8",
+    "total_duration": 347772479,
+    "load_duration": 49686315,
+    "prompt_eval_duration": 4543714,
+    "eval_duration": 277890942,
+    "eval_count": 62,
+    "prompt_eval_count": 133,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b-q8",
+    "created_at": "2026-09-19T03:23:16.800662253Z",
+    "message": {
+      "role": "assistant",
+      "content": "<think>\n\n</think>\n\nEl término civilización deriva del latín *civilis*, que significa ciudadano, y se relaciona tanto con la palabra *civis* (ciudadano) como con *civitas* (ciudad o estado), determinando el tamaño de la sociedad."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 347772479,
+    "load_duration": 49686315,
+    "prompt_eval_count": 133,
+    "prompt_eval_duration": 4543714,
+    "eval_count": 62,
+    "eval_duration": 277890942
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789788196.4217496,
+      "nvidia_smi": {
+        "timestamp_unix": 1789788196.4217498,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2365.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 78,
+            "power_w": 51.262,
+            "temp_c": 58,
+            "sm_clock_mhz": 2610,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789788196.4327967,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 103.26171875,
+        "vms_mib": 3980.078125,
+        "num_threads": 38,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 762.37109375,
+        "tree_threads": 85,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 103.26171875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 659.109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789788196.4440637,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4075600,
+        "proc_vm_rss_kib": 105740,
+        "proc_threads": 38,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789788196.8010635,
+      "nvidia_smi": {
+        "timestamp_unix": 1789788196.8010638,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2365.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 56,
+            "mem_util_pct": 50,
+            "power_w": 50.518,
+            "temp_c": 55,
+            "sm_clock_mhz": 2610,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789788196.814329,
+        "ollama_pid": 2794,
+        "pid": 2794,
+        "cpu_pct": 0.0,
+        "rss_mib": 101.44140625,
+        "vms_mib": 3980.078125,
+        "num_threads": 38,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 372,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 759.36328125,
+        "tree_threads": 85,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2794,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 101.44140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 18024,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031 --port 34043",
+            "rss_mib": 657.921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789788196.8262749,
+        "ollama_pid": 2794,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4075600,
+        "proc_vm_rss_kib": 103876,
+        "proc_threads": 38,
+        "proc_vol_ctx": 369,
+        "proc_invol_ctx": 3,
+        "io_error": "[Errno 13] Permission denied: '/proc/2794/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789788196.4525242,
+      "response_received_unix": 1789788196.8010054,
+      "first_byte_unix": 1789788196.800962,
+      "total_wall_ms": 348.4811782836914,
+      "queue_wait_ms": 348.4377861022949,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 19 Sep 2026 03:23:16 GMT",
+        "Content-Length": "553",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789788196.8349583,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789788196.4524813
+    }
+  },
+  "wall_clock_unix": 1789788196.8349583
+}

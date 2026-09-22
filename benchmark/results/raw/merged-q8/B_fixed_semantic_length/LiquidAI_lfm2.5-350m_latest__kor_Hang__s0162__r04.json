@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0162",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n병원은 다른 사람들의 감염 가능성을 막기 위해 환자를 다른 사람들로부터 분리시키는 것을 포함하여 감염 통제 규직을 준수했다.\n\n/no_think",
+    "source_text": "병원은 다른 사람들의 감염 가능성을 막기 위해 환자를 다른 사람들로부터 분리시키는 것을 포함하여 감염 통제 규직을 준수했다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "병원은 다른 사람들의 감염 가능성을 줄이기 위해 환자를 다른 사람들로부터 분리시키는 절차를 철저히 실행했다. 이는 전염병 발생 시 환자 간의 접촉을 최소화하는 데 중요한 역할을 한다. 분리된 환자들은 병원 내 다른 부서나 시설과의 접촉을 줄여 전파 위험을 낮추는 데 기여한다. 또한, 이러한 관행은 환자 관리의 효율성을 높이고 의료진의 업무 부담을 줄이는 데도 도움이 된다. 분리된 환자들은 정기적인 검진과 모니터링을 통해 건강 상태를 지속적으로 관리할 수 있어, 전체적인 환자 안전을 강화한다. 이러한 체계적인 접근 방식은 병원의 신뢰성을 높이고 환자 안전에 대한 의지를 보여준다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2846059960,
+    "load_duration": 24403712,
+    "prompt_eval_duration": 273563865,
+    "eval_duration": 2518588927,
+    "eval_count": 210,
+    "prompt_eval_count": 116,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T09:10:45.247087494Z",
+    "message": {
+      "role": "assistant",
+      "content": "병원은 다른 사람들의 감염 가능성을 줄이기 위해 환자를 다른 사람들로부터 분리시키는 절차를 철저히 실행했다. 이는 전염병 발생 시 환자 간의 접촉을 최소화하는 데 중요한 역할을 한다. 분리된 환자들은 병원 내 다른 부서나 시설과의 접촉을 줄여 전파 위험을 낮추는 데 기여한다. 또한, 이러한 관행은 환자 관리의 효율성을 높이고 의료진의 업무 부담을 줄이는 데도 도움이 된다. 분리된 환자들은 정기적인 검진과 모니터링을 통해 건강 상태를 지속적으로 관리할 수 있어, 전체적인 환자 안전을 강화한다. 이러한 체계적인 접근 방식은 병원의 신뢰성을 높이고 환자 안전에 대한 의지를 보여준다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2846059960,
+    "load_duration": 24403712,
+    "prompt_eval_count": 116,
+    "prompt_eval_duration": 273563865,
+    "eval_count": 210,
+    "eval_duration": 2518588927
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788945042.3636355,
+      "nvidia_smi": {
+        "timestamp_unix": 1788945042.363636,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 39,
+            "mem_util_pct": 14,
+            "power_w": 12.0,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788945042.3773925,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.48828125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 996.859375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.48828125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.37109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788945042.3918319,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208372,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788945045.2476175,
+      "nvidia_smi": {
+        "timestamp_unix": 1788945045.2476177,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.6875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 31,
+            "mem_util_pct": 14,
+            "power_w": 11.981,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788945045.2624533,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.48828125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 997.359375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.48828125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.87109375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788945045.2780168,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208372,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788945042.4006262,
+      "response_received_unix": 1788945045.2475553,
+      "first_byte_unix": 1788945045.2474983,
+      "total_wall_ms": 2846.9290733337402,
+      "queue_wait_ms": 2846.872091293335,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 09:10:45 GMT",
+        "Content-Length": "1116",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788945045.2869308,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788945042.400582
+    }
+  },
+  "wall_clock_unix": 1788945045.2869308
+}

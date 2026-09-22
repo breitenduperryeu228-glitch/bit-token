@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "fra_Latn",
+  "sample_id": "s0118",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Veuillez écrire environ 256 caractères de texte en français sur le sujet suggéré par la phrase suivante. Pas de salutations ni d'explications, juste le paragraphe :\n\nLa recherche en intelligence artificielle a pour objet l'automatisation par des machines de tâches requérant une approche intelligente.\n\n/no_think",
+    "source_text": "La recherche en intelligence artificielle a pour objet l'automatisation par des machines de tâches requérant une approche intelligente."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "La recherche en IA automatise les tâches complexes. Elle utilise des algorithmes et des modèles d'apprentissage automatique pour optimiser le processus. L'intelligence artificielle permet aux systèmes de prendre des décisions éclairées, améliorant ainsi leur efficacité et leur précision.",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 1183231882,
+    "load_duration": 38826522,
+    "prompt_eval_duration": 171589224,
+    "eval_duration": 939196731,
+    "eval_count": 70,
+    "prompt_eval_count": 95,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T06:45:22.449418276Z",
+    "message": {
+      "role": "assistant",
+      "content": "La recherche en IA automatise les tâches complexes. Elle utilise des algorithmes et des modèles d'apprentissage automatique pour optimiser le processus. L'intelligence artificielle permet aux systèmes de prendre des décisions éclairées, améliorant ainsi leur efficacité et leur précision."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1183231882,
+    "load_duration": 38826522,
+    "prompt_eval_count": 95,
+    "prompt_eval_duration": 171589224,
+    "eval_count": 70,
+    "eval_duration": 939196731
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788936321.2309422,
+      "nvidia_smi": {
+        "timestamp_unix": 1788936321.2309425,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 29,
+            "mem_util_pct": 14,
+            "power_w": 12.28,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788936321.2442348,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 183.7578125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 899993,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1000.30859375,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 183.7578125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 816.55078125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788936321.2570207,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 188168,
+        "proc_threads": 40,
+        "proc_vol_ctx": 893218,
+        "proc_invol_ctx": 6775,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788936322.4497318,
+      "nvidia_smi": {
+        "timestamp_unix": 1788936322.449732,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 14,
+            "power_w": 12.299,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788936322.463344,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 186.94921875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 900003,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1004.6484375,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 186.94921875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 817.69921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788936322.477478,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 191436,
+        "proc_threads": 40,
+        "proc_vol_ctx": 893228,
+        "proc_invol_ctx": 6775,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788936321.2658072,
+      "response_received_unix": 1788936322.449692,
+      "first_byte_unix": 1788936322.4496543,
+      "total_wall_ms": 1183.884859085083,
+      "queue_wait_ms": 1183.847188949585,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 06:45:22 GMT",
+        "Content-Length": "598",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788936322.4863498,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788936321.2657573
+    }
+  },
+  "wall_clock_unix": 1788936322.4863498
+}

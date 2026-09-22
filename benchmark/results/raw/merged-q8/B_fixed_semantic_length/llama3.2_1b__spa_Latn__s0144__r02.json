@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "spa_Latn",
+  "sample_id": "s0144",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nCuando un grupo reducido de seres vivos (una población pequeña) se aparta de la principal de la que provienen (por ejemplo, si se desplazan a una cadena montañosa o a un río, o si se trasladan a una isla nueva de modo que no pueden retroceder con facilidad) se encontrarán, con frecuencia, en un ambiente diferente al que solían estar acostumbrados.\n\n/no_think",
+    "source_text": "Cuando un grupo reducido de seres vivos (una población pequeña) se aparta de la principal de la que provienen (por ejemplo, si se desplazan a una cadena montañosa o a un río, o si se trasladan a una isla nueva de modo que no pueden retroceder con facilidad) se encontrarán, con frecuencia, en un ambiente diferente al que solían estar acostumbrados."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "La población reducida puede experimentar cambios significativos debido a la separación, lo que puede afectar su adaptabilidad y capacidad para sobrevivir.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 292729802,
+    "load_duration": 73084284,
+    "prompt_eval_duration": 5941899,
+    "eval_duration": 198245863,
+    "eval_count": 35,
+    "prompt_eval_count": 171,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T08:10:27.456570047Z",
+    "message": {
+      "role": "assistant",
+      "content": "La población reducida puede experimentar cambios significativos debido a la separación, lo que puede afectar su adaptabilidad y capacidad para sobrevivir."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 292729802,
+    "load_duration": 73084284,
+    "prompt_eval_count": 171,
+    "prompt_eval_duration": 5941899,
+    "eval_count": 35,
+    "eval_duration": 198245863
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789027827.117295,
+      "nvidia_smi": {
+        "timestamp_unix": 1789027827.1172955,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 16,
+            "mem_util_pct": 18,
+            "power_w": 63.326,
+            "temp_c": 76,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789027827.1275954,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.92578125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1278.04296875,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.92578125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1019.1171875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789027827.149256,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265140,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789027827.4569366,
+      "nvidia_smi": {
+        "timestamp_unix": 1789027827.456937,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 16,
+            "mem_util_pct": 18,
+            "power_w": 58.501,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789027827.4680495,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.984375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1278.1015625,
+        "tree_threads": 61,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.984375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 1019.1171875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789027827.4911697,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265200,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789027827.163503,
+      "response_received_unix": 1789027827.4568834,
+      "first_byte_unix": 1789027827.456834,
+      "total_wall_ms": 293.3804988861084,
+      "queue_wait_ms": 293.3311462402344,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 08:10:27 GMT",
+        "Content-Length": "451",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789027827.5055652,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789027827.1634579
+    }
+  },
+  "wall_clock_unix": 1789027827.5055652
+}

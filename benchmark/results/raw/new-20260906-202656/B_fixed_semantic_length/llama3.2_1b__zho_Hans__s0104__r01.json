@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "zho_Hans",
+  "sample_id": "s0104",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n当今，几乎所有投入使用的计算机都是以处理二进制编码的信息为基础的。\n\n/no_think",
+    "source_text": "当今，几乎所有投入使用的计算机都是以处理二进制编码的信息为基础的。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "在计算机领域，几乎所有的计算机都依赖于二进制系统来存储和传输信息。这种系统是基于十进制数值的数字化，而不是基数为二的数字化。因此，计算机的处理能力主要依赖于其处理的二进制数据。虽然大多数计算机现在已经转向使用四进制或八进制系统来存储和传输信息，但仍然存在大量的二进制计算机。这些计算机通常用于低级应用程序、安全设备等领域，例如防御机器、加密设备等。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 912677958,
+    "load_duration": 83348201,
+    "prompt_eval_duration": 6663244,
+    "eval_duration": 761738378,
+    "eval_count": 132,
+    "prompt_eval_count": 97,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T06:55:52.099371103Z",
+    "message": {
+      "role": "assistant",
+      "content": "在计算机领域，几乎所有的计算机都依赖于二进制系统来存储和传输信息。这种系统是基于十进制数值的数字化，而不是基数为二的数字化。因此，计算机的处理能力主要依赖于其处理的二进制数据。虽然大多数计算机现在已经转向使用四进制或八进制系统来存储和传输信息，但仍然存在大量的二进制计算机。这些计算机通常用于低级应用程序、安全设备等领域，例如防御机器、加密设备等。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 912677958,
+    "load_duration": 83348201,
+    "prompt_eval_count": 97,
+    "prompt_eval_duration": 6663244,
+    "eval_count": 132,
+    "eval_duration": 761738378
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789023351.140249,
+      "nvidia_smi": {
+        "timestamp_unix": 1789023351.1402495,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 79.964,
+            "temp_c": 77,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789023351.1510584,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.91015625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.64453125,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.91015625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 971.734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789023351.172087,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265124,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789023352.0997164,
+      "nvidia_smi": {
+        "timestamp_unix": 1789023352.099717,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 72.784,
+            "temp_c": 79,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789023352.1107187,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.4140625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.1484375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.4140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 971.734375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789023352.1338084,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264616,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789023351.1863608,
+      "response_received_unix": 1789023352.0996633,
+      "first_byte_unix": 1789023352.0996206,
+      "total_wall_ms": 913.3024215698242,
+      "queue_wait_ms": 913.259744644165,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:55:52 GMT",
+        "Content-Length": "817",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789023352.1482267,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789023351.1863172
+    }
+  },
+  "wall_clock_unix": 1789023352.1482267
+}

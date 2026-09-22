@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0176",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n몰도바의 수도는 키시나누(Chişinău)이다. 언어는 루마니아어이지만 러시아어가 널리 사용된다.\n\n/no_think",
+    "source_text": "몰도바의 수도는 키시나누(Chişinău)이다. 언어는 루마니아어이지만 러시아어가 널리 사용된다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "몰도바의 수도는 키시나누(Chişinău)에 위치해 있으며, 이는 키시나누의 역사와 문화적 중요성을 반영한 곳입니다. 키시나누는 루마니아의 수도로, 역사적 유적과 예술적 가치가 풍부합니다. 루마니아어는 주로 지역 사회에서 사용되며, 이는 몰도바의 정체성과 문화적 연결을 강화합니다. 또한, 몰도바는 러시아어와도 교류하며, 이는 지역의 다문화적 특성을 보여줍니다. 이러한 언어적 다양성은 몰도바의 풍부한 문화 유산을 형성하는 중요한 요소입니다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2424220322,
+    "load_duration": 23336702,
+    "prompt_eval_duration": 224854666,
+    "eval_duration": 2152619288,
+    "eval_count": 186,
+    "prompt_eval_count": 123,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T09:14:11.6805034Z",
+    "message": {
+      "role": "assistant",
+      "content": "몰도바의 수도는 키시나누(Chişinău)에 위치해 있으며, 이는 키시나누의 역사와 문화적 중요성을 반영한 곳입니다. 키시나누는 루마니아의 수도로, 역사적 유적과 예술적 가치가 풍부합니다. 루마니아어는 주로 지역 사회에서 사용되며, 이는 몰도바의 정체성과 문화적 연결을 강화합니다. 또한, 몰도바는 러시아어와도 교류하며, 이는 지역의 다문화적 특성을 보여줍니다. 이러한 언어적 다양성은 몰도바의 풍부한 문화 유산을 형성하는 중요한 요소입니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2424220322,
+    "load_duration": 23336702,
+    "prompt_eval_count": 123,
+    "prompt_eval_duration": 224854666,
+    "eval_count": 186,
+    "eval_duration": 2152619288
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788945249.2218523,
+      "nvidia_smi": {
+        "timestamp_unix": 1788945249.221853,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.521,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788945249.2352295,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.23828125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 995.6640625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.23828125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.42578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788945249.2475364,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207092,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788945251.6810007,
+      "nvidia_smi": {
+        "timestamp_unix": 1788945251.6810012,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.533,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788945251.6953993,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.46484375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 995.828125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.46484375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.36328125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788945251.7097063,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207324,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788945249.255887,
+      "response_received_unix": 1788945251.6809218,
+      "first_byte_unix": 1788945251.680862,
+      "total_wall_ms": 2425.034761428833,
+      "queue_wait_ms": 2424.9749183654785,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 09:14:11 GMT",
+        "Content-Length": "919",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788945251.7185113,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788945249.2558367
+    }
+  },
+  "wall_clock_unix": 1788945251.7185113
+}

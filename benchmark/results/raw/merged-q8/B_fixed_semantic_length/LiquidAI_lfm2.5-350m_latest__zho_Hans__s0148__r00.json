@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "zho_Hans",
+  "sample_id": "s0148",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n宇宙中的一切都由物质构成，而所有的物质都由被称为原子的微小粒子组成。\n\n/no_think",
+    "source_text": "宇宙中的一切都由物质构成，而所有的物质都由被称为原子的微小粒子组成。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "宇宙的深层结构如同一张无形的网，宏大而微妙。每一个星球都由无数个微小的颗粒组成，形成复杂的地质和生态系统。太阳的光辉依赖于原子核的聚集，而黑洞则像无形的陷阱，吸收一切能量。宇宙的演化如同一场不断变化的舞蹈，微小的摇摆引发宏大的宇宙运动。生命的出现如同一颗奇异的晶体，揭示了宇宙的本质。每一个粒子都在无声中交织，构成了无尽的奇迹。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2263171434,
+    "load_duration": 24678537,
+    "prompt_eval_duration": 223366599,
+    "eval_duration": 1989074670,
+    "eval_count": 168,
+    "prompt_eval_count": 95,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T07:56:13.547560462Z",
+    "message": {
+      "role": "assistant",
+      "content": "宇宙的深层结构如同一张无形的网，宏大而微妙。每一个星球都由无数个微小的颗粒组成，形成复杂的地质和生态系统。太阳的光辉依赖于原子核的聚集，而黑洞则像无形的陷阱，吸收一切能量。宇宙的演化如同一场不断变化的舞蹈，微小的摇摆引发宏大的宇宙运动。生命的出现如同一颗奇异的晶体，揭示了宇宙的本质。每一个粒子都在无声中交织，构成了无尽的奇迹。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2263171434,
+    "load_duration": 24678537,
+    "prompt_eval_count": 95,
+    "prompt_eval_duration": 223366599,
+    "eval_count": 168,
+    "eval_duration": 1989074670
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788940571.2473881,
+      "nvidia_smi": {
+        "timestamp_unix": 1788940571.2473886,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 30,
+            "mem_util_pct": 14,
+            "power_w": 12.217,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788940571.2607284,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.0625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 947059,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 981.97265625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.0625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 779.91015625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788940571.2751007,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 206912,
+        "proc_threads": 40,
+        "proc_vol_ctx": 939806,
+        "proc_invol_ctx": 7253,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788940573.5479605,
+      "nvidia_smi": {
+        "timestamp_unix": 1788940573.547961,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.153,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788940573.5628295,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.9609375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 947299,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 983.87109375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.9609375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.91015625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788940573.5777116,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207832,
+        "proc_threads": 40,
+        "proc_vol_ctx": 940045,
+        "proc_invol_ctx": 7254,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788940571.283986,
+      "response_received_unix": 1788940573.5478919,
+      "first_byte_unix": 1788940573.5478344,
+      "total_wall_ms": 2263.9057636260986,
+      "queue_wait_ms": 2263.848304748535,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 07:56:13 GMT",
+        "Content-Length": "807",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788940573.586354,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788940571.2839384
+    }
+  },
+  "wall_clock_unix": 1788940573.586354
+}

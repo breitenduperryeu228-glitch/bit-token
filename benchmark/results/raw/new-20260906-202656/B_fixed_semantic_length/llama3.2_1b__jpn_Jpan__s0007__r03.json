@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0007",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n昆虫学者は、この昆虫群について昆虫という呼称を正式な意味で使用しています。\n\n/no_think",
+    "source_text": "昆虫学者は、この昆虫群について昆虫という呼称を正式な意味で使用しています。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "日本語では、昆虫のことには「昆虫学」や「昆虫学者」という言葉が使われることが多い。昆虫学は、昆虫の種類や行動について研究する分野です。昆虫学者の仕事は、昆虫の生態系を理解し、昆虫の利用性を高めるために研究を進めます。\n\n昆虫学者が研究した結果によると、昆虫は世界中でたくさんの種類があります。昆虫は食物や宿主に依存しています。昆虫はもともと人間の生活環境に生息していましたが、近年では人間の活動によって昆虫の生態系が変化しています。\n\n日本には多くの種類の昆虫があります。昆虫は世界中で栄養源として利用されます。昆虫の卵や幼虫は食用に使われ、昆虫の皮膚から作った製品もあります。昆虫の利用性を高めるために研究が進められています。\n\n日本では昆虫学者が研究した結果によると、昆虫の生態系を理解することで、人間の生活環境に寄与することができることがわかりました。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1890503428,
+    "load_duration": 89972476,
+    "prompt_eval_duration": 6657772,
+    "eval_duration": 1664764197,
+    "eval_count": 286,
+    "prompt_eval_count": 104,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:11:41.457839738Z",
+    "message": {
+      "role": "assistant",
+      "content": "日本語では、昆虫のことには「昆虫学」や「昆虫学者」という言葉が使われることが多い。昆虫学は、昆虫の種類や行動について研究する分野です。昆虫学者の仕事は、昆虫の生態系を理解し、昆虫の利用性を高めるために研究を進めます。\n\n昆虫学者が研究した結果によると、昆虫は世界中でたくさんの種類があります。昆虫は食物や宿主に依存しています。昆虫はもともと人間の生活環境に生息していましたが、近年では人間の活動によって昆虫の生態系が変化しています。\n\n日本には多くの種類の昆虫があります。昆虫は世界中で栄養源として利用されます。昆虫の卵や幼虫は食用に使われ、昆虫の皮膚から作った製品もあります。昆虫の利用性を高めるために研究が進められています。\n\n日本では昆虫学者が研究した結果によると、昆虫の生態系を理解することで、人間の生活環境に寄与することができることがわかりました。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1890503428,
+    "load_duration": 89972476,
+    "prompt_eval_count": 104,
+    "prompt_eval_duration": 6657772,
+    "eval_count": 286,
+    "eval_duration": 1664764197
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789024299.5202692,
+      "nvidia_smi": {
+        "timestamp_unix": 1789024299.5202692,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 91,
+            "mem_util_pct": 100,
+            "power_w": 82.681,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789024299.5307028,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.6640625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.5,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.6640625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 971.8359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789024299.5525393,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264872,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789024301.4581983,
+      "nvidia_smi": {
+        "timestamp_unix": 1789024301.4581988,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 82.451,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789024301.4693248,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.3515625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.1875,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.3515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 971.8359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789024301.4936893,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264552,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789024299.5670054,
+      "response_received_unix": 1789024301.4581378,
+      "first_byte_unix": 1789024301.4580934,
+      "total_wall_ms": 1891.1323547363281,
+      "queue_wait_ms": 1891.0880088806152,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:11:41 GMT",
+        "Content-Length": "1429",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789024301.5087485,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789024299.5669622
+    }
+  },
+  "wall_clock_unix": 1789024301.5087485
+}

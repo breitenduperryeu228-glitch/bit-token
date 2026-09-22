@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0150",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nСуществует множество таких социальных и политических эффектов, как использование метрической системы, переход от абсолютизма к республиканизму, национализм и вера в то, что страна принадлежит народу, а не единоличному правителю.\n\n/no_think",
+    "source_text": "Существует множество таких социальных и политических эффектов, как использование метрической системы, переход от абсолютизма к республиканизму, национализм и вера в то, что страна принадлежит народу, а не единоличному правителю."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Социальная динамика в стране формируется сложными взаимосвязями между различными группами населения. В контексте метрической системы это означает, что различные группы могут иметь разные приоритеты и интересы, что может привести к конфликтам и нестабильности. Переход от абсолютизма к республиканизму, национализму - это значительное изменение в политической системе, которое может быть вызвано различными факторами, включая экономические, социальные или культурные проблемы. Важно отметить, что вера в то, что страна принадлежит народу, а не единоличному правителю, является фундаментальным аспектом многих политических и социальных систем, способствующей стабильности и развитию.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1252099055,
+    "load_duration": 73796959,
+    "prompt_eval_duration": 6685801,
+    "eval_duration": 1094505015,
+    "eval_count": 188,
+    "prompt_eval_count": 155,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:49:35.272740449Z",
+    "message": {
+      "role": "assistant",
+      "content": "Социальная динамика в стране формируется сложными взаимосвязями между различными группами населения. В контексте метрической системы это означает, что различные группы могут иметь разные приоритеты и интересы, что может привести к конфликтам и нестабильности. Переход от абсолютизма к республиканизму, национализму - это значительное изменение в политической системе, которое может быть вызвано различными факторами, включая экономические, социальные или культурные проблемы. Важно отметить, что вера в то, что страна принадлежит народу, а не единоличному правителю, является фундаментальным аспектом многих политических и социальных систем, способствующей стабильности и развитию."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1252099055,
+    "load_duration": 73796959,
+    "prompt_eval_count": 155,
+    "prompt_eval_duration": 6685801,
+    "eval_count": 188,
+    "eval_duration": 1094505015
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789138173.971318,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138173.9713185,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 49,
+            "mem_util_pct": 52,
+            "power_w": 67.832,
+            "temp_c": 78,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138173.981768,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.62890625,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 32936,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1188.4765625,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.62890625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 944.84765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138174.005114,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249476,
+        "proc_threads": 32,
+        "proc_vol_ctx": 32398,
+        "proc_invol_ctx": 538,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789138175.273182,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138175.2731824,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 81.699,
+            "temp_c": 78,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138175.2844367,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.5234375,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 32948,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1188.37109375,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.5234375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 944.84765625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138175.3091867,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249368,
+        "proc_threads": 32,
+        "proc_vol_ctx": 32410,
+        "proc_invol_ctx": 538,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789138174.0202913,
+      "response_received_unix": 1789138175.273108,
+      "first_byte_unix": 1789138175.2730496,
+      "total_wall_ms": 1252.8166770935059,
+      "queue_wait_ms": 1252.758264541626,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:49:35 GMT",
+        "Content-Length": "1561",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789138175.3243475,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789138174.0202415
+    }
+  },
+  "wall_clock_unix": 1789138175.3243475
+}

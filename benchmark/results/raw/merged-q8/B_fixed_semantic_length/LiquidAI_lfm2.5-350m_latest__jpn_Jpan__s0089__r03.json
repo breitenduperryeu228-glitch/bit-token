@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0089",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\nイギリスでは、16世紀にはすでに貨車道が敷設されていました。\n\n/no_think",
+    "source_text": "イギリスでは、16世紀にはすでに貨車道が敷設されていました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "イギリスでは、16世紀に貨車道が整備され、海上輸送の効率化と商業活動の発展を支える基盤となりました。特に、ロンドンやマンチェスターなどの主要港町では、広大な水路網が整備され、商船の運航が可能となりました。この時期の貨車道は、単なる交通路ではなく、貿易のルートを確保し、経済成長を促進する重要なインフラとして機能しました。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 1548510150,
+    "load_duration": 22986941,
+    "prompt_eval_duration": 167748014,
+    "eval_duration": 1338631407,
+    "eval_count": 117,
+    "prompt_eval_count": 87,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:18:07.740706082Z",
+    "message": {
+      "role": "assistant",
+      "content": "イギリスでは、16世紀に貨車道が整備され、海上輸送の効率化と商業活動の発展を支える基盤となりました。特に、ロンドンやマンチェスターなどの主要港町では、広大な水路網が整備され、商船の運航が可能となりました。この時期の貨車道は、単なる交通路ではなく、貿易のルートを確保し、経済成長を促進する重要なインフラとして機能しました。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1548510150,
+    "load_duration": 22986941,
+    "prompt_eval_count": 87,
+    "prompt_eval_duration": 167748014,
+    "eval_count": 117,
+    "eval_duration": 1338631407
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788941886.1563804,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941886.1563807,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 38,
+            "mem_util_pct": 14,
+            "power_w": 12.474,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941886.171764,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 198.39453125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 961869,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 982.47265625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 198.39453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 784.078125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941886.1839585,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 203156,
+        "proc_threads": 40,
+        "proc_vol_ctx": 954513,
+        "proc_invol_ctx": 7356,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788941887.7412605,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941887.741261,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 29,
+            "mem_util_pct": 14,
+            "power_w": 12.491,
+            "temp_c": 50,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941887.7590723,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 198.39453125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 961869,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 982.41015625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 198.39453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 784.015625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941887.776544,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 203156,
+        "proc_threads": 40,
+        "proc_vol_ctx": 954513,
+        "proc_invol_ctx": 7356,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788941886.1917763,
+      "response_received_unix": 1788941887.7411807,
+      "first_byte_unix": 1788941887.741117,
+      "total_wall_ms": 1549.4043827056885,
+      "queue_wait_ms": 1549.3407249450684,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:18:07 GMT",
+        "Content-Length": "791",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788941887.7852488,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788941886.191733
+    }
+  },
+  "wall_clock_unix": 1788941887.7852488
+}

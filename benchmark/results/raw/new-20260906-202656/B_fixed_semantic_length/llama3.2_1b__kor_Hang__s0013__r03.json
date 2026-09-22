@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "kor_Hang",
+  "sample_id": "s0013",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n아마존 강 주류는 그 길이가 6,387㎞(3,980마일)에 달한다. 이 유역은 수 천 개의 작은 강이 합류하여 빚어진다.\n\n/no_think",
+    "source_text": "아마존 강 주류는 그 길이가 6,387㎞(3,980마일)에 달한다. 이 유역은 수 천 개의 작은 강이 합류하여 빚어진다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "아마존 강은 세계에서 가장ยาว한 강 중 하나로, 6,387km(3,980마일) 길이가 알려져 있다. 이 강은 수천 개의 작은 강과 합쳐진 유역으로, 그 길이가 약 1/4인 2,160km(1,330마일)가 빚어진다. 아마존 강은 인도네시아와 파라나이시에서 시작하여 브라질까지 이르며, 이 강의 수심은 약 100m(330ft)이다.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 819535460,
+    "load_duration": 79446215,
+    "prompt_eval_duration": 5937140,
+    "eval_duration": 686841194,
+    "eval_count": 119,
+    "prompt_eval_count": 124,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:40:44.216520947Z",
+    "message": {
+      "role": "assistant",
+      "content": "아마존 강은 세계에서 가장ยาว한 강 중 하나로, 6,387km(3,980마일) 길이가 알려져 있다. 이 강은 수천 개의 작은 강과 합쳐진 유역으로, 그 길이가 약 1/4인 2,160km(1,330마일)가 빚어진다. 아마존 강은 인도네시아와 파라나이시에서 시작하여 브라질까지 이르며, 이 강의 수심은 약 100m(330ft)이다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 819535460,
+    "load_duration": 79446215,
+    "prompt_eval_count": 124,
+    "prompt_eval_duration": 5937140,
+    "eval_count": 119,
+    "eval_duration": 686841194
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789026043.346376,
+      "nvidia_smi": {
+        "timestamp_unix": 1789026043.346376,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 72.196,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789026043.3571808,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.7109375,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1231.98046875,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.7109375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.26953125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789026043.380716,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264920,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789026044.2168667,
+      "nvidia_smi": {
+        "timestamp_unix": 1789026044.2168677,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 73.276,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789026044.2279506,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.53515625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1231.8046875,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.53515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 973.26953125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789026044.253264,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264740,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789026043.3965585,
+      "response_received_unix": 1789026044.2168114,
+      "first_byte_unix": 1789026044.21677,
+      "total_wall_ms": 820.2528953552246,
+      "queue_wait_ms": 820.2114105224609,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:40:44 GMT",
+        "Content-Length": "680",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789026044.268935,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789026043.39649
+    }
+  },
+  "wall_clock_unix": 1789026044.268935
+}

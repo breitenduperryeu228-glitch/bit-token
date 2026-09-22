@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0065",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nСлово \"цивилизация\" происходит от латинского civilis, что означает \"гражданский\" и является родственником латинских слов civis, означающего \"гражданин\", и civitas, означающего \"город\" или \"город-государство\", и оно также определенным образом выражает размер общества.\n\n/no_think",
+    "source_text": "Слово \"цивилизация\" происходит от латинского civilis, что означает \"гражданский\" и является родственником латинских слов civis, означающего \"гражданин\", и civitas, означающего \"город\" или \"город-государство\", и оно также определенным образом выражает размер общества."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Слово цивилизация на русском языке имеет отношение к пониманию размера общества и его социальной структуры. Это понятие связано с концепцией гражданства, которая предполагает, что каждый человек является частью общества и имеет определенный статус или роль в нем. Цивилизация также часто ассоциируется с идеей о том, что общество должно быть справедливым, равным и справедливым для всех его членов.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 722305357,
+    "load_duration": 69673748,
+    "prompt_eval_duration": 6605185,
+    "eval_duration": 606096873,
+    "eval_count": 105,
+    "prompt_eval_count": 162,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:44:10.229333753Z",
+    "message": {
+      "role": "assistant",
+      "content": "Слово цивилизация на русском языке имеет отношение к пониманию размера общества и его социальной структуры. Это понятие связано с концепцией гражданства, которая предполагает, что каждый человек является частью общества и имеет определенный статус или роль в нем. Цивилизация также часто ассоциируется с идеей о том, что общество должно быть справедливым, равным и справедливым для всех его членов."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 722305357,
+    "load_duration": 69673748,
+    "prompt_eval_count": 162,
+    "prompt_eval_duration": 6605185,
+    "eval_count": 105,
+    "eval_duration": 606096873
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789137849.4610248,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137849.4610255,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 73.006,
+            "temp_c": 76,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137849.4717507,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.1328125,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 20498,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1154.2734375,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.1328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 911.140625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137849.4929433,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 248968,
+        "proc_threads": 32,
+        "proc_vol_ctx": 20154,
+        "proc_invol_ctx": 344,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789137850.2296698,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137850.22967,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 73.046,
+            "temp_c": 76,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137850.2405722,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 241.79296875,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 20531,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1152.93359375,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 241.79296875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 911.140625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137850.263762,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 247596,
+        "proc_threads": 32,
+        "proc_vol_ctx": 20187,
+        "proc_invol_ctx": 344,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789137849.5066783,
+      "response_received_unix": 1789137850.2296188,
+      "first_byte_unix": 1789137850.229577,
+      "total_wall_ms": 722.9404449462891,
+      "queue_wait_ms": 722.8987216949463,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:44:10 GMT",
+        "Content-Length": "1029",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789137850.2776344,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789137849.5066347
+    }
+  },
+  "wall_clock_unix": 1789137850.2776344
+}

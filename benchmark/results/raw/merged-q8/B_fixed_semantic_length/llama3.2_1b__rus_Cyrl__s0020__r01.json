@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0020",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nВ Ватикане используют итальянский язык в законодательстве и официальных сообщениях.\n\n/no_think",
+    "source_text": "В Ватикане используют итальянский язык в законодательстве и официальных сообщениях."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Итальянский язык используется в Ватиканском государственном институте, где принимают участие ученые и сотрудники. В некоторых документах и академических публикациях также используются italianские названия предметов, чтобы расшиrirь понимание предмета.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 500282825,
+    "load_duration": 70746541,
+    "prompt_eval_duration": 5955750,
+    "eval_duration": 395957665,
+    "eval_count": 69,
+    "prompt_eval_count": 105,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:41:44.600450602Z",
+    "message": {
+      "role": "assistant",
+      "content": "Итальянский язык используется в Ватиканском государственном институте, где принимают участие ученые и сотрудники. В некоторых документах и академических публикациях также используются italianские названия предметов, чтобы расшиrirь понимание предмета."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 500282825,
+    "load_duration": 70746541,
+    "prompt_eval_count": 105,
+    "prompt_eval_duration": 5955750,
+    "eval_count": 69,
+    "eval_duration": 395957665
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789137704.0549514,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137704.0549517,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 64.286,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137704.065073,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 242.9453125,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 15752,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1123.18359375,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 242.9453125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 880.23828125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137704.0860646,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 248776,
+        "proc_threads": 32,
+        "proc_vol_ctx": 15503,
+        "proc_invol_ctx": 249,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789137704.6008313,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137704.6008315,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 68.173,
+            "temp_c": 76,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137704.6117857,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 242.8203125,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 15758,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1124.52734375,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 242.8203125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 881.70703125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137704.634404,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 248648,
+        "proc_threads": 32,
+        "proc_vol_ctx": 15508,
+        "proc_invol_ctx": 250,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789137704.0998228,
+      "response_received_unix": 1789137704.6007705,
+      "first_byte_unix": 1789137704.6007252,
+      "total_wall_ms": 500.9477138519287,
+      "queue_wait_ms": 500.9024143218994,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:41:44 GMT",
+        "Content-Length": "756",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789137704.6481626,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789137704.099777
+    }
+  },
+  "wall_clock_unix": 1789137704.6481626
+}

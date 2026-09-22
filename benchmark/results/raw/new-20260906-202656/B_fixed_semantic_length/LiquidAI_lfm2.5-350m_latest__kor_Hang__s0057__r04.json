@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0057",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n오늘날 많은 고생물학자는 공룡의 한 무리가 살아남아 오늘날까지 생존하고 있다고 믿는다. 우리는 그들을 새라고 부른다.\n\n/no_think",
+    "source_text": "오늘날 많은 고생물학자는 공룡의 한 무리가 살아남아 오늘날까지 생존하고 있다고 믿는다. 우리는 그들을 새라고 부른다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "오늘날 많은 고생물학자들이 공룡의 독특한 생태적 역사와 진화 과정을 연구하고 있습니다. 공룡은 지구 역사에서 가장 오래된 생물 중 하나로, 화산 활동과 대륙 이동이 공룡의 분포에 큰 영향을 미쳤습니다. 그들은 다양한 환경에서 번성했으며, 특히 화산 지대에서 번성한 '공룡 화산'은 지구의 지질학적 변화와 밀접하게 연관되어 있습니다. 또한, 공룡의 화석은 지구의 기후 변화와 생태계 변화를 추적하는 데 중요한 자료로 활용되고 있습니다. 이러한 연구는 고생물학의 핵심 분야로서, 과거 생명의 기원과 진화 과정을 이해하는 데 기여하고 있습니다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2499765475,
+    "load_duration": 25212351,
+    "prompt_eval_duration": 184536539,
+    "eval_duration": 2264273964,
+    "eval_count": 195,
+    "prompt_eval_count": 121,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:48:04.890131625Z",
+    "message": {
+      "role": "assistant",
+      "content": "오늘날 많은 고생물학자들이 공룡의 독특한 생태적 역사와 진화 과정을 연구하고 있습니다. 공룡은 지구 역사에서 가장 오래된 생물 중 하나로, 화산 활동과 대륙 이동이 공룡의 분포에 큰 영향을 미쳤습니다. 그들은 다양한 환경에서 번성했으며, 특히 화산 지대에서 번성한 '공룡 화산'은 지구의 지질학적 변화와 밀접하게 연관되어 있습니다. 또한, 공룡의 화석은 지구의 기후 변화와 생태계 변화를 추적하는 데 중요한 자료로 활용되고 있습니다. 이러한 연구는 고생물학의 핵심 분야로서, 과거 생명의 기원과 진화 과정을 이해하는 데 기여하고 있습니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2499765475,
+    "load_duration": 25212351,
+    "prompt_eval_count": 121,
+    "prompt_eval_duration": 184536539,
+    "eval_count": 195,
+    "eval_duration": 2264273964
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788943682.3556323,
+      "nvidia_smi": {
+        "timestamp_unix": 1788943682.3556325,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.497,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788943682.3688464,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 201.91796875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 989.44140625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 201.91796875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.5234375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788943682.3816383,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 206764,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788943684.890554,
+      "nvidia_smi": {
+        "timestamp_unix": 1788943684.8905544,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 36,
+            "mem_util_pct": 14,
+            "power_w": 12.513,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788943684.9057612,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 201.953125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 989.3515625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 201.953125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 787.3984375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788943684.9188,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 206800,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788943682.3899605,
+      "response_received_unix": 1788943684.8904836,
+      "first_byte_unix": 1788943684.8904254,
+      "total_wall_ms": 2500.523090362549,
+      "queue_wait_ms": 2500.464916229248,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:48:04 GMT",
+        "Content-Length": "1055",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788943684.9268985,
+      "vram_delta_mib": -0.0625
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788943682.3899138
+    }
+  },
+  "wall_clock_unix": 1788943684.9268985
+}

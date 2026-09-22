@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0158",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장을 한국어로 이어서 짧은 단락으로 작성해 주세요.\n\n\"스키여행은 스키광(\"\"ski bums\"\")이라고 불리는 애호가들이 즐기는 여행 방식이다. 그 사람들은 휴가 일정을 어느 한 특정 장소에서 줄곧 스키를 타는 시간으로 계획한다.\"\n\n/no_think",
+    "source_text": "\"스키여행은 스키광(\"\"ski bums\"\")이라고 불리는 애호가들이 즐기는 여행 방식이다. 그 사람들은 휴가 일정을 어느 한 특정 장소에서 줄곧 스키를 타는 시간으로 계획한다.\""
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "스키여행은 스키광(\"ski bums\")이라고 불리는 애호가들이 즐기는 여행 방식이다. 그들은 휴가 일정을 어느 한 특정 장소에서 줄곧 스키를 타는 시간으로 계획한다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 930652577,
+    "load_duration": 23570423,
+    "prompt_eval_duration": 247249347,
+    "eval_duration": 647179468,
+    "eval_count": 56,
+    "prompt_eval_count": 107,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-06T15:11:29.950903066Z",
+    "message": {
+      "role": "assistant",
+      "content": "스키여행은 스키광(\"ski bums\")이라고 불리는 애호가들이 즐기는 여행 방식이다. 그들은 휴가 일정을 어느 한 특정 장소에서 줄곧 스키를 타는 시간으로 계획한다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 930652577,
+    "load_duration": 23570423,
+    "prompt_eval_count": 107,
+    "prompt_eval_duration": 247249347,
+    "eval_count": 56,
+    "eval_duration": 647179468
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788707488.9808843,
+      "nvidia_smi": {
+        "timestamp_unix": 1788707488.9808846,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.5625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 25,
+            "mem_util_pct": 14,
+            "power_w": 12.687,
+            "temp_c": 54,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788707488.9950316,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 586.8515625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 330220,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1367.9921875,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 586.8515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 781.140625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788707489.009925,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 600936,
+        "proc_threads": 40,
+        "proc_vol_ctx": 329154,
+        "proc_invol_ctx": 1066,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788707489.9514713,
+      "nvidia_smi": {
+        "timestamp_unix": 1788707489.9514718,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2622.5625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 14,
+            "power_w": 12.676,
+            "temp_c": 54,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788707489.969098,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 586.203125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 330223,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1368.21875,
+        "tree_threads": 77,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 586.203125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2565125,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 44667",
+            "rss_mib": 782.015625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788707489.9829242,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 600272,
+        "proc_threads": 40,
+        "proc_vol_ctx": 329157,
+        "proc_invol_ctx": 1066,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788707489.0197866,
+      "response_received_unix": 1788707489.9513881,
+      "first_byte_unix": 1788707489.9513016,
+      "total_wall_ms": 931.6015243530273,
+      "queue_wait_ms": 931.5149784088135,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sun, 06 Sep 2026 15:11:29 GMT",
+        "Content-Length": "527",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788707489.9909983,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788707489.0197346
+    }
+  },
+  "wall_clock_unix": 1788707489.9909983
+}

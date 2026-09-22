@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "deu_Latn",
+  "sample_id": "s0013",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Bitte schreiben Sie ungefähr 256 Zeichen Text auf Deutsch über das Thema des folgenden Satzes. Keine Begrüßung, keine Erklärungen, nur den Absatz selbst:\n\nDer Amazonas-Hauptstrom ist 6387 km (3980 Meilen) lang. Es nimmt Wasser von tausenden kleineren Flüssen in sich auf.\n\n/no_think",
+    "source_text": "Der Amazonas-Hauptstrom ist 6387 km (3980 Meilen) lang. Es nimmt Wasser von tausenden kleineren Flüssen in sich auf."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Der Amazonas-Hauptstrom ist ein riesiges Wasserreservoir, das über 6387 km lang ist und etwa 3980 Meilen weit reicht. Es sammelt Wasser von tausenden kleineren Flüssen, die es in sich aufnehmen.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 905750737,
+    "load_duration": 23841361,
+    "prompt_eval_duration": 225806149,
+    "eval_duration": 646564296,
+    "eval_count": 55,
+    "prompt_eval_count": 100,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T09:43:20.763501816Z",
+    "message": {
+      "role": "assistant",
+      "content": "Der Amazonas-Hauptstrom ist ein riesiges Wasserreservoir, das über 6387 km lang ist und etwa 3980 Meilen weit reicht. Es sammelt Wasser von tausenden kleineren Flüssen, die es in sich aufnehmen."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 905750737,
+    "load_duration": 23841361,
+    "prompt_eval_count": 100,
+    "prompt_eval_duration": 225806149,
+    "eval_count": 55,
+    "eval_duration": 646564296
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788946999.8215234,
+      "nvidia_smi": {
+        "timestamp_unix": 1788946999.8215237,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 11.924,
+            "temp_c": 47,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788946999.8353958,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 198.80078125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 984057,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 992.80078125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 198.80078125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 794.0,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788946999.84891,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 203572,
+        "proc_threads": 40,
+        "proc_vol_ctx": 976529,
+        "proc_invol_ctx": 7528,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788947000.7640638,
+      "nvidia_smi": {
+        "timestamp_unix": 1788947000.7640646,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 11.892,
+            "temp_c": 47,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788947000.7799437,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 198.80078125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 984057,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 992.92578125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 198.80078125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 794.125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788947000.795026,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 203572,
+        "proc_threads": 40,
+        "proc_vol_ctx": 976529,
+        "proc_invol_ctx": 7528,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788946999.8573346,
+      "response_received_unix": 1788947000.7639935,
+      "first_byte_unix": 1788947000.7639291,
+      "total_wall_ms": 906.6588878631592,
+      "queue_wait_ms": 906.5945148468018,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 09:43:20 GMT",
+        "Content-Length": "509",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788947000.8044105,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788946999.857293
+    }
+  },
+  "wall_clock_unix": 1788947000.8044105
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "zho_Hans",
+  "sample_id": "s0015",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "请根据下面这句话的隐含主题，用中文写出大约256个汉字的正文。不要问候、不要解释，只写正文段落：\n\n赫尔希和蔡斯利用噬菌体或病毒，将他们自己的 DNA 植入到细菌之中。\n\n/no_think",
+    "source_text": "赫尔希和蔡斯利用噬菌体或病毒，将他们自己的 DNA 植入到细菌之中。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "在科学界，研究人员正在探索一种叫做噬菌体的微生物，它可以将其 ownDNA插入到另一个微生物的基因组中。这种技术被称为基因重排或基因转换。赫尔希和蔡斯是一位美国科学家，他在2012年发现了这种技术。他利用一种叫做噬菌体的细菌，将其 ownDNA插入到另一个细菌的基因组中。这使得他能够将一种叫做阿尔茨海默病的疾病引起的基因转换为一种叫做克罗恩病的疾病。这种技术被称为基因重排或基因转换，研究人员正在探索它是否可以用于治疗其他类型的疾病。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1138907899,
+    "load_duration": 72923590,
+    "prompt_eval_duration": 6881906,
+    "eval_duration": 991251331,
+    "eval_count": 171,
+    "prompt_eval_count": 100,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T06:44:19.78803978Z",
+    "message": {
+      "role": "assistant",
+      "content": "在科学界，研究人员正在探索一种叫做噬菌体的微生物，它可以将其 ownDNA插入到另一个微生物的基因组中。这种技术被称为基因重排或基因转换。赫尔希和蔡斯是一位美国科学家，他在2012年发现了这种技术。他利用一种叫做噬菌体的细菌，将其 ownDNA插入到另一个细菌的基因组中。这使得他能够将一种叫做阿尔茨海默病的疾病引起的基因转换为一种叫做克罗恩病的疾病。这种技术被称为基因重排或基因转换，研究人员正在探索它是否可以用于治疗其他类型的疾病。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1138907899,
+    "load_duration": 72923590,
+    "prompt_eval_count": 100,
+    "prompt_eval_duration": 6881906,
+    "eval_count": 171,
+    "eval_duration": 991251331
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789022658.602659,
+      "nvidia_smi": {
+        "timestamp_unix": 1789022658.602659,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 79.291,
+            "temp_c": 80,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789022658.6131222,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.140625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1212.15234375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 954.01171875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789022658.6344235,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264336,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789022659.7883806,
+      "nvidia_smi": {
+        "timestamp_unix": 1789022659.7883809,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 77.338,
+            "temp_c": 79,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789022659.799418,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 257.78515625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1212.0859375,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 257.78515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 954.30078125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789022659.8224404,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 263972,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789022658.6487954,
+      "response_received_unix": 1789022659.788316,
+      "first_byte_unix": 1789022659.788277,
+      "total_wall_ms": 1139.5206451416016,
+      "queue_wait_ms": 1139.481544494629,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:44:19 GMT",
+        "Content-Length": "914",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789022659.8366706,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789022658.648752
+    }
+  },
+  "wall_clock_unix": 1789022659.8366706
+}

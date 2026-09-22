@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "jpn_Jpan",
+  "sample_id": "s0073",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n1683年に清朝（1644～1912年）軍が台湾西部および北部の沿岸部を占領し、1885年に台湾を清国の省とすることを宣言しました。\n\n/no_think",
+    "source_text": "1683年に清朝（1644～1912年）軍が台湾西部および北部の沿岸部を占領し、1885年に台湾を清国の省とすることを宣言しました。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "1683年に清朝が台湾に侵攻し、北部を占領したことは、東アジアの歴史において極めて重要な転換点でした。明朝の衰退と中国の東南アジアにおける勢力拡大が背景にあり、清朝はこの地域を支配しようと試みました。1885年、台湾を清国の省として正式に認められたことで、朝鮮半島や東南アジアの影響力が中国に広がり、地域の政治構造が大きく変化しました。この出来事は、清朝の権威を揺るがし、後の日本列島の征服へとつながる重要な契機となりました。",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2142904717,
+    "load_duration": 25144850,
+    "prompt_eval_duration": 257477334,
+    "eval_duration": 1832334733,
+    "eval_count": 152,
+    "prompt_eval_count": 109,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T08:15:35.820047186Z",
+    "message": {
+      "role": "assistant",
+      "content": "1683年に清朝が台湾に侵攻し、北部を占領したことは、東アジアの歴史において極めて重要な転換点でした。明朝の衰退と中国の東南アジアにおける勢力拡大が背景にあり、清朝はこの地域を支配しようと試みました。1885年、台湾を清国の省として正式に認められたことで、朝鮮半島や東南アジアの影響力が中国に広がり、地域の政治構造が大きく変化しました。この出来事は、清朝の権威を揺るがし、後の日本列島の征服へとつながる重要な契機となりました。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2142904717,
+    "load_duration": 25144850,
+    "prompt_eval_count": 109,
+    "prompt_eval_duration": 257477334,
+    "eval_count": 152,
+    "eval_duration": 1832334733
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788941733.6380675,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941733.6380677,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.25,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.311,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941733.6524963,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.83984375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 960635,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 984.91796875,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.83984375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 781.078125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941733.6677196,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208732,
+        "proc_threads": 40,
+        "proc_vol_ctx": 953293,
+        "proc_invol_ctx": 7342,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788941735.8206105,
+      "nvidia_smi": {
+        "timestamp_unix": 1788941735.820611,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.25,
+            "vram_total_mib": 8188.0,
+            "util_pct": 29,
+            "mem_util_pct": 14,
+            "power_w": 12.295,
+            "temp_c": 49,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788941735.8357148,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 203.85546875,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 960642,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 984.43359375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 203.85546875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 780.578125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788941735.8515773,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 208748,
+        "proc_threads": 40,
+        "proc_vol_ctx": 953300,
+        "proc_invol_ctx": 7342,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788941733.6767435,
+      "response_received_unix": 1788941735.8205328,
+      "first_byte_unix": 1788941735.8204627,
+      "total_wall_ms": 2143.789291381836,
+      "queue_wait_ms": 2143.71919631958,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 08:15:35 GMT",
+        "Content-Length": "939",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788941735.8613622,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788941733.6766987
+    }
+  },
+  "wall_clock_unix": 1788941735.8613622
+}

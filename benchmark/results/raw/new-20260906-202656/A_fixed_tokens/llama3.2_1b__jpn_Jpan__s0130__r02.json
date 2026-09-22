@@ -1,0 +1,201 @@
+{
+  "experiment": "A_fixed_tokens",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0130",
+  "repeat": 2,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章を日本語で続けて、短い段落で書いてください。\n\nキルヒネル夫人は、アルゼンチン劇場で大統領選に出馬するという意向を表明しました。2005年にブエノスアイレス州の代表団の一員として上院選への出馬を表明したのもこの劇場でした。\n\n/no_think",
+    "source_text": "キルヒネル夫人は、アルゼンチン劇場で大統領選に出馬するという意向を表明しました。2005年にブエノスアイレス州の代表団の一員として上院選への出馬を表明したのもこの劇場でした。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "アルゼンチンのキルヒネル夫人は、2005年から上院議員に就任することを決意しました。上院議員には、アルゼンチン大統領が選ばれるためです。彼は、アルゼンチン劇場で大統領選に出馬する意向を表明しました。\n\nブエノスアイレス州の代表団の一員として2005年に上院選に出たのは、彼の父親です。彼は「大統領選に出るために、アルゼンチンの政治家が集まっています。私はこれからも政治家と協力して、アルゼンチンを発展させることを目指します」と話しました。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 5539952787,
+    "load_duration": 73998124,
+    "prompt_eval_duration": 35194939,
+    "eval_duration": 5337835435,
+    "eval_count": 152,
+    "prompt_eval_count": 115,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-07T02:01:37.27511447Z",
+    "message": {
+      "role": "assistant",
+      "content": "アルゼンチンのキルヒネル夫人は、2005年から上院議員に就任することを決意しました。上院議員には、アルゼンチン大統領が選ばれるためです。彼は、アルゼンチン劇場で大統領選に出馬する意向を表明しました。\n\nブエノスアイレス州の代表団の一員として2005年に上院選に出たのは、彼の父親です。彼は「大統領選に出るために、アルゼンチンの政治家が集まっています。私はこれからも政治家と協力して、アルゼンチンを発展させることを目指します」と話しました。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 5539952787,
+    "load_duration": 73998124,
+    "prompt_eval_count": 115,
+    "prompt_eval_duration": 35194939,
+    "eval_count": 152,
+    "eval_duration": 5337835435
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788746491.697377,
+      "nvidia_smi": {
+        "timestamp_unix": 1788746491.6973774,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 33,
+            "mem_util_pct": 14,
+            "power_w": 12.715,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788746491.7105503,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 241.80859375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2194.30078125,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 241.80859375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1952.4921875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788746491.7251174,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 247612,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788746497.2754803,
+      "nvidia_smi": {
+        "timestamp_unix": 1788746497.2754805,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2621.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.754,
+            "temp_c": 53,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788746497.2889168,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 238.94140625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 481593,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2191.4453125,
+        "tree_threads": 56,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 238.94140625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 2231890,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 35879",
+            "rss_mib": 1952.50390625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788746497.3038137,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 244676,
+        "proc_threads": 40,
+        "proc_vol_ctx": 477755,
+        "proc_invol_ctx": 3838,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788746491.7347696,
+      "response_received_unix": 1788746497.2754335,
+      "first_byte_unix": 1788746497.2753928,
+      "total_wall_ms": 5540.663957595825,
+      "queue_wait_ms": 5540.623188018799,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 07 Sep 2026 02:01:37 GMT",
+        "Content-Length": "937",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788746497.3138306,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788746491.7347236
+    }
+  },
+  "wall_clock_unix": 1788746497.3138306
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "kor_Hang",
+  "sample_id": "s0152",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "다음 문장이 암시하는 주제에 대해 한국어로 대략 256자 분량의 본문을 작성해 주세요. 인사말이나 설명 없이 본문 단락만 작성해 주세요:\n\n엔젤 (2006)은 조직이 더 높은 수준의 성과를 달성하도록 돕는 방법으로 컨티넘(Continuum)이라는 접근 방식을 설명합니다.\n\n/no_think",
+    "source_text": "엔젤 (2006)은 조직이 더 높은 수준의 성과를 달성하도록 돕는 방법으로 컨티넘(Continuum)이라는 접근 방식을 설명합니다."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "엔젤은 조직이 더 높은 수준의 성과를 달성하기 위해 필요한 전략적 사고와 실행력을 강조합니다. 컨티넘이라는 접근 방식은 단순한 성과 측정이 아니라, 지속적인 개선과 혁신을 통해 장기적인 성장을 이끌어내는 과정을 의미합니다. 엔젤은 조직이 내부 문화와 역량을 강화하고, 팀원들의 자율성을 존중하며, 지속 가능한 성과를 창출하는 데 중요한 역할을 한다고 강조합니다. 이러한 접근 방식은 단기적인 목표보다 장기적인 가치 창출을 우선시하는 조직의 성공을 보장합니다.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2196436099,
+    "load_duration": 21547579,
+    "prompt_eval_duration": 137286364,
+    "eval_duration": 2013471411,
+    "eval_count": 173,
+    "prompt_eval_count": 123,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T09:08:14.376137489Z",
+    "message": {
+      "role": "assistant",
+      "content": "엔젤은 조직이 더 높은 수준의 성과를 달성하기 위해 필요한 전략적 사고와 실행력을 강조합니다. 컨티넘이라는 접근 방식은 단순한 성과 측정이 아니라, 지속적인 개선과 혁신을 통해 장기적인 성장을 이끌어내는 과정을 의미합니다. 엔젤은 조직이 내부 문화와 역량을 강화하고, 팀원들의 자율성을 존중하며, 지속 가능한 성과를 창출하는 데 중요한 역할을 한다고 강조합니다. 이러한 접근 방식은 단기적인 목표보다 장기적인 가치 창출을 우선시하는 조직의 성공을 보장합니다."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2196436099,
+    "load_duration": 21547579,
+    "prompt_eval_count": 123,
+    "prompt_eval_duration": 137286364,
+    "eval_count": 173,
+    "eval_duration": 2013471411
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788944892.1413927,
+      "nvidia_smi": {
+        "timestamp_unix": 1788944892.141393,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 35,
+            "mem_util_pct": 14,
+            "power_w": 12.427,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788944892.1549006,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.328125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 996.15234375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.82421875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788944892.1685839,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207184,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788944894.3766341,
+      "nvidia_smi": {
+        "timestamp_unix": 1788944894.376635,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1667.875,
+            "vram_total_mib": 8188.0,
+            "util_pct": 32,
+            "mem_util_pct": 14,
+            "power_w": 12.393,
+            "temp_c": 51,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788944894.3915236,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 202.328125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 974960,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 995.71484375,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 202.328125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 793.38671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788944894.4085717,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 207184,
+        "proc_threads": 40,
+        "proc_vol_ctx": 967533,
+        "proc_invol_ctx": 7427,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788944892.1792629,
+      "response_received_unix": 1788944894.3765342,
+      "first_byte_unix": 1788944894.3764546,
+      "total_wall_ms": 2197.2713470458984,
+      "queue_wait_ms": 2197.1917152404785,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 09:08:14 GMT",
+        "Content-Length": "954",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788944894.4174333,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788944892.1792116
+    }
+  },
+  "wall_clock_unix": 1788944894.4174333
+}

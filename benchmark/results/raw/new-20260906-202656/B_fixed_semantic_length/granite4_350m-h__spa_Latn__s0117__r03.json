@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "granite4:350m-h",
+  "language": "spa_Latn",
+  "sample_id": "s0117",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nEl objetivo del acogimiento familiar es cubrir todas las necesidades que no eran atendidas en el hogar del que fueron recogidos con anterioridad.\n\n/no_think",
+    "source_text": "El objetivo del acogimiento familiar es cubrir todas las necesidades que no eran atendidas en el hogar del que fueron recogidos con anterioridad."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "El objetivo de la atención familiar es abordar todas las necesidades que no se abordan en el hogar donde fueron recibidos.",
+  "ollama": {
+    "model": "granite4:350m-h",
+    "total_duration": 605232411,
+    "load_duration": 39279621,
+    "prompt_eval_duration": 170431595,
+    "eval_duration": 381791156,
+    "eval_count": 29,
+    "prompt_eval_count": 97,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "granite4:350m-h",
+    "created_at": "2026-09-09T06:33:00.287393264Z",
+    "message": {
+      "role": "assistant",
+      "content": "El objetivo de la atención familiar es abordar todas las necesidades que no se abordan en el hogar donde fueron recibidos."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 605232411,
+    "load_duration": 39279621,
+    "prompt_eval_count": 97,
+    "prompt_eval_duration": 170431595,
+    "eval_count": 29,
+    "eval_duration": 381791156
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788935579.643909,
+      "nvidia_smi": {
+        "timestamp_unix": 1788935579.6439092,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 31,
+            "mem_util_pct": 14,
+            "power_w": 12.132,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788935579.6576521,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 180.6015625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 887535,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 993.48828125,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 180.6015625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 812.88671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788935579.6724508,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 184936,
+        "proc_threads": 40,
+        "proc_vol_ctx": 880975,
+        "proc_invol_ctx": 6560,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788935580.2877555,
+      "nvidia_smi": {
+        "timestamp_unix": 1788935580.2877557,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 27,
+            "mem_util_pct": 14,
+            "power_w": 12.241,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788935580.3010657,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 184.16015625,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 887539,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 997.046875,
+        "tree_threads": 57,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 184.16015625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 1151144,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-c7d9873640dc303b6773dcc44e72e5bdf533e1c95ca8421e6191fbff5c94c942 --port 40883",
+            "rss_mib": 812.88671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788935580.3135936,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 188580,
+        "proc_threads": 40,
+        "proc_vol_ctx": 880979,
+        "proc_invol_ctx": 6560,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788935579.6817188,
+      "response_received_unix": 1788935580.2877166,
+      "first_byte_unix": 1788935580.2876775,
+      "total_wall_ms": 605.9978008270264,
+      "queue_wait_ms": 605.9587001800537,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 06:33:00 GMT",
+        "Content-Length": "423",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788935580.3220968,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788935579.6816638
+    }
+  },
+  "wall_clock_unix": 1788935580.3220968
+}

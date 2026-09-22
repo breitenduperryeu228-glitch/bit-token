@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "LiquidAI/lfm2.5-350m:latest",
+  "language": "rus_Cyrl",
+  "sample_id": "s0103",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nЦелые 20 процентов воды, поступаемой из рек нашей планеты в океаны, текут из Амазонки.\n\n/no_think",
+    "source_text": "Целые 20 процентов воды, поступаемой из рек нашей планеты в океаны, текут из Амазонки."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Оба рек, нашей планеты, имеют свои уникальные характеристики. Амазонка, начиная от Тихого океана, является крупнейшим водоснабежемом на Земле. Вот несколько особенностей:\n\n- Амазонка расположена в центре планеты, что делает её важнейшим источником воды.\n- Обычно вода в Амазоне содержит высокую концентрацию и содержание dissolved substances.\n- Вода в этом регионе также имеет значительное влияние на климат и экосистемы.\n\nНо без приветствий и пояснений, только сам абзац.",
+  "ollama": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "total_duration": 2228494646,
+    "load_duration": 23422665,
+    "prompt_eval_duration": 280675888,
+    "eval_duration": 1903391014,
+    "eval_count": 158,
+    "prompt_eval_count": 118,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "LiquidAI/lfm2.5-350m:latest",
+    "created_at": "2026-09-09T10:02:51.263339967Z",
+    "message": {
+      "role": "assistant",
+      "content": "Оба рек, нашей планеты, имеют свои уникальные характеристики. Амазонка, начиная от Тихого океана, является крупнейшим водоснабежемом на Земле. Вот несколько особенностей:\n\n- Амазонка расположена в центре планеты, что делает её важнейшим источником воды.\n- Обычно вода в Амазоне содержит высокую концентрацию и содержание dissolved substances.\n- Вода в этом регионе также имеет значительное влияние на климат и экосистемы.\n\nНо без приветствий и пояснений, только сам абзац."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2228494646,
+    "load_duration": 23422665,
+    "prompt_eval_count": 118,
+    "prompt_eval_duration": 280675888,
+    "eval_count": 158,
+    "eval_duration": 1903391014
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788948168.9977517,
+      "nvidia_smi": {
+        "timestamp_unix": 1788948168.9977524,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 34,
+            "mem_util_pct": 14,
+            "power_w": 12.041,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788948169.011646,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 204.359375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 987533,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 999.2265625,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 204.359375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 794.8671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788948169.025551,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 209264,
+        "proc_threads": 40,
+        "proc_vol_ctx": 979966,
+        "proc_invol_ctx": 7567,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788948171.2638435,
+      "nvidia_smi": {
+        "timestamp_unix": 1788948171.2638438,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.0625,
+            "vram_total_mib": 8188.0,
+            "util_pct": 40,
+            "mem_util_pct": 14,
+            "power_w": 12.032,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788948171.2789533,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 205.12109375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 987533,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 999.67578125,
+        "tree_threads": 79,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 205.12109375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3084376,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-be036a757295e550098b85e13f6af2735d0fa73b41e1156a40c7d8e8e32a5766 --port 39963",
+            "rss_mib": 794.5546875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788948171.2946005,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 210044,
+        "proc_threads": 40,
+        "proc_vol_ctx": 979966,
+        "proc_invol_ctx": 7567,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788948169.0344732,
+      "response_received_unix": 1788948171.2637503,
+      "first_byte_unix": 1788948171.2636845,
+      "total_wall_ms": 2229.2771339416504,
+      "queue_wait_ms": 2229.2113304138184,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 10:02:51 GMT",
+        "Content-Length": "1164",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788948171.3038223,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788948169.0344267
+    }
+  },
+  "wall_clock_unix": 1788948171.3038223
+}

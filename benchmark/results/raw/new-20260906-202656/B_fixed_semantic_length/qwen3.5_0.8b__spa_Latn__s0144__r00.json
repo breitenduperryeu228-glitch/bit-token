@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "spa_Latn",
+  "sample_id": "s0144",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Escriba aproximadamente 256 caracteres de texto en español sobre el tema implícito de la siguiente oración. No agregue saludos ni explicaciones, solo el párrafo:\n\nCuando un grupo reducido de seres vivos (una población pequeña) se aparta de la principal de la que provienen (por ejemplo, si se desplazan a una cadena montañosa o a un río, o si se trasladan a una isla nueva de modo que no pueden retroceder con facilidad) se encontrarán, con frecuencia, en un ambiente diferente al que solían estar acostumbrados.\n\n/no_think",
+    "source_text": "Cuando un grupo reducido de seres vivos (una población pequeña) se aparta de la principal de la que provienen (por ejemplo, si se desplazan a una cadena montañosa o a un río, o si se trasladan a una isla nueva de modo que no pueden retroceder con facilidad) se encontrarán, con frecuencia, en un ambiente diferente al que solían estar acostumbrados."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "La transición de un grupo reducido a un entorno distinto, como un río o una isla, genera una fuerte presión implícita para que los individuos se adapten rápidamente a las condiciones cambiantes, lo que puede resultar en una mayor diversidad genética y una mayor capacidad de supervivencia en comparación con la población original.",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 569941831,
+    "load_duration": 125989612,
+    "prompt_eval_duration": 27308001,
+    "eval_duration": 388396659,
+    "eval_count": 67,
+    "prompt_eval_count": 151,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T06:02:50.492259785Z",
+    "message": {
+      "role": "assistant",
+      "content": "La transición de un grupo reducido a un entorno distinto, como un río o una isla, genera una fuerte presión implícita para que los individuos se adapten rápidamente a las condiciones cambiantes, lo que puede resultar en una mayor diversidad genética y una mayor capacidad de supervivencia en comparación con la población original."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 569941831,
+    "load_duration": 125989612,
+    "prompt_eval_count": 151,
+    "prompt_eval_duration": 27308001,
+    "eval_count": 67,
+    "eval_duration": 388396659
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789020169.870992,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020169.8709924,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 0,
+            "mem_util_pct": 0,
+            "power_w": 51.761,
+            "temp_c": 71,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020169.8817866,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 240.421875,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2333.5703125,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 240.421875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2093.1484375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020169.9059138,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 246192,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789020170.4926934,
+      "nvidia_smi": {
+        "timestamp_unix": 1789020170.4926937,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 16,
+            "mem_util_pct": 12,
+            "power_w": 55.699,
+            "temp_c": 76,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789020170.5047286,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 265.15625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2355.4375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 265.15625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2090.28125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789020170.530947,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 271520,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789020169.921935,
+      "response_received_unix": 1789020170.4926388,
+      "first_byte_unix": 1789020170.4925816,
+      "total_wall_ms": 570.7037448883057,
+      "queue_wait_ms": 570.6465244293213,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 06:02:50 GMT",
+        "Content-Length": "636",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789020170.5469952,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789020169.9218793
+    }
+  },
+  "wall_clock_unix": 1789020170.5469952
+}

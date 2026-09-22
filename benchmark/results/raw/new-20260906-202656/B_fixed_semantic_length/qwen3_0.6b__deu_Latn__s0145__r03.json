@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3:0.6b",
+  "language": "deu_Latn",
+  "sample_id": "s0145",
+  "repeat": 3,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Bitte schreiben Sie ungefähr 256 Zeichen Text auf Deutsch über das Thema des folgenden Satzes. Keine Begrüßung, keine Erklärungen, nur den Absatz selbst:\n\nDiese Pläne wurden jedoch fast über Nacht obsolet, als über 800.000 Soldaten der Roten Armee der Sowjetunion in die weißrussischen und ukrainischen Fronten eindrangen und diese schufen, nachdem sie in Verletzung des Friedensvertrags von Riga, des sowjetisch-polnischen Nichtangriffspakts und anderer bilateraler und multilateraler internationaler Verträge in die östlichen Regionen Polens eingedrungen waren.\n\n/no_think",
+    "source_text": "Diese Pläne wurden jedoch fast über Nacht obsolet, als über 800.000 Soldaten der Roten Armee der Sowjetunion in die weißrussischen und ukrainischen Fronten eindrangen und diese schufen, nachdem sie in Verletzung des Friedensvertrags von Riga, des sowjetisch-polnischen Nichtangriffspakts und anderer bilateraler und multilateraler internationaler Verträge in die östlichen Regionen Polens eingedrungen waren."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "Diese Pläne wurden aber fast über Nacht obsolet, als über 800.000 Soldaten der Roten Armee der Sowjetunion in die weißrussischen und ukrainischen Fronten eindrangen und diese schufen, nachdem sie in Verletzung des Friedensvertrags von Riga, des sowjetisch-polnischen Nichtangriffspakts und anderer bilateraler und multilateraler internationaler Verträge in die östlichen Regionen Polens eingedrungen waren.",
+  "ollama": {
+    "model": "qwen3:0.6b",
+    "total_duration": 2029243685,
+    "load_duration": 67382233,
+    "prompt_eval_duration": 16026208,
+    "eval_duration": 1891647362,
+    "eval_count": 118,
+    "prompt_eval_count": 190,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-09-09T11:34:44.408660117Z",
+    "message": {
+      "role": "assistant",
+      "content": "Diese Pläne wurden aber fast über Nacht obsolet, als über 800.000 Soldaten der Roten Armee der Sowjetunion in die weißrussischen und ukrainischen Fronten eindrangen und diese schufen, nachdem sie in Verletzung des Friedensvertrags von Riga, des sowjetisch-polnischen Nichtangriffspakts und anderer bilateraler und multilateraler internationaler Verträge in die östlichen Regionen Polens eingedrungen waren."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2029243685,
+    "load_duration": 67382233,
+    "prompt_eval_count": 190,
+    "prompt_eval_duration": 16026208,
+    "eval_count": 118,
+    "eval_duration": 1891647362
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1788953682.341938,
+      "nvidia_smi": {
+        "timestamp_unix": 1788953682.3419383,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.25,
+            "vram_total_mib": 8188.0,
+            "util_pct": 25,
+            "mem_util_pct": 14,
+            "power_w": 11.926,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788953682.3554602,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 211.5234375,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1028856,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1523.359375,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 211.5234375,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1311.8359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788953682.3699152,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 216600,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1020595,
+        "proc_invol_ctx": 8261,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1788953684.409121,
+      "nvidia_smi": {
+        "timestamp_unix": 1788953684.4091215,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 1668.25,
+            "vram_total_mib": 8188.0,
+            "util_pct": 25,
+            "mem_util_pct": 13,
+            "power_w": 12.091,
+            "temp_c": 48,
+            "sm_clock_mhz": 210,
+            "mem_clock_mhz": 6001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1788953684.4232526,
+        "ollama_pid": 2869,
+        "pid": 2869,
+        "cpu_pct": 0.0,
+        "rss_mib": 214.703125,
+        "vms_mib": 4257.35546875,
+        "num_threads": 40,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 1028857,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1526.8515625,
+        "tree_threads": 82,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2869,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 214.703125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 3560955,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa --port 34431",
+            "rss_mib": 1312.1484375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1788953684.4395468,
+        "ollama_pid": 2869,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4359532,
+        "proc_vm_rss_kib": 219856,
+        "proc_threads": 40,
+        "proc_vol_ctx": 1020596,
+        "proc_invol_ctx": 8261,
+        "io_error": "[Errno 13] Permission denied: '/proc/2869/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1788953682.3790677,
+      "response_received_unix": 1788953684.4090436,
+      "first_byte_unix": 1788953684.4089777,
+      "total_wall_ms": 2029.9758911132812,
+      "queue_wait_ms": 2029.9100875854492,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 11:34:44 GMT",
+        "Content-Length": "710",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1788953684.4488034,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1788953682.37902
+    }
+  },
+  "wall_clock_unix": 1788953684.4488034
+}

@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "qwen3.5:0.8b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0146",
+  "repeat": 0,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n世論調査では、オーストラリアはできるだけ早く共和国になるべきだと考えている人が29%、共和国になるべきではないと考えている人が31%と、両極端の結果が出ています。\n\n/no_think",
+    "source_text": "世論調査では、オーストラリアはできるだけ早く共和国になるべきだと考えている人が29%、共和国になるべきではないと考えている人が31%と、両極端の結果が出ています。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 4096
+  },
+  "response_text": "オーストラリアの世論調査結果は、共和国への期待と反対の意見が明確に分かれる。一方の支持者は、国が早く独立するべきだと強く主張しており、反対派は独立を待つのと見なしている。この対立は、政治的な決断のスピードと、国民の期待値に大きく影響している。両派が争うのは、国が何日、何月、何年独立するかという具体的な時間軸の明確化だ。この争いでは、どちらの立場が正しいかという判断が、国がどのように進むかという決断に直結する。",
+  "ollama": {
+    "model": "qwen3.5:0.8b",
+    "total_duration": 951456054,
+    "load_duration": 116420458,
+    "prompt_eval_duration": 22060578,
+    "eval_duration": 760891031,
+    "eval_count": 131,
+    "prompt_eval_count": 106,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "qwen3.5:0.8b",
+    "created_at": "2026-09-10T04:08:49.264571324Z",
+    "message": {
+      "role": "assistant",
+      "content": "オーストラリアの世論調査結果は、共和国への期待と反対の意見が明確に分かれる。一方の支持者は、国が早く独立するべきだと強く主張しており、反対派は独立を待つのと見なしている。この対立は、政治的な決断のスピードと、国民の期待値に大きく影響している。両派が争うのは、国が何日、何月、何年独立するかという具体的な時間軸の明確化だ。この争いでは、どちらの立場が正しいかという判断が、国がどのように進むかという決断に直結する。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 951456054,
+    "load_duration": 116420458,
+    "prompt_eval_count": 106,
+    "prompt_eval_duration": 22060578,
+    "eval_count": 131,
+    "eval_duration": 760891031
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789013328.2660904,
+      "nvidia_smi": {
+        "timestamp_unix": 1789013328.2660909,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 88,
+            "mem_util_pct": 70,
+            "power_w": 62.126,
+            "temp_c": 76,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789013328.2766368,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 260.25,
+        "vms_mib": 4218.85546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2337.9375,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 260.25,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2077.6875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789013328.2983935,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320108,
+        "proc_vm_rss_kib": 266496,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789013329.2650337,
+      "nvidia_smi": {
+        "timestamp_unix": 1789013329.2650342,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2340.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 88,
+            "mem_util_pct": 70,
+            "power_w": 62.508,
+            "temp_c": 77,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789013329.276576,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 260.4765625,
+        "vms_mib": 4218.85546875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 2338.171875,
+        "tree_threads": 90,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 260.4765625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 225207,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --ollama-engine --model /usr/share/ollama/.ollama/models/blobs/sha256-afb707b6b8fac6e475acc42bc8380fc0b8d2e0e4190be5a969fbf62fcc897db5 --port 36067",
+            "rss_mib": 2077.6953125,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789013329.2998216,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320108,
+        "proc_vm_rss_kib": 266728,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789013328.3127832,
+      "response_received_unix": 1789013329.264963,
+      "first_byte_unix": 1789013329.2648962,
+      "total_wall_ms": 952.1796703338623,
+      "queue_wait_ms": 952.1129131317139,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 04:08:49 GMT",
+        "Content-Length": "917",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789013329.3137836,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789013328.3127358
+    }
+  },
+  "wall_clock_unix": 1789013329.3137836
+}

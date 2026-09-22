@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "jpn_Jpan",
+  "sample_id": "s0009",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "次の文章が示すテーマについて、日本后語で約256文字の本文を書いてください。挨拶や説明は不要です。本文の段落のみを書いてください：\n\n提示されている制限速度は前後の区間に比べて明らかに低く、一般的には時速35～40マイル（56～64キロ）とされ、その制限速度に厳密に従うことが他の区間よりも重要とされます。\n\n/no_think",
+    "source_text": "提示されている制限速度は前後の区間に比べて明らかに低く、一般的には時速35～40マイル（56～64キロ）とされ、その制限速度に厳密に従うことが他の区間よりも重要とされます。"
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "日本の道路では、特定の区間に制限速度が決められています。一般的に時速35～40マイル（56～64キロ）とされています。この速度は前後の区間に比べて低く、他の区間よりも重要です。例えば、国道や県道など、一般的な道路ではこの速度を遵守することが大切です。ただし、特定の状況で他の速度に従うことも必要な場合があります。たとえば、車が急いで走るときは、他の区間よりも速く走ることができますが、危険な行為をするときはこの速度を遵守しないと注意されるかもしれません。",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1036977867,
+    "load_duration": 77633777,
+    "prompt_eval_duration": 6711655,
+    "eval_duration": 892331062,
+    "eval_count": 154,
+    "prompt_eval_count": 136,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-10T07:11:52.214989545Z",
+    "message": {
+      "role": "assistant",
+      "content": "日本の道路では、特定の区間に制限速度が決められています。一般的に時速35～40マイル（56～64キロ）とされています。この速度は前後の区間に比べて低く、他の区間よりも重要です。例えば、国道や県道など、一般的な道路ではこの速度を遵守することが大切です。ただし、特定の状況で他の速度に従うことも必要な場合があります。たとえば、車が急いで走るときは、他の区間よりも速く走ることができますが、危険な行為をするときはこの速度を遵守しないと注意されるかもしれません。"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1036977867,
+    "load_duration": 77633777,
+    "prompt_eval_count": 136,
+    "prompt_eval_duration": 6711655,
+    "eval_count": 154,
+    "eval_duration": 892331062
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789024311.131622,
+      "nvidia_smi": {
+        "timestamp_unix": 1789024311.131622,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 74.62,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789024311.1421113,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.8203125,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.65625,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.8203125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 971.8359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789024311.163342,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 265032,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789024312.2153058,
+      "nvidia_smi": {
+        "timestamp_unix": 1789024312.2153065,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 73.708,
+            "temp_c": 80,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789024312.2263722,
+        "ollama_pid": 2589,
+        "pid": 2589,
+        "cpu_pct": 0.0,
+        "rss_mib": 258.3515625,
+        "vms_mib": 4219.16796875,
+        "num_threads": 39,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 370,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1230.1875,
+        "tree_threads": 60,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2589,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 258.3515625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 401274,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 40251",
+            "rss_mib": 971.8359375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789024312.2500536,
+        "ollama_pid": 2589,
+        "proc_state": "S",
+        "proc_vm_size_kib": 4320428,
+        "proc_vm_rss_kib": 264552,
+        "proc_threads": 39,
+        "proc_vol_ctx": 363,
+        "proc_invol_ctx": 7,
+        "io_error": "[Errno 13] Permission denied: '/proc/2589/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789024311.1777024,
+      "response_received_unix": 1789024312.2152529,
+      "first_byte_unix": 1789024312.2152104,
+      "total_wall_ms": 1037.550449371338,
+      "queue_wait_ms": 1037.5080108642578,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 10 Sep 2026 07:11:52 GMT",
+        "Content-Length": "962",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789024312.264689,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789024311.1776545
+    }
+  },
+  "wall_clock_unix": 1789024312.264689
+}

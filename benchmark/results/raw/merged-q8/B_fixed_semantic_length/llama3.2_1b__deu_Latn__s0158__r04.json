@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "deu_Latn",
+  "sample_id": "s0158",
+  "repeat": 4,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Bitte schreiben Sie ungefähr 256 Zeichen Text auf Deutsch über das Thema des folgenden Satzes. Keine Begrüßung, keine Erklärungen, nur den Absatz selbst:\n\nSkifahren ist eine beliebte Reisetätigkeit mit vielen Enthusiasten, gelegentlich auch als „Skipenner“ bekannt, die ihren gesamten Urlaub rund um das Skifahren an einem bestimmten Ort planen.\n\n/no_think",
+    "source_text": "Skifahren ist eine beliebte Reisetätigkeit mit vielen Enthusiasten, gelegentlich auch als „Skipenner“ bekannt, die ihren gesamten Urlaub rund um das Skifahren an einem bestimmten Ort planen."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Die Sonne bricht über die Berge und der Schnee bedeckte Hügel schimmern in einer weißen Schönheit\nDer Klang des Skihalts, ein lauter Knall, erfüllt den Luftstrom\nEin Skipener ist ein Reisender, der seinen Urlaub rund um das Skifahren an einem bestimmten Ort planen möchte\nEr hat keine Zeit für lange Wanderungen und möchte stattdessen schnell und einfach zum nächsten Skihalt fliehen\nDie Freiheit des Freien Skigebiets, die Stille des Waldes, das Gefühl der Abenteuerlust\nDas ist das Leben eines Skipenners, der sein Urlaub in einer neuen und atemberaubenden Umgebung verbringt",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 1084621527,
+    "load_duration": 79925419,
+    "prompt_eval_duration": 6638284,
+    "eval_duration": 933670592,
+    "eval_count": 161,
+    "prompt_eval_count": 129,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:36:04.61077933Z",
+    "message": {
+      "role": "assistant",
+      "content": "Die Sonne bricht über die Berge und der Schnee bedeckte Hügel schimmern in einer weißen Schönheit\nDer Klang des Skihalts, ein lauter Knall, erfüllt den Luftstrom\nEin Skipener ist ein Reisender, der seinen Urlaub rund um das Skifahren an einem bestimmten Ort planen möchte\nEr hat keine Zeit für lange Wanderungen und möchte stattdessen schnell und einfach zum nächsten Skihalt fliehen\nDie Freiheit des Freien Skigebiets, die Stille des Waldes, das Gefühl der Abenteuerlust\nDas ist das Leben eines Skipenners, der sein Urlaub in einer neuen und atemberaubenden Umgebung verbringt"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1084621527,
+    "load_duration": 79925419,
+    "prompt_eval_count": 129,
+    "prompt_eval_duration": 6638284,
+    "eval_count": 161,
+    "eval_duration": 933670592
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789137363.4754837,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137363.475484,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 74.597,
+            "temp_c": 71,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137363.485783,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 247.95703125,
+        "vms_mib": 3646.75,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 3922,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1030.39453125,
+        "tree_threads": 52,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 247.95703125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 782.4375,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137363.5102172,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734272,
+        "proc_vm_rss_kib": 253908,
+        "proc_threads": 32,
+        "proc_vol_ctx": 3839,
+        "proc_invol_ctx": 83,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789137364.611483,
+      "nvidia_smi": {
+        "timestamp_unix": 1789137364.6114836,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2170.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 93,
+            "mem_util_pct": 100,
+            "power_w": 71.062,
+            "temp_c": 72,
+            "sm_clock_mhz": 2475,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789137364.6224184,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 240.44921875,
+        "vms_mib": 3646.75,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 3941,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1024.359375,
+        "tree_threads": 52,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 240.44921875,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 783.91015625,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789137364.6468697,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734272,
+        "proc_vm_rss_kib": 246220,
+        "proc_threads": 32,
+        "proc_vol_ctx": 3858,
+        "proc_invol_ctx": 83,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789137363.5257914,
+      "response_received_unix": 1789137364.6113844,
+      "first_byte_unix": 1789137364.6112742,
+      "total_wall_ms": 1085.5929851531982,
+      "queue_wait_ms": 1085.4828357696533,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:36:04 GMT",
+        "Content-Length": "888",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789137364.6615233,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789137363.525738
+    }
+  },
+  "wall_clock_unix": 1789137364.6615233
+}

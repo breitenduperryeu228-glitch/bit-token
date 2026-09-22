@@ -1,0 +1,201 @@
+{
+  "experiment": "B_fixed_semantic_length",
+  "model": "llama3.2:1b",
+  "language": "rus_Cyrl",
+  "sample_id": "s0188",
+  "repeat": 1,
+  "prompt": {
+    "system": "You are a helpful assistant.",
+    "user": "Пожалуйста, напишите примерно 256 символов текста на русском языке по теме, подразумеваемой следующим предложением. Без приветствий и пояснений, только сам абзац:\n\nНапример, самый распространённый в мире формат для статических фотографий — 35 мм, и именно этот размер был доминирующим размером плёнки на закате аналоговой эры.\n\n/no_think",
+    "source_text": "Например, самый распространённый в мире формат для статических фотографий — 35 мм, и именно этот размер был доминирующим размером плёнки на закате аналоговой эры."
+  },
+  "options": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 1024
+  },
+  "response_text": "Без приветствий и пояснений, только сам абзац:\n\nВ истории photography, особенно в период аналоговой эры, доминировал 35 мм. Этот размер был наиболее распространённым и широко используемым для статических фотографий. В то время как другие размеры плёнки, такие как 6x4 или 8x10, были более распространены в других областях, photography оставался на первом месте.",
+  "ollama": {
+    "model": "llama3.2:1b",
+    "total_duration": 711442596,
+    "load_duration": 86844408,
+    "prompt_eval_duration": 6662454,
+    "eval_duration": 576098605,
+    "eval_count": 100,
+    "prompt_eval_count": 133,
+    "done_reason": "stop"
+  },
+  "raw_response": {
+    "model": "llama3.2:1b",
+    "created_at": "2026-09-11T14:52:10.921189551Z",
+    "message": {
+      "role": "assistant",
+      "content": "Без приветствий и пояснений, только сам абзац:\n\nВ истории photography, особенно в период аналоговой эры, доминировал 35 мм. Этот размер был наиболее распространённым и широко используемым для статических фотографий. В то время как другие размеры плёнки, такие как 6x4 или 8x10, были более распространены в других областях, photography оставался на первом месте."
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 711442596,
+    "load_duration": 86844408,
+    "prompt_eval_count": 133,
+    "prompt_eval_duration": 6662454,
+    "eval_count": 100,
+    "eval_duration": 576098605
+  },
+  "host": {
+    "pre_call": {
+      "timestamp_unix": 1789138330.159084,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138330.1590843,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 92,
+            "mem_util_pct": 100,
+            "power_w": 72.015,
+            "temp_c": 79,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138330.1698143,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 243.81640625,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 37512,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1188.68359375,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 243.81640625,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 944.8671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138330.1938684,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249668,
+        "proc_threads": 32,
+        "proc_vol_ctx": 36875,
+        "proc_invol_ctx": 637,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "post_call": {
+      "timestamp_unix": 1789138330.921637,
+      "nvidia_smi": {
+        "timestamp_unix": 1789138330.9216373,
+        "gpus": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "vram_used_mib": 2172.8125,
+            "vram_total_mib": 8188.0,
+            "util_pct": 86,
+            "mem_util_pct": 97,
+            "power_w": 71.941,
+            "temp_c": 77,
+            "sm_clock_mhz": 2460,
+            "mem_clock_mhz": 8001
+          }
+        ],
+        "method": "pynvml"
+      },
+      "psutil": {
+        "timestamp_unix": 1789138330.9334452,
+        "ollama_pid": 2539,
+        "pid": 2539,
+        "cpu_pct": 0.0,
+        "rss_mib": 244.01953125,
+        "vms_mib": 3646.7578125,
+        "num_threads": 32,
+        "status": "sleeping",
+        "nice": 0,
+        "ctx_switches": 37642,
+        "tree_cpu_pct": 0.0,
+        "tree_rss_mib": 1188.88671875,
+        "tree_threads": 54,
+        "tree_process_count": 2,
+        "children": [
+          {
+            "pid": 2539,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama serve",
+            "rss_mib": 244.01953125,
+            "status": "sleeping"
+          },
+          {
+            "pid": 105863,
+            "name": "ollama",
+            "cmdline": "/usr/local/bin/ollama runner --model /usr/share/ollama/.ollama/models/blobs/sha256-74701a8c35f6c8d9a4b91f3f3497643001d63e0c7a84e085bed452548fa88d45 --port 33979",
+            "rss_mib": 944.8671875,
+            "status": "sleeping"
+          }
+        ]
+      },
+      "proc": {
+        "timestamp_unix": 1789138330.959172,
+        "ollama_pid": 2539,
+        "proc_state": "S",
+        "proc_vm_size_kib": 3734280,
+        "proc_vm_rss_kib": 249876,
+        "proc_threads": 32,
+        "proc_vol_ctx": 37004,
+        "proc_invol_ctx": 638,
+        "io_error": "[Errno 13] Permission denied: '/proc/2539/io'",
+        "proc_cmdline": "/usr/local/bin/ollama serve"
+      }
+    },
+    "client": {
+      "request_sent_unix": 1789138330.2094028,
+      "response_received_unix": 1789138330.9215703,
+      "first_byte_unix": 1789138330.9215147,
+      "total_wall_ms": 712.167501449585,
+      "queue_wait_ms": 712.1119499206543,
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 11 Sep 2026 14:52:10 GMT",
+        "Content-Length": "927",
+        "Connection": "close"
+      },
+      "payload_received_unix": 1789138330.9747128,
+      "vram_delta_mib": 0.0
+    },
+    "retry": {
+      "attempt": 1,
+      "max_attempts": 3,
+      "wall_clock_request_unix": 1789138330.209352
+    }
+  },
+  "wall_clock_unix": 1789138330.9747128
+}

@@ -1,0 +1,23 @@
+[10:12:36] === run_benchmark start (pid=12434) ===
+[10:12:36]   stale .run.pid (12434) — same as current PID, removing
+[10:12:36]   acquired single-process lock (PID=12434)
+[10:12:36] === run_benchmark config: models=1 langs=8 samples=200 repeats=5 phase=both resume=True out_dir=new-q8-20260919-101236
+[10:12:36]   models in order: ['qwen3:0.6b-q8']
+[10:12:36]   languages: ['eng_Latn', 'zho_Hans', 'jpn_Jpan', 'kor_Hang', 'spa_Latn', 'fra_Latn', 'deu_Latn', 'rus_Cyrl']
+[10:12:36] -- PHASE A_fixed_tokens --
+[10:12:36]   >>> qwen3:0.6b-q8 × A_fixed_tokens START
+[10:12:36]   [preflight] 'qwen3:0.6b-q8' available=True VRAM=1088MiB loaded_before=[]
+[10:12:37]   [ensure_loaded] ok — load_duration=668ms VRAM: 1088 -> 1921 MiB
+[10:12:37]   >>> qwen3:0.6b-q8 cells_target = 8000
+[11:01:06]   >>> qwen3:0.6b-q8 cells=8000 saved=8000 skipped=0 failed=0 retries=0
+[11:01:07]   [unload] 'qwen3:0.6b-q8' success=True elapsed=1.0s VRAM_after=1402MiB
+[11:01:07]   >>> qwen3:0.6b-q8 × A_fixed_tokens DONE
+[11:01:07] -- PHASE B_fixed_semantic_length --
+[11:01:07]   >>> qwen3:0.6b-q8 × B_fixed_semantic_length START
+[11:01:07]   [preflight] 'qwen3:0.6b-q8' available=True VRAM=1402MiB loaded_before=[]
+[11:01:07]   [ensure_loaded] ok — load_duration=617ms VRAM: 1402 -> 2235 MiB
+[11:01:07]   >>> qwen3:0.6b-q8 cells_target = 8000
+[11:44:21]   >>> qwen3:0.6b-q8 cells=8000 saved=8000 skipped=0 failed=0 retries=0
+[11:44:22]   [unload] 'qwen3:0.6b-q8' success=True elapsed=1.0s VRAM_after=1114MiB
+[11:44:22]   >>> qwen3:0.6b-q8 × B_fixed_semantic_length DONE
+[11:44:22] === run_benchmark done — report at results/raw/new-q8-20260919-101236/RUN_REPORT.md ===
